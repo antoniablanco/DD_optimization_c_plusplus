@@ -1,0 +1,87 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.27"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "DD_optimization_program",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Class::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Class-Debug-d72683a733c90402a196.json",
+					"name" : "Class",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "IndependentSet::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-IndependentSet-Debug-d5b91865908681f28fdc.json",
+					"name" : "IndependentSet",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Knapsack::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Knapsack-Debug-cc5b5927fe8d7fdbe94f.json",
+					"name" : "Knapsack",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "SetCovering::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-SetCovering-Debug-2c2527b2beb05c917191.json",
+					"name" : "SetCovering",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/antoniablanco/Desktop/DD_optimization_program/cmake-build-debug",
+		"source" : "/Users/antoniablanco/Desktop/DD_optimization_program"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

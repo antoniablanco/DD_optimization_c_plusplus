@@ -1,0 +1,6 @@
+# ninja log v5
+0	620	1705680882878342137	CMakeFiles/Class.dir/Class/DDStructure/Arc.cpp.o	5576978335a2fd49
+0	625	1705680882879258397	CMakeFiles/Class.dir/Class/DDStructure/Node.cpp.o	5335be04959ead8c
+1	626	1705680882882822647	CMakeFiles/Class.dir/Class/DDStructure/Graph.cpp.o	f609352ea83b2a7d
+626	655	1705680882918883000	libClass.a	1f5646b0469aac2f
+2	701	1705680882961431850	CMakeFiles/Knapsack.dir/Examples/Knapsack/KnapsackMain.cpp.o	834830675536b34f
