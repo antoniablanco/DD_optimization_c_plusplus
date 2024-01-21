@@ -77,6 +77,13 @@ build CMakeFiles/Class.dir/Class/DDStructure/utils.cpp.o: CXX_COMPILER__Class_un
   OBJECT_DIR = CMakeFiles/Class.dir
   OBJECT_FILE_DIR = CMakeFiles/Class.dir/Class/DDStructure
 
+build CMakeFiles/Class.dir/Class/Problems/AbstractProblemClass.cpp.o: CXX_COMPILER__Class_unscanned_Debug /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/Problems/AbstractProblemClass.cpp || cmake_object_order_depends_target_Class
+  DEP_FILE = CMakeFiles/Class.dir/Class/Problems/AbstractProblemClass.cpp.o.d
+  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDStructure
+  OBJECT_DIR = CMakeFiles/Class.dir
+  OBJECT_FILE_DIR = CMakeFiles/Class.dir/Class/Problems
+
 
 # =============================================================================
 # Link build statements for STATIC_LIBRARY target Class
@@ -85,7 +92,7 @@ build CMakeFiles/Class.dir/Class/DDStructure/utils.cpp.o: CXX_COMPILER__Class_un
 #############################################
 # Link the static library libClass.a
 
-build libClass.a: CXX_STATIC_LIBRARY_LINKER__Class_Debug CMakeFiles/Class.dir/Class/DDStructure/Arc.cpp.o CMakeFiles/Class.dir/Class/DDStructure/Node.cpp.o CMakeFiles/Class.dir/Class/DDStructure/Graph.cpp.o CMakeFiles/Class.dir/Class/DDStructure/utils.cpp.o
+build libClass.a: CXX_STATIC_LIBRARY_LINKER__Class_Debug CMakeFiles/Class.dir/Class/DDStructure/Arc.cpp.o CMakeFiles/Class.dir/Class/DDStructure/Node.cpp.o CMakeFiles/Class.dir/Class/DDStructure/Graph.cpp.o CMakeFiles/Class.dir/Class/DDStructure/utils.cpp.o CMakeFiles/Class.dir/Class/Problems/AbstractProblemClass.cpp.o
   ARCH_FLAGS = -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk
   LANGUAGE_COMPILE_FLAGS = -g
   OBJECT_DIR = CMakeFiles/Class.dir
@@ -110,6 +117,13 @@ build CMakeFiles/Knapsack.dir/Examples/Knapsack/KnapsackMain.cpp.o: CXX_COMPILER
   OBJECT_DIR = CMakeFiles/Knapsack.dir
   OBJECT_FILE_DIR = CMakeFiles/Knapsack.dir/Examples/Knapsack
 
+build CMakeFiles/Knapsack.dir/Examples/Knapsack/KnapsackProblem.cpp.o: CXX_COMPILER__Knapsack_unscanned_Debug /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Examples/Knapsack/KnapsackProblem.cpp || cmake_object_order_depends_target_Knapsack
+  DEP_FILE = CMakeFiles/Knapsack.dir/Examples/Knapsack/KnapsackProblem.cpp.o.d
+  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDStructure
+  OBJECT_DIR = CMakeFiles/Knapsack.dir
+  OBJECT_FILE_DIR = CMakeFiles/Knapsack.dir/Examples/Knapsack
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Knapsack
@@ -118,7 +132,7 @@ build CMakeFiles/Knapsack.dir/Examples/Knapsack/KnapsackMain.cpp.o: CXX_COMPILER
 #############################################
 # Link the executable Knapsack
 
-build Knapsack: CXX_EXECUTABLE_LINKER__Knapsack_Debug CMakeFiles/Knapsack.dir/Examples/Knapsack/KnapsackMain.cpp.o | libClass.a || libClass.a
+build Knapsack: CXX_EXECUTABLE_LINKER__Knapsack_Debug CMakeFiles/Knapsack.dir/Examples/Knapsack/KnapsackMain.cpp.o CMakeFiles/Knapsack.dir/Examples/Knapsack/KnapsackProblem.cpp.o | libClass.a || libClass.a
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk
   LINK_LIBRARIES = libClass.a
   OBJECT_DIR = CMakeFiles/Knapsack.dir
