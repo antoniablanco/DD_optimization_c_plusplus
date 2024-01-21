@@ -2,7 +2,6 @@ cmake_minimum_required(VERSION 3.27)
 project(DD_optimization_program)
 
 set(CMAKE_CXX_STANDARD 20)
-set(CMAKE_VERBOSE_MAKEFILE ON)
 
 
 set(CLASS_SOURCE
@@ -12,6 +11,8 @@ set(CLASS_SOURCE
         Class/DDStructure/Node.h
         Class/DDStructure/Graph.cpp
         Class/DDStructure/Graph.h
+        Class/DDStructure/utils.h
+        Class/DDStructure/utils.cpp
 )
 
 add_library(Class ${CLASS_SOURCE})
@@ -25,3 +26,4 @@ add_executable(SetCovering Examples/SetCovering/SetCoveringMain.cpp)
 target_link_libraries(Knapsack PRIVATE Class)
 target_link_libraries(IndependentSet PRIVATE Class)
 target_link_libraries(SetCovering PRIVATE Class)
+

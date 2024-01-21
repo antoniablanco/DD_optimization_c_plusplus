@@ -5,24 +5,26 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <list>
 
-template <typename T>
+using namespace std;
+
 class Arc;
 
-template <typename T>
 class Node {
 public:
-    Node(int id, T state);
+    Node(int id, vector<int> state);
     int id;
-    T state;
-    std::vector<Arc<T>*> in_arcs;
-    std::vector<Arc<T>*> out_arcs;
+    vector<int> state;
+    list<Arc> in_arcs;
+    list<Arc> out_arcs;
 
     std::string to_string();
-    void add_in_arc(Arc<T>* arc);
-    void add_out_arc(Arc<T>* arc);
-    void remove_in_arc(Arc<T>* arc);
-    void remove_out_arc(Arc<T>* arc);
+    bool operator==(const Node &other) const;
+    void add_in_arc(Arc& arc);
+    void add_out_arc(Arc& arc);
+    void remove_in_arc(Arc& arc);
+    void remove_out_arc(Arc& arc);
 };
 
 #endif //DD_OPTIMIZATION_PROGRAM_NODE_H

@@ -10,14 +10,12 @@
 
 using namespace std;
 
-template <typename T>
-Graph<T>::Graph(Node<T>* initial_node) : nodes(), structure(), actual_layer(0) {
+Graph::Graph(Node& initial_node) : nodes(), structure(), actual_layer(0) {
     nodes.push_back(initial_node);
     structure.push_back({initial_node});
 }
 
-template <typename T>
-bool Graph<T>::operator==(const Graph<T> &other) const {
+bool Graph::operator==(const Graph &other) const {
     bool result = true;
 
     for (size_t i = 0; i < structure.size(); ++i) {
@@ -28,12 +26,12 @@ bool Graph<T>::operator==(const Graph<T> &other) const {
         bool there_is_equal_node = false;
 
         for (size_t j = 0; j < structure[i].size(); ++j) {
-            const Node<T> node = structure[i][j];
+            const Node node = structure[i][j];
 
             for (size_t k = 0; k < other.structure[i].size(); ++k) {
-                const Node<T> other_node = other.structure[i][k];
+                const Node other_node = other.structure[i][k];
 
-                if (node->state == other_node->state) {
+                if (node.state == other_node.state) {
                     there_is_equal_node = there_is_equal_node || compare_two_nodes(node, other_node);
                 }
             }
@@ -43,8 +41,7 @@ bool Graph<T>::operator==(const Graph<T> &other) const {
     return result;
 }
 
-template <typename T>
-bool Graph<T>::compare_two_nodes(const Node<T>& nodeOne, const Node<T>& nodeTwo) const {
+bool Graph::compare_two_nodes(const Node& nodeOne, const Node& nodeTwo) const {
     bool return_in_arcs = true;
     for (auto& arc : nodeOne.in_arcs) {
         bool there_is_equal_arc = false;
@@ -72,8 +69,7 @@ bool Graph<T>::compare_two_nodes(const Node<T>& nodeOne, const Node<T>& nodeTwo)
     return return_in_arcs && return_out_arcs;
 }
 
-template <typename T>
-void Graph<T>::add_node(Node<T>& node) {
+void Graph::add_node(Node& node) {
     auto iterator = find(nodes.begin(), nodes.end(), node);
     if (iterator == nodes.end()) {
         nodes.push_back(node);
@@ -81,32 +77,23 @@ void Graph<T>::add_node(Node<T>& node) {
     }
 }
 
-template <typename T>
-void Graph<T>::add_new_layer() {
+void Graph::add_new_layer() {
     actual_layer++;
     structure.push_back({});
 }
 
-template <typename T>
-void Graph<T>::eliminate_node_and_his_arcs(Node<T>& node) {
+void Graph::eliminate_node_and_his_arcs(Node& node) {
     remove_node_from_layer(node);
 
     for (auto& arc : node.in_arcs) {
-        arc.out_node.out_arcs.erase(
-                remove(arc.out_node.out_arcs.begin(), arc.out_node.out_arcs.end(), arc),
-                arc.out_node.out_arcs.end()
-        );
-
-        delete arc;
+        arc.out_node.out_arcs.remove(arc);
     }
 
     node.in_arcs.clear();
     remove_node(node);
-    delete node;
 }
 
-template <typename T>
-void Graph<T>::remove_node(Node<T>& node) {
+void Graph::remove_node(Node& node) {
     auto iterator = find(nodes.begin(), nodes.end(), node);
 
     if (iterator != nodes.end()) {
@@ -115,8 +102,7 @@ void Graph<T>::remove_node(Node<T>& node) {
     }
 }
 
-template <typename T>
-void Graph<T>::remove_node_from_layer(Node<T>& node) {
+void Graph::remove_node_from_layer(Node& node) {
     for (auto& layer : structure) {
         auto iterator = find(layer.begin(), layer.end(), node);
 

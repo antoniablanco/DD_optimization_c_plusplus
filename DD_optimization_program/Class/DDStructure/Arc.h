@@ -6,18 +6,20 @@
 #include <string>
 #include <vector>
 
-template <typename T>
+using namespace std;
+
 class Node;
 
-template <typename T>
 class Arc {
 public:
-    Arc(Node<T>* out_node, Node<T>* in_node, int variable_value, std::string variable_id);
-    Node<T>* out_node;
-    Node<T>* in_node;
+    Arc(Node& out_node, Node& in_node, int variable_value, std::string variable_id);
+    Node& out_node;
+    Node& in_node;
     int variable_value;
     std::string variable_id;
-    std::string to_string();
+
+    std::string to_string() const;
+    bool operator==(const Arc &other) const;
 };
 
 #endif //DD_OPTIMIZATION_PROGRAM_ARC_H
