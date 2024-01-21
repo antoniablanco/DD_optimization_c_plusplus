@@ -1,0 +1,6 @@
+/Users/antoniablanco/Desktop/DD_optimization_c-/build/CMakeFiles/Class.dir
+/Users/antoniablanco/Desktop/DD_optimization_c-/build/CMakeFiles/Knapsack.dir
+/Users/antoniablanco/Desktop/DD_optimization_c-/build/CMakeFiles/IndependentSet.dir
+/Users/antoniablanco/Desktop/DD_optimization_c-/build/CMakeFiles/SetCovering.dir
+/Users/antoniablanco/Desktop/DD_optimization_c-/build/CMakeFiles/edit_cache.dir
+/Users/antoniablanco/Desktop/DD_optimization_c-/build/CMakeFiles/rebuild_cache.dir
