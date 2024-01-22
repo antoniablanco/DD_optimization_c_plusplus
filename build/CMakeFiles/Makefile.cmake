@@ -48,6 +48,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/Class.dir/DependInfo.cmake"
+  "CMakeFiles/Exceptions.dir/DependInfo.cmake"
   "CMakeFiles/Knapsack.dir/DependInfo.cmake"
   "CMakeFiles/IndependentSet.dir/DependInfo.cmake"
   "CMakeFiles/SetCovering.dir/DependInfo.cmake"

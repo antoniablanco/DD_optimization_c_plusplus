@@ -3,7 +3,6 @@ project(DD_optimization_program)
 
 set(CMAKE_CXX_STANDARD 20)
 
-
 set(CLASS_SOURCE
         Class/DDStructure/Arc.cpp
         Class/DDStructure/Arc.h
@@ -17,9 +16,16 @@ set(CLASS_SOURCE
         Class/Problems/AbstractProblemClass.h
 )
 
+set(EXCEPTIONS_SOURCE
+        Exceptions/MyExceptions.h
+        Exceptions/MyExceptions.cpp)
+
 add_library(Class ${CLASS_SOURCE})
+add_library(Exceptions ${EXCEPTIONS_SOURCE})
 
 target_include_directories(Class PUBLIC Class/DDStructure)
+target_include_directories(Class PUBLIC Class/Problems)
+target_include_directories(Exceptions PUBLIC Exceptions)
 
 add_executable(Knapsack Examples/Knapsack/KnapsackMain.cpp
         Examples/Knapsack/KnapsackProblem.cpp
@@ -28,6 +34,7 @@ add_executable(IndependentSet Examples/IndependentSet/IndependentSetMain.cpp)
 add_executable(SetCovering Examples/SetCovering/SetCoveringMain.cpp)
 
 target_link_libraries(Knapsack PRIVATE Class)
+target_link_libraries(Knapsack PRIVATE Exceptions)
 target_link_libraries(IndependentSet PRIVATE Class)
 target_link_libraries(SetCovering PRIVATE Class)
 

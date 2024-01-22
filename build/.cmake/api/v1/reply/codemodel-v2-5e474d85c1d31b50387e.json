@@ -18,7 +18,8 @@
 						0,
 						1,
 						2,
-						3
+						3,
+						4
 					]
 				}
 			],
@@ -36,7 +37,8 @@
 						0,
 						1,
 						2,
-						3
+						3,
+						4
 					]
 				}
 			],
@@ -45,28 +47,35 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "Class::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Class-Debug-8b47daf00d2ec29f63e0.json",
+					"jsonFile" : "target-Class-Debug-e4f6e82ea0e8a4551934.json",
 					"name" : "Class",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
+					"id" : "Exceptions::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Exceptions-Debug-ecedbf2b1f43fad0d885.json",
+					"name" : "Exceptions",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
 					"id" : "IndependentSet::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-IndependentSet-Debug-ca9c24c680c23e4b17ef.json",
+					"jsonFile" : "target-IndependentSet-Debug-145bd7225f0107780d4b.json",
 					"name" : "IndependentSet",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "Knapsack::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Knapsack-Debug-d708b352368aa2cbc548.json",
+					"jsonFile" : "target-Knapsack-Debug-08d2a6298f236195c98a.json",
 					"name" : "Knapsack",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "SetCovering::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-SetCovering-Debug-212d986cb56305462f77.json",
+					"jsonFile" : "target-SetCovering-Debug-32e0b7843044af163fca.json",
 					"name" : "SetCovering",
 					"projectIndex" : 0
 				}

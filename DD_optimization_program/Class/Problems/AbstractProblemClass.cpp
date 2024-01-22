@@ -2,9 +2,9 @@
 // Created by antonia blanco on 21-01-24.
 //
 
-#include "AbstractProblemClass.h"
+#include "AbstractProblemClass.h" 
 
-AbstractProblem::AbstractProblem(const vector<int>& initial_state, const vector<pair<string, vector<int>>> &variables):
+AbstractProblem::AbstractProblem(vector<int>& initial_state, const vector<pair<string, vector<int>>> &variables):
     initial_state(initial_state),
     ordered_variables(get_variables(variables)) {}
 

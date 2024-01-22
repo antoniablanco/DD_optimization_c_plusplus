@@ -130,6 +130,19 @@ Class/fast:
 .PHONY : Class/fast
 
 #=============================================================================
+# Target rules for targets named Exceptions
+
+# Build rule for target.
+Exceptions: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Exceptions
+.PHONY : Exceptions
+
+# fast build rule for target.
+Exceptions/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Exceptions.dir/build.make CMakeFiles/Exceptions.dir/build
+.PHONY : Exceptions/fast
+
+#=============================================================================
 # Target rules for targets named Knapsack
 
 # Build rule for target.
@@ -384,6 +397,30 @@ Examples/SetCovering/SetCoveringMain.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SetCovering.dir/build.make CMakeFiles/SetCovering.dir/Examples/SetCovering/SetCoveringMain.cpp.s
 .PHONY : Examples/SetCovering/SetCoveringMain.cpp.s
 
+Exceptions/MyExceptions.o: Exceptions/MyExceptions.cpp.o
+.PHONY : Exceptions/MyExceptions.o
+
+# target to build an object file
+Exceptions/MyExceptions.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Exceptions.dir/build.make CMakeFiles/Exceptions.dir/Exceptions/MyExceptions.cpp.o
+.PHONY : Exceptions/MyExceptions.cpp.o
+
+Exceptions/MyExceptions.i: Exceptions/MyExceptions.cpp.i
+.PHONY : Exceptions/MyExceptions.i
+
+# target to preprocess a source file
+Exceptions/MyExceptions.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Exceptions.dir/build.make CMakeFiles/Exceptions.dir/Exceptions/MyExceptions.cpp.i
+.PHONY : Exceptions/MyExceptions.cpp.i
+
+Exceptions/MyExceptions.s: Exceptions/MyExceptions.cpp.s
+.PHONY : Exceptions/MyExceptions.s
+
+# target to generate assembly for a file
+Exceptions/MyExceptions.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Exceptions.dir/build.make CMakeFiles/Exceptions.dir/Exceptions/MyExceptions.cpp.s
+.PHONY : Exceptions/MyExceptions.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -393,6 +430,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Class"
+	@echo "... Exceptions"
 	@echo "... IndependentSet"
 	@echo "... Knapsack"
 	@echo "... SetCovering"
@@ -423,6 +461,9 @@ help:
 	@echo "... Examples/SetCovering/SetCoveringMain.o"
 	@echo "... Examples/SetCovering/SetCoveringMain.i"
 	@echo "... Examples/SetCovering/SetCoveringMain.s"
+	@echo "... Exceptions/MyExceptions.o"
+	@echo "... Exceptions/MyExceptions.i"
+	@echo "... Exceptions/MyExceptions.s"
 .PHONY : help
 
 

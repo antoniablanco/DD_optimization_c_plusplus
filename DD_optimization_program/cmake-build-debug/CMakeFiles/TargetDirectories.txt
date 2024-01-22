@@ -1,4 +1,5 @@
 /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/cmake-build-debug/CMakeFiles/Class.dir
+/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/cmake-build-debug/CMakeFiles/Exceptions.dir
 /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/cmake-build-debug/CMakeFiles/Knapsack.dir
 /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/cmake-build-debug/CMakeFiles/IndependentSet.dir
 /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/cmake-build-debug/CMakeFiles/SetCovering.dir
