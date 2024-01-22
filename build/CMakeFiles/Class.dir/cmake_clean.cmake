@@ -1,4 +1,10 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/Class.dir/Class/DD.cpp.o"
+  "CMakeFiles/Class.dir/Class/DD.cpp.o.d"
+  "CMakeFiles/Class.dir/Class/DDBuilder/AbstractDDBuilder.cpp.o"
+  "CMakeFiles/Class.dir/Class/DDBuilder/AbstractDDBuilder.cpp.o.d"
+  "CMakeFiles/Class.dir/Class/DDBuilder/DDBuilder.cpp.o"
+  "CMakeFiles/Class.dir/Class/DDBuilder/DDBuilder.cpp.o.d"
   "CMakeFiles/Class.dir/Class/DDStructure/Arc.cpp.o"
   "CMakeFiles/Class.dir/Class/DDStructure/Arc.cpp.o.d"
   "CMakeFiles/Class.dir/Class/DDStructure/Graph.cpp.o"

@@ -4,6 +4,10 @@ project(DD_optimization_program)
 set(CMAKE_CXX_STANDARD 20)
 
 set(CLASS_SOURCE
+        Class/DDBuilder/AbstractDDBuilder.h
+        Class/DDBuilder/AbstractDDBuilder.cpp
+        Class/DDBuilder/DDBuilder.h
+        Class/DDBuilder/DDBuilder.cpp
         Class/DDStructure/Arc.cpp
         Class/DDStructure/Arc.h
         Class/DDStructure/Node.cpp
@@ -14,6 +18,8 @@ set(CLASS_SOURCE
         Class/DDStructure/utils.cpp
         Class/Problems/AbstractProblemClass.cpp
         Class/Problems/AbstractProblemClass.h
+        Class/DD.h
+        Class/DD.cpp
 )
 
 set(EXCEPTIONS_SOURCE
@@ -23,8 +29,10 @@ set(EXCEPTIONS_SOURCE
 add_library(Class ${CLASS_SOURCE})
 add_library(Exceptions ${EXCEPTIONS_SOURCE})
 
+target_include_directories(Class PUBLIC Class)
 target_include_directories(Class PUBLIC Class/DDStructure)
 target_include_directories(Class PUBLIC Class/Problems)
+target_include_directories(Class PUBLIC Class/DDBuilder)
 target_include_directories(Exceptions PUBLIC Exceptions)
 
 add_executable(Knapsack Examples/Knapsack/KnapsackMain.cpp

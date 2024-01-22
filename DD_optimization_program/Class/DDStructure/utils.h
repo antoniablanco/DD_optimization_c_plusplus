@@ -16,6 +16,7 @@ using namespace std;
 class Arc;
 
 string to_string_int_vector(vector<int> vector);
+string to_string_string_vector(vector<string> vector);
 void remove_int_vector(vector<int> &vector, int value);
 
 

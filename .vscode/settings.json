@@ -4,6 +4,8 @@
     "files.associations": {
         "vector": "cpp",
         "iosfwd": "cpp",
-        "locale": "cpp"
+        "locale": "cpp",
+        "map": "cpp",
+        "iostream": "cpp"
     }
 }

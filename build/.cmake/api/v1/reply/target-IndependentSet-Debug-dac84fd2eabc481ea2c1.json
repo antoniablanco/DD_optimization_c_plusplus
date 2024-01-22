@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "Knapsack"
+			"path" : "IndependentSet"
 		}
 	],
 	"backtrace" : 1,
@@ -25,19 +25,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 30,
+				"line" : 41,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 36,
-				"parent" : 0
-			},
-			{
-				"command" : 1,
-				"file" : 0,
-				"line" : 37,
+				"line" : 46,
 				"parent" : 0
 			}
 		]
@@ -55,6 +49,10 @@
 			[
 				{
 					"backtrace" : 2,
+					"path" : "/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class"
+				},
+				{
+					"backtrace" : 2,
 					"path" : "/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDStructure"
 				},
 				{
@@ -62,8 +60,8 @@
 					"path" : "/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/Problems"
 				},
 				{
-					"backtrace" : 3,
-					"path" : "/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Exceptions"
+					"backtrace" : 2,
+					"path" : "/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDBuilder"
 				}
 			],
 			"language" : "CXX",
@@ -77,23 +75,18 @@
 			},
 			"sourceIndexes" : 
 			[
-				0,
-				1
+				0
 			]
 		}
 	],
 	"dependencies" : 
 	[
 		{
-			"backtrace" : 3,
-			"id" : "Exceptions::@6890427a1f51a3e7e1df"
-		},
-		{
 			"backtrace" : 2,
 			"id" : "Class::@6890427a1f51a3e7e1df"
 		}
 	],
-	"id" : "Knapsack::@6890427a1f51a3e7e1df",
+	"id" : "IndependentSet::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -110,17 +103,12 @@
 				"backtrace" : 2,
 				"fragment" : "libClass.a",
 				"role" : "libraries"
-			},
-			{
-				"backtrace" : 3,
-				"fragment" : "libExceptions.a",
-				"role" : "libraries"
 			}
 		],
 		"language" : "CXX"
 	},
-	"name" : "Knapsack",
-	"nameOnDisk" : "Knapsack",
+	"name" : "IndependentSet",
+	"nameOnDisk" : "IndependentSet",
 	"paths" : 
 	{
 		"build" : ".",
@@ -132,15 +120,7 @@
 			"name" : "Source Files",
 			"sourceIndexes" : 
 			[
-				0,
-				1
-			]
-		},
-		{
-			"name" : "Header Files",
-			"sourceIndexes" : 
-			[
-				2
+				0
 			]
 		}
 	],
@@ -149,19 +129,8 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Examples/Knapsack/KnapsackMain.cpp",
+			"path" : "Examples/IndependentSet/IndependentSetMain.cpp",
 			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "Examples/Knapsack/KnapsackProblem.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Examples/Knapsack/KnapsackProblem.h",
-			"sourceGroupIndex" : 1
 		}
 	],
 	"type" : "EXECUTABLE"

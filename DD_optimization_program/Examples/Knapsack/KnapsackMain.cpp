@@ -2,48 +2,50 @@
 #include "Node.h"
 #include "Arc.h"
 #include "Graph.h"
+#include "KnapsackProblem.h"
+#include "utils.h"
+#include "DD.h"
+
+#include <iostream>
+#include <vector>
+#include <string>
+#include <algorithm>
+#include <cmath>
+#include <map>
+#include <list>
 
 using namespace std;
 
 int main() {
 
-    Node node_0(0, {0});
-    Graph graph(node_0);
+    // Valores construcción knapsack
+    vector<vector<int>> matrix_of_wheight = {{3, 3, 4, 6}};
+    vector<int> right_side_of_restrictions = {6};
 
-    graph.add_new_layer();
-    Node node_1 = Node(1, {0});
-    Arc arc_0_1 = Arc(node_0, node_1, 0, "x_1");
-    node_0.add_out_arc(arc_0_1);
-    node_1.add_in_arc(arc_0_1);
+    // Valores construcción abstract problem
+    vector<int> initial_state = {0, 0};
+    vector<pair<string, vector<int>>> variables = {
+        make_pair("x_1", vector<int>{0, 1}), 
+        make_pair("x_2", vector<int>{0, 1}),
+        make_pair("x_3", vector<int>{0, 1}), 
+        make_pair("x_4", vector<int>{0, 1})
+    };
+    
 
-    graph.add_node(node_1);
-    Node node_2 = Node(2, {3});
-    Arc arc_0_2 = Arc(node_0, node_2, 1, "x_1");
-    node_0.add_out_arc(arc_0_2);
-    node_2.add_in_arc(arc_0_2);
-    graph.add_node(node_2);
+    KnapsackProblem knapsack_instance(initial_state, variables, matrix_of_wheight, right_side_of_restrictions);
 
-    graph.add_new_layer();
-    Node node_3 = Node(3, {0});
-    Arc arc_1_3 = Arc(node_1, node_3, 0, "x_2");
-    node_1.add_out_arc(arc_1_3);
-    node_3.add_in_arc(arc_1_3);
-
-    graph.add_node(node_3);
-    Node node_4 = Node(4, {3});
-    Arc arc_1_4 = Arc(node_1, node_4, 1, "x_2");
-    node_1.add_out_arc(arc_1_4);
-    node_4.add_in_arc(arc_1_4);
-    Arc arc_2_4 = Arc(node_2, node_4, 0, "x_2");
-    node_2.add_out_arc(arc_2_4);
-    node_4.add_in_arc(arc_2_4);
-
-    graph.add_node(node_4);
-    Node node_5 = Node(5, {6});
-    Arc arc_2_5 = Arc(node_2, node_5, 1, "x_2");
-    node_2.add_out_arc(arc_2_5);
-    node_5.add_in_arc(arc_2_5);
-    graph.add_node(node_5);
+    
+    cout << "Initial state: " << to_string_int_vector(knapsack_instance.initial_state) << endl;
+    cout << "Variables: " << to_string_string_vector(knapsack_instance.ordered_variables) << endl;
+    
+    cout << "Variables domain: " << endl;
+    for (const auto& pair : knapsack_instance.variables_domain ) {
+        std::cout << pair.first << ": ";
+        for (int value : pair.second) {
+            std::cout << value << " ";
+        }
+        std::cout << std::endl;
+    }
 
     return 0;
 }

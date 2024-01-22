@@ -181,6 +181,78 @@ SetCovering/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SetCovering.dir/build.make CMakeFiles/SetCovering.dir/build
 .PHONY : SetCovering/fast
 
+Class/DD.o: Class/DD.cpp.o
+.PHONY : Class/DD.o
+
+# target to build an object file
+Class/DD.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Class.dir/build.make CMakeFiles/Class.dir/Class/DD.cpp.o
+.PHONY : Class/DD.cpp.o
+
+Class/DD.i: Class/DD.cpp.i
+.PHONY : Class/DD.i
+
+# target to preprocess a source file
+Class/DD.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Class.dir/build.make CMakeFiles/Class.dir/Class/DD.cpp.i
+.PHONY : Class/DD.cpp.i
+
+Class/DD.s: Class/DD.cpp.s
+.PHONY : Class/DD.s
+
+# target to generate assembly for a file
+Class/DD.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Class.dir/build.make CMakeFiles/Class.dir/Class/DD.cpp.s
+.PHONY : Class/DD.cpp.s
+
+Class/DDBuilder/AbstractDDBuilder.o: Class/DDBuilder/AbstractDDBuilder.cpp.o
+.PHONY : Class/DDBuilder/AbstractDDBuilder.o
+
+# target to build an object file
+Class/DDBuilder/AbstractDDBuilder.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Class.dir/build.make CMakeFiles/Class.dir/Class/DDBuilder/AbstractDDBuilder.cpp.o
+.PHONY : Class/DDBuilder/AbstractDDBuilder.cpp.o
+
+Class/DDBuilder/AbstractDDBuilder.i: Class/DDBuilder/AbstractDDBuilder.cpp.i
+.PHONY : Class/DDBuilder/AbstractDDBuilder.i
+
+# target to preprocess a source file
+Class/DDBuilder/AbstractDDBuilder.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Class.dir/build.make CMakeFiles/Class.dir/Class/DDBuilder/AbstractDDBuilder.cpp.i
+.PHONY : Class/DDBuilder/AbstractDDBuilder.cpp.i
+
+Class/DDBuilder/AbstractDDBuilder.s: Class/DDBuilder/AbstractDDBuilder.cpp.s
+.PHONY : Class/DDBuilder/AbstractDDBuilder.s
+
+# target to generate assembly for a file
+Class/DDBuilder/AbstractDDBuilder.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Class.dir/build.make CMakeFiles/Class.dir/Class/DDBuilder/AbstractDDBuilder.cpp.s
+.PHONY : Class/DDBuilder/AbstractDDBuilder.cpp.s
+
+Class/DDBuilder/DDBuilder.o: Class/DDBuilder/DDBuilder.cpp.o
+.PHONY : Class/DDBuilder/DDBuilder.o
+
+# target to build an object file
+Class/DDBuilder/DDBuilder.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Class.dir/build.make CMakeFiles/Class.dir/Class/DDBuilder/DDBuilder.cpp.o
+.PHONY : Class/DDBuilder/DDBuilder.cpp.o
+
+Class/DDBuilder/DDBuilder.i: Class/DDBuilder/DDBuilder.cpp.i
+.PHONY : Class/DDBuilder/DDBuilder.i
+
+# target to preprocess a source file
+Class/DDBuilder/DDBuilder.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Class.dir/build.make CMakeFiles/Class.dir/Class/DDBuilder/DDBuilder.cpp.i
+.PHONY : Class/DDBuilder/DDBuilder.cpp.i
+
+Class/DDBuilder/DDBuilder.s: Class/DDBuilder/DDBuilder.cpp.s
+.PHONY : Class/DDBuilder/DDBuilder.s
+
+# target to generate assembly for a file
+Class/DDBuilder/DDBuilder.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Class.dir/build.make CMakeFiles/Class.dir/Class/DDBuilder/DDBuilder.cpp.s
+.PHONY : Class/DDBuilder/DDBuilder.cpp.s
+
 Class/DDStructure/Arc.o: Class/DDStructure/Arc.cpp.o
 .PHONY : Class/DDStructure/Arc.o
 
@@ -434,6 +506,15 @@ help:
 	@echo "... IndependentSet"
 	@echo "... Knapsack"
 	@echo "... SetCovering"
+	@echo "... Class/DD.o"
+	@echo "... Class/DD.i"
+	@echo "... Class/DD.s"
+	@echo "... Class/DDBuilder/AbstractDDBuilder.o"
+	@echo "... Class/DDBuilder/AbstractDDBuilder.i"
+	@echo "... Class/DDBuilder/AbstractDDBuilder.s"
+	@echo "... Class/DDBuilder/DDBuilder.o"
+	@echo "... Class/DDBuilder/DDBuilder.i"
+	@echo "... Class/DDBuilder/DDBuilder.s"
 	@echo "... Class/DDStructure/Arc.o"
 	@echo "... Class/DDStructure/Arc.i"
 	@echo "... Class/DDStructure/Arc.s"

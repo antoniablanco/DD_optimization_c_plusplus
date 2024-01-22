@@ -6,30 +6,31 @@
 
 using namespace std;
 
-
 KnapsackProblem::KnapsackProblem(vector<int> &initial_state, const vector<pair<string, vector<int>>>& variables,
-vector<vector<int>> list_of_wheight_for_restrictions, vector<int> right_side_of_restrictions)
-    : AbstractProblem(initial_state, variables) {
-    check_atributes(variables, initial_state);
-    this->list_of_wheight_for_restrictions = list_of_wheight_for_restrictions;
-    this->right_side_of_restrictions = right_side_of_restrictions;
+vector<vector<int>> matrix_of_wheight, vector<int> right_side_of_restrictions)
+    : AbstractProblem(initial_state, variables),
+    matrix_of_wheight(matrix_of_wheight),
+    right_side_of_restrictions(right_side_of_restrictions)
+    {   
+        check_atributes(variables, initial_state);
     }
- 
+
+
 void KnapsackProblem::check_atributes(const vector<pair<string, vector<int>>>& variables, vector<int>& initial_state) {
     check_same_len_matrix_and_right_side(initial_state);
     check_same_len_rows_matrix_and_variables(variables);
     }
 
 void KnapsackProblem::check_same_len_matrix_and_right_side(vector<int>& initial_state) {
-        assert(list_of_wheight_for_restrictions.size() == right_side_of_restrictions.size() && "matrix_of_wheight and right_side_of_restrictions must have the same length");
+        assert(matrix_of_wheight.size() == right_side_of_restrictions.size() && "matrix_of_wheight and right_side_of_restrictions must have the same length");
         
         assert((initial_state.size() == right_side_of_restrictions.size() || initial_state.size() == 2 * right_side_of_restrictions.size()) &&
-               "matrix_of_wheight and right_side_of_restrictions must have the same length");
+               "initial_state and right_side_of_restrictions must have the same length");
     }
 
 void KnapsackProblem::check_same_len_rows_matrix_and_variables(const vector<pair<string, vector<int>>>& variables) {
-        for (auto &variable: variables) {
-            assert(variable.second.size() == list_of_wheight_for_restrictions.size() &&
+        for (auto &row: matrix_of_wheight) {
+            assert(variables.size() == row.size() &&
                    "matrix_of_wheight and variables must have the same length");
         }
     }
@@ -43,8 +44,8 @@ pair<vector<int>, bool> KnapsackProblem::transition_function(const vector<int>& 
     bool isFeasible = true;
     vector<int> state = {};
 
-    for (size_t row = 0; row < list_of_wheight_for_restrictions.size(); ++row) {
-        vector<int> lista_suma_variables = list_of_wheight_for_restrictions[row];
+    for (size_t row = 0; row < matrix_of_wheight.size(); ++row) {
+        vector<int> lista_suma_variables = matrix_of_wheight[row];
         int new_state = previous_state[row] + lista_suma_variables[stoi(variable_id.substr(2)) - 1] * variable_value;
         state.push_back(new_state);
 

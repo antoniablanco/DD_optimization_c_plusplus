@@ -22,15 +22,15 @@ public:
     virtual int get_priority_for_merge_nodes(const int node_id, const vector<int>& state) const = 0;
     virtual const vector<int> merge_operator(const vector<int>& state_one, const vector<int>& state_two) const = 0;
 
-    virtual ~AbstractProblem() = default;
-
-protected:
     vector<int>& initial_state;
     vector<string> ordered_variables;
     map<string, vector<int>> variables_domain;
+    
+    virtual ~AbstractProblem() = default;
+
 
 private:
-    vector<string> get_variables(const vector<pair<string, vector<int>>>& variables);
+    void get_variables(const vector<pair<string, vector<int>>>& variables);
 };
 
 #endif //DD_OPTIMIZATION_PROGRAM_ABSTRACTPROBLEMCLASS_H
