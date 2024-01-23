@@ -3,7 +3,6 @@
 #include "Node.h"
 #include "Arc.h"
 #include "Graph.h"
-#include "AbstractDDBuilder.h"
 #include "DDBuilder.h"
 
 #include <thread>
@@ -17,7 +16,7 @@ Graph DD::create_desition_diagram(const bool verbose) {
     cout << "Iniciando la creación del diagrama de decisión..." << endl;
     auto start = chrono::steady_clock::now();
 
-    Graph graph = AbstractDDBuilder(problem).get_desition_diagram(verbose);
+    Graph graph = DDBuilder(problem).get_desition_diagram(verbose);
     
     auto end = chrono::steady_clock::now();
     cout << "Diagrama de decisión creado" << endl;

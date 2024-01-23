@@ -21,7 +21,7 @@ public:
     Graph graph;
     Graph get_desition_diagram(bool should_visualize);
 
-    //virtual ~AbstractDDBuilder() = default;
+    virtual ~AbstractDDBuilder() = default;
 
 protected:
     int node_number;
@@ -41,8 +41,9 @@ private:
     void create_arc_for_the_new_node(Node existed_node, Node node_created, int variable_value, int variable_id);
     void print_graph(bool should_visualize);
     void print();
-    //virtual void specific_layer_function() const=0;
-    //specific_final_function() const=0;
+    
+    virtual void specific_layer_function() const=0;
+    virtual void specific_final_function() const=0;
 };
 
 
