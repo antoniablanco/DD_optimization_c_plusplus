@@ -6,6 +6,11 @@
         "iosfwd": "cpp",
         "locale": "cpp",
         "map": "cpp",
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "algorithm": "cpp",
+        "ostream": "cpp",
+        "__config": "cpp",
+        "string": "cpp",
+        "bitset": "cpp"
     }
 }

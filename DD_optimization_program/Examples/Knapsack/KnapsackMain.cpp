@@ -1,7 +1,3 @@
-
-#include "Node.h"
-#include "Arc.h"
-#include "Graph.h"
 #include "KnapsackProblem.h"
 #include "utils.h"
 #include "DD.h"
@@ -43,12 +39,15 @@ int main() {
         std::cout << std::endl;
     }
 
-    DD dd_instance(knapsack_instance);
+    DD dd_instance(knapsack_instance, true);
 
     cout << "DD: " << to_string_int_vector(dd_instance.problem.initial_state) << endl;
     cout << "Variables: " << to_string_string_vector(dd_instance.problem.ordered_variables) << endl;
 
     cout << "Time: " << dd_instance.get_dd_builder_time() << endl; 
+
+    Graph graph = dd_instance.get_desition_diagram();
+    cout << "Nodes: " << graph.nodes.size() << endl;
 
     return 0;
 }

@@ -11,7 +11,7 @@
 
 Node::Node(int id, vector<int> state) : id(id), state(state) {}
 
-string Node::to_string() {
+string Node::to_string() const {
     return "u_" + std::to_string(id)  + " " + to_string_int_vector(state);
 }
 
@@ -27,7 +27,13 @@ bool Node::operator==(const Node &other) const {
 }
 
 void Node::add_in_arc(Arc& arc) {
+    cout << "" << endl;
+    cout << "add_in_arc" << endl;
+    cout << "node: " << to_string() << endl;
+    cout << "arc: " << arc.to_string() << endl;
+    cout << "size: " << in_arcs.size() << endl;
     in_arcs.push_back(arc);
+    cout << "size: " << in_arcs.size() << endl;
 }
 
 void Node::add_out_arc(Arc& arc) {

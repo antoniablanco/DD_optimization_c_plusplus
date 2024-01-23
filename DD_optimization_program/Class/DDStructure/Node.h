@@ -14,12 +14,13 @@ class Arc;
 class Node {
 public:
     Node(int id, vector<int> state);
+    Node() = default;
     int id;
     vector<int> state;
     list<Arc> in_arcs;
     list<Arc> out_arcs;
 
-    std::string to_string();
+    std::string to_string() const;
     bool operator==(const Node &other) const;
     void add_in_arc(Arc& arc);
     void add_out_arc(Arc& arc);
