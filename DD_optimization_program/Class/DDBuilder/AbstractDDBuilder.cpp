@@ -18,11 +18,11 @@ Graph AbstractDDBuilder::initialize_graph(vector<int>& initial_state) {
 Graph AbstractDDBuilder::get_desition_diagram(bool should_visualize) {
     for (size_t variable_id = 0; variable_id < variables.size(); ++variable_id) {
         create_new_layer(variable_id);
-        //specific_layer_function();
+        specific_layer_function();
         print_graph(should_visualize);
     }
 
-    //specific_final_function();
+    specific_final_function();
     print_graph(should_visualize);
 
     return graph;
@@ -95,7 +95,7 @@ pair<bool, Node> AbstractDDBuilder::exist_node_with_same_state(vector<int> node_
 }
 
 void AbstractDDBuilder::create_arc_for_the_new_node(Node existed_node, Node node_created, int variable_value, int variable_id) {
-    Arc arc(existed_node, node_created, variable_value, variables[variable_id]);
+    Arc arc(&existed_node, &node_created, variable_value, variables[variable_id]);
     
     existed_node.add_out_arc(arc);
 
@@ -119,7 +119,7 @@ void AbstractDDBuilder::print() {
             string in_arcs_str;
             //cout << "Node: " << node.id << " " << node.out_arcs.size() << endl;
             for (const auto& arc : node.in_arcs) {
-                in_arcs_str += arc.to_string() + " ";
+                in_arcs_str += arc->to_string() + " ";
             }
             in_arcs_str = in_arcs_str.empty() ? "" : in_arcs_str.substr(0, in_arcs_str.size() - 2);
             cout << node.to_string() << "(" << in_arcs_str << ") ";

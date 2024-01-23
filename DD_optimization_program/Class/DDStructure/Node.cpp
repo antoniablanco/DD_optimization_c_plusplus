@@ -32,18 +32,18 @@ void Node::add_in_arc(Arc& arc) {
     cout << "node: " << to_string() << endl;
     cout << "arc: " << arc.to_string() << endl;
     cout << "size: " << in_arcs.size() << endl;
-    in_arcs.push_back(arc);
+    in_arcs.push_back(&arc);
     cout << "size: " << in_arcs.size() << endl;
 }
 
 void Node::add_out_arc(Arc& arc) {
-    out_arcs.push_back(arc);
+    out_arcs.push_back(&arc);
 }
 
 void Node::remove_in_arc(Arc& arc) {
-    in_arcs.remove(arc);
+    in_arcs.remove(&arc);
 }
 
 void Node::remove_out_arc(Arc& arc) {
-    out_arcs.remove(arc);
+    out_arcs.remove(&arc);
 }

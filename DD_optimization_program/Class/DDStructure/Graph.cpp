@@ -47,7 +47,7 @@ bool Graph::compare_two_nodes(const Node& nodeOne, const Node& nodeTwo) const {
         bool there_is_equal_arc = false;
 
         for (auto& other_arc : nodeTwo.in_arcs) {
-            if (arc.variable_value == other_arc.variable_value and arc.out_node.state==other_arc.out_node.state) {
+            if (arc->variable_value == other_arc->variable_value and arc->out_node->state==other_arc->out_node->state) {
                 there_is_equal_arc = true;
             }
         }
@@ -59,7 +59,7 @@ bool Graph::compare_two_nodes(const Node& nodeOne, const Node& nodeTwo) const {
         bool there_is_equal_arc = false;
 
         for (auto& other_arc : nodeTwo.out_arcs) {
-            if (arc.variable_value == other_arc.variable_value and arc.in_node.state==other_arc.in_node.state) {
+            if (arc->variable_value == other_arc->variable_value and arc->in_node->state==other_arc->in_node->state) {
                 there_is_equal_arc = true;
             }
         }
@@ -86,7 +86,7 @@ void Graph::eliminate_node_and_his_arcs(Node& node) {
     remove_node_from_layer(node);
 
     for (auto& arc : node.in_arcs) {
-        arc.out_node.out_arcs.remove(arc);
+        arc->out_node->out_arcs.remove(arc);
     }
 
     node.in_arcs.clear();

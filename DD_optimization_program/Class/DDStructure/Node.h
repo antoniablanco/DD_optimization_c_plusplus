@@ -17,8 +17,8 @@ public:
     Node() = default;
     int id;
     vector<int> state;
-    list<Arc> in_arcs;
-    list<Arc> out_arcs;
+    list<Arc*> in_arcs;
+    list<Arc*> out_arcs;
 
     std::string to_string() const;
     bool operator==(const Node &other) const;

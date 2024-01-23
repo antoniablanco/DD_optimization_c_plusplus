@@ -12,9 +12,9 @@ class Node;
 
 class Arc {
 public:
-    Arc(Node& out_node, Node& in_node, int variable_value, std::string variable_id);
-    Node& out_node;
-    Node& in_node;
+    Arc(Node* out_node, Node* in_node, int variable_value, std::string variable_id);
+    Node* out_node;
+    Node* in_node;
     int variable_value;
     std::string variable_id;
 
