@@ -33,10 +33,6 @@ int main() {
     
 
     KnapsackProblem knapsack_instance(initial_state, variables, matrix_of_wheight, right_side_of_restrictions);
-
-    
-    cout << "Initial state: " << to_string_int_vector(knapsack_instance.initial_state) << endl;
-    cout << "Variables: " << to_string_string_vector(knapsack_instance.ordered_variables) << endl;
     
     cout << "Variables domain: " << endl;
     for (const auto& pair : knapsack_instance.variables_domain ) {
@@ -46,6 +42,13 @@ int main() {
         }
         std::cout << std::endl;
     }
+
+    DD dd_instance(knapsack_instance);
+
+    cout << "DD: " << to_string_int_vector(dd_instance.problem.initial_state) << endl;
+    cout << "Variables: " << to_string_string_vector(dd_instance.problem.ordered_variables) << endl;
+
+    cout << "Time: " << dd_instance.get_dd_builder_time() << endl; 
 
     return 0;
 }
