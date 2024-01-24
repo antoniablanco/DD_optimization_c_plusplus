@@ -4,10 +4,15 @@
 
 #include "Node.h"
 #include "Arc.h"
+#include "Node.h"
 
 #include <iostream>
 #include <string>
 #include <vector>
+#include <algorithm>
+
+
+using namespace std;
 
 class Graph {
 public:
@@ -15,8 +20,8 @@ public:
 
     Graph() = default;
 
-    std::vector<Node*> nodes;
-    std::vector<std::vector<Node*>> structure;
+    vector<Node*> nodes;
+    vector<vector<Node*>> structure;
     int actual_layer;
 
     bool operator==(const Graph &other) const;

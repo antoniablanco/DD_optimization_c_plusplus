@@ -7,6 +7,7 @@
 
 #include <thread>
 
+/*
 DD::DD(AbstractProblem& problem, const bool verbose) : 
     problem(problem),
     graph_DD(create_desition_diagram(verbose))
@@ -54,3 +55,4 @@ unique_ptr<Graph> DD::get_desition_diagram_copy() {
     return graphCopy;
 }
 
+*/

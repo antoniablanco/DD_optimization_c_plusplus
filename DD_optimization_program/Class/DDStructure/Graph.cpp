@@ -3,12 +3,7 @@
 //
 
 #include "Graph.h"
-#include "Node.h"
 
-#include <vector>
-#include <algorithm>
-
-using namespace std;
 
 Graph::Graph(Node* initial_node) : nodes(), structure(), actual_layer(0) {
     nodes.push_back(initial_node);

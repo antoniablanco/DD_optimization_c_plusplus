@@ -16,6 +16,7 @@
 
 using namespace std;
 
+/*
 class DD {
 public:
     DD(AbstractProblem& problem, const bool verbose = false);
@@ -48,6 +49,6 @@ private:
     chrono::duration<double>  relaxed_dd_builder_time = chrono::duration<double>(0);
 
 };
-
+*/
 
 #endif //DD_OPTIMIZATION_PROGRAM_DD_H

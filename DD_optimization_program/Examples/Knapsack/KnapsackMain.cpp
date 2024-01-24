@@ -31,7 +31,11 @@ int main() {
     
 
     KnapsackProblem knapsack_instance(initial_state, variables, matrix_of_wheight, right_side_of_restrictions);
-    DD dd_instance(knapsack_instance, true);
+
+    Node* node_one = new Node(1, {0, 0});
+
+    //Graph graph = new Graph(node_one);
+   //DD dd_instance(knapsack_instance, true);
 
     //cout << "DD: " << to_string_int_vector(dd_instance.problem.initial_state) << endl;
     //cout << "Variables: " << to_string_string_vector(dd_instance.problem.ordered_variables) << endl;

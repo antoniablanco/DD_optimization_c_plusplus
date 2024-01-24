@@ -10,7 +10,7 @@ using namespace std;
 
 class Node;
 
-class Arc {
+class Arc{
 public:
     Arc(Node* out_node, Node* in_node, int variable_value, std::string variable_id);
     Node* out_node;
