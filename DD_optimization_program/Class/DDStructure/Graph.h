@@ -13,15 +13,17 @@
 
 class Graph {
 public:
-    Graph(Node& initial_node);
+    Graph(Node* initial_node);
 
-    std::vector<Node> nodes;
-    std::vector<std::vector<Node>> structure;
+    Graph() = default;
+
+    std::vector<Node*> nodes;
+    std::vector<std::vector<Node*>> structure;
     int actual_layer;
 
     bool operator==(const Graph &other) const;
 
-    void add_node(Node& node);
+    void add_node(Node* node);
 
     void add_new_layer();
 

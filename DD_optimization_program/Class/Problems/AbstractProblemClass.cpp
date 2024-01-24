@@ -17,3 +17,4 @@ void  AbstractProblem::get_variables(const vector<pair<std::string, vector<int>>
         this->variables_domain[variable.first] = variable.second;
     }
 }
+

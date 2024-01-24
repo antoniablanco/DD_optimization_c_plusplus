@@ -805,6 +805,7 @@ CMakeFiles/Class.dir/Class/DD.cpp.o: /Users/antoniablanco/Desktop/DD_optimizatio
   /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDStructure/Arc.h \
   /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDStructure/Graph.h \
   /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDStructure/Node.h \
+  /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDStructure/utils.h \
   /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/Problems/AbstractProblemClass.h
 
 CMakeFiles/Class.dir/Class/DDBuilder/AbstractDDBuilder.cpp.o: /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDBuilder/AbstractDDBuilder.cpp \
@@ -1589,6 +1590,7 @@ CMakeFiles/Class.dir/Class/DDBuilder/AbstractDDBuilder.cpp.o: /Users/antoniablan
   /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDStructure/Arc.h \
   /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDStructure/Graph.h \
   /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDStructure/Node.h \
+  /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDStructure/utils.h \
   /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/Problems/AbstractProblemClass.h
 
 CMakeFiles/Class.dir/Class/DDBuilder/DDBuilder.cpp.o: /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDBuilder/DDBuilder.cpp \
@@ -2374,6 +2376,7 @@ CMakeFiles/Class.dir/Class/DDBuilder/DDBuilder.cpp.o: /Users/antoniablanco/Deskt
   /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDStructure/Arc.h \
   /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDStructure/Graph.h \
   /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDStructure/Node.h \
+  /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDStructure/utils.h \
   /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/Problems/AbstractProblemClass.h
 
 CMakeFiles/Class.dir/Class/DDStructure/Arc.cpp.o: /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDStructure/Arc.cpp \
@@ -6205,13 +6208,13 @@ CMakeFiles/Class.dir/Class/Problems/AbstractProblemClass.cpp.o: /Users/antoniabl
 
 /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDStructure/utils.cpp:
 
-/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDStructure/utils.h:
-
 /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDStructure/Graph.cpp:
 
 /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDStructure/Arc.cpp:
 
 /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/Problems/AbstractProblemClass.h:
+
+/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDStructure/utils.h:
 
 /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDStructure/Arc.h:
 

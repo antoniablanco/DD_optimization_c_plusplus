@@ -16,13 +16,14 @@ Graph DD::create_desition_diagram(const bool verbose) {
     cout << "Iniciando la creación del diagrama de decisión..." << endl;
     auto start = chrono::steady_clock::now();
 
-    Graph graph = DDBuilder(problem).get_desition_diagram(verbose);
+    DDBuilder dDBuilder(problem);
+    Graph graph = dDBuilder.get_desition_diagram(verbose);
     
     auto end = chrono::steady_clock::now();
     cout << "Diagrama de decisión creado" << endl;
     
     dd_builder_time = chrono::duration<double>(end - start);
-    return graph;
+    return Graph();
 }
 
 string DD::get_dd_builder_time() {

@@ -5,6 +5,7 @@
 #include "Arc.h"
 #include "Graph.h"
 #include "AbstractProblemClass.h"
+#include "utils.h"
 
 #include <iostream>
 #include <string>
@@ -33,12 +34,12 @@ private:
     Graph initialize_graph(vector<int>& initial_state);
     void create_new_layer(int variable_id);
     void create_new_nodes_in_the_new_layer(int variable_id);
-    void check_if_new_node_should_be_created(int variable_value, Node existed_node, int variable_id);
+    void check_if_new_node_should_be_created(int variable_value, Node* existed_node, int variable_id);
     bool there_is_node_in_last_layer(int variable_id);
-    void create_arcs_for_the_terminal_node(int variable_value, Node existed_node, int variable_id);
-    void create_rest_of_arcs(int variable_value, Node existed_node, int variable_id, vector<int> node_state);
-    pair<bool, Node> exist_node_with_same_state(vector<int> node_state);
-    void create_arc_for_the_new_node(Node existed_node, Node node_created, int variable_value, int variable_id);
+    void create_arcs_for_the_terminal_node(int variable_value, Node* existed_node, int variable_id);
+    void create_rest_of_arcs(int variable_value, Node* existed_node, int variable_id, vector<int> node_state);
+    pair<bool, Node*> exist_node_with_same_state(vector<int> node_state);
+    void create_arc_for_the_new_node(Node* existed_node, Node* node_created, int variable_value, int variable_id);
     void print_graph(bool should_visualize);
     void print();
     

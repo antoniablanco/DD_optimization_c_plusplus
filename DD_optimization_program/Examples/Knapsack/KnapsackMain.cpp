@@ -12,8 +12,10 @@
 
 using namespace std;
 
-int main() {
 
+
+int main() {
+    
     // Valores construcción knapsack
     vector<vector<int>> matrix_of_wheight = {{3, 3, 4, 6}};
     vector<int> right_side_of_restrictions = {6};
@@ -29,25 +31,15 @@ int main() {
     
 
     KnapsackProblem knapsack_instance(initial_state, variables, matrix_of_wheight, right_side_of_restrictions);
-    
-    cout << "Variables domain: " << endl;
-    for (const auto& pair : knapsack_instance.variables_domain ) {
-        std::cout << pair.first << ": ";
-        for (int value : pair.second) {
-            std::cout << value << " ";
-        }
-        std::cout << std::endl;
-    }
-
     DD dd_instance(knapsack_instance, true);
 
-    cout << "DD: " << to_string_int_vector(dd_instance.problem.initial_state) << endl;
-    cout << "Variables: " << to_string_string_vector(dd_instance.problem.ordered_variables) << endl;
+    //cout << "DD: " << to_string_int_vector(dd_instance.problem.initial_state) << endl;
+    //cout << "Variables: " << to_string_string_vector(dd_instance.problem.ordered_variables) << endl;
 
-    cout << "Time: " << dd_instance.get_dd_builder_time() << endl; 
+    //cout << "Time: " << dd_instance.get_dd_builder_time() << endl; 
 
-    Graph graph = dd_instance.get_desition_diagram();
-    cout << "Nodes: " << graph.nodes.size() << endl;
-
+    //Graph graph = dd_instance.get_desition_diagram();
+    //cout << "Nodes: " << graph.nodes.size() << endl;
+    
     return 0;
 }

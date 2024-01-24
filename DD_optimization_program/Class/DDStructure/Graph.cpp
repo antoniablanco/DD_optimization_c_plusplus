@@ -10,9 +10,10 @@
 
 using namespace std;
 
-Graph::Graph(Node& initial_node) : nodes(), structure(), actual_layer(0) {
+Graph::Graph(Node* initial_node) : nodes(), structure(), actual_layer(0) {
     nodes.push_back(initial_node);
-    structure.push_back({initial_node});
+    structure.push_back({});
+    structure[0].push_back(initial_node);
 }
 
 bool Graph::operator==(const Graph &other) const {
@@ -26,10 +27,10 @@ bool Graph::operator==(const Graph &other) const {
         bool there_is_equal_node = false;
 
         for (size_t j = 0; j < structure[i].size(); ++j) {
-            const Node node = structure[i][j];
+            const Node& node = *structure[i][j];
 
             for (size_t k = 0; k < other.structure[i].size(); ++k) {
-                const Node other_node = other.structure[i][k];
+                const Node& other_node = *other.structure[i][k];
 
                 if (node.state == other_node.state) {
                     there_is_equal_node = there_is_equal_node || compare_two_nodes(node, other_node);
@@ -69,7 +70,7 @@ bool Graph::compare_two_nodes(const Node& nodeOne, const Node& nodeTwo) const {
     return return_in_arcs && return_out_arcs;
 }
 
-void Graph::add_node(Node& node) {
+void Graph::add_node(Node* node) {
     auto iterator = find(nodes.begin(), nodes.end(), node);
     if (iterator == nodes.end()) {
         nodes.push_back(node);
@@ -94,7 +95,7 @@ void Graph::eliminate_node_and_his_arcs(Node& node) {
 }
 
 void Graph::remove_node(Node& node) {
-    auto iterator = find(nodes.begin(), nodes.end(), node);
+    auto iterator = find(nodes.begin(), nodes.end(), &node);
 
     if (iterator != nodes.end()) {
         nodes.erase(iterator);
@@ -104,7 +105,7 @@ void Graph::remove_node(Node& node) {
 
 void Graph::remove_node_from_layer(Node& node) {
     for (auto& layer : structure) {
-        auto iterator = find(layer.begin(), layer.end(), node);
+        auto iterator = find(layer.begin(), layer.end(), &node);
 
         if (iterator != layer.end()) {
             layer.erase(iterator);

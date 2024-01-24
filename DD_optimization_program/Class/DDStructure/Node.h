@@ -13,7 +13,7 @@ class Arc;
 
 class Node {
 public:
-    Node(int id, vector<int> state);
+    Node(int node_id, vector<int> state);
     Node() = default;
     int id;
     vector<int> state;
@@ -22,8 +22,8 @@ public:
 
     std::string to_string() const;
     bool operator==(const Node &other) const;
-    void add_in_arc(Arc& arc);
-    void add_out_arc(Arc& arc);
+    void add_in_arc(Arc* arc);
+    void add_out_arc(Arc* arc);
     void remove_in_arc(Arc& arc);
     void remove_out_arc(Arc& arc);
 };

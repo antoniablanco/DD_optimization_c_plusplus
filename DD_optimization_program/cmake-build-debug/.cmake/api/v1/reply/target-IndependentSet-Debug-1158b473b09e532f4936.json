@@ -25,13 +25,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 27,
+				"line" : 41,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 31,
+				"line" : 46,
 				"parent" : 0
 			}
 		]
@@ -49,7 +49,19 @@
 			[
 				{
 					"backtrace" : 2,
+					"path" : "/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class"
+				},
+				{
+					"backtrace" : 2,
 					"path" : "/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDStructure"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/Problems"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDBuilder"
 				}
 			],
 			"language" : "CXX",

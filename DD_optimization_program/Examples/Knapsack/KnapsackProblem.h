@@ -27,7 +27,6 @@ public:
     int get_priority_for_merge_nodes(const int node_id, const vector<int>& state) const override;
     const vector<int> merge_operator(const vector<int>& state_one, const vector<int>& state_two) const override;
 
-
 private:
     vector<vector<int>> matrix_of_wheight;
     vector<int> right_side_of_restrictions;

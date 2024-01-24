@@ -49,40 +49,61 @@ cmake_ninja_workdir = /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimiz
 
 build cmake_object_order_depends_target_Class: phony || CMakeFiles/Class.dir
 
+build CMakeFiles/Class.dir/Class/DDBuilder/AbstractDDBuilder.cpp.o: CXX_COMPILER__Class_unscanned_Debug /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDBuilder/AbstractDDBuilder.cpp || cmake_object_order_depends_target_Class
+  DEP_FILE = CMakeFiles/Class.dir/Class/DDBuilder/AbstractDDBuilder.cpp.o.d
+  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class -I/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDStructure -I/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/Problems -I/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDBuilder
+  OBJECT_DIR = CMakeFiles/Class.dir
+  OBJECT_FILE_DIR = CMakeFiles/Class.dir/Class/DDBuilder
+
+build CMakeFiles/Class.dir/Class/DDBuilder/DDBuilder.cpp.o: CXX_COMPILER__Class_unscanned_Debug /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDBuilder/DDBuilder.cpp || cmake_object_order_depends_target_Class
+  DEP_FILE = CMakeFiles/Class.dir/Class/DDBuilder/DDBuilder.cpp.o.d
+  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class -I/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDStructure -I/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/Problems -I/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDBuilder
+  OBJECT_DIR = CMakeFiles/Class.dir
+  OBJECT_FILE_DIR = CMakeFiles/Class.dir/Class/DDBuilder
+
 build CMakeFiles/Class.dir/Class/DDStructure/Arc.cpp.o: CXX_COMPILER__Class_unscanned_Debug /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDStructure/Arc.cpp || cmake_object_order_depends_target_Class
   DEP_FILE = CMakeFiles/Class.dir/Class/DDStructure/Arc.cpp.o.d
   FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -fcolor-diagnostics
-  INCLUDES = -I/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDStructure
+  INCLUDES = -I/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class -I/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDStructure -I/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/Problems -I/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDBuilder
   OBJECT_DIR = CMakeFiles/Class.dir
   OBJECT_FILE_DIR = CMakeFiles/Class.dir/Class/DDStructure
 
 build CMakeFiles/Class.dir/Class/DDStructure/Node.cpp.o: CXX_COMPILER__Class_unscanned_Debug /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDStructure/Node.cpp || cmake_object_order_depends_target_Class
   DEP_FILE = CMakeFiles/Class.dir/Class/DDStructure/Node.cpp.o.d
   FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -fcolor-diagnostics
-  INCLUDES = -I/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDStructure
+  INCLUDES = -I/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class -I/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDStructure -I/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/Problems -I/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDBuilder
   OBJECT_DIR = CMakeFiles/Class.dir
   OBJECT_FILE_DIR = CMakeFiles/Class.dir/Class/DDStructure
 
 build CMakeFiles/Class.dir/Class/DDStructure/Graph.cpp.o: CXX_COMPILER__Class_unscanned_Debug /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDStructure/Graph.cpp || cmake_object_order_depends_target_Class
   DEP_FILE = CMakeFiles/Class.dir/Class/DDStructure/Graph.cpp.o.d
   FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -fcolor-diagnostics
-  INCLUDES = -I/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDStructure
+  INCLUDES = -I/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class -I/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDStructure -I/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/Problems -I/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDBuilder
   OBJECT_DIR = CMakeFiles/Class.dir
   OBJECT_FILE_DIR = CMakeFiles/Class.dir/Class/DDStructure
 
 build CMakeFiles/Class.dir/Class/DDStructure/utils.cpp.o: CXX_COMPILER__Class_unscanned_Debug /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDStructure/utils.cpp || cmake_object_order_depends_target_Class
   DEP_FILE = CMakeFiles/Class.dir/Class/DDStructure/utils.cpp.o.d
   FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -fcolor-diagnostics
-  INCLUDES = -I/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDStructure
+  INCLUDES = -I/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class -I/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDStructure -I/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/Problems -I/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDBuilder
   OBJECT_DIR = CMakeFiles/Class.dir
   OBJECT_FILE_DIR = CMakeFiles/Class.dir/Class/DDStructure
 
 build CMakeFiles/Class.dir/Class/Problems/AbstractProblemClass.cpp.o: CXX_COMPILER__Class_unscanned_Debug /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/Problems/AbstractProblemClass.cpp || cmake_object_order_depends_target_Class
   DEP_FILE = CMakeFiles/Class.dir/Class/Problems/AbstractProblemClass.cpp.o.d
   FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -fcolor-diagnostics
-  INCLUDES = -I/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDStructure
+  INCLUDES = -I/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class -I/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDStructure -I/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/Problems -I/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDBuilder
   OBJECT_DIR = CMakeFiles/Class.dir
   OBJECT_FILE_DIR = CMakeFiles/Class.dir/Class/Problems
+
+build CMakeFiles/Class.dir/Class/DD.cpp.o: CXX_COMPILER__Class_unscanned_Debug /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DD.cpp || cmake_object_order_depends_target_Class
+  DEP_FILE = CMakeFiles/Class.dir/Class/DD.cpp.o.d
+  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class -I/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDStructure -I/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/Problems -I/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDBuilder
+  OBJECT_DIR = CMakeFiles/Class.dir
+  OBJECT_FILE_DIR = CMakeFiles/Class.dir/Class
 
 
 # =============================================================================
@@ -92,7 +113,7 @@ build CMakeFiles/Class.dir/Class/Problems/AbstractProblemClass.cpp.o: CXX_COMPIL
 #############################################
 # Link the static library libClass.a
 
-build libClass.a: CXX_STATIC_LIBRARY_LINKER__Class_Debug CMakeFiles/Class.dir/Class/DDStructure/Arc.cpp.o CMakeFiles/Class.dir/Class/DDStructure/Node.cpp.o CMakeFiles/Class.dir/Class/DDStructure/Graph.cpp.o CMakeFiles/Class.dir/Class/DDStructure/utils.cpp.o CMakeFiles/Class.dir/Class/Problems/AbstractProblemClass.cpp.o
+build libClass.a: CXX_STATIC_LIBRARY_LINKER__Class_Debug CMakeFiles/Class.dir/Class/DDBuilder/AbstractDDBuilder.cpp.o CMakeFiles/Class.dir/Class/DDBuilder/DDBuilder.cpp.o CMakeFiles/Class.dir/Class/DDStructure/Arc.cpp.o CMakeFiles/Class.dir/Class/DDStructure/Node.cpp.o CMakeFiles/Class.dir/Class/DDStructure/Graph.cpp.o CMakeFiles/Class.dir/Class/DDStructure/utils.cpp.o CMakeFiles/Class.dir/Class/Problems/AbstractProblemClass.cpp.o CMakeFiles/Class.dir/Class/DD.cpp.o
   ARCH_FLAGS = -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk
   LANGUAGE_COMPILE_FLAGS = -g
   OBJECT_DIR = CMakeFiles/Class.dir
@@ -102,25 +123,58 @@ build libClass.a: CXX_STATIC_LIBRARY_LINKER__Class_Debug CMakeFiles/Class.dir/Cl
   TARGET_PDB = Class.a.dbg
 
 # =============================================================================
+# Object build statements for STATIC_LIBRARY target Exceptions
+
+
+#############################################
+# Order-only phony target for Exceptions
+
+build cmake_object_order_depends_target_Exceptions: phony || CMakeFiles/Exceptions.dir
+
+build CMakeFiles/Exceptions.dir/Exceptions/MyExceptions.cpp.o: CXX_COMPILER__Exceptions_unscanned_Debug /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Exceptions/MyExceptions.cpp || cmake_object_order_depends_target_Exceptions
+  DEP_FILE = CMakeFiles/Exceptions.dir/Exceptions/MyExceptions.cpp.o.d
+  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Exceptions
+  OBJECT_DIR = CMakeFiles/Exceptions.dir
+  OBJECT_FILE_DIR = CMakeFiles/Exceptions.dir/Exceptions
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target Exceptions
+
+
+#############################################
+# Link the static library libExceptions.a
+
+build libExceptions.a: CXX_STATIC_LIBRARY_LINKER__Exceptions_Debug CMakeFiles/Exceptions.dir/Exceptions/MyExceptions.cpp.o
+  ARCH_FLAGS = -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = CMakeFiles/Exceptions.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = libExceptions.a
+  TARGET_PDB = Exceptions.a.dbg
+
+# =============================================================================
 # Object build statements for EXECUTABLE target Knapsack
 
 
 #############################################
 # Order-only phony target for Knapsack
 
-build cmake_object_order_depends_target_Knapsack: phony || cmake_object_order_depends_target_Class
+build cmake_object_order_depends_target_Knapsack: phony || cmake_object_order_depends_target_Class cmake_object_order_depends_target_Exceptions
 
 build CMakeFiles/Knapsack.dir/Examples/Knapsack/KnapsackMain.cpp.o: CXX_COMPILER__Knapsack_unscanned_Debug /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Examples/Knapsack/KnapsackMain.cpp || cmake_object_order_depends_target_Knapsack
   DEP_FILE = CMakeFiles/Knapsack.dir/Examples/Knapsack/KnapsackMain.cpp.o.d
   FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -fcolor-diagnostics
-  INCLUDES = -I/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDStructure
+  INCLUDES = -I/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class -I/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDStructure -I/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/Problems -I/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDBuilder -I/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Exceptions
   OBJECT_DIR = CMakeFiles/Knapsack.dir
   OBJECT_FILE_DIR = CMakeFiles/Knapsack.dir/Examples/Knapsack
 
 build CMakeFiles/Knapsack.dir/Examples/Knapsack/KnapsackProblem.cpp.o: CXX_COMPILER__Knapsack_unscanned_Debug /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Examples/Knapsack/KnapsackProblem.cpp || cmake_object_order_depends_target_Knapsack
   DEP_FILE = CMakeFiles/Knapsack.dir/Examples/Knapsack/KnapsackProblem.cpp.o.d
   FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -fcolor-diagnostics
-  INCLUDES = -I/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDStructure
+  INCLUDES = -I/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class -I/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDStructure -I/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/Problems -I/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDBuilder -I/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Exceptions
   OBJECT_DIR = CMakeFiles/Knapsack.dir
   OBJECT_FILE_DIR = CMakeFiles/Knapsack.dir/Examples/Knapsack
 
@@ -132,9 +186,9 @@ build CMakeFiles/Knapsack.dir/Examples/Knapsack/KnapsackProblem.cpp.o: CXX_COMPI
 #############################################
 # Link the executable Knapsack
 
-build Knapsack: CXX_EXECUTABLE_LINKER__Knapsack_Debug CMakeFiles/Knapsack.dir/Examples/Knapsack/KnapsackMain.cpp.o CMakeFiles/Knapsack.dir/Examples/Knapsack/KnapsackProblem.cpp.o | libClass.a || libClass.a
+build Knapsack: CXX_EXECUTABLE_LINKER__Knapsack_Debug CMakeFiles/Knapsack.dir/Examples/Knapsack/KnapsackMain.cpp.o CMakeFiles/Knapsack.dir/Examples/Knapsack/KnapsackProblem.cpp.o | libClass.a libExceptions.a || libClass.a libExceptions.a
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk
-  LINK_LIBRARIES = libClass.a
+  LINK_LIBRARIES = libClass.a  libExceptions.a
   OBJECT_DIR = CMakeFiles/Knapsack.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -153,7 +207,7 @@ build cmake_object_order_depends_target_IndependentSet: phony || cmake_object_or
 build CMakeFiles/IndependentSet.dir/Examples/IndependentSet/IndependentSetMain.cpp.o: CXX_COMPILER__IndependentSet_unscanned_Debug /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Examples/IndependentSet/IndependentSetMain.cpp || cmake_object_order_depends_target_IndependentSet
   DEP_FILE = CMakeFiles/IndependentSet.dir/Examples/IndependentSet/IndependentSetMain.cpp.o.d
   FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -fcolor-diagnostics
-  INCLUDES = -I/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDStructure
+  INCLUDES = -I/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class -I/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDStructure -I/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/Problems -I/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDBuilder
   OBJECT_DIR = CMakeFiles/IndependentSet.dir
   OBJECT_FILE_DIR = CMakeFiles/IndependentSet.dir/Examples/IndependentSet
 
@@ -186,7 +240,7 @@ build cmake_object_order_depends_target_SetCovering: phony || cmake_object_order
 build CMakeFiles/SetCovering.dir/Examples/SetCovering/SetCoveringMain.cpp.o: CXX_COMPILER__SetCovering_unscanned_Debug /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Examples/SetCovering/SetCoveringMain.cpp || cmake_object_order_depends_target_SetCovering
   DEP_FILE = CMakeFiles/SetCovering.dir/Examples/SetCovering/SetCoveringMain.cpp.o.d
   FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -fcolor-diagnostics
-  INCLUDES = -I/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDStructure
+  INCLUDES = -I/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class -I/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDStructure -I/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/Problems -I/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDBuilder
   OBJECT_DIR = CMakeFiles/SetCovering.dir
   OBJECT_FILE_DIR = CMakeFiles/SetCovering.dir/Examples/SetCovering
 
@@ -235,6 +289,8 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 build Class: phony libClass.a
 
+build Exceptions: phony libExceptions.a
+
 # =============================================================================
 # Folder targets.
 
@@ -243,7 +299,7 @@ build Class: phony libClass.a
 #############################################
 # Folder: /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/cmake-build-debug
 
-build all: phony libClass.a Knapsack IndependentSet SetCovering
+build all: phony libClass.a libExceptions.a Knapsack IndependentSet SetCovering
 
 # =============================================================================
 # Built-in targets

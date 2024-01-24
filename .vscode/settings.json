@@ -11,6 +11,7 @@
         "ostream": "cpp",
         "__config": "cpp",
         "string": "cpp",
-        "bitset": "cpp"
+        "bitset": "cpp",
+        "__locale": "cpp"
     }
 }
