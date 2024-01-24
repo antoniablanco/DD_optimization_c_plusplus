@@ -16,6 +16,8 @@ Graph::Graph(Node* initial_node) : nodes(), structure(), actual_layer(0) {
     structure[0].push_back(initial_node);
 }
 
+
+
 bool Graph::operator==(const Graph &other) const {
     bool result = true;
 

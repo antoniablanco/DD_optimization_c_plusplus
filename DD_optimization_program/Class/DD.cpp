@@ -26,7 +26,7 @@ Graph DD::create_desition_diagram(const bool verbose) {
     cout << "Diagrama de decisión creado" << endl;
     
     dd_builder_time = chrono::duration<double>(end - start);
-    return Graph();
+    return graph;
 }
 
 string DD::get_dd_builder_time() {

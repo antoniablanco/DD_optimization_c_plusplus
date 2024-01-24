@@ -19,7 +19,7 @@ class AbstractDDBuilder{
 public:
     AbstractDDBuilder(AbstractProblem& problem);
 
-    Graph graph;
+    Graph* graph;
     Graph get_desition_diagram(bool should_visualize);
 
     virtual ~AbstractDDBuilder() = default;
