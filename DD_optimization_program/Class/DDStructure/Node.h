@@ -15,6 +15,9 @@ class Node {
 public:
     Node(int node_id, vector<int> state);
     Node() = default;
+
+    ~Node();
+    
     int id;
     vector<int> state;
     list<Arc*> in_arcs;

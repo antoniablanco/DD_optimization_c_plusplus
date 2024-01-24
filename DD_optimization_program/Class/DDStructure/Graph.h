@@ -9,8 +9,6 @@
 #include <string>
 #include <vector>
 
-
-
 class Graph {
 public:
     Graph(Node* initial_node);
@@ -30,6 +28,8 @@ public:
     void eliminate_node_and_his_arcs(Node& node);
 
     void remove_node(Node& node);
+
+    ~Graph() = default;
 
 private:
     bool compare_two_nodes(const Node& nodeOne, const Node& nodeTwo) const;

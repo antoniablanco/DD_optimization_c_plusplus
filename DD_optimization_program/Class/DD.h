@@ -35,6 +35,8 @@ public:
     string get_restricted_dd_builder_time();
     string get_relaxed_dd_builder_time();
 
+    ~DD();
+
 private:
 
     Graph create_desition_diagram(const bool verbose = false);

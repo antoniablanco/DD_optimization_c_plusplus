@@ -12,6 +12,9 @@ DD::DD(AbstractProblem& problem, const bool verbose) :
     graph_DD(create_desition_diagram(verbose))
     {}
 
+DD::~DD() {}
+
+
 Graph DD::create_desition_diagram(const bool verbose) {
     cout << "Iniciando la creación del diagrama de decisión..." << endl;
     auto start = chrono::steady_clock::now();
@@ -50,3 +53,4 @@ unique_ptr<Graph> DD::get_desition_diagram_copy() {
     auto graphCopy = make_unique<Graph>(graph_DD);
     return graphCopy;
 }
+

@@ -11,6 +11,12 @@
 
 Node::Node(int node_id, vector<int> state) : id(node_id), state(state) {}
 
+Node::~Node() {
+    for (auto& arc : in_arcs) {
+        delete arc;
+    }
+}
+
 string Node::to_string() const {
     return "u_" + std::to_string(id)  + " " + to_string_int_vector(state);
 }
