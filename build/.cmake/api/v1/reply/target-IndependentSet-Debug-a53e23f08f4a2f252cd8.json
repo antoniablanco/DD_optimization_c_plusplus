@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "Knapsack"
+			"path" : "IndependentSet"
 		}
 	],
 	"backtrace" : 1,
@@ -25,19 +25,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 38,
-				"parent" : 0
-			},
-			{
-				"command" : 1,
-				"file" : 0,
 				"line" : 44,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 45,
+				"line" : 49,
 				"parent" : 0
 			}
 		]
@@ -70,8 +64,8 @@
 					"path" : "/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDBuilder"
 				},
 				{
-					"backtrace" : 3,
-					"path" : "/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Exceptions"
+					"backtrace" : 2,
+					"path" : "/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/RestrictedDDBuilder"
 				}
 			],
 			"language" : "CXX",
@@ -85,8 +79,7 @@
 			},
 			"sourceIndexes" : 
 			[
-				0,
-				1
+				0
 			]
 		}
 	],
@@ -95,13 +88,9 @@
 		{
 			"backtrace" : 2,
 			"id" : "Class::@6890427a1f51a3e7e1df"
-		},
-		{
-			"backtrace" : 3,
-			"id" : "Exceptions::@6890427a1f51a3e7e1df"
 		}
 	],
-	"id" : "Knapsack::@6890427a1f51a3e7e1df",
+	"id" : "IndependentSet::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -118,17 +107,12 @@
 				"backtrace" : 2,
 				"fragment" : "libClass.a",
 				"role" : "libraries"
-			},
-			{
-				"backtrace" : 3,
-				"fragment" : "libExceptions.a",
-				"role" : "libraries"
 			}
 		],
 		"language" : "CXX"
 	},
-	"name" : "Knapsack",
-	"nameOnDisk" : "Knapsack",
+	"name" : "IndependentSet",
+	"nameOnDisk" : "IndependentSet",
 	"paths" : 
 	{
 		"build" : ".",
@@ -140,15 +124,7 @@
 			"name" : "Source Files",
 			"sourceIndexes" : 
 			[
-				0,
-				1
-			]
-		},
-		{
-			"name" : "Header Files",
-			"sourceIndexes" : 
-			[
-				2
+				0
 			]
 		}
 	],
@@ -157,19 +133,8 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Examples/Knapsack/KnapsackMain.cpp",
+			"path" : "Examples/IndependentSet/IndependentSetMain.cpp",
 			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "Examples/Knapsack/KnapsackProblem.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Examples/Knapsack/KnapsackProblem.h",
-			"sourceGroupIndex" : 1
 		}
 	],
 	"type" : "EXECUTABLE"

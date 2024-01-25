@@ -1,7 +1,7 @@
 
 #include "AbstractDDBuilder.h"
 
-/*
+
 AbstractDDBuilder::AbstractDDBuilder(AbstractProblem& problem) : 
     problem(problem),
     node_number(1),
@@ -126,4 +126,3 @@ void AbstractDDBuilder::print() {
         cout << "" << endl;
     }
 }
-*/

@@ -1,6 +1,5 @@
-/*
-#ifndef DD_OPTIMIZATION_PROGRAM_ABSTRACTDDBUILDER_H
 
+#ifndef DD_OPTIMIZATION_PROGRAM_ABSTRACTDDBUILDER_H
 #define DD_OPTIMIZATION_PROGRAM_ABSTRACTDDBUILDER_H
 
 #include "Node.h"
@@ -45,10 +44,9 @@ private:
     void print_graph(bool should_visualize);
     void print();
     
-    virtual void specific_layer_function() const=0;
-    virtual void specific_final_function() const=0;
+    virtual void specific_layer_function() = 0;
+    virtual void specific_final_function() = 0;
 };
 
 
 #endif //DD_OPTIMIZATION_PROGRAM_ABSTRACTDDBUILDER_H
-*/

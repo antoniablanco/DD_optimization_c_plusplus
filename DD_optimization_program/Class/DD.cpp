@@ -4,10 +4,11 @@
 #include "Arc.h"
 #include "Graph.h"
 #include "DDBuilder.h"
+#include "RestrictedDDBuilder.h"
 
 #include <thread>
 
-/*
+
 DD::DD(AbstractProblem& problem, const bool verbose) : 
     problem(problem),
     graph_DD(create_desition_diagram(verbose))
@@ -28,6 +29,20 @@ Graph DD::create_desition_diagram(const bool verbose) {
     
     dd_builder_time = chrono::duration<double>(end - start);
     return graph;
+}
+
+void DD::create_restricted_desition_diagram(int max_width, const bool verbose) {
+    cout << "Iniciando la creación del diagrama de decisión restringido ..." << endl;
+    auto start = chrono::steady_clock::now();
+
+    RestrictedDDBuilder restrictedDDBuilder(problem, max_width);
+    Graph graph = restrictedDDBuilder.get_desition_diagram(verbose);
+    graph_DD = graph;
+
+    auto end = chrono::steady_clock::now();
+    cout << "Diagrama de decisión restringido creado" << endl;
+    
+    restricted_dd_builder_time = chrono::duration<double>(end - start);
 }
 
 string DD::get_dd_builder_time() {
@@ -55,4 +70,3 @@ unique_ptr<Graph> DD::get_desition_diagram_copy() {
     return graphCopy;
 }
 
-*/

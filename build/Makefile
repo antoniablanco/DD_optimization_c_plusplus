@@ -373,6 +373,30 @@ Class/Problems/AbstractProblemClass.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Class.dir/build.make CMakeFiles/Class.dir/Class/Problems/AbstractProblemClass.cpp.s
 .PHONY : Class/Problems/AbstractProblemClass.cpp.s
 
+Class/RestrictedDDBuilder/RestrictedDDBuilder.o: Class/RestrictedDDBuilder/RestrictedDDBuilder.cpp.o
+.PHONY : Class/RestrictedDDBuilder/RestrictedDDBuilder.o
+
+# target to build an object file
+Class/RestrictedDDBuilder/RestrictedDDBuilder.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Class.dir/build.make CMakeFiles/Class.dir/Class/RestrictedDDBuilder/RestrictedDDBuilder.cpp.o
+.PHONY : Class/RestrictedDDBuilder/RestrictedDDBuilder.cpp.o
+
+Class/RestrictedDDBuilder/RestrictedDDBuilder.i: Class/RestrictedDDBuilder/RestrictedDDBuilder.cpp.i
+.PHONY : Class/RestrictedDDBuilder/RestrictedDDBuilder.i
+
+# target to preprocess a source file
+Class/RestrictedDDBuilder/RestrictedDDBuilder.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Class.dir/build.make CMakeFiles/Class.dir/Class/RestrictedDDBuilder/RestrictedDDBuilder.cpp.i
+.PHONY : Class/RestrictedDDBuilder/RestrictedDDBuilder.cpp.i
+
+Class/RestrictedDDBuilder/RestrictedDDBuilder.s: Class/RestrictedDDBuilder/RestrictedDDBuilder.cpp.s
+.PHONY : Class/RestrictedDDBuilder/RestrictedDDBuilder.s
+
+# target to generate assembly for a file
+Class/RestrictedDDBuilder/RestrictedDDBuilder.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Class.dir/build.make CMakeFiles/Class.dir/Class/RestrictedDDBuilder/RestrictedDDBuilder.cpp.s
+.PHONY : Class/RestrictedDDBuilder/RestrictedDDBuilder.cpp.s
+
 Examples/IndependentSet/IndependentSetMain.o: Examples/IndependentSet/IndependentSetMain.cpp.o
 .PHONY : Examples/IndependentSet/IndependentSetMain.o
 
@@ -530,6 +554,9 @@ help:
 	@echo "... Class/Problems/AbstractProblemClass.o"
 	@echo "... Class/Problems/AbstractProblemClass.i"
 	@echo "... Class/Problems/AbstractProblemClass.s"
+	@echo "... Class/RestrictedDDBuilder/RestrictedDDBuilder.o"
+	@echo "... Class/RestrictedDDBuilder/RestrictedDDBuilder.i"
+	@echo "... Class/RestrictedDDBuilder/RestrictedDDBuilder.s"
 	@echo "... Examples/IndependentSet/IndependentSetMain.o"
 	@echo "... Examples/IndependentSet/IndependentSetMain.i"
 	@echo "... Examples/IndependentSet/IndependentSetMain.s"

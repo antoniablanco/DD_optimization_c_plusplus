@@ -15,6 +15,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Class.dir/Class/DDStructure/utils.cpp.o.d"
   "CMakeFiles/Class.dir/Class/Problems/AbstractProblemClass.cpp.o"
   "CMakeFiles/Class.dir/Class/Problems/AbstractProblemClass.cpp.o.d"
+  "CMakeFiles/Class.dir/Class/RestrictedDDBuilder/RestrictedDDBuilder.cpp.o"
+  "CMakeFiles/Class.dir/Class/RestrictedDDBuilder/RestrictedDDBuilder.cpp.o.d"
   "libClass.a"
   "libClass.pdb"
 )
