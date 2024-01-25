@@ -20,8 +20,8 @@ class RestrictedDDBuilder: public AbstractDDBuilder {
         void specific_final_function() override;
         
         void eliminate_nodes_when_width_is_greater_than_w();
-        void width_is_greater_than_w();
-        void eliminate_nodes();
+        bool width_is_greater_than_w();
+        void eliminate_nodes(vector<Node*> nodes_to_eliminate);
         void eliminate_nodes_without_out_arcs();
         void adjust_node_number();
 
