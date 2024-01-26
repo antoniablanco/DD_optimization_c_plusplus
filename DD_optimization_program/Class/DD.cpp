@@ -5,6 +5,7 @@
 #include "Graph.h"
 #include "DDBuilder.h"
 #include "RestrictedDDBuilder.h"
+#include "RelaxedDDBuilder.h"
 
 #include <thread>
 
@@ -18,6 +19,7 @@ DD::~DD() {}
 
 
 Graph DD::create_desition_diagram(const bool verbose) {
+    cout << endl;
     cout << "Iniciando la creación del diagrama de decisión..." << endl;
     auto start = chrono::steady_clock::now();
 
@@ -32,6 +34,7 @@ Graph DD::create_desition_diagram(const bool verbose) {
 }
 
 void DD::create_restricted_desition_diagram(int max_width, const bool verbose) {
+    cout << endl;
     cout << "Iniciando la creación del diagrama de decisión restringido ..." << endl;
     auto start = chrono::steady_clock::now();
 
@@ -40,9 +43,24 @@ void DD::create_restricted_desition_diagram(int max_width, const bool verbose) {
     graph_DD = graph;
 
     auto end = chrono::steady_clock::now();
-    cout << "Diagrama de decisión restringido creado" << endl;
+    cout << "Creación del diagrama de decision restringido terminado" << endl;
     
     restricted_dd_builder_time = chrono::duration<double>(end - start);
+}
+
+void DD::create_relaxed_desition_diagram(int max_width, const bool verbose) {
+    cout << endl;
+    cout << "Iniciando la creación del diagrama de decisión relajado ..." << endl;
+    auto start = chrono::steady_clock::now();
+
+    RelaxedDDBuilder relaxedDDBuilder(problem, max_width);
+    Graph graph = relaxedDDBuilder.get_desition_diagram(verbose);
+    graph_DD = graph;
+
+    auto end = chrono::steady_clock::now();
+    cout << "Creación del diagrama de decision relajado terminado" << endl;
+    
+    relaxed_dd_builder_time = chrono::duration<double>(end - start);
 }
 
 string DD::get_dd_builder_time() {

@@ -30,6 +30,7 @@ protected:
     AbstractProblem& problem;
     vector<string> variables;
     map<string, vector<int>> variables_domain;
+    pair<bool, Node*> exist_node_with_same_state(vector<int> node_state);
 
 private:
     Graph initialize_graph(vector<int>& initial_state);
@@ -39,7 +40,7 @@ private:
     bool there_is_node_in_last_layer(int variable_id);
     void create_arcs_for_the_terminal_node(int variable_value, Node* existed_node, int variable_id);
     void create_rest_of_arcs(int variable_value, Node* existed_node, int variable_id, vector<int> node_state);
-    pair<bool, Node*> exist_node_with_same_state(vector<int> node_state);
+    
     void create_arc_for_the_new_node(Node* existed_node, Node* node_created, int variable_value, int variable_id);
     void print_graph(bool should_visualize);
     void print();

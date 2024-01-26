@@ -25,13 +25,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 44,
+				"line" : 47,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 49,
+				"line" : 52,
 				"parent" : 0
 			}
 		]
@@ -66,6 +66,10 @@
 				{
 					"backtrace" : 2,
 					"path" : "/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/RestrictedDDBuilder"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/RelaxedDDBuilder"
 				}
 			],
 			"language" : "CXX",

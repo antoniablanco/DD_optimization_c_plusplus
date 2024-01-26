@@ -25,19 +25,19 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 41,
+				"line" : 44,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 47,
+				"line" : 50,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 48,
+				"line" : 51,
 				"parent" : 0
 			}
 		]
@@ -72,6 +72,10 @@
 				{
 					"backtrace" : 2,
 					"path" : "/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/RestrictedDDBuilder"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/RelaxedDDBuilder"
 				},
 				{
 					"backtrace" : 3,

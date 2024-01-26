@@ -40,7 +40,6 @@ bool RestrictedDDBuilder::width_is_greater_than_w() {
 
 void RestrictedDDBuilder::eliminate_nodes(vector<Node*> nodes_to_eliminate) {
     for (Node* node : nodes_to_eliminate) {
-        cout << "Eliminando nodo: " << node->to_string() << endl;
         graph->eliminate_node_and_his_arcs(*node);
         };
 }

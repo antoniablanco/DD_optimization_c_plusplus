@@ -48,6 +48,7 @@ pair<vector<int>, bool> KnapsackProblem::transition_function(const vector<int>& 
         vector<int> lista_suma_variables = matrix_of_wheight[row];
         int new_state = previous_state[row] + lista_suma_variables[stoi(variable_id.substr(2)) - 1] * variable_value;
         state.push_back(new_state);
+        state.push_back(new_state);
 
         bool isFeasible_this_row = state[row] <= right_side_of_restrictions[row];
         isFeasible = isFeasible && isFeasible_this_row;
@@ -74,10 +75,10 @@ int KnapsackProblem::get_priority_for_merge_nodes(const int node_id, const vecto
 const vector<int> KnapsackProblem::merge_operator(const vector<int>& state_one, const vector<int>& state_two) const {
     vector<int> state = {};
     
-    for (size_t i = 0; i < state_one.size(); ++i) {
-        state.push_back(state_one[i]);
-        state.push_back( state_two[i]);
-        }
+    state.push_back(state_one[0]);
+    state.push_back(state_two.back());
+
+    sort(state.begin(), state.end());
 
     return state;
     }

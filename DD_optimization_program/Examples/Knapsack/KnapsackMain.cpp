@@ -33,15 +33,16 @@ int main() {
     KnapsackProblem knapsack_instance(initial_state, variables, matrix_of_wheight, right_side_of_restrictions);
     DD dd_instance(knapsack_instance, false);
 
-    dd_instance.create_restricted_desition_diagram(3 ,true);
+    Graph graph = dd_instance.get_desition_diagram();
+    cout << "Nodes: " << graph.nodes.size() << endl;
 
-    //cout << "DD: " << to_string_int_vector(dd_instance.problem.initial_state) << endl;
-    //cout << "Variables: " << to_string_string_vector(dd_instance.problem.ordered_variables) << endl;
+    //dd_instance.create_restricted_desition_diagram(3 ,false);
+    dd_instance.create_relaxed_desition_diagram(3 ,true);
 
-    cout << "Restricted time: " << dd_instance.get_restricted_dd_builder_time() << endl; 
+    cout << "Relaxed time: " << dd_instance.get_relaxed_dd_builder_time() << endl; //Funciona bien
 
-    //Graph graph = dd_instance.get_desition_diagram();
-    //cout << "Nodes: " << graph.nodes.size() << endl;
+    Graph graph2 = dd_instance.get_desition_diagram();
+    cout << "Nodes: " << graph2.nodes.size() << endl;
     
     return 0;
 }
