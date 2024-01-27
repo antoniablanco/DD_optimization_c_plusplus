@@ -373,6 +373,30 @@ Class/Problems/AbstractProblemClass.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Class.dir/build.make CMakeFiles/Class.dir/Class/Problems/AbstractProblemClass.cpp.s
 .PHONY : Class/Problems/AbstractProblemClass.cpp.s
 
+Class/ReduceDDBuilder/ReduceDDBuilder.o: Class/ReduceDDBuilder/ReduceDDBuilder.cpp.o
+.PHONY : Class/ReduceDDBuilder/ReduceDDBuilder.o
+
+# target to build an object file
+Class/ReduceDDBuilder/ReduceDDBuilder.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Class.dir/build.make CMakeFiles/Class.dir/Class/ReduceDDBuilder/ReduceDDBuilder.cpp.o
+.PHONY : Class/ReduceDDBuilder/ReduceDDBuilder.cpp.o
+
+Class/ReduceDDBuilder/ReduceDDBuilder.i: Class/ReduceDDBuilder/ReduceDDBuilder.cpp.i
+.PHONY : Class/ReduceDDBuilder/ReduceDDBuilder.i
+
+# target to preprocess a source file
+Class/ReduceDDBuilder/ReduceDDBuilder.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Class.dir/build.make CMakeFiles/Class.dir/Class/ReduceDDBuilder/ReduceDDBuilder.cpp.i
+.PHONY : Class/ReduceDDBuilder/ReduceDDBuilder.cpp.i
+
+Class/ReduceDDBuilder/ReduceDDBuilder.s: Class/ReduceDDBuilder/ReduceDDBuilder.cpp.s
+.PHONY : Class/ReduceDDBuilder/ReduceDDBuilder.s
+
+# target to generate assembly for a file
+Class/ReduceDDBuilder/ReduceDDBuilder.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Class.dir/build.make CMakeFiles/Class.dir/Class/ReduceDDBuilder/ReduceDDBuilder.cpp.s
+.PHONY : Class/ReduceDDBuilder/ReduceDDBuilder.cpp.s
+
 Class/RelaxedDDBuilder/RelaxedDDBuilder.o: Class/RelaxedDDBuilder/RelaxedDDBuilder.cpp.o
 .PHONY : Class/RelaxedDDBuilder/RelaxedDDBuilder.o
 
@@ -578,6 +602,9 @@ help:
 	@echo "... Class/Problems/AbstractProblemClass.o"
 	@echo "... Class/Problems/AbstractProblemClass.i"
 	@echo "... Class/Problems/AbstractProblemClass.s"
+	@echo "... Class/ReduceDDBuilder/ReduceDDBuilder.o"
+	@echo "... Class/ReduceDDBuilder/ReduceDDBuilder.i"
+	@echo "... Class/ReduceDDBuilder/ReduceDDBuilder.s"
 	@echo "... Class/RelaxedDDBuilder/RelaxedDDBuilder.o"
 	@echo "... Class/RelaxedDDBuilder/RelaxedDDBuilder.i"
 	@echo "... Class/RelaxedDDBuilder/RelaxedDDBuilder.s"

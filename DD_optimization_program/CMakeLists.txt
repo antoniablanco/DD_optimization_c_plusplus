@@ -18,6 +18,8 @@ set(CLASS_SOURCE
         Class/DDStructure/utils.cpp
         Class/Problems/AbstractProblemClass.cpp
         Class/Problems/AbstractProblemClass.h
+        Class/ReduceDDBuilder/ReduceDDBuilder.h
+        Class/ReduceDDBuilder/ReduceDDBuilder.cpp
         Class/RestrictedDDBuilder/RestrictedDDBuilder.h
         Class/RestrictedDDBuilder/RestrictedDDBuilder.cpp
         Class/RelaxedDDBuilder/RelaxedDDBuilder.h
@@ -39,6 +41,7 @@ target_include_directories(Class PUBLIC Class/Problems)
 target_include_directories(Class PUBLIC Class/DDBuilder)
 target_include_directories(Class PUBLIC Class/RestrictedDDBuilder)
 target_include_directories(Class PUBLIC Class/RelaxedDDBuilder)
+target_include_directories(Class PUBLIC Class/ReduceDDBuilder)
 target_include_directories(Exceptions PUBLIC Exceptions)
 
 add_executable(Knapsack Examples/Knapsack/KnapsackMain.cpp

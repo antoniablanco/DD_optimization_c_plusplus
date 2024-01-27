@@ -6,6 +6,7 @@
 #include "DDBuilder.h"
 #include "RestrictedDDBuilder.h"
 #include "RelaxedDDBuilder.h"
+#include "ReduceDDBuilder.h"
 
 #include <thread>
 
@@ -61,6 +62,21 @@ void DD::create_relaxed_desition_diagram(int max_width, const bool verbose) {
     cout << "Creación del diagrama de decision relajado terminado" << endl;
     
     relaxed_dd_builder_time = chrono::duration<double>(end - start);
+}
+
+void DD::create_reduce_desition_diagram(const bool verbose) {
+    cout << endl;
+    cout << "Iniciando la creación del diagrama de decisión reducido ..." << endl;
+    auto start = chrono::steady_clock::now();
+
+    ReduceDDBuilder reduceDDBuilder(&graph_DD);
+    Graph graph = reduceDDBuilder.get_desition_diagram(verbose);
+    graph_DD = graph;
+
+    auto end = chrono::steady_clock::now();
+    cout << "Creación del diagrama de decision reducido terminado" << endl;
+    
+    reduce_dd_builder_time = chrono::duration<double>(end - start);
 }
 
 string DD::get_dd_builder_time() {

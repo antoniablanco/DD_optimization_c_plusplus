@@ -36,10 +36,11 @@ int main() {
     Graph graph = dd_instance.get_desition_diagram();
     cout << "Nodes: " << graph.nodes.size() << endl;
 
+    dd_instance.create_reduce_desition_diagram(false);
     //dd_instance.create_restricted_desition_diagram(3 ,false);
-    dd_instance.create_relaxed_desition_diagram(3 ,true);
+    //dd_instance.create_relaxed_desition_diagram(3 ,true);
 
-    cout << "Relaxed time: " << dd_instance.get_relaxed_dd_builder_time() << endl; //Funciona bien
+    cout << "Reduce time: " << dd_instance.get_reduce_dd_builder_time() << endl; //Funciona bien
 
     Graph graph2 = dd_instance.get_desition_diagram();
     cout << "Nodes: " << graph2.nodes.size() << endl;
