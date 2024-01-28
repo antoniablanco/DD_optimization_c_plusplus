@@ -349,6 +349,78 @@ Class/DDStructure/utils.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Class.dir/build.make CMakeFiles/Class.dir/Class/DDStructure/utils.cpp.s
 .PHONY : Class/DDStructure/utils.cpp.s
 
+Class/ObjectiveFunction/AbstractObjective.o: Class/ObjectiveFunction/AbstractObjective.cpp.o
+.PHONY : Class/ObjectiveFunction/AbstractObjective.o
+
+# target to build an object file
+Class/ObjectiveFunction/AbstractObjective.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Class.dir/build.make CMakeFiles/Class.dir/Class/ObjectiveFunction/AbstractObjective.cpp.o
+.PHONY : Class/ObjectiveFunction/AbstractObjective.cpp.o
+
+Class/ObjectiveFunction/AbstractObjective.i: Class/ObjectiveFunction/AbstractObjective.cpp.i
+.PHONY : Class/ObjectiveFunction/AbstractObjective.i
+
+# target to preprocess a source file
+Class/ObjectiveFunction/AbstractObjective.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Class.dir/build.make CMakeFiles/Class.dir/Class/ObjectiveFunction/AbstractObjective.cpp.i
+.PHONY : Class/ObjectiveFunction/AbstractObjective.cpp.i
+
+Class/ObjectiveFunction/AbstractObjective.s: Class/ObjectiveFunction/AbstractObjective.cpp.s
+.PHONY : Class/ObjectiveFunction/AbstractObjective.s
+
+# target to generate assembly for a file
+Class/ObjectiveFunction/AbstractObjective.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Class.dir/build.make CMakeFiles/Class.dir/Class/ObjectiveFunction/AbstractObjective.cpp.s
+.PHONY : Class/ObjectiveFunction/AbstractObjective.cpp.s
+
+Class/ObjectiveFunction/LinearObjectiveDP.o: Class/ObjectiveFunction/LinearObjectiveDP.cpp.o
+.PHONY : Class/ObjectiveFunction/LinearObjectiveDP.o
+
+# target to build an object file
+Class/ObjectiveFunction/LinearObjectiveDP.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Class.dir/build.make CMakeFiles/Class.dir/Class/ObjectiveFunction/LinearObjectiveDP.cpp.o
+.PHONY : Class/ObjectiveFunction/LinearObjectiveDP.cpp.o
+
+Class/ObjectiveFunction/LinearObjectiveDP.i: Class/ObjectiveFunction/LinearObjectiveDP.cpp.i
+.PHONY : Class/ObjectiveFunction/LinearObjectiveDP.i
+
+# target to preprocess a source file
+Class/ObjectiveFunction/LinearObjectiveDP.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Class.dir/build.make CMakeFiles/Class.dir/Class/ObjectiveFunction/LinearObjectiveDP.cpp.i
+.PHONY : Class/ObjectiveFunction/LinearObjectiveDP.cpp.i
+
+Class/ObjectiveFunction/LinearObjectiveDP.s: Class/ObjectiveFunction/LinearObjectiveDP.cpp.s
+.PHONY : Class/ObjectiveFunction/LinearObjectiveDP.s
+
+# target to generate assembly for a file
+Class/ObjectiveFunction/LinearObjectiveDP.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Class.dir/build.make CMakeFiles/Class.dir/Class/ObjectiveFunction/LinearObjectiveDP.cpp.s
+.PHONY : Class/ObjectiveFunction/LinearObjectiveDP.cpp.s
+
+Class/ObjectiveFunction/ObjectiveFunction.o: Class/ObjectiveFunction/ObjectiveFunction.cpp.o
+.PHONY : Class/ObjectiveFunction/ObjectiveFunction.o
+
+# target to build an object file
+Class/ObjectiveFunction/ObjectiveFunction.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Class.dir/build.make CMakeFiles/Class.dir/Class/ObjectiveFunction/ObjectiveFunction.cpp.o
+.PHONY : Class/ObjectiveFunction/ObjectiveFunction.cpp.o
+
+Class/ObjectiveFunction/ObjectiveFunction.i: Class/ObjectiveFunction/ObjectiveFunction.cpp.i
+.PHONY : Class/ObjectiveFunction/ObjectiveFunction.i
+
+# target to preprocess a source file
+Class/ObjectiveFunction/ObjectiveFunction.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Class.dir/build.make CMakeFiles/Class.dir/Class/ObjectiveFunction/ObjectiveFunction.cpp.i
+.PHONY : Class/ObjectiveFunction/ObjectiveFunction.cpp.i
+
+Class/ObjectiveFunction/ObjectiveFunction.s: Class/ObjectiveFunction/ObjectiveFunction.cpp.s
+.PHONY : Class/ObjectiveFunction/ObjectiveFunction.s
+
+# target to generate assembly for a file
+Class/ObjectiveFunction/ObjectiveFunction.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Class.dir/build.make CMakeFiles/Class.dir/Class/ObjectiveFunction/ObjectiveFunction.cpp.s
+.PHONY : Class/ObjectiveFunction/ObjectiveFunction.cpp.s
+
 Class/Problems/AbstractProblemClass.o: Class/Problems/AbstractProblemClass.cpp.o
 .PHONY : Class/Problems/AbstractProblemClass.o
 
@@ -599,6 +671,15 @@ help:
 	@echo "... Class/DDStructure/utils.o"
 	@echo "... Class/DDStructure/utils.i"
 	@echo "... Class/DDStructure/utils.s"
+	@echo "... Class/ObjectiveFunction/AbstractObjective.o"
+	@echo "... Class/ObjectiveFunction/AbstractObjective.i"
+	@echo "... Class/ObjectiveFunction/AbstractObjective.s"
+	@echo "... Class/ObjectiveFunction/LinearObjectiveDP.o"
+	@echo "... Class/ObjectiveFunction/LinearObjectiveDP.i"
+	@echo "... Class/ObjectiveFunction/LinearObjectiveDP.s"
+	@echo "... Class/ObjectiveFunction/ObjectiveFunction.o"
+	@echo "... Class/ObjectiveFunction/ObjectiveFunction.i"
+	@echo "... Class/ObjectiveFunction/ObjectiveFunction.s"
 	@echo "... Class/Problems/AbstractProblemClass.o"
 	@echo "... Class/Problems/AbstractProblemClass.i"
 	@echo "... Class/Problems/AbstractProblemClass.s"

@@ -1,6 +1,8 @@
 #include "KnapsackProblem.h"
 #include "utils.h"
 #include "DD.h"
+#include "LinearObjectiveDP.h"
+#include "ObjectiveFunction.h"
 
 #include <iostream>
 #include <vector>

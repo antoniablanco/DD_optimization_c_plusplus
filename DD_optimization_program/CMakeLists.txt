@@ -16,6 +16,12 @@ set(CLASS_SOURCE
         Class/DDStructure/Graph.h
         Class/DDStructure/utils.h
         Class/DDStructure/utils.cpp
+        Class/ObjectiveFunction/LinearObjectiveDP.h
+        Class/ObjectiveFunction/LinearObjectiveDP.cpp
+        Class/ObjectiveFunction/ObjectiveFunction.h
+        Class/ObjectiveFunction/ObjectiveFunction.cpp
+        Class/ObjectiveFunction/AbstractObjective.h
+        Class/ObjectiveFunction/AbstractObjective.cpp
         Class/Problems/AbstractProblemClass.cpp
         Class/Problems/AbstractProblemClass.h
         Class/ReduceDDBuilder/ReduceDDBuilder.h
@@ -37,6 +43,7 @@ add_library(Exceptions ${EXCEPTIONS_SOURCE})
 
 target_include_directories(Class PUBLIC Class)
 target_include_directories(Class PUBLIC Class/DDStructure)
+target_include_directories(Class PUBLIC Class/ObjectiveFunction)
 target_include_directories(Class PUBLIC Class/Problems)
 target_include_directories(Class PUBLIC Class/DDBuilder)
 target_include_directories(Class PUBLIC Class/RestrictedDDBuilder)
