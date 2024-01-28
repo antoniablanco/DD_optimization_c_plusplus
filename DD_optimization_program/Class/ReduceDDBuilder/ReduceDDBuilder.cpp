@@ -19,8 +19,8 @@ Graph ReduceDDBuilder::get_desition_diagram(bool should_visualize) {
 
     for (const auto& layer : reversedStructure) {
         print_graph(should_visualize);
-        layer_working -=1;
         reviewing_layer(layer);
+        layer_working -=1;
     }
 
     specific_final_function();
@@ -30,28 +30,29 @@ Graph ReduceDDBuilder::get_desition_diagram(bool should_visualize) {
 }
 
 void ReduceDDBuilder::reviewing_layer(vector<Node*> layer) {
-    for (size_t i = 0; i < layer.size(); ++i) {
-        Node* nodeOne = layer[i];
 
-        vector<Node*> nodes(layer.begin() + i + 1, layer.end());
-
-        while (!nodes.empty()) {
-            Node* nodeTwo = nodes.front();
-            nodes.erase(nodes.begin());
-
-            if (checking_if_two_nodes_should_merge(nodeOne, nodeTwo)) {
-                cout << "Merge: " << nodeOne->to_string() << " and " << nodeTwo->to_string() << endl;
-                merge_nodes(nodeOne, nodeTwo);
+    auto it = layer.begin();
+    while (it != layer.end()) {
+        Node* node_one = *it;
+        auto nodes_it = it;
+        ++nodes_it;  
+        while (nodes_it != layer.end()) {
+            Node* node_two = *nodes_it;
+            if (checking_if_two_nodes_should_merge(node_one, node_two)) {
+                merge_nodes(node_one, node_two);
+                nodes_it = layer.erase(nodes_it); 
+            } else {
+                ++nodes_it;
             }
         }
+        ++it;
     }
+
 }
 
 bool ReduceDDBuilder::checking_if_two_nodes_should_merge(Node* node_one, Node* node_two) {
     vector<string> PathsOfNodeOne = get_node_of_every_type_of_path(node_one);
     vector<string> PathsOfNodeTwo = get_node_of_every_type_of_path(node_two);
-    cout << "Paths of node one: " << to_string_string_vector(PathsOfNodeOne) << endl;
-    cout << "Paths of node two: " << to_string_string_vector(PathsOfNodeTwo) << endl;
     return PathsOfNodeOne == PathsOfNodeTwo;
 }
 
@@ -60,7 +61,7 @@ vector<string> ReduceDDBuilder::get_node_of_every_type_of_path(Node* node) {
     for (Arc* arc : node->out_arcs) {
 
         std::ostringstream ss;
-        ss << arc->out_node->to_string() << "_" << to_string(arc->variable_value);
+        ss << arc->in_node->to_string() << "_" << to_string(arc->variable_value);
 
         nodesOfPath.push_back(ss.str());
     }
@@ -92,12 +93,10 @@ pair<Node*, Node*> ReduceDDBuilder::get_order_of_changin_nodes(Node* node_one, N
     } else {
         cout << "Error: No se encuentran los nodos en la capa actual" << endl;
         return std::make_pair(static_cast<Node*>(nullptr), static_cast<Node*>(nullptr));
-}
-
+    }
 }
 
 void ReduceDDBuilder::redirect_in_arcs(Node* node_to_remove, Node* node_to_keep) {
-
     for (Arc* arc : node_to_remove->in_arcs) {
         arc->in_node = node_to_keep;
 
@@ -109,10 +108,12 @@ void ReduceDDBuilder::redirect_in_arcs(Node* node_to_remove, Node* node_to_keep)
 }
 
 void ReduceDDBuilder::delete_out_arcs(Node* node_to_remove) {
-    for (Arc* arc : node_to_remove->out_arcs) {
-        arc->out_node = nullptr;
+    for (auto it = node_to_remove->out_arcs.begin(); it != node_to_remove->out_arcs.end(); ) {
+        Arc* arc = *it;
+        it = node_to_remove->out_arcs.erase(it); 
+        arc->in_node->in_arcs.remove(arc);
+        delete arc; 
     }
-    node_to_remove->out_arcs.clear();
 }
 
 void ReduceDDBuilder::delete_node(Node* node_to_remove) {
@@ -141,7 +142,7 @@ void ReduceDDBuilder::print_graph(bool should_visualize) {
 }
 
 void ReduceDDBuilder::print() {
-    
+
     cout << "" << endl;
     for (const auto& layer : graph->structure) {
         cout << "------------------------------------------------------" << endl;
