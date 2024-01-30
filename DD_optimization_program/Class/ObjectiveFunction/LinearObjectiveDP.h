@@ -20,7 +20,7 @@ class LinearObjectiveDP : public AbstractObjective {
     void assign_graph(Graph graph_DD) override;
     ObjectiveStruct resolve_graph() override;
 
-    ~LinearObjectiveDP();
+    ~LinearObjectiveDP()= default;
 
     private:
     vector<int> weights;

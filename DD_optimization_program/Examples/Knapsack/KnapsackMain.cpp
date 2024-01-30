@@ -38,7 +38,7 @@ int main() {
     Graph graph = dd_instance.get_desition_diagram();
     cout << "Nodes: " << graph.nodes.size() << endl;
 
-    dd_instance.create_reduce_desition_diagram(false);
+    //dd_instance.create_reduce_desition_diagram(false);
     //dd_instance.create_restricted_desition_diagram(3 ,false);
     //dd_instance.create_relaxed_desition_diagram(3 ,true);
 
@@ -46,6 +46,13 @@ int main() {
 
     Graph graph2 = dd_instance.get_desition_diagram();
     cout << "Nodes: " << graph2.nodes.size() << endl;
+
+    // Resolución del diagrama
+    ObjectiveFunction objective_function_instance = ObjectiveFunction(dd_instance);
+    LinearObjectiveDP linear_objective_instance = LinearObjectiveDP({-5, 1, 18, 17}, "max");
+    objective_function_instance.set_objective_function(linear_objective_instance);
+    objective_function_instance.solve_dd();
+    cout << objective_function_instance.get_the_solution().value<< endl;
     
     return 0;
 }

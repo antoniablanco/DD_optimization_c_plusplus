@@ -93,6 +93,7 @@ IndependentSet_EXTERNAL_OBJECTS =
 IndependentSet: CMakeFiles/IndependentSet.dir/Examples/IndependentSet/IndependentSetMain.cpp.o
 IndependentSet: CMakeFiles/IndependentSet.dir/build.make
 IndependentSet: libClass.a
+IndependentSet: libExceptions.a
 IndependentSet: CMakeFiles/IndependentSet.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/antoniablanco/Desktop/DD_optimization_c-/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable IndependentSet"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/IndependentSet.dir/link.txt --verbose=$(VERBOSE)

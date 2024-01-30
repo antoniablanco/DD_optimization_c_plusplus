@@ -65,3 +65,5 @@ target_link_libraries(Knapsack PRIVATE Exceptions)
 target_link_libraries(IndependentSet PRIVATE Class)
 target_link_libraries(SetCovering PRIVATE Class)
 
+target_link_libraries(Class PRIVATE Exceptions)
+

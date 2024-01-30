@@ -24,12 +24,22 @@ ObjectiveStruct ObjectiveFunction::solve_dd() {
     return answer;
 }
 
+void ObjectiveFunction::check_if_objective_is_set() {
+    if (objective_function == nullptr) {
+        cout << "No se ha definido una función objetivo" << endl;
+        exit(1);
+    }
+}
+
 string ObjectiveFunction::get_time() {
     return to_string(time.count());
 }
 
 ObjectiveStruct ObjectiveFunction::get_the_solution() {
-    // falta if not hasattr(self, "answer"):
-    //        raise ObjectiveNotSetException()
-    return answer;
+    if (answer.path != "") {
+        return answer;
+    } else {
+        cout << "No se ha resuelto el diagrama de decisión" << endl;
+        exit(1);
+    }
 }

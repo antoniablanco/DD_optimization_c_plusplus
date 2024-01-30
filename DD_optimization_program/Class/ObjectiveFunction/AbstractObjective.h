@@ -21,7 +21,7 @@ class AbstractObjective {
     virtual void assign_graph(Graph graph_DD) = 0;
     virtual ObjectiveStruct resolve_graph() = 0;
 
-    virtual ~AbstractObjective();
+    virtual ~AbstractObjective()= default;
 };
 
 #endif //DD_OPTIMIZATION_PROGRAM_ABSTRACTOBJECTIVE_H
