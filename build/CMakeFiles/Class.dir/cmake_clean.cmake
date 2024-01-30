@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/Class.dir/Class/AnswerStructure/ObjectiveStructure.cpp.o"
+  "CMakeFiles/Class.dir/Class/AnswerStructure/ObjectiveStructure.cpp.o.d"
   "CMakeFiles/Class.dir/Class/DD.cpp.o"
   "CMakeFiles/Class.dir/Class/DD.cpp.o.d"
   "CMakeFiles/Class.dir/Class/DDBuilder/AbstractDDBuilder.cpp.o"

@@ -4,6 +4,8 @@ project(DD_optimization_program)
 set(CMAKE_CXX_STANDARD 20)
 
 set(CLASS_SOURCE
+        Class/AnswerStructure/ObjectiveStructure.h
+        Class/AnswerStructure/ObjectiveStructure.cpp
         Class/DDBuilder/AbstractDDBuilder.h
         Class/DDBuilder/AbstractDDBuilder.cpp
         Class/DDBuilder/DDBuilder.h
@@ -42,6 +44,7 @@ add_library(Class ${CLASS_SOURCE})
 add_library(Exceptions ${EXCEPTIONS_SOURCE})
 
 target_include_directories(Class PUBLIC Class)
+target_include_directories(Class PUBLIC Class/AnswerStructure)
 target_include_directories(Class PUBLIC Class/DDStructure)
 target_include_directories(Class PUBLIC Class/ObjectiveFunction)
 target_include_directories(Class PUBLIC Class/Problems)

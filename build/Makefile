@@ -181,6 +181,30 @@ SetCovering/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SetCovering.dir/build.make CMakeFiles/SetCovering.dir/build
 .PHONY : SetCovering/fast
 
+Class/AnswerStructure/ObjectiveStructure.o: Class/AnswerStructure/ObjectiveStructure.cpp.o
+.PHONY : Class/AnswerStructure/ObjectiveStructure.o
+
+# target to build an object file
+Class/AnswerStructure/ObjectiveStructure.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Class.dir/build.make CMakeFiles/Class.dir/Class/AnswerStructure/ObjectiveStructure.cpp.o
+.PHONY : Class/AnswerStructure/ObjectiveStructure.cpp.o
+
+Class/AnswerStructure/ObjectiveStructure.i: Class/AnswerStructure/ObjectiveStructure.cpp.i
+.PHONY : Class/AnswerStructure/ObjectiveStructure.i
+
+# target to preprocess a source file
+Class/AnswerStructure/ObjectiveStructure.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Class.dir/build.make CMakeFiles/Class.dir/Class/AnswerStructure/ObjectiveStructure.cpp.i
+.PHONY : Class/AnswerStructure/ObjectiveStructure.cpp.i
+
+Class/AnswerStructure/ObjectiveStructure.s: Class/AnswerStructure/ObjectiveStructure.cpp.s
+.PHONY : Class/AnswerStructure/ObjectiveStructure.s
+
+# target to generate assembly for a file
+Class/AnswerStructure/ObjectiveStructure.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Class.dir/build.make CMakeFiles/Class.dir/Class/AnswerStructure/ObjectiveStructure.cpp.s
+.PHONY : Class/AnswerStructure/ObjectiveStructure.cpp.s
+
 Class/DD.o: Class/DD.cpp.o
 .PHONY : Class/DD.o
 
@@ -650,6 +674,9 @@ help:
 	@echo "... IndependentSet"
 	@echo "... Knapsack"
 	@echo "... SetCovering"
+	@echo "... Class/AnswerStructure/ObjectiveStructure.o"
+	@echo "... Class/AnswerStructure/ObjectiveStructure.i"
+	@echo "... Class/AnswerStructure/ObjectiveStructure.s"
 	@echo "... Class/DD.o"
 	@echo "... Class/DD.i"
 	@echo "... Class/DD.s"

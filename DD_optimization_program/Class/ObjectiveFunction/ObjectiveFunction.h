@@ -9,22 +9,25 @@
 
 #include "Graph.h"
 #include "AbstractObjective.h"
+#include "ObjectiveStructure.h"
+#include "DD.h"
 
 using namespace std;
 
 class ObjectiveFunction {
     public:
-    ObjectiveFunction(Graph graph);
-    tuple<int, string, vector<Arc*>> answer;
+    ObjectiveFunction(DD dd);
+    ObjectiveStruct answer;
 
     void set_objective_function(AbstractObjective& objective_function);
-    tuple<int, string, vector<Arc*>> solve_dd();
+    ObjectiveStruct solve_dd();
     string get_time();
-    tuple<int, string, vector<Arc*>> get_the_solution();
+    ObjectiveStruct get_the_solution();
 
     private:
     Graph graph;
     chrono::duration<double> time;
+    AbstractObjective* objective_function;
 
     void check_if_objective_is_set();
 };
