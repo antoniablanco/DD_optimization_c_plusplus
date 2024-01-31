@@ -28,9 +28,10 @@ Graph DD::create_desition_diagram(const bool verbose) {
     Graph graph = dDBuilder.get_desition_diagram(verbose);
     
     auto end = chrono::steady_clock::now();
-    cout << "Diagrama de decisión creado" << endl;
-    
     dd_builder_time = chrono::duration<double>(end - start);
+
+    cout << "Diagrama de decisión creado en: "<<  to_string(dd_builder_time.count()) << endl;
+
     return graph;
 }
 
