@@ -16,49 +16,42 @@ void LinearObjectiveDP::assign_graph(Graph graph_DD) {
     graph = graph_DD;
 }
 
+
+
 ObjectiveStruct LinearObjectiveDP::resolve_graph() {
-    
-    ObjectiveStruct* objective_answer = new ObjectiveStruct();
-    objective_answer->value = 10;
-    objective_answer->path = "u_0_0 -> u_0_1";
+    //DP = vector<ObjectiveStruct*>(graph.nodes.size(), new ObjectiveStruct());
+    DP = vector<ObjectiveStruct*>(graph.nodes.size(), nullptr);
+    int last_layer_number = graph.structure.size() - 2;
+    ObjectiveStruct* objective_answer = dp(*graph.nodes.back(), last_layer_number);
+
+    if (objective == "max"){
+        objective_answer->value = -objective_answer->value;
+    }
+
+    objective_answer->path = objective_answer->path.substr(2);
 
     return *objective_answer;
 }
 
 
-/*
-ObjectiveStruct LinearObjectiveDP::resolve_graph() {
-    DP = vector<ObjectiveStruct>(graph.nodes.size(), ObjectiveStruct());
-    int last_layer_number = graph.structure.size() - 2;
-    ObjectiveStruct objective_answer = dp(*graph.nodes.back(), last_layer_number);
+ObjectiveStruct* LinearObjectiveDP::dp(Node node, int layer) {
 
-    if (objective == "max"){
-        objective_answer.value = -objective_answer.value;
-    }
-
-    objective_answer.path = objective_answer.path.substr(2);
-
-    return objective_answer;
-}
-*/
-
-ObjectiveStruct LinearObjectiveDP::dp(Node node, int layer) {
     if (node.in_arcs.size() == 0) {
-        return ObjectiveStruct();
-    }
-    
-    if (DP[node.id].value != neutro) {
-        return DP[node.id];
+        return new ObjectiveStruct(0, "", {});
     }
 
-    DP[node.id].value = numeric_limits<int>::max();
-
+    DP[node.id] = new ObjectiveStruct(numeric_limits<int>::max(), "", {});
     for (auto& arc : node.in_arcs) {
-        if (DP[node.id].value > dp(*arc->out_node, layer - 1).value + arc->variable_value * weights[layer]) {
-            DP[node.id].value = dp(*arc->out_node, layer - 1).value + arc->variable_value * weights[layer];
-            DP[node.id].path = dp(*arc->out_node, layer - 1).path + "-> " + arc->to_string() + "(" + to_string(arc->variable_value) + ")";
-            DP[node.id].arcs.assign(DP[arc->out_node->id].arcs.begin(), DP[arc->out_node->id].arcs.end());
-            DP[node.id].arcs.push_back(arc);
+        if (DP[arc->out_node->id] == nullptr) {
+            DP[arc->out_node->id] = dp(*arc->out_node, layer - 1);
+        }
+
+        ObjectiveStruct* subResult = DP[arc->out_node->id];
+        if (DP[node.id]->value > subResult->value + arc->variable_value * weights[layer]) {
+            DP[node.id]->value = subResult->value + arc->variable_value * weights[layer];
+            DP[node.id]->path = subResult->path + "-> " + arc->to_string() + "(" + to_string(arc->variable_value) + ")";
+            DP[node.id]->arcs.assign(subResult->arcs.begin(), subResult->arcs.end());
+            DP[node.id]->arcs.push_back(arc);
         }
     }
 

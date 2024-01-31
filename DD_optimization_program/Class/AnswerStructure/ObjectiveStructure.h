@@ -19,6 +19,7 @@ struct ObjectiveStruct {
     vector<Arc*> arcs;
 
     ObjectiveStruct();
+    ObjectiveStruct(int value, string path, vector<Arc*> arcs);
 };
 
 #endif //DD_OPTIMIZATION_PROGRAM_OBJECTIVESTRUCTURE_H

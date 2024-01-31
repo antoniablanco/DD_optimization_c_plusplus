@@ -53,6 +53,7 @@ int main() {
     objective_function_instance.set_objective_function(linear_objective_instance);
     objective_function_instance.solve_dd();
     cout << objective_function_instance.get_the_solution().value<< endl;
+    cout << objective_function_instance.get_the_solution().path<< endl;
     
     return 0;
 }

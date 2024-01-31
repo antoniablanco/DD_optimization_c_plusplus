@@ -27,10 +27,10 @@ class LinearObjectiveDP : public AbstractObjective {
     string objective;
     Graph graph;
     int neutro = -111111;
-    vector<ObjectiveStruct> DP;
+    vector<ObjectiveStruct*> DP;
     
     void choose_transform_weights();
-    ObjectiveStruct dp(Node node, int layer);
+    ObjectiveStruct* dp(Node node, int layer);
 };
 
 
