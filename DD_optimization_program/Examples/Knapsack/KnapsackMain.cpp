@@ -19,7 +19,6 @@ using namespace std;
 
 int main() {
     
-    
     // Valores construcción knapsack
     vector<vector<int>> matrix_of_wheight = {{3, 3, 4, 6}};
     vector<int> right_side_of_restrictions = {6};
@@ -34,42 +33,42 @@ int main() {
     };
     
 
-    // 67.789444/ 66.876237 segundos en c++
-    // 51.712515115737915/ 55.72262930870056 en python
+    // Tiempos:
+    // Creación dd: 67.789444/ 66.876237 segundos en c++ y en python fue: 51.712515115737915/ 55.72262930870056 
+    // Reduce dd: 40.130613
+    // Restricted dd: 0.19868
+    // Relaxed dd: 65.879433
+    // LinearDp: 3.89174 seconds
+
     // Configurar el generador de números aleatorios 
     
     /*
-    std::random_device rd;
-    std::mt19937 gen(rd());
-    std::uniform_int_distribution<> dis(1, 10);
+    random_device rd;
+    mt19937 gen(rd());
+    uniform_int_distribution<> dis(1, 10);
 
-    // Crear la matriz
     vector<vector<int>> matrix_of_wheight(1, std::vector<int>(1000));
-
-    // Iterar sobre la matriz y asignar números aleatorios
     for (size_t j = 0; j < matrix_of_wheight[0].size(); ++j) {
         matrix_of_wheight[0][j] = dis(gen);
     }
 
     vector<int> right_side_of_restrictions = {100};
 
-    // Valores construcción abstract problem
     vector<int> initial_state = {0, 0};
     
-    // Crear el vector de variables
     std::vector<std::pair<std::string, std::vector<int>>> variables;
-
-    // Agregar mil variables al vector
     for (int i = 1; i <= 1000; ++i) {
         std::string variable_name = "x_" + std::to_string(i);
         variables.emplace_back(make_pair(variable_name, vector<int>{0,1}));
     }
     
-    vector<int> objective_weights(vector<int>(1000)); // Time: 3.89174 seconds
+    vector<int> objective_weights(vector<int>(1000)); 
     for (size_t j = 0; j < objective_weights.size(); ++j) {
         objective_weights[j] = dis(gen);
     }
+    
     */
+
 
     KnapsackProblem knapsack_instance(initial_state, variables, matrix_of_wheight, right_side_of_restrictions);
     DD dd_instance(knapsack_instance, false);
@@ -78,13 +77,15 @@ int main() {
     cout << "Nodes: " << graph.nodes.size() << endl;
 
     //dd_instance.create_reduce_desition_diagram(false);
-    //dd_instance.create_restricted_desition_diagram(3 ,false);
-    //dd_instance.create_relaxed_desition_diagram(3 ,true);
+    // dd_instance.create_restricted_desition_diagram(3 ,false);
+    dd_instance.create_relaxed_desition_diagram(3, false);
 
-    //cout << "Reduce time: " << dd_instance.get_reduce_dd_builder_time() << endl; //Funciona bien
+    cout << "Relaxed time: " << dd_instance.get_relaxed_dd_builder_time() << endl; 
+    cout << "Nodes: " << graph.nodes.size() << endl;
 
     //dd_instance.export_graph_file("knapsack_file");
 
+    
     
     // Resolución del diagrama
     vector<int> objective_weights = {-5, 1, 18, 17};
