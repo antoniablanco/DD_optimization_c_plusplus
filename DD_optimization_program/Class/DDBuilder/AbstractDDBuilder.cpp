@@ -14,7 +14,7 @@ AbstractDDBuilder::AbstractDDBuilder(AbstractProblem& problem) :
     }
     
 
-Graph AbstractDDBuilder::get_desition_diagram(bool should_visualize) {
+Graph* AbstractDDBuilder::get_desition_diagram(bool should_visualize) {
         
     for (size_t variable_id = 0; variable_id < variables.size(); ++variable_id) {
         create_new_layer(variable_id);
@@ -25,7 +25,7 @@ Graph AbstractDDBuilder::get_desition_diagram(bool should_visualize) {
     specific_final_function();
     print_graph(should_visualize);
 
-    return *graph;
+    return graph;
 }
 
 void AbstractDDBuilder::create_new_layer(int variable_id) {

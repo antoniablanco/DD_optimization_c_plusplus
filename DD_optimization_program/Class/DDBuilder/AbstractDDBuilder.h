@@ -21,7 +21,7 @@ public:
     AbstractDDBuilder(AbstractProblem& problem);
 
     Graph* graph;
-    Graph get_desition_diagram(bool should_visualize);
+    Graph* get_desition_diagram(bool should_visualize);
 
     virtual ~AbstractDDBuilder() = default;
 

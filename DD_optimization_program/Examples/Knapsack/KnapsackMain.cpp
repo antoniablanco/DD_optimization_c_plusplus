@@ -73,15 +73,17 @@ int main() {
     KnapsackProblem knapsack_instance(initial_state, variables, matrix_of_wheight, right_side_of_restrictions);
     DD dd_instance(knapsack_instance, false);
 
-    Graph graph = dd_instance.get_desition_diagram();
-    cout << "Nodes: " << graph.nodes.size() << endl;
+    Graph pre_graph = dd_instance.get_desition_diagram();
+    cout << "Nodes: " << pre_graph.nodes.size() << endl;
 
     //dd_instance.create_reduce_desition_diagram(false);
     // dd_instance.create_restricted_desition_diagram(3 ,false);
     dd_instance.create_relaxed_desition_diagram(3, false);
 
     cout << "Relaxed time: " << dd_instance.get_relaxed_dd_builder_time() << endl; 
-    cout << "Nodes: " << graph.nodes.size() << endl;
+
+    Graph post_graph = dd_instance.get_desition_diagram();
+    cout << "Nodes: " << post_graph.nodes.size() << endl;
 
     //dd_instance.export_graph_file("knapsack_file");
 
