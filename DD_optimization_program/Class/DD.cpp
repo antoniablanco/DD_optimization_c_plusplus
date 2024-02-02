@@ -4,25 +4,26 @@
 
 DD::DD(AbstractProblem& problem, const bool verbose) : 
     problem(problem),
-    graph_DD(create_desition_diagram(verbose))
-    {}
+    graph_DD()
+    {
+        create_desition_diagram(verbose);
+    }
 
 DD::~DD() {}
 
-Graph DD::create_desition_diagram(const bool verbose) {
+void DD::create_desition_diagram(const bool verbose) {
     cout << endl;
     cout << "Iniciando la creación del diagrama de decisión..." << endl;
     auto start = chrono::steady_clock::now();
 
     DDBuilder dDBuilder(problem);
     Graph* graph = dDBuilder.get_desition_diagram(verbose);
-    
+    graph_DD = *graph;
     auto end = chrono::steady_clock::now();
+    
     dd_builder_time = chrono::duration<double>(end - start);
-
     cout << "Diagrama de decisión creado"<< endl;
 
-    return *graph;
 }
 
 void DD::create_restricted_desition_diagram(int max_width, const bool verbose) {
@@ -36,7 +37,7 @@ void DD::create_restricted_desition_diagram(int max_width, const bool verbose) {
     auto end = chrono::steady_clock::now();
     
     restricted_dd_builder_time = chrono::duration<double>(end - start);
-    cout << "Time: " << restricted_dd_builder_time.count() << endl;
+    cout << "Creación del diagrama de decision restringido terminado" << endl;
 }
 
 void DD::create_relaxed_desition_diagram(int max_width, const bool verbose) {

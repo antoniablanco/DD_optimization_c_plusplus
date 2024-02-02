@@ -75,11 +75,15 @@ int main() {
 
     Graph pre_graph = dd_instance.get_desition_diagram();
     cout << "Nodes: " << pre_graph.nodes.size() << endl;
+    cout << "Creation Time: " << dd_instance.get_dd_builder_time() << endl;
 
-    //dd_instance.create_reduce_desition_diagram(false);
-    // dd_instance.create_restricted_desition_diagram(3 ,false);
+    dd_instance.create_reduce_desition_diagram(false);
+    cout << "Reduce time: " << dd_instance.get_reduce_dd_builder_time() << endl; 
+
+    dd_instance.create_restricted_desition_diagram(3 ,false);
+    cout << "Restricted time: " << dd_instance.get_restricted_dd_builder_time() << endl; 
+    
     dd_instance.create_relaxed_desition_diagram(3, false);
-
     cout << "Relaxed time: " << dd_instance.get_relaxed_dd_builder_time() << endl; 
 
     Graph post_graph = dd_instance.get_desition_diagram();

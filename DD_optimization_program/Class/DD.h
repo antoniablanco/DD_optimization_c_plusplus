@@ -49,7 +49,7 @@ public:
 
 private:
 
-    Graph create_desition_diagram(const bool verbose = false);
+    void create_desition_diagram(const bool verbose = false);
     Graph graph_DD;
 
     chrono::duration<double>  dd_builder_time = chrono::duration<double>(0);
