@@ -1,14 +1,5 @@
 
 #include "DD.h"
-#include "Node.h"
-#include "Arc.h"
-#include "Graph.h"
-#include "DDBuilder.h"
-#include "RestrictedDDBuilder.h"
-#include "RelaxedDDBuilder.h"
-#include "ReduceDDBuilder.h"
-
-#include <thread>
 
 
 DD::DD(AbstractProblem& problem, const bool verbose) : 
@@ -105,3 +96,6 @@ unique_ptr<Graph> DD::get_desition_diagram_copy() {
     return graphCopy;
 }
 
+void DD::export_graph_file(string file_name) {
+    GraphFile graphFile(file_name, graph_DD);
+}

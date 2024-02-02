@@ -10,9 +10,18 @@
 #include <set>
 #include <chrono>
 #include <memory>
+#include <thread>
 
-#include "Problems/AbstractProblemClass.h"
-#include "DDStructure/Graph.h"
+#include "AbstractProblemClass.h"
+#include "Graph.h"
+#include "GraphFile.h"
+#include "Node.h"
+#include "Arc.h"
+#include "Graph.h"
+#include "DDBuilder.h"
+#include "RestrictedDDBuilder.h"
+#include "RelaxedDDBuilder.h"
+#include "ReduceDDBuilder.h"
 
 using namespace std;
 
