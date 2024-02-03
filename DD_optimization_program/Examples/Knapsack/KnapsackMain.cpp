@@ -34,7 +34,7 @@ int main() {
     
 
     // Tiempos:
-    // Creación dd: 67.789444/ 66.876237 segundos en c++ y en python fue: 51.712515115737915/ 55.72262930870056 
+    // Creación dd: 67.789444 en c++ y en python fue: 51.712515115737915
     // Reduce dd: 40.130613
     // Restricted dd: 0.19868
     // Relaxed dd: 65.879433
@@ -89,7 +89,7 @@ int main() {
     Graph post_graph = dd_instance.get_desition_diagram();
     cout << "Nodes: " << post_graph.nodes.size() << endl;
 
-    //dd_instance.export_graph_file("knapsack_file");
+    dd_instance.export_graph_file("knapsack_file");
 
     
     
@@ -101,8 +101,8 @@ int main() {
     objective_function_instance.set_objective_function(linear_objective_instance);
     objective_function_instance.solve_dd();
     cout << objective_function_instance.get_the_solution().value<< endl;
-    cout << objective_function_instance.get_the_solution().path<< endl;
-    
+    //cout << objective_function_instance.get_the_solution().path<< endl;
+    cout << "LinearDp time: " << objective_function_instance.get_time() << endl;
    
     return 0;
 }

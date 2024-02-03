@@ -589,6 +589,30 @@ Examples/IndependentSet/IndependentSetMain.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/IndependentSet.dir/build.make CMakeFiles/IndependentSet.dir/Examples/IndependentSet/IndependentSetMain.cpp.s
 .PHONY : Examples/IndependentSet/IndependentSetMain.cpp.s
 
+Examples/IndependentSet/IndependentSetProblem.o: Examples/IndependentSet/IndependentSetProblem.cpp.o
+.PHONY : Examples/IndependentSet/IndependentSetProblem.o
+
+# target to build an object file
+Examples/IndependentSet/IndependentSetProblem.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/IndependentSet.dir/build.make CMakeFiles/IndependentSet.dir/Examples/IndependentSet/IndependentSetProblem.cpp.o
+.PHONY : Examples/IndependentSet/IndependentSetProblem.cpp.o
+
+Examples/IndependentSet/IndependentSetProblem.i: Examples/IndependentSet/IndependentSetProblem.cpp.i
+.PHONY : Examples/IndependentSet/IndependentSetProblem.i
+
+# target to preprocess a source file
+Examples/IndependentSet/IndependentSetProblem.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/IndependentSet.dir/build.make CMakeFiles/IndependentSet.dir/Examples/IndependentSet/IndependentSetProblem.cpp.i
+.PHONY : Examples/IndependentSet/IndependentSetProblem.cpp.i
+
+Examples/IndependentSet/IndependentSetProblem.s: Examples/IndependentSet/IndependentSetProblem.cpp.s
+.PHONY : Examples/IndependentSet/IndependentSetProblem.s
+
+# target to generate assembly for a file
+Examples/IndependentSet/IndependentSetProblem.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/IndependentSet.dir/build.make CMakeFiles/IndependentSet.dir/Examples/IndependentSet/IndependentSetProblem.cpp.s
+.PHONY : Examples/IndependentSet/IndependentSetProblem.cpp.s
+
 Examples/Knapsack/KnapsackMain.o: Examples/Knapsack/KnapsackMain.cpp.o
 .PHONY : Examples/Knapsack/KnapsackMain.o
 
@@ -660,6 +684,30 @@ Examples/SetCovering/SetCoveringMain.s: Examples/SetCovering/SetCoveringMain.cpp
 Examples/SetCovering/SetCoveringMain.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SetCovering.dir/build.make CMakeFiles/SetCovering.dir/Examples/SetCovering/SetCoveringMain.cpp.s
 .PHONY : Examples/SetCovering/SetCoveringMain.cpp.s
+
+Examples/SetCovering/SetCoveringProblem.o: Examples/SetCovering/SetCoveringProblem.cpp.o
+.PHONY : Examples/SetCovering/SetCoveringProblem.o
+
+# target to build an object file
+Examples/SetCovering/SetCoveringProblem.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SetCovering.dir/build.make CMakeFiles/SetCovering.dir/Examples/SetCovering/SetCoveringProblem.cpp.o
+.PHONY : Examples/SetCovering/SetCoveringProblem.cpp.o
+
+Examples/SetCovering/SetCoveringProblem.i: Examples/SetCovering/SetCoveringProblem.cpp.i
+.PHONY : Examples/SetCovering/SetCoveringProblem.i
+
+# target to preprocess a source file
+Examples/SetCovering/SetCoveringProblem.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SetCovering.dir/build.make CMakeFiles/SetCovering.dir/Examples/SetCovering/SetCoveringProblem.cpp.i
+.PHONY : Examples/SetCovering/SetCoveringProblem.cpp.i
+
+Examples/SetCovering/SetCoveringProblem.s: Examples/SetCovering/SetCoveringProblem.cpp.s
+.PHONY : Examples/SetCovering/SetCoveringProblem.s
+
+# target to generate assembly for a file
+Examples/SetCovering/SetCoveringProblem.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SetCovering.dir/build.make CMakeFiles/SetCovering.dir/Examples/SetCovering/SetCoveringProblem.cpp.s
+.PHONY : Examples/SetCovering/SetCoveringProblem.cpp.s
 
 Exceptions/MyExceptions.o: Exceptions/MyExceptions.cpp.o
 .PHONY : Exceptions/MyExceptions.o
@@ -749,6 +797,9 @@ help:
 	@echo "... Examples/IndependentSet/IndependentSetMain.o"
 	@echo "... Examples/IndependentSet/IndependentSetMain.i"
 	@echo "... Examples/IndependentSet/IndependentSetMain.s"
+	@echo "... Examples/IndependentSet/IndependentSetProblem.o"
+	@echo "... Examples/IndependentSet/IndependentSetProblem.i"
+	@echo "... Examples/IndependentSet/IndependentSetProblem.s"
 	@echo "... Examples/Knapsack/KnapsackMain.o"
 	@echo "... Examples/Knapsack/KnapsackMain.i"
 	@echo "... Examples/Knapsack/KnapsackMain.s"
@@ -758,6 +809,9 @@ help:
 	@echo "... Examples/SetCovering/SetCoveringMain.o"
 	@echo "... Examples/SetCovering/SetCoveringMain.i"
 	@echo "... Examples/SetCovering/SetCoveringMain.s"
+	@echo "... Examples/SetCovering/SetCoveringProblem.o"
+	@echo "... Examples/SetCovering/SetCoveringProblem.i"
+	@echo "... Examples/SetCovering/SetCoveringProblem.s"
 	@echo "... Exceptions/MyExceptions.o"
 	@echo "... Exceptions/MyExceptions.i"
 	@echo "... Exceptions/MyExceptions.s"

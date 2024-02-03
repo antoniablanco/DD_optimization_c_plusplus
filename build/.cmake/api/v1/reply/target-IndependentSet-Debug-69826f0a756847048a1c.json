@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "Knapsack"
+			"path" : "IndependentSet"
 		}
 	],
 	"backtrace" : 1,
@@ -25,19 +25,19 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 60,
+				"line" : 63,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 66,
+				"line" : 72,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 67,
+				"line" : 73,
 				"parent" : 0
 			}
 		]
@@ -110,7 +110,7 @@
 			"sourceIndexes" : 
 			[
 				0,
-				1
+				2
 			]
 		}
 	],
@@ -118,14 +118,14 @@
 	[
 		{
 			"backtrace" : 2,
-			"id" : "Exceptions::@6890427a1f51a3e7e1df"
+			"id" : "Class::@6890427a1f51a3e7e1df"
 		},
 		{
 			"backtrace" : 2,
-			"id" : "Class::@6890427a1f51a3e7e1df"
+			"id" : "Exceptions::@6890427a1f51a3e7e1df"
 		}
 	],
-	"id" : "Knapsack::@6890427a1f51a3e7e1df",
+	"id" : "IndependentSet::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -151,8 +151,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "Knapsack",
-	"nameOnDisk" : "Knapsack",
+	"name" : "IndependentSet",
+	"nameOnDisk" : "IndependentSet",
 	"paths" : 
 	{
 		"build" : ".",
@@ -165,14 +165,14 @@
 			"sourceIndexes" : 
 			[
 				0,
-				1
+				2
 			]
 		},
 		{
 			"name" : "Header Files",
 			"sourceIndexes" : 
 			[
-				2
+				1
 			]
 		}
 	],
@@ -181,19 +181,19 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Examples/Knapsack/KnapsackMain.cpp",
+			"path" : "Examples/IndependentSet/IndependentSetMain.cpp",
 			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Examples/IndependentSet/IndependentSetProblem.h",
+			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Examples/Knapsack/KnapsackProblem.cpp",
+			"path" : "Examples/IndependentSet/IndependentSetProblem.cpp",
 			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Examples/Knapsack/KnapsackProblem.h",
-			"sourceGroupIndex" : 1
 		}
 	],
 	"type" : "EXECUTABLE"

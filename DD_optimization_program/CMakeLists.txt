@@ -60,13 +60,19 @@ target_include_directories(Exceptions PUBLIC Exceptions)
 add_executable(Knapsack Examples/Knapsack/KnapsackMain.cpp
         Examples/Knapsack/KnapsackProblem.cpp
         Examples/Knapsack/KnapsackProblem.h)
-add_executable(IndependentSet Examples/IndependentSet/IndependentSetMain.cpp)
-add_executable(SetCovering Examples/SetCovering/SetCoveringMain.cpp)
+add_executable(IndependentSet Examples/IndependentSet/IndependentSetMain.cpp
+        Examples/IndependentSet/IndependentSetProblem.h
+        Examples/IndependentSet/IndependentSetProblem.cpp)
+add_executable(SetCovering Examples/SetCovering/SetCoveringMain.cpp
+        Examples/SetCovering/SetCoveringProblem.cpp
+        Examples/SetCovering/SetCoveringProblem.h)
 
 target_link_libraries(Knapsack PRIVATE Class)
 target_link_libraries(Knapsack PRIVATE Exceptions)
 target_link_libraries(IndependentSet PRIVATE Class)
+target_link_libraries(IndependentSet PRIVATE Exceptions)
 target_link_libraries(SetCovering PRIVATE Class)
+target_link_libraries(SetCovering PRIVATE Exceptions)
 
 target_link_libraries(Class PRIVATE Exceptions)
 

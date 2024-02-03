@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/SetCovering.dir/Examples/SetCovering/SetCoveringMain.cpp.o"
   "CMakeFiles/SetCovering.dir/Examples/SetCovering/SetCoveringMain.cpp.o.d"
+  "CMakeFiles/SetCovering.dir/Examples/SetCovering/SetCoveringProblem.cpp.o"
+  "CMakeFiles/SetCovering.dir/Examples/SetCovering/SetCoveringProblem.cpp.o.d"
   "SetCovering"
   "SetCovering.pdb"
 )

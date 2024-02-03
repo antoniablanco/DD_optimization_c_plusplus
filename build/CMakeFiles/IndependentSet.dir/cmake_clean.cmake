@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/IndependentSet.dir/Examples/IndependentSet/IndependentSetMain.cpp.o"
   "CMakeFiles/IndependentSet.dir/Examples/IndependentSet/IndependentSetMain.cpp.o.d"
+  "CMakeFiles/IndependentSet.dir/Examples/IndependentSet/IndependentSetProblem.cpp.o"
+  "CMakeFiles/IndependentSet.dir/Examples/IndependentSet/IndependentSetProblem.cpp.o.d"
   "IndependentSet"
   "IndependentSet.pdb"
 )
