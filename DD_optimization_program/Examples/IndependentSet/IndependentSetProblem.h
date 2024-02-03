@@ -11,12 +11,13 @@
 #include <map>
 #include <cassert>
 #include <set>
+#include <unordered_set>
 
 using namespace std;
 
 class IndependentSetProblem : public AbstractProblem {
 public:
-    IndependentSetProblem(vector<int>& initial_state, const vector<pair<string, vector<int>>>& variables, 
+    IndependentSetProblem(vector<int>& initial_state, vector<pair<string, vector<int>>>& variables, 
     map<string, vector<int>> dict_node_neighbors);
 
     bool equals(const vector<int>& state_one, const vector<int>& state_two) const override;
@@ -27,10 +28,12 @@ public:
 
 private:
     map<string, vector<int>> dict_node_neighbors;
-    void check_atributes(const vector<pair<string, vector<int>>>& variables);
-    void check_same_variables(const vector<pair<string, vector<int>>>& variables);
-    void check_neighbors_must_be_integers();
+    void check_atributes(vector<pair<string, vector<int>>>& variables);
+    void check_same_variables(vector<pair<string, vector<int>>>& variables);
     void check_consistent_dictionary_of_neighbors();
+    vector<string> keysToVector(const map<std::string, vector<int>>& variables);
+    vector<string> keysOfVector(vector<pair<string, vector<int>>>& variables);
+    bool isNeighborConsistent(const string& key, int value);
 
 };
 

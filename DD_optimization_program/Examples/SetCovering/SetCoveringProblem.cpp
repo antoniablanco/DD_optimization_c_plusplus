@@ -17,10 +17,10 @@ void SetCoveringProblem::check_atributes(const vector<pair<string, vector<int>>>
     }
 
 void SetCoveringProblem::check_same_len_matrix_and_right_side(vector<int>& initial_state) {
-        assert(matrix_of_wheight.size() == right_side_of_restrictions.size() && "matrix_of_wheight and right_side_of_restrictions must have the same length");
-        
-        assert((initial_state.size() == right_side_of_restrictions.size() || initial_state.size() == 2 * right_side_of_restrictions.size()) &&
-               "initial_state and right_side_of_restrictions must have the same length");
+    assert(matrix_of_wheight.size() == right_side_of_restrictions.size() && "matrix_of_wheight and right_side_of_restrictions must have the same length");
+    
+    assert((initial_state.size() == right_side_of_restrictions.size() || initial_state.size() == 2 * right_side_of_restrictions.size()) &&
+            "initial_state and right_side_of_restrictions must have the same length");
     }
 
 void SetCoveringProblem::check_same_len_rows_matrix_and_variables(const vector<pair<string, vector<int>>>& variables) {
