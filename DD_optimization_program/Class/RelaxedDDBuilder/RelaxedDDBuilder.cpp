@@ -9,7 +9,8 @@ using namespace std;
 
 
 RelaxedDDBuilder::RelaxedDDBuilder(AbstractProblem& problem, int max_width) : 
-AbstractDDBuilder(problem), max_width(max_width) {}
+AbstractDDBuilder(problem), max_width(max_width) {
+}
 
 void RelaxedDDBuilder::specific_layer_function() {
     merge_nodes_when_width_is_greater_than_w();
@@ -20,11 +21,12 @@ void RelaxedDDBuilder::specific_final_function() {
 }
 
 void RelaxedDDBuilder::merge_nodes_when_width_is_greater_than_w() {
-    if (width_is_greater_than_w()) {
+    while (width_is_greater_than_w()) {
         vector<Node*> ordered_nodes = graph->structure.back();
-        sort(ordered_nodes.begin(), ordered_nodes.end(), [this](Node* node1, Node* node2) {
-            return problem.get_priority_for_discard_node(node1->state) <
-                    problem.get_priority_for_discard_node(node2->state);
+        
+        sort(ordered_nodes.begin(), ordered_nodes.end(), [&](const Node* node1, const Node* node2) {
+            return problem.get_priority_for_merge_nodes(node1->id, node1->state) >
+                problem.get_priority_for_merge_nodes(node2->id, node2->state);
         });
 
         merge_nodes(ordered_nodes[0], ordered_nodes[1]);

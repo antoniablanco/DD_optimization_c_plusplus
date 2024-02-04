@@ -77,13 +77,13 @@ int main() {
     cout << "Nodes: " << pre_graph.nodes.size() << endl;
     cout << "Creation Time: " << dd_instance.get_dd_builder_time() << endl;
 
-    dd_instance.create_reduce_desition_diagram(false);
+    //dd_instance.create_reduce_desition_diagram(false);
     cout << "Reduce time: " << dd_instance.get_reduce_dd_builder_time() << endl; 
 
-    dd_instance.create_restricted_desition_diagram(3 ,false);
+    //dd_instance.create_restricted_desition_diagram(3 ,false);
     cout << "Restricted time: " << dd_instance.get_restricted_dd_builder_time() << endl; 
     
-    dd_instance.create_relaxed_desition_diagram(3, false);
+    dd_instance.create_relaxed_desition_diagram(3, true);
     cout << "Relaxed time: " << dd_instance.get_relaxed_dd_builder_time() << endl; 
 
     Graph post_graph = dd_instance.get_desition_diagram();
@@ -91,7 +91,6 @@ int main() {
 
     dd_instance.export_graph_file("knapsack_file");
 
-    
     
     // Resolución del diagrama
     vector<int> objective_weights = {-5, 1, 18, 17};
@@ -101,7 +100,7 @@ int main() {
     objective_function_instance.set_objective_function(linear_objective_instance);
     objective_function_instance.solve_dd();
     cout << objective_function_instance.get_the_solution().value<< endl;
-    //cout << objective_function_instance.get_the_solution().path<< endl;
+    cout << objective_function_instance.get_the_solution().path<< endl;
     cout << "LinearDp time: " << objective_function_instance.get_time() << endl;
    
     return 0;

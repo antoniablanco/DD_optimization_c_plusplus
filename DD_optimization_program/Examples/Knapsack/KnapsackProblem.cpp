@@ -69,7 +69,7 @@ int KnapsackProblem::get_priority_for_merge_nodes(const int node_id, const vecto
     if (state[0] != state[1]) {
         return -500;
         }
-    return -int(node_id);
+    return -node_id;
 }
 
 const vector<int> KnapsackProblem::merge_operator(const vector<int>& state_one, const vector<int>& state_two) const {
