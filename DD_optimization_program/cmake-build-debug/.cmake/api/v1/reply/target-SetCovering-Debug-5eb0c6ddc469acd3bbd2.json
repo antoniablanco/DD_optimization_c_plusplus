@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "Knapsack"
+			"path" : "SetCovering"
 		}
 	],
 	"backtrace" : 1,
@@ -25,19 +25,19 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 38,
+				"line" : 66,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 44,
+				"line" : 74,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 45,
+				"line" : 75,
 				"parent" : 0
 			}
 		]
@@ -59,7 +59,19 @@
 				},
 				{
 					"backtrace" : 2,
+					"path" : "/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/AnswerStructure"
+				},
+				{
+					"backtrace" : 2,
 					"path" : "/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDStructure"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/GraphVisualization"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/ObjectiveFunction"
 				},
 				{
 					"backtrace" : 2,
@@ -68,6 +80,18 @@
 				{
 					"backtrace" : 2,
 					"path" : "/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDBuilder"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/RestrictedDDBuilder"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/RelaxedDDBuilder"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/ReduceDDBuilder"
 				},
 				{
 					"backtrace" : 3,
@@ -97,11 +121,11 @@
 			"id" : "Class::@6890427a1f51a3e7e1df"
 		},
 		{
-			"backtrace" : 3,
+			"backtrace" : 2,
 			"id" : "Exceptions::@6890427a1f51a3e7e1df"
 		}
 	],
-	"id" : "Knapsack::@6890427a1f51a3e7e1df",
+	"id" : "SetCovering::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -127,8 +151,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "Knapsack",
-	"nameOnDisk" : "Knapsack",
+	"name" : "SetCovering",
+	"nameOnDisk" : "SetCovering",
 	"paths" : 
 	{
 		"build" : ".",
@@ -157,18 +181,18 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Examples/Knapsack/KnapsackMain.cpp",
+			"path" : "Examples/SetCovering/SetCoveringMain.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Examples/Knapsack/KnapsackProblem.cpp",
+			"path" : "Examples/SetCovering/SetCoveringProblem.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"path" : "Examples/Knapsack/KnapsackProblem.h",
+			"path" : "Examples/SetCovering/SetCoveringProblem.h",
 			"sourceGroupIndex" : 1
 		}
 	],

@@ -56,7 +56,7 @@ int main() {
     Graph post_graph = dd_instance.get_desition_diagram();
     cout << "Nodes: " << post_graph.nodes.size() << endl;
 
-    dd_instance.export_graph_file("knapsack_file");
+    dd_instance.export_graph_file("set_covering_file");
 
     
     

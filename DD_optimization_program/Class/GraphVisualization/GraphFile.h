@@ -17,19 +17,40 @@ namespace fs = std::filesystem;
 
 using namespace std;
 
+/**
+ * @brief Clase que representa un archivo de grafo.
+ */
 class GraphFile {
 public:
-    GraphFile() = default;
+    /**
+     * @brief Constructor de la clase GraphFile.
+     * @param file_name Nombre del archivo de grafo.
+     * @param graph Grafo que se va a escribir en el archivo.
+     */
     GraphFile(string file_name, Graph& graph);
+
+    /**
+     * @brief Constructor por defecto de la clase GraphFile.
+     */
+    GraphFile() = default;
+
+    /**
+     * @brief Escribe el grafo en el archivo.
+     */
     ~GraphFile() = default;
 
 private:
-    string file_name;
-    Graph graph;
-    bool is_graph_binary;
-    ofstream* bdd_file;
+    string file_name; /**< Nombre del archivo de grafo. */
+    Graph graph; /**< Grafo que se va a escribir en el archivo. */
+    bool is_graph_binary; /**< Indica si el grafo es binario. */
+    ofstream* bdd_file; /**< Puntero al archivo de grafo. */
     
+    /**
+     * @brief Crea el archivo de grafo.
+     */
     void create_gml_file();
+
+    // Métodos que trabajan a partir de la estructura de nodos del grafo para representarlos en el archivo .gml
     void start_file();
     void add_nodes_and_arcs();
     bool check_if_graph_is_binary();

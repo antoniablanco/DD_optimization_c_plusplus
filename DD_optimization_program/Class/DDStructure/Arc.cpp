@@ -15,3 +15,4 @@ bool Arc::operator==(const Arc &other) const {
     return out_node->id == other.out_node->id and in_node->id == other.in_node->id and
            variable_value == other.variable_value and variable_id == other.variable_id;
 }
+

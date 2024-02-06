@@ -36,7 +36,7 @@ string ObjectiveFunction::get_time() {
 }
 
 ObjectiveStruct ObjectiveFunction::get_the_solution() {
-    if (answer.path != "") {
+    if (answer.value != -111111) {
         return answer;
     } else {
         cout << "No se ha resuelto el diagrama de decisión" << endl;

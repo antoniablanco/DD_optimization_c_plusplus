@@ -49,15 +49,14 @@ int main() {
     dd_instance.create_restricted_desition_diagram(2 ,false);
     cout << "Restricted time: " << dd_instance.get_restricted_dd_builder_time() << endl; 
     
-    dd_instance.create_relaxed_desition_diagram(2, true);
+    dd_instance.create_relaxed_desition_diagram(2, false);
     cout << "Relaxed time: " << dd_instance.get_relaxed_dd_builder_time() << endl; 
 
     Graph post_graph = dd_instance.get_desition_diagram();
     cout << "Nodes: " << post_graph.nodes.size() << endl;
 
-    dd_instance.export_graph_file("knapsack_file");
+    dd_instance.export_graph_file("independent_set_file");
 
-    
     
     // Resolución del diagrama
     vector<int> objective_weights = {3, 4, 2, 2, 7, 1};
