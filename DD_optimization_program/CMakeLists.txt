@@ -3,6 +3,8 @@ project(DD_optimization_program)
 
 set(CMAKE_CXX_STANDARD 20)
 
+add_subdirectory(lib/googletest)
+
 set(CLASS_SOURCE
         Class/AnswerStructure/ObjectiveStructure.h
         Class/AnswerStructure/ObjectiveStructure.cpp
@@ -42,20 +44,36 @@ set(EXCEPTIONS_SOURCE
         Exceptions/MyExceptions.h
         Exceptions/MyExceptions.cpp)
 
+set(PROBLEMS_SOURCE
+        Examples/Knapsack/KnapsackProblem.h
+        Examples/Knapsack/KnapsackProblem.cpp
+        Examples/IndependentSet/IndependentSetProblem.h
+        Examples/IndependentSet/IndependentSetProblem.cpp
+        Examples/SetCovering/SetCoveringProblem.h
+        Examples/SetCovering/SetCoveringProblem.cpp)
+
 add_library(Class ${CLASS_SOURCE})
 add_library(Exceptions ${EXCEPTIONS_SOURCE})
+add_library(Problems ${PROBLEMS_SOURCE})
 
-target_include_directories(Class PUBLIC Class)
-target_include_directories(Class PUBLIC Class/AnswerStructure)
-target_include_directories(Class PUBLIC Class/DDStructure)
-target_include_directories(Class PUBLIC Class/GraphVisualization)
-target_include_directories(Class PUBLIC Class/ObjectiveFunction)
-target_include_directories(Class PUBLIC Class/Problems)
-target_include_directories(Class PUBLIC Class/DDBuilder)
-target_include_directories(Class PUBLIC Class/RestrictedDDBuilder)
-target_include_directories(Class PUBLIC Class/RelaxedDDBuilder)
-target_include_directories(Class PUBLIC Class/ReduceDDBuilder)
-target_include_directories(Exceptions PUBLIC Exceptions)
+target_include_directories(Class
+    PUBLIC
+    Class
+    Class/AnswerStructure
+    Class/DDStructure
+    Class/GraphVisualization
+    Class/ObjectiveFunction
+    Class/Problems
+    Class/DDBuilder
+    Class/RestrictedDDBuilder
+    Class/RelaxedDDBuilder
+    Class/ReduceDDBuilder
+)
+
+target_include_directories(Exceptions 
+        PUBLIC 
+        Exceptions)
+target_include_directories(Problems PUBLIC Problems)
 
 add_executable(Knapsack Examples/Knapsack/KnapsackMain.cpp
         Examples/Knapsack/KnapsackProblem.cpp
@@ -67,12 +85,21 @@ add_executable(SetCovering Examples/SetCovering/SetCoveringMain.cpp
         Examples/SetCovering/SetCoveringProblem.cpp
         Examples/SetCovering/SetCoveringProblem.h)
 
-target_link_libraries(Knapsack PRIVATE Class)
-target_link_libraries(Knapsack PRIVATE Exceptions)
-target_link_libraries(IndependentSet PRIVATE Class)
-target_link_libraries(IndependentSet PRIVATE Exceptions)
-target_link_libraries(SetCovering PRIVATE Class)
-target_link_libraries(SetCovering PRIVATE Exceptions)
-
+target_link_libraries(Knapsack PRIVATE Class Exceptions)
+target_link_libraries(IndependentSet PRIVATE Class Exceptions)
+target_link_libraries(SetCovering PRIVATE Class Exceptions)
 target_link_libraries(Class PRIVATE Exceptions)
+target_link_libraries(Problems PRIVATE Class Exceptions)
+
+add_executable(DD_optimization_program_tests
+    Test/test_ProblemKnapsack.cpp
+)
+target_link_libraries(DD_optimization_program_tests PRIVATE 
+                        Class 
+                        Exceptions 
+                        gtest_main 
+                        Problems)
+
+include(GoogleTest)
+gtest_discover_tests(DD_optimization_program_tests)
 

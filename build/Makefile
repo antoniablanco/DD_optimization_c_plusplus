@@ -85,6 +85,51 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"gmock\" \"gtest\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+.PHONY : list_install_components/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
+	/usr/local/Cellar/cmake/3.28.1/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
+	/usr/local/Cellar/cmake/3.28.1/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
+	/usr/local/Cellar/cmake/3.28.1/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
+	/usr/local/Cellar/cmake/3.28.1/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
+	/usr/local/Cellar/cmake/3.28.1/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
+	/usr/local/Cellar/cmake/3.28.1/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
 # The main all target
 all: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniablanco/Desktop/DD_optimization_c-/build/CMakeFiles /Users/antoniablanco/Desktop/DD_optimization_c-/build//CMakeFiles/progress.marks
@@ -143,6 +188,19 @@ Exceptions/fast:
 .PHONY : Exceptions/fast
 
 #=============================================================================
+# Target rules for targets named Problems
+
+# Build rule for target.
+Problems: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Problems
+.PHONY : Problems
+
+# fast build rule for target.
+Problems/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Problems.dir/build.make CMakeFiles/Problems.dir/build
+.PHONY : Problems/fast
+
+#=============================================================================
 # Target rules for targets named Knapsack
 
 # Build rule for target.
@@ -180,6 +238,71 @@ SetCovering: cmake_check_build_system
 SetCovering/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SetCovering.dir/build.make CMakeFiles/SetCovering.dir/build
 .PHONY : SetCovering/fast
+
+#=============================================================================
+# Target rules for targets named DD_optimization_program_tests
+
+# Build rule for target.
+DD_optimization_program_tests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 DD_optimization_program_tests
+.PHONY : DD_optimization_program_tests
+
+# fast build rule for target.
+DD_optimization_program_tests/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DD_optimization_program_tests.dir/build.make CMakeFiles/DD_optimization_program_tests.dir/build
+.PHONY : DD_optimization_program_tests/fast
+
+#=============================================================================
+# Target rules for targets named gmock
+
+# Build rule for target.
+gmock: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gmock
+.PHONY : gmock
+
+# fast build rule for target.
+gmock/fast:
+	$(MAKE) $(MAKESILENT) -f lib/googletest/googlemock/CMakeFiles/gmock.dir/build.make lib/googletest/googlemock/CMakeFiles/gmock.dir/build
+.PHONY : gmock/fast
+
+#=============================================================================
+# Target rules for targets named gmock_main
+
+# Build rule for target.
+gmock_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gmock_main
+.PHONY : gmock_main
+
+# fast build rule for target.
+gmock_main/fast:
+	$(MAKE) $(MAKESILENT) -f lib/googletest/googlemock/CMakeFiles/gmock_main.dir/build.make lib/googletest/googlemock/CMakeFiles/gmock_main.dir/build
+.PHONY : gmock_main/fast
+
+#=============================================================================
+# Target rules for targets named gtest
+
+# Build rule for target.
+gtest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gtest
+.PHONY : gtest
+
+# fast build rule for target.
+gtest/fast:
+	$(MAKE) $(MAKESILENT) -f lib/googletest/googletest/CMakeFiles/gtest.dir/build.make lib/googletest/googletest/CMakeFiles/gtest.dir/build
+.PHONY : gtest/fast
+
+#=============================================================================
+# Target rules for targets named gtest_main
+
+# Build rule for target.
+gtest_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gtest_main
+.PHONY : gtest_main
+
+# fast build rule for target.
+gtest_main/fast:
+	$(MAKE) $(MAKESILENT) -f lib/googletest/googletest/CMakeFiles/gtest_main.dir/build.make lib/googletest/googletest/CMakeFiles/gtest_main.dir/build
+.PHONY : gtest_main/fast
 
 Class/AnswerStructure/ObjectiveStructure.o: Class/AnswerStructure/ObjectiveStructure.cpp.o
 .PHONY : Class/AnswerStructure/ObjectiveStructure.o
@@ -594,6 +717,7 @@ Examples/IndependentSet/IndependentSetProblem.o: Examples/IndependentSet/Indepen
 
 # target to build an object file
 Examples/IndependentSet/IndependentSetProblem.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Problems.dir/build.make CMakeFiles/Problems.dir/Examples/IndependentSet/IndependentSetProblem.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/IndependentSet.dir/build.make CMakeFiles/IndependentSet.dir/Examples/IndependentSet/IndependentSetProblem.cpp.o
 .PHONY : Examples/IndependentSet/IndependentSetProblem.cpp.o
 
@@ -602,6 +726,7 @@ Examples/IndependentSet/IndependentSetProblem.i: Examples/IndependentSet/Indepen
 
 # target to preprocess a source file
 Examples/IndependentSet/IndependentSetProblem.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Problems.dir/build.make CMakeFiles/Problems.dir/Examples/IndependentSet/IndependentSetProblem.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/IndependentSet.dir/build.make CMakeFiles/IndependentSet.dir/Examples/IndependentSet/IndependentSetProblem.cpp.i
 .PHONY : Examples/IndependentSet/IndependentSetProblem.cpp.i
 
@@ -610,6 +735,7 @@ Examples/IndependentSet/IndependentSetProblem.s: Examples/IndependentSet/Indepen
 
 # target to generate assembly for a file
 Examples/IndependentSet/IndependentSetProblem.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Problems.dir/build.make CMakeFiles/Problems.dir/Examples/IndependentSet/IndependentSetProblem.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/IndependentSet.dir/build.make CMakeFiles/IndependentSet.dir/Examples/IndependentSet/IndependentSetProblem.cpp.s
 .PHONY : Examples/IndependentSet/IndependentSetProblem.cpp.s
 
@@ -642,6 +768,7 @@ Examples/Knapsack/KnapsackProblem.o: Examples/Knapsack/KnapsackProblem.cpp.o
 
 # target to build an object file
 Examples/Knapsack/KnapsackProblem.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Problems.dir/build.make CMakeFiles/Problems.dir/Examples/Knapsack/KnapsackProblem.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Knapsack.dir/build.make CMakeFiles/Knapsack.dir/Examples/Knapsack/KnapsackProblem.cpp.o
 .PHONY : Examples/Knapsack/KnapsackProblem.cpp.o
 
@@ -650,6 +777,7 @@ Examples/Knapsack/KnapsackProblem.i: Examples/Knapsack/KnapsackProblem.cpp.i
 
 # target to preprocess a source file
 Examples/Knapsack/KnapsackProblem.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Problems.dir/build.make CMakeFiles/Problems.dir/Examples/Knapsack/KnapsackProblem.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Knapsack.dir/build.make CMakeFiles/Knapsack.dir/Examples/Knapsack/KnapsackProblem.cpp.i
 .PHONY : Examples/Knapsack/KnapsackProblem.cpp.i
 
@@ -658,6 +786,7 @@ Examples/Knapsack/KnapsackProblem.s: Examples/Knapsack/KnapsackProblem.cpp.s
 
 # target to generate assembly for a file
 Examples/Knapsack/KnapsackProblem.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Problems.dir/build.make CMakeFiles/Problems.dir/Examples/Knapsack/KnapsackProblem.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Knapsack.dir/build.make CMakeFiles/Knapsack.dir/Examples/Knapsack/KnapsackProblem.cpp.s
 .PHONY : Examples/Knapsack/KnapsackProblem.cpp.s
 
@@ -690,6 +819,7 @@ Examples/SetCovering/SetCoveringProblem.o: Examples/SetCovering/SetCoveringProbl
 
 # target to build an object file
 Examples/SetCovering/SetCoveringProblem.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Problems.dir/build.make CMakeFiles/Problems.dir/Examples/SetCovering/SetCoveringProblem.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SetCovering.dir/build.make CMakeFiles/SetCovering.dir/Examples/SetCovering/SetCoveringProblem.cpp.o
 .PHONY : Examples/SetCovering/SetCoveringProblem.cpp.o
 
@@ -698,6 +828,7 @@ Examples/SetCovering/SetCoveringProblem.i: Examples/SetCovering/SetCoveringProbl
 
 # target to preprocess a source file
 Examples/SetCovering/SetCoveringProblem.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Problems.dir/build.make CMakeFiles/Problems.dir/Examples/SetCovering/SetCoveringProblem.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SetCovering.dir/build.make CMakeFiles/SetCovering.dir/Examples/SetCovering/SetCoveringProblem.cpp.i
 .PHONY : Examples/SetCovering/SetCoveringProblem.cpp.i
 
@@ -706,6 +837,7 @@ Examples/SetCovering/SetCoveringProblem.s: Examples/SetCovering/SetCoveringProbl
 
 # target to generate assembly for a file
 Examples/SetCovering/SetCoveringProblem.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Problems.dir/build.make CMakeFiles/Problems.dir/Examples/SetCovering/SetCoveringProblem.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SetCovering.dir/build.make CMakeFiles/SetCovering.dir/Examples/SetCovering/SetCoveringProblem.cpp.s
 .PHONY : Examples/SetCovering/SetCoveringProblem.cpp.s
 
@@ -733,6 +865,30 @@ Exceptions/MyExceptions.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Exceptions.dir/build.make CMakeFiles/Exceptions.dir/Exceptions/MyExceptions.cpp.s
 .PHONY : Exceptions/MyExceptions.cpp.s
 
+Test/test_ProblemKnapsack.o: Test/test_ProblemKnapsack.cpp.o
+.PHONY : Test/test_ProblemKnapsack.o
+
+# target to build an object file
+Test/test_ProblemKnapsack.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DD_optimization_program_tests.dir/build.make CMakeFiles/DD_optimization_program_tests.dir/Test/test_ProblemKnapsack.cpp.o
+.PHONY : Test/test_ProblemKnapsack.cpp.o
+
+Test/test_ProblemKnapsack.i: Test/test_ProblemKnapsack.cpp.i
+.PHONY : Test/test_ProblemKnapsack.i
+
+# target to preprocess a source file
+Test/test_ProblemKnapsack.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DD_optimization_program_tests.dir/build.make CMakeFiles/DD_optimization_program_tests.dir/Test/test_ProblemKnapsack.cpp.i
+.PHONY : Test/test_ProblemKnapsack.cpp.i
+
+Test/test_ProblemKnapsack.s: Test/test_ProblemKnapsack.cpp.s
+.PHONY : Test/test_ProblemKnapsack.s
+
+# target to generate assembly for a file
+Test/test_ProblemKnapsack.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DD_optimization_program_tests.dir/build.make CMakeFiles/DD_optimization_program_tests.dir/Test/test_ProblemKnapsack.cpp.s
+.PHONY : Test/test_ProblemKnapsack.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -740,12 +896,22 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... install"
+	@echo "... install/local"
+	@echo "... install/strip"
+	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... Class"
+	@echo "... DD_optimization_program_tests"
 	@echo "... Exceptions"
 	@echo "... IndependentSet"
 	@echo "... Knapsack"
+	@echo "... Problems"
 	@echo "... SetCovering"
+	@echo "... gmock"
+	@echo "... gmock_main"
+	@echo "... gtest"
+	@echo "... gtest_main"
 	@echo "... Class/AnswerStructure/ObjectiveStructure.o"
 	@echo "... Class/AnswerStructure/ObjectiveStructure.i"
 	@echo "... Class/AnswerStructure/ObjectiveStructure.s"
@@ -815,6 +981,9 @@ help:
 	@echo "... Exceptions/MyExceptions.o"
 	@echo "... Exceptions/MyExceptions.i"
 	@echo "... Exceptions/MyExceptions.s"
+	@echo "... Test/test_ProblemKnapsack.o"
+	@echo "... Test/test_ProblemKnapsack.i"
+	@echo "... Test/test_ProblemKnapsack.s"
 .PHONY : help
 
 
