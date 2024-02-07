@@ -3,7 +3,12 @@ project(DD_optimization_program)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_subdirectory(lib/googletest)
+include(FetchContent)
+FetchContent_Declare(
+  googletest
+  URL https://github.com/google/googletest/archive/refs/tags/release-1.11.0.tar.gz
+)
+FetchContent_MakeAvailable(googletest)
 
 set(CLASS_SOURCE
         Class/AnswerStructure/ObjectiveStructure.h

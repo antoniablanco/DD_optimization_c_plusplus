@@ -354,7 +354,6 @@ CMakeFiles/DD_optimization_program_tests.dir/Test/test_ProblemKnapsack.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__fwd/hash.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__fwd/memory_resource.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__fwd/pair.h
- /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__fwd/span.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__fwd/string.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__fwd/string_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__fwd/subrange.h
@@ -630,7 +629,6 @@ CMakeFiles/DD_optimization_program_tests.dir/Test/test_ProblemKnapsack.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/cmath
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/compare
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/concepts
- /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/condition_variable
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/cstdarg
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/cstddef
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/cstdint
@@ -669,7 +667,6 @@ CMakeFiles/DD_optimization_program_tests.dir/Test/test_ProblemKnapsack.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/ostream
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/ratio
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/set
- /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/span
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/sstream
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/stddef.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/stdexcept
@@ -858,25 +855,24 @@ CMakeFiles/DD_optimization_program_tests.dir/Test/test_ProblemKnapsack.cpp.o
  /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/RelaxedDDBuilder/RelaxedDDBuilder.h
  /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/RestrictedDDBuilder/RestrictedDDBuilder.h
  /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Exceptions/MyExceptions.h
- /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/lib/googletest/googletest/include/gtest/gtest-assertion-result.h
- /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/lib/googletest/googletest/include/gtest/gtest-death-test.h
- /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/lib/googletest/googletest/include/gtest/gtest-matchers.h
- /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/lib/googletest/googletest/include/gtest/gtest-message.h
- /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/lib/googletest/googletest/include/gtest/gtest-param-test.h
- /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/lib/googletest/googletest/include/gtest/gtest-printers.h
- /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/lib/googletest/googletest/include/gtest/gtest-test-part.h
- /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/lib/googletest/googletest/include/gtest/gtest-typed-test.h
- /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/lib/googletest/googletest/include/gtest/gtest.h
- /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/lib/googletest/googletest/include/gtest/gtest_pred_impl.h
- /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/lib/googletest/googletest/include/gtest/gtest_prod.h
- /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/lib/googletest/googletest/include/gtest/internal/custom/gtest-port.h
- /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/lib/googletest/googletest/include/gtest/internal/custom/gtest-printers.h
- /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/lib/googletest/googletest/include/gtest/internal/gtest-death-test-internal.h
- /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/lib/googletest/googletest/include/gtest/internal/gtest-filepath.h
- /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/lib/googletest/googletest/include/gtest/internal/gtest-internal.h
- /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/lib/googletest/googletest/include/gtest/internal/gtest-param-util.h
- /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/lib/googletest/googletest/include/gtest/internal/gtest-port-arch.h
- /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/lib/googletest/googletest/include/gtest/internal/gtest-port.h
- /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/lib/googletest/googletest/include/gtest/internal/gtest-string.h
- /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/lib/googletest/googletest/include/gtest/internal/gtest-type-util.h
+ /Users/antoniablanco/Desktop/DD_optimization_c-/build/_deps/googletest-src/googletest/include/gtest/gtest-death-test.h
+ /Users/antoniablanco/Desktop/DD_optimization_c-/build/_deps/googletest-src/googletest/include/gtest/gtest-matchers.h
+ /Users/antoniablanco/Desktop/DD_optimization_c-/build/_deps/googletest-src/googletest/include/gtest/gtest-message.h
+ /Users/antoniablanco/Desktop/DD_optimization_c-/build/_deps/googletest-src/googletest/include/gtest/gtest-param-test.h
+ /Users/antoniablanco/Desktop/DD_optimization_c-/build/_deps/googletest-src/googletest/include/gtest/gtest-printers.h
+ /Users/antoniablanco/Desktop/DD_optimization_c-/build/_deps/googletest-src/googletest/include/gtest/gtest-test-part.h
+ /Users/antoniablanco/Desktop/DD_optimization_c-/build/_deps/googletest-src/googletest/include/gtest/gtest-typed-test.h
+ /Users/antoniablanco/Desktop/DD_optimization_c-/build/_deps/googletest-src/googletest/include/gtest/gtest.h
+ /Users/antoniablanco/Desktop/DD_optimization_c-/build/_deps/googletest-src/googletest/include/gtest/gtest_pred_impl.h
+ /Users/antoniablanco/Desktop/DD_optimization_c-/build/_deps/googletest-src/googletest/include/gtest/gtest_prod.h
+ /Users/antoniablanco/Desktop/DD_optimization_c-/build/_deps/googletest-src/googletest/include/gtest/internal/custom/gtest-port.h
+ /Users/antoniablanco/Desktop/DD_optimization_c-/build/_deps/googletest-src/googletest/include/gtest/internal/custom/gtest-printers.h
+ /Users/antoniablanco/Desktop/DD_optimization_c-/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-death-test-internal.h
+ /Users/antoniablanco/Desktop/DD_optimization_c-/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-filepath.h
+ /Users/antoniablanco/Desktop/DD_optimization_c-/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-internal.h
+ /Users/antoniablanco/Desktop/DD_optimization_c-/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-param-util.h
+ /Users/antoniablanco/Desktop/DD_optimization_c-/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-port-arch.h
+ /Users/antoniablanco/Desktop/DD_optimization_c-/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-port.h
+ /Users/antoniablanco/Desktop/DD_optimization_c-/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-string.h
+ /Users/antoniablanco/Desktop/DD_optimization_c-/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-type-util.h
 

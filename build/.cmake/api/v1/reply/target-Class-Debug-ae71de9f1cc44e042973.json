@@ -1,0 +1,375 @@
+{
+	"archive" : {},
+	"artifacts" : 
+	[
+		{
+			"path" : "libClass.a"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"target_link_libraries",
+			"target_include_directories"
+		],
+		"files" : 
+		[
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 60,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 96,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 64,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g -std=gnu++20 -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 3,
+					"path" : "/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/AnswerStructure"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDStructure"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/GraphVisualization"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/ObjectiveFunction"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/Problems"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDBuilder"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/RestrictedDDBuilder"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/RelaxedDDBuilder"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/ReduceDDBuilder"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Exceptions"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					1
+				],
+				"standard" : "20"
+			},
+			"sourceIndexes" : 
+			[
+				1,
+				3,
+				5,
+				6,
+				8,
+				10,
+				13,
+				15,
+				17,
+				19,
+				21,
+				22,
+				25,
+				27,
+				29,
+				31
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "Exceptions::@6890427a1f51a3e7e1df"
+		}
+	],
+	"id" : "Class::@6890427a1f51a3e7e1df",
+	"name" : "Class",
+	"nameOnDisk" : "libClass.a",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				0,
+				2,
+				4,
+				7,
+				9,
+				11,
+				12,
+				14,
+				16,
+				18,
+				20,
+				23,
+				24,
+				26,
+				28,
+				30
+			]
+		},
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				1,
+				3,
+				5,
+				6,
+				8,
+				10,
+				13,
+				15,
+				17,
+				19,
+				21,
+				22,
+				25,
+				27,
+				29,
+				31
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"path" : "Class/AnswerStructure/ObjectiveStructure.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Class/AnswerStructure/ObjectiveStructure.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Class/DDBuilder/AbstractDDBuilder.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Class/DDBuilder/AbstractDDBuilder.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Class/DDBuilder/DDBuilder.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Class/DDBuilder/DDBuilder.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Class/DDStructure/Arc.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Class/DDStructure/Arc.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Class/DDStructure/Node.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Class/DDStructure/Node.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Class/DDStructure/Graph.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Class/DDStructure/Graph.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Class/DDStructure/utils.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Class/DDStructure/utils.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Class/GraphVisualization/GraphFile.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Class/GraphVisualization/GraphFile.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Class/ObjectiveFunction/LinearObjectiveDP.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Class/ObjectiveFunction/LinearObjectiveDP.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Class/ObjectiveFunction/ObjectiveFunction.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Class/ObjectiveFunction/ObjectiveFunction.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Class/ObjectiveFunction/AbstractObjective.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Class/ObjectiveFunction/AbstractObjective.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Class/Problems/AbstractProblemClass.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Class/Problems/AbstractProblemClass.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Class/ReduceDDBuilder/ReduceDDBuilder.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Class/ReduceDDBuilder/ReduceDDBuilder.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Class/RestrictedDDBuilder/RestrictedDDBuilder.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Class/RestrictedDDBuilder/RestrictedDDBuilder.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Class/RelaxedDDBuilder/RelaxedDDBuilder.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Class/RelaxedDDBuilder/RelaxedDDBuilder.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Class/DD.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Class/DD.cpp",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}

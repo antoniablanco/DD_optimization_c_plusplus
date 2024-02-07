@@ -287,6 +287,26 @@ DD_optimization_program_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 DD_optimization_program_SOURCE_DIR:STATIC=/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program
 
+//Directory under which to collect all populated content
+FETCHCONTENT_BASE_DIR:PATH=/Users/antoniablanco/Desktop/DD_optimization_c-/build/_deps
+
+//Disables all attempts to download or update content and assumes
+// source dirs already exist
+FETCHCONTENT_FULLY_DISCONNECTED:BOOL=OFF
+
+//Enables QUIET option for all content population
+FETCHCONTENT_QUIET:BOOL=ON
+
+//When not empty, overrides where to find pre-populated content
+// for googletest
+FETCHCONTENT_SOURCE_DIR_GOOGLETEST:PATH=
+
+//Enables UPDATE_DISCONNECTED behavior for all content population
+FETCHCONTENT_UPDATES_DISCONNECTED:BOOL=OFF
+
+//Enables UPDATE_DISCONNECTED behavior just for population of googletest
+FETCHCONTENT_UPDATES_DISCONNECTED_GOOGLETEST:BOOL=OFF
+
 //Use Abseil and RE2. Requires Abseil and RE2 to be separately
 // added to the build.
 GTEST_HAS_ABSL:BOOL=OFF
@@ -296,34 +316,40 @@ GTEST_HAS_ABSL:BOOL=OFF
 INSTALL_GTEST:BOOL=ON
 
 //Value Computed by CMake
-gmock_BINARY_DIR:STATIC=/Users/antoniablanco/Desktop/DD_optimization_c-/build/lib/googletest/googlemock
+gmock_BINARY_DIR:STATIC=/Users/antoniablanco/Desktop/DD_optimization_c-/build/_deps/googletest-build/googlemock
 
 //Value Computed by CMake
 gmock_IS_TOP_LEVEL:STATIC=OFF
 
+//Dependencies for the target
+gmock_LIB_DEPENDS:STATIC=general;gtest;
+
 //Value Computed by CMake
-gmock_SOURCE_DIR:STATIC=/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/lib/googletest/googlemock
+gmock_SOURCE_DIR:STATIC=/Users/antoniablanco/Desktop/DD_optimization_c-/build/_deps/googletest-src/googlemock
 
 //Build all of Google Mock's own tests.
 gmock_build_tests:BOOL=OFF
 
+//Dependencies for the target
+gmock_main_LIB_DEPENDS:STATIC=general;gmock;
+
 //Value Computed by CMake
-googletest-distribution_BINARY_DIR:STATIC=/Users/antoniablanco/Desktop/DD_optimization_c-/build/lib/googletest
+googletest-distribution_BINARY_DIR:STATIC=/Users/antoniablanco/Desktop/DD_optimization_c-/build/_deps/googletest-build
 
 //Value Computed by CMake
 googletest-distribution_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-googletest-distribution_SOURCE_DIR:STATIC=/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/lib/googletest
+googletest-distribution_SOURCE_DIR:STATIC=/Users/antoniablanco/Desktop/DD_optimization_c-/build/_deps/googletest-src
 
 //Value Computed by CMake
-gtest_BINARY_DIR:STATIC=/Users/antoniablanco/Desktop/DD_optimization_c-/build/lib/googletest/googletest
+gtest_BINARY_DIR:STATIC=/Users/antoniablanco/Desktop/DD_optimization_c-/build/_deps/googletest-build/googletest
 
 //Value Computed by CMake
 gtest_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-gtest_SOURCE_DIR:STATIC=/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/lib/googletest/googletest
+gtest_SOURCE_DIR:STATIC=/Users/antoniablanco/Desktop/DD_optimization_c-/build/_deps/googletest-src/googletest
 
 //Build gtest's sample programs.
 gtest_build_samples:BOOL=OFF
@@ -340,6 +366,9 @@ gtest_force_shared_crt:BOOL=OFF
 
 //Build gtest with internal symbols hidden in shared libraries.
 gtest_hide_internal_symbols:BOOL=OFF
+
+//Dependencies for the target
+gtest_main_LIB_DEPENDS:STATIC=general;gtest;
 
 
 ########################
@@ -517,12 +546,25 @@ CMAKE_TAPI-ADVANCED:INTERNAL=1
 CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//Details about finding Python
+FIND_PACKAGE_MESSAGE_DETAILS_Python:INTERNAL=[/Library/Frameworks/Python.framework/Versions/3.11/bin/python3.11][cfound components: Interpreter ][v3.11.3()]
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 //CMAKE_INSTALL_PREFIX during last run
 _GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=/usr/local
+//Compiler reason failure
+_Python_Compiler_REASON_FAILURE:INTERNAL=
+//Development reason failure
+_Python_Development_REASON_FAILURE:INTERNAL=
+//Path to a program.
+_Python_EXECUTABLE:INTERNAL=/Library/Frameworks/Python.framework/Versions/3.11/bin/python3.11
+//Python Properties
+_Python_INTERPRETER_PROPERTIES:INTERNAL=Python;3;11;3;64;32;;cpython-311-darwin;abi3;/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11;/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11;/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages;/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages
+_Python_INTERPRETER_SIGNATURE:INTERNAL=16af98a70dcdf7b11ba7bd79a89c931f
+//NumPy reason failure
+_Python_NumPy_REASON_FAILURE:INTERNAL=
 cmake_package_name:INTERNAL=GTest
-generated_dir:INTERNAL=/Users/antoniablanco/Desktop/DD_optimization_c-/build/lib/googletest/googletest/generated
+generated_dir:INTERNAL=/Users/antoniablanco/Desktop/DD_optimization_c-/build/_deps/googletest-build/googletest/generated
 //ADVANCED property for variable: gmock_build_tests
 gmock_build_tests-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: gtest_build_samples

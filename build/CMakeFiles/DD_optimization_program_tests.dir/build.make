@@ -94,9 +94,9 @@ DD_optimization_program_tests: CMakeFiles/DD_optimization_program_tests.dir/Test
 DD_optimization_program_tests: CMakeFiles/DD_optimization_program_tests.dir/build.make
 DD_optimization_program_tests: libClass.a
 DD_optimization_program_tests: libExceptions.a
-DD_optimization_program_tests: lib/libgtest_main.a
+DD_optimization_program_tests: lib/libgtest_maind.a
 DD_optimization_program_tests: libProblems.a
-DD_optimization_program_tests: lib/libgtest.a
+DD_optimization_program_tests: lib/libgtestd.a
 DD_optimization_program_tests: libClass.a
 DD_optimization_program_tests: libExceptions.a
 DD_optimization_program_tests: CMakeFiles/DD_optimization_program_tests.dir/link.txt
