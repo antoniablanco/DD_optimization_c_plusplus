@@ -98,6 +98,8 @@ target_link_libraries(Problems PRIVATE Class Exceptions)
 
 add_executable(DD_optimization_program_tests
     Test/test_ProblemKnapsack.cpp
+    Test/test_ProblemIndependentSet.cpp
+    Test/test_ProblemSetCovering.cpp
 )
 target_link_libraries(DD_optimization_program_tests PRIVATE 
                         Class 

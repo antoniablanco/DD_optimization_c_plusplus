@@ -865,6 +865,30 @@ Exceptions/MyExceptions.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Exceptions.dir/build.make CMakeFiles/Exceptions.dir/Exceptions/MyExceptions.cpp.s
 .PHONY : Exceptions/MyExceptions.cpp.s
 
+Test/test_ProblemIndependentSet.o: Test/test_ProblemIndependentSet.cpp.o
+.PHONY : Test/test_ProblemIndependentSet.o
+
+# target to build an object file
+Test/test_ProblemIndependentSet.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DD_optimization_program_tests.dir/build.make CMakeFiles/DD_optimization_program_tests.dir/Test/test_ProblemIndependentSet.cpp.o
+.PHONY : Test/test_ProblemIndependentSet.cpp.o
+
+Test/test_ProblemIndependentSet.i: Test/test_ProblemIndependentSet.cpp.i
+.PHONY : Test/test_ProblemIndependentSet.i
+
+# target to preprocess a source file
+Test/test_ProblemIndependentSet.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DD_optimization_program_tests.dir/build.make CMakeFiles/DD_optimization_program_tests.dir/Test/test_ProblemIndependentSet.cpp.i
+.PHONY : Test/test_ProblemIndependentSet.cpp.i
+
+Test/test_ProblemIndependentSet.s: Test/test_ProblemIndependentSet.cpp.s
+.PHONY : Test/test_ProblemIndependentSet.s
+
+# target to generate assembly for a file
+Test/test_ProblemIndependentSet.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DD_optimization_program_tests.dir/build.make CMakeFiles/DD_optimization_program_tests.dir/Test/test_ProblemIndependentSet.cpp.s
+.PHONY : Test/test_ProblemIndependentSet.cpp.s
+
 Test/test_ProblemKnapsack.o: Test/test_ProblemKnapsack.cpp.o
 .PHONY : Test/test_ProblemKnapsack.o
 
@@ -888,6 +912,30 @@ Test/test_ProblemKnapsack.s: Test/test_ProblemKnapsack.cpp.s
 Test/test_ProblemKnapsack.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DD_optimization_program_tests.dir/build.make CMakeFiles/DD_optimization_program_tests.dir/Test/test_ProblemKnapsack.cpp.s
 .PHONY : Test/test_ProblemKnapsack.cpp.s
+
+Test/test_ProblemSetCovering.o: Test/test_ProblemSetCovering.cpp.o
+.PHONY : Test/test_ProblemSetCovering.o
+
+# target to build an object file
+Test/test_ProblemSetCovering.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DD_optimization_program_tests.dir/build.make CMakeFiles/DD_optimization_program_tests.dir/Test/test_ProblemSetCovering.cpp.o
+.PHONY : Test/test_ProblemSetCovering.cpp.o
+
+Test/test_ProblemSetCovering.i: Test/test_ProblemSetCovering.cpp.i
+.PHONY : Test/test_ProblemSetCovering.i
+
+# target to preprocess a source file
+Test/test_ProblemSetCovering.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DD_optimization_program_tests.dir/build.make CMakeFiles/DD_optimization_program_tests.dir/Test/test_ProblemSetCovering.cpp.i
+.PHONY : Test/test_ProblemSetCovering.cpp.i
+
+Test/test_ProblemSetCovering.s: Test/test_ProblemSetCovering.cpp.s
+.PHONY : Test/test_ProblemSetCovering.s
+
+# target to generate assembly for a file
+Test/test_ProblemSetCovering.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DD_optimization_program_tests.dir/build.make CMakeFiles/DD_optimization_program_tests.dir/Test/test_ProblemSetCovering.cpp.s
+.PHONY : Test/test_ProblemSetCovering.cpp.s
 
 # Help Target
 help:
@@ -981,9 +1029,15 @@ help:
 	@echo "... Exceptions/MyExceptions.o"
 	@echo "... Exceptions/MyExceptions.i"
 	@echo "... Exceptions/MyExceptions.s"
+	@echo "... Test/test_ProblemIndependentSet.o"
+	@echo "... Test/test_ProblemIndependentSet.i"
+	@echo "... Test/test_ProblemIndependentSet.s"
 	@echo "... Test/test_ProblemKnapsack.o"
 	@echo "... Test/test_ProblemKnapsack.i"
 	@echo "... Test/test_ProblemKnapsack.s"
+	@echo "... Test/test_ProblemSetCovering.o"
+	@echo "... Test/test_ProblemSetCovering.i"
+	@echo "... Test/test_ProblemSetCovering.s"
 .PHONY : help
 
 

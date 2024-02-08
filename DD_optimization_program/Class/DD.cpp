@@ -15,7 +15,6 @@ void DD::create_desition_diagram(const bool verbose) {
     cout << endl;
     cout << "Iniciando la creación del diagrama de decisión..." << endl;
     auto start = chrono::steady_clock::now();
-
     DDBuilder dDBuilder(problem);
     Graph* graph = dDBuilder.get_desition_diagram(verbose);
     graph_DD = *graph;
@@ -87,6 +86,10 @@ string DD::get_relaxed_dd_builder_time() {
 }
 
 Graph& DD::get_desition_diagram() {
+    if (graph_DD.nodes.empty()) {
+        cout << "No se encuentra guardado el grafo, revisar su construcción" << endl;
+        exit(1);
+    }
     return graph_DD;
 }
 
