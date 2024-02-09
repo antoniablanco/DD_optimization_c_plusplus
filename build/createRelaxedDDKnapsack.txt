@@ -1,0 +1,6 @@
+
+Iniciando la creación del diagrama de decisión...
+Diagrama de decisión creado
+
+Iniciando la creación del diagrama de decisión relajado ...
+Creación del diagrama de decision relajado terminado

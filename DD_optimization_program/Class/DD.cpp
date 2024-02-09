@@ -93,9 +93,13 @@ Graph& DD::get_desition_diagram() {
     return graph_DD;
 }
 
-unique_ptr<Graph> DD::get_desition_diagram_copy() {
-    auto graphCopy = make_unique<Graph>(graph_DD);
-    return graphCopy;
+Graph DD::get_desition_diagram_copy() {
+    if (graph_DD.nodes.empty()) {
+        cout << "No se encuentra guardado el grafo, revisar su construcción" << endl;
+        exit(1);
+    }
+    Graph graphCopy(graph_DD);
+    return graphCopy; 
 }
 
 void DD::export_graph_file(string file_name) {

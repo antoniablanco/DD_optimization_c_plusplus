@@ -871,4 +871,11 @@ CMakeFiles/DD_optimization_program_tests.dir/Test/test_ProblemKnapsack.cpp.o: \
   /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDBuilder/AbstractDDBuilder.h \
   /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/RestrictedDDBuilder/RestrictedDDBuilder.h \
   /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/RelaxedDDBuilder/RelaxedDDBuilder.h \
-  /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/ReduceDDBuilder/ReduceDDBuilder.h
+  /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/ReduceDDBuilder/ReduceDDBuilder.h \
+  /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/AnswerStructure/../../Class/AnswerStructure/ObjectiveStructure.h \
+  /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/AnswerStructure/../../Class/ObjectiveFunction/LinearObjectiveDP.h \
+  /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/ObjectiveFunction/AbstractObjective.h \
+  /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/AnswerStructure/ObjectiveStructure.h \
+  /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/AnswerStructure/../../Class/ObjectiveFunction/ObjectiveFunction.h \
+  /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DD.h \
+  /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Test/dd_controller_generators/DDKnapsack.cpp

@@ -73,7 +73,7 @@ public:
      * @brief Obtiene una copia única del grafo del diagrama de decisión.
      * @return Puntero único al grafo del diagrama de decisión.
      */
-    unique_ptr<Graph> get_desition_diagram_copy();
+    Graph get_desition_diagram_copy();
 
     // Métodos que obtienen el tiempo de construcción de los diagramas de decisión.
     string get_dd_builder_time();
