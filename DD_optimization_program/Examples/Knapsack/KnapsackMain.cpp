@@ -18,7 +18,7 @@ using namespace std;
 
 
 int main() {
-    /*
+    
     // Valores construcción knapsack
     vector<vector<int>> matrix_of_wheight = {{3, 3, 4, 6}};
     vector<int> right_side_of_restrictions = {6};
@@ -31,7 +31,7 @@ int main() {
         make_pair("x_3", vector<int>{0, 1}), 
         make_pair("x_4", vector<int>{0, 1})
     };
-    */
+    
     
 
     // Tiempos:
@@ -43,7 +43,7 @@ int main() {
 
     // Configurar el generador de números aleatorios 
     
-    
+    /*
     random_device rd;
     mt19937 gen(rd());
     uniform_int_distribution<> dis(1, 10);
@@ -67,7 +67,7 @@ int main() {
     for (size_t j = 0; j < objective_weights.size(); ++j) {
         objective_weights[j] = dis(gen);
     }
-    
+    */
 
     KnapsackProblem knapsack_instance(initial_state, variables, matrix_of_wheight, right_side_of_restrictions);
     DD dd_instance(knapsack_instance, false);
@@ -79,7 +79,7 @@ int main() {
     dd_instance.create_reduce_desition_diagram(false);
     cout << "Reduce time: " << dd_instance.get_reduce_dd_builder_time() << endl; 
 
-    dd_instance.create_restricted_desition_diagram(3 ,false);
+    dd_instance.create_restricted_desition_diagram(3 ,true);
     cout << "Restricted time: " << dd_instance.get_restricted_dd_builder_time() << endl; 
     
     dd_instance.create_relaxed_desition_diagram(3, false);
@@ -89,10 +89,11 @@ int main() {
     cout << "Nodes: " << post_graph.nodes.size() << endl;
 
     dd_instance.export_graph_file("knapsack_file");
+    
 
     
     // Resolución del diagrama
-    //vector<int> objective_weights = {-5, 1, 18, 17};
+    vector<int> objective_weights = {-5, 1, 18, 17};
 
     ObjectiveFunction objective_function_instance = ObjectiveFunction(dd_instance);
     LinearObjectiveDP linear_objective_instance = LinearObjectiveDP(objective_weights, "max");

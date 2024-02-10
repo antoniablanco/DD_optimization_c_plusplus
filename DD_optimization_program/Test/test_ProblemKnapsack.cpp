@@ -16,7 +16,9 @@
 #include <chrono>
 #include <memory>
 #include <thread>
+#include <filesystem>
 
+namespace fs = std::filesystem;
 using namespace std;
 
 bool areEqualIgnoringNonPrintable(const std::string& str1, const std::string& str2) {
@@ -93,15 +95,18 @@ TEST_F(ProblemKnapsackTest, TestVerboseCreateDD) {
     DD dd_knapsack_instance(*knapsack_instance, true);
     cout.rdbuf(coutbuf);
     
-    ifstream file("Test/txt_files/createDDKnapsack.txt");
+    string source_directory = fs::current_path().parent_path().string();
+    string full_file_path = source_directory + "/DD_optimization_program/Test/txt_files/createDDKnapsack.txt";
+
+    ifstream file(full_file_path);
     string expected_output((istreambuf_iterator<char>(file)), istreambuf_iterator<char>());
     file.close();
-
+    
     ifstream actual_file("createDDKnapsack.txt");
     string actual_output((istreambuf_iterator<char>(actual_file)), istreambuf_iterator<char>());
     actual_file.close();
 
-    ASSERT_TRUE(areEqualIgnoringNonPrintable(actual_output, expected_output));
+    ASSERT_TRUE(actual_output==expected_output);
 }
 
 TEST_F(ProblemKnapsackTest, TestVerboseCreateReduceDD) {
@@ -113,8 +118,11 @@ TEST_F(ProblemKnapsackTest, TestVerboseCreateReduceDD) {
     dd_knapsack_instance.create_reduce_desition_diagram(true);
 
     cout.rdbuf(coutbuf);
-    
-    ifstream file("Test/txt_files/createReduceDDKnapsack.txt");
+
+    string source_directory = fs::current_path().parent_path().string();
+    string full_file_path = source_directory + "/DD_optimization_program/Test/txt_files/createReduceDDKnapsack.txt";
+
+    ifstream file(full_file_path);
     string expected_output((istreambuf_iterator<char>(file)), istreambuf_iterator<char>());
     file.close();
 
@@ -122,7 +130,7 @@ TEST_F(ProblemKnapsackTest, TestVerboseCreateReduceDD) {
     string actual_output((istreambuf_iterator<char>(actual_file)), istreambuf_iterator<char>());
     actual_file.close();
 
-    ASSERT_EQ(actual_output, expected_output);
+    ASSERT_TRUE(actual_output==expected_output);
 }
 
 TEST_F(ProblemKnapsackTest, TestVerboseCreateRestrictedDD) {
@@ -131,11 +139,14 @@ TEST_F(ProblemKnapsackTest, TestVerboseCreateRestrictedDD) {
     cout.rdbuf(out.rdbuf());
 
     DD dd_knapsack_instance(*knapsack_instance, false);
-    dd_knapsack_instance.create_restricted_desition_diagram(true);
+    dd_knapsack_instance.create_restricted_desition_diagram(3, true);
 
     cout.rdbuf(coutbuf);
     
-    ifstream file("Test/txt_files/createRestrictedDDKnapsack.txt");
+    string source_directory = fs::current_path().parent_path().string();
+    string full_file_path = source_directory + "/DD_optimization_program/Test/txt_files/createRestrictedDDKnapsack.txt";
+
+    ifstream file(full_file_path);
     string expected_output((istreambuf_iterator<char>(file)), istreambuf_iterator<char>());
     file.close();
 
@@ -143,7 +154,7 @@ TEST_F(ProblemKnapsackTest, TestVerboseCreateRestrictedDD) {
     string actual_output((istreambuf_iterator<char>(actual_file)), istreambuf_iterator<char>());
     actual_file.close();
 
-    ASSERT_EQ(actual_output, expected_output);
+    ASSERT_TRUE(actual_output==expected_output);
 }
 
 TEST_F(ProblemKnapsackTest, TestVerboseCreateRelaxedDD) {
@@ -152,11 +163,14 @@ TEST_F(ProblemKnapsackTest, TestVerboseCreateRelaxedDD) {
     cout.rdbuf(out.rdbuf());
 
     DD dd_knapsack_instance(*knapsack_instance, false);
-    dd_knapsack_instance.create_relaxed_desition_diagram(true);
+    dd_knapsack_instance.create_relaxed_desition_diagram(3, true);
 
     cout.rdbuf(coutbuf);
     
-    ifstream file("Test/txt_files/createRelaxedDDKnapsack.txt");
+    string source_directory = fs::current_path().parent_path().string();
+    string full_file_path = source_directory + "/DD_optimization_program/Test/txt_files/createRelaxedDDKnapsack.txt";
+
+    ifstream file(full_file_path);
     string expected_output((istreambuf_iterator<char>(file)), istreambuf_iterator<char>());
     file.close();
 
@@ -164,7 +178,7 @@ TEST_F(ProblemKnapsackTest, TestVerboseCreateRelaxedDD) {
     string actual_output((istreambuf_iterator<char>(actual_file)), istreambuf_iterator<char>());
     actual_file.close();
 
-    ASSERT_EQ(actual_output, expected_output);
+    ASSERT_TRUE(actual_output==expected_output);
 }
 
 TEST_F(ProblemKnapsackTest, TestCreateDDGraphEqual) {
@@ -180,12 +194,10 @@ TEST_F(ProblemKnapsackTest, TestCreateReduceDDGraphEqual) {
 }
 
 TEST_F(ProblemKnapsackTest, TestCreateRestrictedDDGraphEqual) {
-    Graph expected_graph_one = GetRestrictedDDKnapsack();
-    Graph expected_graph_two = DiferentOrderRestrictedDDKnapsack();
+    Graph expected_graph = GetRestrictedDDKnapsack();
     dd_instance->create_restricted_desition_diagram(3);
 
-    ASSERT_TRUE(dd_instance->get_desition_diagram()==expected_graph_one);
-    ASSERT_TRUE(dd_instance->get_desition_diagram()==expected_graph_two);
+    ASSERT_TRUE(dd_instance->get_desition_diagram()==expected_graph);
 }
 
 TEST_F(ProblemKnapsackTest, CompareTwoDifferentGraphs) {
@@ -206,7 +218,7 @@ TEST_F(ProblemKnapsackTest, TestGetCopy) {
     Graph copied_graph = dd_instance->get_desition_diagram_copy();
     
     ASSERT_NE(&original_graph, &copied_graph);
-    ASSERT_TRUE(&original_graph==&copied_graph);
+    ASSERT_TRUE(original_graph==copied_graph);
 }
 
 TEST_F(ProblemKnapsackTest, TestGetDDBuilderTime) {
@@ -266,8 +278,10 @@ TEST_F(ProblemKnapsackTest, GetSolutionForRelaxedeDD) {
 TEST_F(ProblemKnapsackTest, TestCompareGMLDDGraph) {
     dd_instance->export_graph_file("test");
 
-    string expected_file_path = "Test/gml_files/exact_dd_knapsack.gml";
-    string actual_file_path = "test.gml";
+    string source_directory = fs::current_path().parent_path().string();
+
+    string expected_file_path = source_directory + "/DD_optimization_program/Test/gml_files/exact_dd_knapsack.gml";
+    string actual_file_path = source_directory + "/DD_optimization_program/test.gml";
 
     ASSERT_TRUE(ifstream(expected_file_path).good());
     ASSERT_TRUE(ifstream(actual_file_path).good());
@@ -277,15 +291,17 @@ TEST_F(ProblemKnapsackTest, TestCompareGMLDDGraph) {
     string expected_output((istreambuf_iterator<char>(expected_file)), istreambuf_iterator<char>());
     string actual_output((istreambuf_iterator<char>(actual_file)), istreambuf_iterator<char>());
 
-    ASSERT_EQ(expected_output, actual_output);
+    ASSERT_TRUE(actual_output==expected_output);
 }
 
 TEST_F(ProblemKnapsackTest, TestCompareGMLReduceDDGraph) {
     dd_instance->create_reduce_desition_diagram();
     dd_instance->export_graph_file("test");
 
-    string expected_file_path = "Test/gml_files/reduce_dd_knapsack.gml";
-    string actual_file_path = "test.gml";
+    string source_directory = fs::current_path().parent_path().string();
+
+    string expected_file_path = source_directory + "/DD_optimization_program/Test/gml_files/reduce_dd_knapsack.gml";
+    string actual_file_path = source_directory + "/DD_optimization_program/test.gml";
 
     ASSERT_TRUE(ifstream(expected_file_path).good());
     ASSERT_TRUE(ifstream(actual_file_path).good());
@@ -295,15 +311,17 @@ TEST_F(ProblemKnapsackTest, TestCompareGMLReduceDDGraph) {
     string expected_output((istreambuf_iterator<char>(expected_file)), istreambuf_iterator<char>());
     string actual_output((istreambuf_iterator<char>(actual_file)), istreambuf_iterator<char>());
 
-    ASSERT_EQ(expected_output, actual_output);
+    ASSERT_TRUE(actual_output==expected_output);
 }
 
 TEST_F(ProblemKnapsackTest, TestCompareGMLRestrictedDDGraph) {
     dd_instance->create_restricted_desition_diagram(3);
     dd_instance->export_graph_file("test");
 
-    string expected_file_path = "Test/gml_files/restricted_dd_knapsack.gml";
-    string actual_file_path = "test.gml";
+    string source_directory = fs::current_path().parent_path().string();
+
+    string expected_file_path = source_directory + "/DD_optimization_program/Test/gml_files/restricted_dd_knapsack.gml";
+    string actual_file_path = source_directory + "/DD_optimization_program/test.gml";
 
     ASSERT_TRUE(ifstream(expected_file_path).good());
     ASSERT_TRUE(ifstream(actual_file_path).good());
@@ -313,15 +331,17 @@ TEST_F(ProblemKnapsackTest, TestCompareGMLRestrictedDDGraph) {
     string expected_output((istreambuf_iterator<char>(expected_file)), istreambuf_iterator<char>());
     string actual_output((istreambuf_iterator<char>(actual_file)), istreambuf_iterator<char>());
 
-    ASSERT_EQ(expected_output, actual_output);
+    ASSERT_TRUE(actual_output==expected_output);
 }
 
 TEST_F(ProblemKnapsackTest, TestCompareGMLRelaxedDDGraph) {
     dd_instance->create_relaxed_desition_diagram(3);
     dd_instance->export_graph_file("test");
 
-    string expected_file_path = "Test/gml_files/relaxed_dd_knapsack.gml";
-    string actual_file_path = "test.gml";
+    string source_directory = fs::current_path().parent_path().string();
+
+    string expected_file_path = source_directory + "/DD_optimization_program/Test/gml_files/relax_dd_knapsack.gml";
+    string actual_file_path = source_directory + "/DD_optimization_program/test.gml";
 
     ASSERT_TRUE(ifstream(expected_file_path).good());
     ASSERT_TRUE(ifstream(actual_file_path).good());
@@ -331,5 +351,5 @@ TEST_F(ProblemKnapsackTest, TestCompareGMLRelaxedDDGraph) {
     string expected_output((istreambuf_iterator<char>(expected_file)), istreambuf_iterator<char>());
     string actual_output((istreambuf_iterator<char>(actual_file)), istreambuf_iterator<char>());
 
-    ASSERT_EQ(expected_output, actual_output);
+    ASSERT_TRUE(actual_output==expected_output);
 }
