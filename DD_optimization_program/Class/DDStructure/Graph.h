@@ -41,6 +41,12 @@ public:
      */
     bool operator==(const Graph &other) const;
 
+    /**
+     * @brief Sobrecarga del operador de escritura para los grafos.
+     * @param graph Grafo que se quiere escribir en una cadena.
+     */
+    friend std::ostream& operator<<(std::ostream& os, const Graph& graph);
+
     // Métodos que trabajan sobre la estructura de nodos del grafo.
     void add_node(Node* node);
     void add_new_layer();

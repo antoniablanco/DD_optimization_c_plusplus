@@ -38,9 +38,6 @@ int main() {
     IndependentSetProblem independent_set_instance(initial_state, variables, dict_node_neighbors);
     DD dd_instance(independent_set_instance, false);
 
-    
-    Graph pre_graph = dd_instance.get_desition_diagram();
-    cout << "Nodes: " << pre_graph.nodes.size() << endl;
     cout << "Creation Time: " << dd_instance.get_dd_builder_time() << endl;
     
     dd_instance.create_reduce_desition_diagram(false);
@@ -52,8 +49,6 @@ int main() {
     dd_instance.create_relaxed_desition_diagram(2, false);
     cout << "Relaxed time: " << dd_instance.get_relaxed_dd_builder_time() << endl; 
 
-    Graph post_graph = dd_instance.get_desition_diagram();
-    cout << "Nodes: " << post_graph.nodes.size() << endl;
 
     dd_instance.export_graph_file("independent_set_file");
 

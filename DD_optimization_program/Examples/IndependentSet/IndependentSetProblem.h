@@ -3,6 +3,7 @@
 
 #include "MyExceptions.h"
 #include "AbstractProblemClass.h"
+#include "utils.h"
 
 #include <iostream>
 #include <string>

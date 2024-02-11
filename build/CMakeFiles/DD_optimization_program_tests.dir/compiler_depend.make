@@ -841,8 +841,13 @@ CMakeFiles/DD_optimization_program_tests.dir/Test/test_ProblemIndependentSet.cpp
   /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdarg.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stddef.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdint.h \
+  /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/AnswerStructure/ObjectiveStructure.h \
   /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DD.h \
+  /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/ObjectiveFunction/LinearObjectiveDP.h \
+  /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/ObjectiveFunction/ObjectiveFunction.h \
   /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Examples/IndependentSet/IndependentSetProblem.h \
+  /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/AnswerStructure/ObjectiveStructure.h \
+  /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DD.h \
   /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDBuilder/AbstractDDBuilder.h \
   /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDBuilder/DDBuilder.h \
   /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDStructure/Arc.h \
@@ -850,11 +855,13 @@ CMakeFiles/DD_optimization_program_tests.dir/Test/test_ProblemIndependentSet.cpp
   /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDStructure/Node.h \
   /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDStructure/utils.h \
   /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/GraphVisualization/GraphFile.h \
+  /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/ObjectiveFunction/AbstractObjective.h \
   /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/Problems/AbstractProblemClass.h \
   /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/ReduceDDBuilder/ReduceDDBuilder.h \
   /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/RelaxedDDBuilder/RelaxedDDBuilder.h \
   /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/RestrictedDDBuilder/RestrictedDDBuilder.h \
   /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Exceptions/MyExceptions.h \
+  /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Test/dd_controller_generators/DDIndependentSet.cpp \
   _deps/googletest-src/googletest/include/gtest/gtest-death-test.h \
   _deps/googletest-src/googletest/include/gtest/gtest-matchers.h \
   _deps/googletest-src/googletest/include/gtest/gtest-message.h \
@@ -2635,14 +2642,6 @@ CMakeFiles/DD_optimization_program_tests.dir/Test/test_ProblemSetCovering.cpp.o:
 
 /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Test/test_ProblemSetCovering.cpp:
 
-/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/ObjectiveFunction/AbstractObjective.h:
-
-/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/ObjectiveFunction/ObjectiveFunction.h:
-
-/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/ObjectiveFunction/LinearObjectiveDP.h:
-
-/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/AnswerStructure/ObjectiveStructure.h:
-
 _deps/googletest-src/googletest/include/gtest/internal/gtest-param-util.h:
 
 _deps/googletest-src/googletest/include/gtest/internal/custom/gtest-printers.h:
@@ -2667,6 +2666,8 @@ _deps/googletest-src/googletest/include/gtest/gtest-death-test.h:
 
 /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/Problems/AbstractProblemClass.h:
 
+/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/ObjectiveFunction/AbstractObjective.h:
+
 /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/GraphVisualization/GraphFile.h:
 
 /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDStructure/utils.h:
@@ -2677,7 +2678,13 @@ _deps/googletest-src/googletest/include/gtest/gtest-death-test.h:
 
 /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDBuilder/AbstractDDBuilder.h:
 
+/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/ObjectiveFunction/ObjectiveFunction.h:
+
+/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/ObjectiveFunction/LinearObjectiveDP.h:
+
 /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DD.h:
+
+/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/AnswerStructure/ObjectiveStructure.h:
 
 /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdint.h:
 
@@ -3168,6 +3175,8 @@ _deps/googletest-src/googletest/include/gtest/internal/gtest-port-arch.h:
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__type_traits/is_default_constructible.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__type_traits/is_core_convertible.h:
+
+/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Test/dd_controller_generators/DDIndependentSet.cpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__utility/unreachable.h:
 

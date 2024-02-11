@@ -24,7 +24,7 @@ protected:
         vector<int> right_side_of_restrictions = {1, 1, 1};
 
         
-        vector<int> initial_state = {1, 2, 3};
+        initial_state = vector<int>{1, 2, 3};
         vector<pair<string, vector<int>>> variables = {
             make_pair("x_1", vector<int>{0, 1}), 
             make_pair("x_2", vector<int>{0, 1}),
@@ -42,6 +42,7 @@ protected:
         delete set_covering_instance;
         delete dd_instance;
     }
+    vector<int> initial_state;
     SetCoveringProblem* set_covering_instance;
     DD* dd_instance;
 };

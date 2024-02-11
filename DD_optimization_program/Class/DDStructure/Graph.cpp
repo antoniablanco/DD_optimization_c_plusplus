@@ -11,7 +11,25 @@ Graph::Graph(Node* initial_node) : nodes(), structure(), actual_layer(0) {
     structure[0].push_back(initial_node);
 }
 
+ostream& operator<<(std::ostream& os, const Graph& graph) {
 
+    for (const auto& layer : graph.structure) {
+        for (const auto& node : layer) {
+            os << *node;
+            if (!node->in_arcs.empty()) {
+                os << "(";
+                for (const auto& arc : node->in_arcs) {
+                    os << *arc << " ";
+                }
+                os << ")";
+            }
+            os << " ";
+        }
+        os <<endl << "------------------------------------------------------" <<endl;
+    }
+
+    return os;
+}
 
 bool Graph::operator==(const Graph &other) const {
     bool result = true;
