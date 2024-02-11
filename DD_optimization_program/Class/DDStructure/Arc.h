@@ -35,6 +35,8 @@ public:
      */
     string to_string() const;
 
+    friend std::ostream& operator<<(std::ostream& os, const Arc& arc);
+
     /**
      * @brief Sobrecarga del operador de comparación de igualdad para los arcos.
      * @param other Arco con el que se desea comparar.

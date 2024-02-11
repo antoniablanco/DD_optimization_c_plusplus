@@ -11,6 +11,11 @@ string Arc::to_string() const {
     return "arc_" + std::to_string(out_node->id) + "_" + std::to_string(in_node->id);
 }
 
+ostream& operator<<(std::ostream& os, const Arc& arc) {
+    os << "arc_" << std::to_string(arc.out_node->id) << "_" + std::to_string(arc.in_node->id);
+    return os;
+}
+
 bool Arc::operator==(const Arc &other) const {
     return out_node->id == other.out_node->id and in_node->id == other.in_node->id and
            variable_value == other.variable_value and variable_id == other.variable_id;

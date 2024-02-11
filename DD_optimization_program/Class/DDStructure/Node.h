@@ -4,6 +4,7 @@
 
 #include <iostream>
 #include <string>
+#include <sstream>
 #include <vector>
 #include <list>
 
@@ -46,6 +47,9 @@ public:
      * @return true si los nodos son iguales, false en caso contrario.
      */
     bool operator==(const Node &other) const;
+
+
+    friend std::ostream& operator<<(std::ostream& os, const Node& node);
 
     // Métodos que trabajan sobre la estructura de arcos del nodo.
     void add_in_arc(Arc* arc);

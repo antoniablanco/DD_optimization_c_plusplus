@@ -17,6 +17,7 @@ bool Graph::operator==(const Graph &other) const {
     bool result = true;
 
     for (size_t i = 0; i < structure.size(); ++i) {
+
         if (structure[i].size() != other.structure[i].size()) {
             return false;
         }
@@ -34,6 +35,8 @@ bool Graph::operator==(const Graph &other) const {
                 }
             }
         }
+
+        result = result && there_is_equal_node;
     }
 
     return result;

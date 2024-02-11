@@ -21,6 +21,11 @@ string Node::to_string() const {
     return "u_" + std::to_string(id)  + " " + to_string_int_vector(state);
 }
 
+ostream& operator<<(std::ostream& os, const Node& node) {
+    os << "u_" << std::to_string(node.id) << " " + to_string_int_vector(node.state);
+    return os;
+}
+
 bool Node::operator==(const Node &other) const {
     bool same_in_arc;
     bool same_out_arc;

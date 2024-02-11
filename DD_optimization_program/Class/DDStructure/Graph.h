@@ -5,6 +5,7 @@
 #include "Node.h"
 #include "Arc.h"
 #include "Node.h"
+#include "utils.h"
 
 #include <iostream>
 #include <string>
