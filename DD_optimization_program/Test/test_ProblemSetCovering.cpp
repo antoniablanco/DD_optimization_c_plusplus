@@ -164,7 +164,6 @@ TEST_F(ProblemSetCoveringTest, TestVerboseCreateRelaxedDD) {
 
     cout.rdbuf(coutbuf);
     
-    string source_directory = fs::current_path().parent_path().string();
     string full_file_path = source_directory + "/Test/txt_files/createRelaxedDDSetCovering.txt";
 
     ifstream file(full_file_path);
@@ -274,8 +273,6 @@ TEST_F(ProblemSetCoveringTest, GetSolutionForRelaxedeDD) {
 
 TEST_F(ProblemSetCoveringTest, TestCompareGMLDDGraph) {
     dd_instance->export_graph_file("test");
-
-    string source_directory = fs::current_path().parent_path().string();
 
     string expected_file_path = source_directory + "/Test/gml_files/exact_dd_set_covering.gml";
     string actual_file_path = source_directory + "/test.gml";

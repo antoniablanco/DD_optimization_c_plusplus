@@ -275,8 +275,6 @@ TEST_F(ProblemIndependentSetTest, GetSolutionForRelaxedeDD) {
 TEST_F(ProblemIndependentSetTest, TestCompareGMLDDGraph) {
     dd_instance->export_graph_file("test");
 
-    string source_directory = fs::current_path().parent_path().string();
-
     string expected_file_path = source_directory + "/Test/gml_files/exact_dd_independent_set.gml";
     string actual_file_path = source_directory + "/test.gml";
 

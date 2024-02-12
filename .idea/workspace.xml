@@ -7,14 +7,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ad155aba-e836-4943-98df-aedd7029eaad" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/DD_optimization_program/Examples/IndependentSet/IndependentSetMain.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/DD_optimization_program/Examples/IndependentSet/IndependentSetMain.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DD_optimization_program/Examples/Knapsack/KnapsackMain.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/DD_optimization_program/Examples/Knapsack/KnapsackMain.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DD_optimization_program/Examples/SetCovering/SetCoveringMain.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/DD_optimization_program/Examples/SetCovering/SetCoveringMain.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/.cmake/api/v1/reply/index-2024-02-04T20-03-56-0146.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/IndependentSet.dir/Examples/IndependentSet/IndependentSetMain.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/IndependentSet.dir/Examples/IndependentSet/IndependentSetMain.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/SetCovering.dir/Examples/SetCovering/SetCoveringMain.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/SetCovering.dir/Examples/SetCovering/SetCoveringMain.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/.cmake/api/v1/reply/index-2024-02-12T11-44-08-0227.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Class.dir/Class/GraphVisualization/GraphFile.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/Class.dir/Class/GraphVisualization/GraphFile.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/DD_optimization_program_tests.dir/Test/test_ProblemIndependentSet.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/DD_optimization_program_tests.dir/Test/test_ProblemIndependentSet.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/DD_optimization_program_tests.dir/Test/test_ProblemKnapsack.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/DD_optimization_program_tests.dir/Test/test_ProblemKnapsack.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/DD_optimization_program_tests.dir/Test/test_ProblemSetCovering.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/DD_optimization_program_tests.dir/Test/test_ProblemSetCovering.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/DD_optimization_program_tests" beforeDir="false" afterPath="$PROJECT_DIR$/build/DD_optimization_program_tests" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/IndependentSet" beforeDir="false" afterPath="$PROJECT_DIR$/build/IndependentSet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Knapsack" beforeDir="false" afterPath="$PROJECT_DIR$/build/Knapsack" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/SetCovering" beforeDir="false" afterPath="$PROJECT_DIR$/build/SetCovering" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libClass.a" beforeDir="false" afterPath="$PROJECT_DIR$/build/libClass.a" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,28 +32,28 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2bzzOhX5hiE4Sbnj30Nk56oJtAd" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "RunOnceActivity.readMode.enableVisualFormatting": "true",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/antoniablanco/Desktop/DD_optimization_c-",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/antoniablanco/Desktop/DD_optimization_c-&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">

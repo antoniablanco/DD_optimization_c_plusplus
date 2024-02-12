@@ -110,3 +110,8 @@
 1607	1970	1707739986238908352	DD_optimization_program_tests	eb1ee59b46f60a3d
 1607	1970	1707739986238908352	DD_optimization_program_tests[1]_tests.cmake	eb1ee59b46f60a3d
 1607	1970	1707739986238908352	/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/cmake-build-debug/DD_optimization_program_tests[1]_tests.cmake	eb1ee59b46f60a3d
+3	1094	1707740501847566177	CMakeFiles/DD_optimization_program_tests.dir/Test/test_ProblemIndependentSet.cpp.o	b5f18c4cd0cd4147
+3	1102	1707740501857407449	CMakeFiles/DD_optimization_program_tests.dir/Test/test_ProblemSetCovering.cpp.o	2384671c67059eb
+1102	1502	1707740502260272856	DD_optimization_program_tests	eb1ee59b46f60a3d
+1102	1502	1707740502260272856	DD_optimization_program_tests[1]_tests.cmake	eb1ee59b46f60a3d
+1102	1502	1707740502260272856	/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/cmake-build-debug/DD_optimization_program_tests[1]_tests.cmake	eb1ee59b46f60a3d
