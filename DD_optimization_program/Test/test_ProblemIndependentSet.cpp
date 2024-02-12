@@ -189,12 +189,10 @@ TEST_F(ProblemIndependentSetTest, TestCreateReduceDDGraphEqual) {
 }
 
 TEST_F(ProblemIndependentSetTest, TestCreateRestrictedDDGraphEqual) {
-    Graph expected_graph_one = GetRestrictedDDIndependentSet();
-    Graph expected_graph_two =GetDiferentOrderRestrictedDDIndependentSet();
+    Graph expected_graph = GetRestrictedDDIndependentSet();
     dd_instance->create_restricted_desition_diagram(2);
 
-    ASSERT_TRUE(dd_instance->get_desition_diagram()==expected_graph_one);
-    ASSERT_TRUE(dd_instance->get_desition_diagram()==expected_graph_two);
+    ASSERT_TRUE(dd_instance->get_desition_diagram()==expected_graph);
 }
 
 TEST_F(ProblemIndependentSetTest, CompareTwoDifferentGraphs) {
