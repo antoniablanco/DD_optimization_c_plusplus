@@ -165,7 +165,7 @@ TEST_F(ProblemSetCoveringTest, TestVerboseCreateRelaxedDD) {
     cout.rdbuf(coutbuf);
     
     string source_directory = fs::current_path().parent_path().string();
-    string full_file_path = source_directory + "/DD_optimization_program/Test/txt_files/createRelaxedDDSetCovering.txt";
+    string full_file_path = source_directory + "/Test/txt_files/createRelaxedDDSetCovering.txt";
 
     ifstream file(full_file_path);
     string expected_output((istreambuf_iterator<char>(file)), istreambuf_iterator<char>());
@@ -277,8 +277,8 @@ TEST_F(ProblemSetCoveringTest, TestCompareGMLDDGraph) {
 
     string source_directory = fs::current_path().parent_path().string();
 
-    string expected_file_path = source_directory + "/DD_optimization_program/Test/gml_files/exact_dd_set_covering.gml";
-    string actual_file_path = source_directory + "/DD_optimization_program/test.gml";
+    string expected_file_path = source_directory + "/Test/gml_files/exact_dd_set_covering.gml";
+    string actual_file_path = source_directory + "/test.gml";
 
     ASSERT_TRUE(ifstream(expected_file_path).good());
     ASSERT_TRUE(ifstream(actual_file_path).good());

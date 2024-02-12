@@ -3,7 +3,10 @@
 GraphFile::GraphFile(string file_name, Graph& graph) : file_name(file_name), graph(graph) {
 
     string source_directory = fs::current_path().parent_path().string();
-    string full_file_path = source_directory + "/DD_optimization_program/" + file_name + ".gml";
+    if (source_directory == "/Users/antoniablanco/Desktop/DD_optimization_c-") {
+        source_directory = source_directory + "/DD_optimization_program";
+    }
+    string full_file_path = source_directory + "/" + file_name + ".gml";
 
     bdd_file = new ofstream(full_file_path);
     is_graph_binary = check_if_graph_is_binary();
