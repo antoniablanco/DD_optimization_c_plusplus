@@ -50,7 +50,7 @@ public:
      * @brief Obtiene la solución de la función objetivo calculada anteriormente.
      * @return Estructura que contiene la solución de la función objetivo.
      */
-    ObjectiveStruct get_the_solution();
+    ObjectiveStruct get_the_solution() const;
 
 private:
 

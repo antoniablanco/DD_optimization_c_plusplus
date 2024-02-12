@@ -47,6 +47,11 @@ protected:
 
         knapsack_instance = new KnapsackProblem(initial_state, variables, matrix_of_wheight, right_side_of_restrictions);
         dd_instance = new DD(*knapsack_instance, false);
+
+        source_directory = fs::current_path().parent_path().string();
+        if (source_directory == "/Users/antoniablanco/Desktop/DD_optimization_c-") {
+            source_directory = source_directory + "/DD_optimization_program";
+        }
     }
 
     void TearDown() override {
@@ -66,6 +71,7 @@ protected:
     vector<int> initial_state;
     KnapsackProblem* knapsack_instance;
     DD* dd_instance;
+    string source_directory;
 };
 
 TEST_F(ProblemKnapsackTest, TestOrderedVariables) {
@@ -94,9 +100,7 @@ TEST_F(ProblemKnapsackTest, TestVerboseCreateDD) {
 
     DD dd_knapsack_instance(*knapsack_instance, true);
     cout.rdbuf(coutbuf);
-    
-    string source_directory = fs::current_path().parent_path().string();
-    string full_file_path = source_directory + "/DD_optimization_program/Test/txt_files/createDDKnapsack.txt";
+    string full_file_path = source_directory + "/Test/txt_files/createDDKnapsack.txt";
 
     ifstream file(full_file_path);
     string expected_output((istreambuf_iterator<char>(file)), istreambuf_iterator<char>());
@@ -115,12 +119,11 @@ TEST_F(ProblemKnapsackTest, TestVerboseCreateReduceDD) {
     cout.rdbuf(out.rdbuf());
 
     DD dd_knapsack_instance(*knapsack_instance, false);
-    dd_knapsack_instance.create_reduce_desition_diagram(true);
+    dd_knapsack_instance.createReduceDecisionDiagram(true);
 
     cout.rdbuf(coutbuf);
 
-    string source_directory = fs::current_path().parent_path().string();
-    string full_file_path = source_directory + "/DD_optimization_program/Test/txt_files/createReduceDDKnapsack.txt";
+    string full_file_path = source_directory + "/Test/txt_files/createReduceDDKnapsack.txt";
 
     ifstream file(full_file_path);
     string expected_output((istreambuf_iterator<char>(file)), istreambuf_iterator<char>());
@@ -139,12 +142,11 @@ TEST_F(ProblemKnapsackTest, TestVerboseCreateRestrictedDD) {
     cout.rdbuf(out.rdbuf());
 
     DD dd_knapsack_instance(*knapsack_instance, false);
-    dd_knapsack_instance.create_restricted_desition_diagram(3, true);
+    dd_knapsack_instance.createRestrictedDecisionDiagram(3, true);
 
     cout.rdbuf(coutbuf);
     
-    string source_directory = fs::current_path().parent_path().string();
-    string full_file_path = source_directory + "/DD_optimization_program/Test/txt_files/createRestrictedDDKnapsack.txt";
+    string full_file_path = source_directory + "/Test/txt_files/createRestrictedDDKnapsack.txt";
 
     ifstream file(full_file_path);
     string expected_output((istreambuf_iterator<char>(file)), istreambuf_iterator<char>());
@@ -163,12 +165,11 @@ TEST_F(ProblemKnapsackTest, TestVerboseCreateRelaxedDD) {
     cout.rdbuf(out.rdbuf());
 
     DD dd_knapsack_instance(*knapsack_instance, false);
-    dd_knapsack_instance.create_relaxed_desition_diagram(3, true);
+    dd_knapsack_instance.createRelaxedDecisionDiagram(3, true);
 
     cout.rdbuf(coutbuf);
     
-    string source_directory = fs::current_path().parent_path().string();
-    string full_file_path = source_directory + "/DD_optimization_program/Test/txt_files/createRelaxedDDKnapsack.txt";
+    string full_file_path = source_directory + "/Test/txt_files/createRelaxedDDKnapsack.txt";
 
     ifstream file(full_file_path);
     string expected_output((istreambuf_iterator<char>(file)), istreambuf_iterator<char>());
@@ -188,14 +189,14 @@ TEST_F(ProblemKnapsackTest, TestCreateDDGraphEqual) {
 
 TEST_F(ProblemKnapsackTest, TestCreateReduceDDGraphEqual) {
     Graph expected_graph = GetReduceDDKnapsack();
-    dd_instance->create_reduce_desition_diagram();
+    dd_instance->createReduceDecisionDiagram();
 
     ASSERT_TRUE(dd_instance->get_desition_diagram()==expected_graph);
 }
 
 TEST_F(ProblemKnapsackTest, TestCreateRestrictedDDGraphEqual) {
     Graph expected_graph = GetRestrictedDDKnapsack();
-    dd_instance->create_restricted_desition_diagram(3);
+    dd_instance->createRestrictedDecisionDiagram(3);
 
     ASSERT_TRUE(dd_instance->get_desition_diagram()==expected_graph);
 }
@@ -208,7 +209,7 @@ TEST_F(ProblemKnapsackTest, CompareTwoDifferentGraphs) {
 
 TEST_F(ProblemKnapsackTest, TestCreateRelaxedDDGraphEqual) {
     Graph expected_graph = GetRelaxedDDKnapsack();
-    dd_instance->create_relaxed_desition_diagram(3);
+    dd_instance->createRelaxedDecisionDiagram(3);
 
     ASSERT_TRUE(dd_instance->get_desition_diagram()==expected_graph);
 }
@@ -222,21 +223,21 @@ TEST_F(ProblemKnapsackTest, TestGetCopy) {
 }
 
 TEST_F(ProblemKnapsackTest, TestGetDDBuilderTime) {
-    ASSERT_GT(stof(dd_instance->get_dd_builder_time()), 0);
+    ASSERT_GT(stof(dd_instance->getDdBuilderTime()), 0);
 }
 
 TEST_F(ProblemKnapsackTest, TestGetReduceDDBuilderTime) {
-    dd_instance->create_reduce_desition_diagram();
-    ASSERT_GT(stof(dd_instance->get_reduce_dd_builder_time()), 0);
+    dd_instance->createReduceDecisionDiagram();
+    ASSERT_GT(stof(dd_instance->getReduceDdBuilderTime()), 0);
 }
 
 TEST_F(ProblemKnapsackTest, TestGetRestrictedDDBuilderTime) {
-    dd_instance->create_restricted_desition_diagram(3);
-    ASSERT_GT(stof(dd_instance->get_restricted_dd_builder_time()), 0);
+    dd_instance->createRestrictedDecisionDiagram(3);
+    ASSERT_GT(stof(dd_instance->getRestrictedDdBuilderTime()), 0);
 }
 
 TEST_F(ProblemKnapsackTest, TestGetRelaxedDDBuilderTime) {
-    dd_instance->create_relaxed_desition_diagram(3, true);
+    dd_instance->createRelaxedDecisionDiagram(3, true);
     ASSERT_GT(stof(dd_instance->get_relaxed_dd_builder_time()), 0);
 }
 
@@ -249,7 +250,7 @@ TEST_F(ProblemKnapsackTest, GetSolutionForDD) {
 }
 
 TEST_F(ProblemKnapsackTest, GetSolutionForReduceDD) {
-    dd_instance->create_reduce_desition_diagram();
+    dd_instance->createReduceDecisionDiagram();
     ObjectiveStruct solution = getLinearDpSolution();
     int expected_value = 18;
     string expected_path = " arc_0_1(0)-> arc_1_3(0)-> arc_3_6(1)-> arc_6_7(0)";
@@ -258,7 +259,7 @@ TEST_F(ProblemKnapsackTest, GetSolutionForReduceDD) {
 }
 
 TEST_F(ProblemKnapsackTest, GetSolutionForRestrictedeDD) {
-    dd_instance->create_restricted_desition_diagram(3);
+    dd_instance->createRestrictedDecisionDiagram(3);
     ObjectiveStruct solution = getLinearDpSolution();
     int expected_value = 18;
     string expected_path = " arc_0_1(0)-> arc_1_3(0)-> arc_3_6(1)-> arc_6_9(0)";
@@ -267,7 +268,7 @@ TEST_F(ProblemKnapsackTest, GetSolutionForRestrictedeDD) {
 }
 
 TEST_F(ProblemKnapsackTest, GetSolutionForRelaxedeDD) {
-    dd_instance->create_relaxed_desition_diagram(3);
+    dd_instance->createRelaxedDecisionDiagram(3);
     ObjectiveStruct solution = getLinearDpSolution();
     int expected_value = 35;
     string expected_path = " arc_0_1(0)-> arc_1_3(0)-> arc_3_6(1)-> arc_6_9(1)";
@@ -278,10 +279,8 @@ TEST_F(ProblemKnapsackTest, GetSolutionForRelaxedeDD) {
 TEST_F(ProblemKnapsackTest, TestCompareGMLDDGraph) {
     dd_instance->export_graph_file("test");
 
-    string source_directory = fs::current_path().parent_path().string();
-
-    string expected_file_path = source_directory + "/DD_optimization_program/Test/gml_files/exact_dd_knapsack.gml";
-    string actual_file_path = source_directory + "/DD_optimization_program/test.gml";
+    string expected_file_path = source_directory + "/Test/gml_files/exact_dd_knapsack.gml";
+    string actual_file_path = source_directory + "/test.gml";
 
     ASSERT_TRUE(ifstream(expected_file_path).good());
     ASSERT_TRUE(ifstream(actual_file_path).good());
@@ -295,13 +294,11 @@ TEST_F(ProblemKnapsackTest, TestCompareGMLDDGraph) {
 }
 
 TEST_F(ProblemKnapsackTest, TestCompareGMLReduceDDGraph) {
-    dd_instance->create_reduce_desition_diagram();
+    dd_instance->createReduceDecisionDiagram();
     dd_instance->export_graph_file("test");
 
-    string source_directory = fs::current_path().parent_path().string();
-
-    string expected_file_path = source_directory + "/DD_optimization_program/Test/gml_files/reduce_dd_knapsack.gml";
-    string actual_file_path = source_directory + "/DD_optimization_program/test.gml";
+    string expected_file_path = source_directory + "/Test/gml_files/reduce_dd_knapsack.gml";
+    string actual_file_path = source_directory + "/test.gml";
 
     ASSERT_TRUE(ifstream(expected_file_path).good());
     ASSERT_TRUE(ifstream(actual_file_path).good());
@@ -315,13 +312,11 @@ TEST_F(ProblemKnapsackTest, TestCompareGMLReduceDDGraph) {
 }
 
 TEST_F(ProblemKnapsackTest, TestCompareGMLRestrictedDDGraph) {
-    dd_instance->create_restricted_desition_diagram(3);
+    dd_instance->createRestrictedDecisionDiagram(3);
     dd_instance->export_graph_file("test");
 
-    string source_directory = fs::current_path().parent_path().string();
-
-    string expected_file_path = source_directory + "/DD_optimization_program/Test/gml_files/restricted_dd_knapsack.gml";
-    string actual_file_path = source_directory + "/DD_optimization_program/test.gml";
+    string expected_file_path = source_directory + "/Test/gml_files/restricted_dd_knapsack.gml";
+    string actual_file_path = source_directory + "/test.gml";
 
     ASSERT_TRUE(ifstream(expected_file_path).good());
     ASSERT_TRUE(ifstream(actual_file_path).good());
@@ -335,13 +330,11 @@ TEST_F(ProblemKnapsackTest, TestCompareGMLRestrictedDDGraph) {
 }
 
 TEST_F(ProblemKnapsackTest, TestCompareGMLRelaxedDDGraph) {
-    dd_instance->create_relaxed_desition_diagram(3);
+    dd_instance->createRelaxedDecisionDiagram(3);
     dd_instance->export_graph_file("test");
 
-    string source_directory = fs::current_path().parent_path().string();
-
-    string expected_file_path = source_directory + "/DD_optimization_program/Test/gml_files/relax_dd_knapsack.gml";
-    string actual_file_path = source_directory + "/DD_optimization_program/test.gml";
+    string expected_file_path = source_directory + "/Test/gml_files/relax_dd_knapsack.gml";
+    string actual_file_path = source_directory + "/test.gml";
 
     ASSERT_TRUE(ifstream(expected_file_path).good());
     ASSERT_TRUE(ifstream(actual_file_path).good());

@@ -35,7 +35,7 @@ string ObjectiveFunction::get_time() {
     return to_string(time.count());
 }
 
-ObjectiveStruct ObjectiveFunction::get_the_solution() {
+ObjectiveStruct ObjectiveFunction::get_the_solution() const {
     if (answer.value != -111111) {
         return answer;
     } else {

@@ -65,7 +65,7 @@ private:
      * @param nodeTwo Nodo a comparar.
      * @return true si los nodos son iguales, false en caso contrario.
      */
-    bool compare_two_nodes(const Node& nodeOne, const Node& nodeTwo) const;
+    static bool compare_two_nodes(const Node& nodeOne, const Node& nodeTwo) ;
     void remove_node_from_layer(Node& node); /** < Elimina el nodo entegado del grafo*/
 };
 

@@ -60,7 +60,7 @@ bool Graph::operator==(const Graph &other) const {
     return result;
 }
 
-bool Graph::compare_two_nodes(const Node& nodeOne, const Node& nodeTwo) const {
+bool Graph::compare_two_nodes(const Node& nodeOne, const Node& nodeTwo) {
     bool return_in_arcs = true;
     for (auto& arc : nodeOne.in_arcs) {
         bool there_is_equal_arc = false;

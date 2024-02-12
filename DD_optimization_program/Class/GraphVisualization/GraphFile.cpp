@@ -77,7 +77,7 @@ void GraphFile::add_node(Node* node) {
     (*bdd_file) << "]\n";
 }
 
-void GraphFile::add_arcs(vector<Arc*> arcs) {
+void GraphFile::add_arcs(const vector<Arc*>& arcs) {
     for (auto& arc: arcs) {
         add_arc(arc);
     }

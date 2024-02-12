@@ -56,7 +56,7 @@ private:
     bool check_if_graph_is_binary();
     bool is_node_binary(Node* node);
     void add_node(Node* node);
-    void add_arcs(vector<Arc*> arcs);
+    void add_arcs(const vector<Arc*>& arcs);
     void add_arc(Arc* arc);
     void add_arc_source(Arc* arc);
     void add_arc_label(Arc* arc);

@@ -41,6 +41,11 @@ protected:
         
         independent_set_instance = new IndependentSetProblem(initial_state, variables, dict_node_neighbors);
         dd_instance = new DD(*independent_set_instance, false);
+
+        source_directory = fs::current_path().parent_path().string();
+        if (source_directory == "/Users/antoniablanco/Desktop/DD_optimization_c-") {
+            source_directory = source_directory + "/DD_optimization_program";
+        }
     }
 
     void TearDown() override {
@@ -59,6 +64,7 @@ protected:
     vector<int> initial_state;
     IndependentSetProblem* independent_set_instance;
     DD* dd_instance;
+    string source_directory;
 };
 
 
@@ -90,8 +96,7 @@ TEST_F(ProblemIndependentSetTest, TestVerboseCreateDD) {
     DD dd_independent_set_instance(*independent_set_instance, true);
     cout.rdbuf(coutbuf);
     
-    string source_directory = fs::current_path().parent_path().string();
-    string full_file_path = source_directory + "/DD_optimization_program/Test/txt_files/createDDIndependentSet.txt";
+    string full_file_path = source_directory + "/Test/txt_files/createDDIndependentSet.txt";
 
     ifstream file(full_file_path);
     string expected_output((istreambuf_iterator<char>(file)), istreambuf_iterator<char>());
@@ -110,12 +115,11 @@ TEST_F(ProblemIndependentSetTest, TestVerboseCreateReduceDD) {
     cout.rdbuf(out.rdbuf());
 
     DD dd_independent_set_instance(*independent_set_instance, false);
-    dd_independent_set_instance.create_reduce_desition_diagram(true);
+    dd_independent_set_instance.createReduceDecisionDiagram(true);
 
     cout.rdbuf(coutbuf);
 
-    string source_directory = fs::current_path().parent_path().string();
-    string full_file_path = source_directory + "/DD_optimization_program/Test/txt_files/createReduceDDIndependentSet.txt";
+    string full_file_path = source_directory + "/Test/txt_files/createReduceDDIndependentSet.txt";
 
     ifstream file(full_file_path);
     string expected_output((istreambuf_iterator<char>(file)), istreambuf_iterator<char>());
@@ -134,12 +138,11 @@ TEST_F(ProblemIndependentSetTest, TestVerboseCreateRestrictedDD) {
     cout.rdbuf(out.rdbuf());
 
     DD dd_independent_set_instance(*independent_set_instance, false);
-    dd_independent_set_instance.create_restricted_desition_diagram(2, true);
+    dd_independent_set_instance.createRestrictedDecisionDiagram(2, true);
 
     cout.rdbuf(coutbuf);
     
-    string source_directory = fs::current_path().parent_path().string();
-    string full_file_path = source_directory + "/DD_optimization_program/Test/txt_files/createRestrictedDDIndependentSet.txt";
+    string full_file_path = source_directory + "/Test/txt_files/createRestrictedDDIndependentSet.txt";
 
     ifstream file(full_file_path);
     string expected_output((istreambuf_iterator<char>(file)), istreambuf_iterator<char>());
@@ -158,12 +161,11 @@ TEST_F(ProblemIndependentSetTest, TestVerboseCreateRelaxedDD) {
     cout.rdbuf(out.rdbuf());
 
     DD dd_independent_set_instance(*independent_set_instance, false);
-    dd_independent_set_instance.create_relaxed_desition_diagram(2, true);
+    dd_independent_set_instance.createRelaxedDecisionDiagram(2, true);
 
     cout.rdbuf(coutbuf);
     
-    string source_directory = fs::current_path().parent_path().string();
-    string full_file_path = source_directory + "/DD_optimization_program/Test/txt_files/createRelaxedDDIndependentSet.txt";
+    string full_file_path = source_directory + "/Test/txt_files/createRelaxedDDIndependentSet.txt";
 
     ifstream file(full_file_path);
     string expected_output((istreambuf_iterator<char>(file)), istreambuf_iterator<char>());
@@ -183,14 +185,14 @@ TEST_F(ProblemIndependentSetTest, TestCreateDDGraphEqual) {
 
 TEST_F(ProblemIndependentSetTest, TestCreateReduceDDGraphEqual) {
     Graph expected_graph = GetReduceDDIndependentSet();
-    dd_instance->create_reduce_desition_diagram();
+    dd_instance->createReduceDecisionDiagram();
 
     ASSERT_TRUE(dd_instance->get_desition_diagram()==expected_graph);
 }
 
 TEST_F(ProblemIndependentSetTest, TestCreateRestrictedDDGraphEqual) {
     Graph expected_graph = GetRestrictedDDIndependentSet();
-    dd_instance->create_restricted_desition_diagram(2);
+    dd_instance->createRestrictedDecisionDiagram(2);
 
     ASSERT_TRUE(dd_instance->get_desition_diagram()==expected_graph);
 }
@@ -203,7 +205,7 @@ TEST_F(ProblemIndependentSetTest, CompareTwoDifferentGraphs) {
 
 TEST_F(ProblemIndependentSetTest, TestCreateRelaxedDDGraphEqual) {
     Graph expected_graph = GetRelaxedDDIndependentSet();
-    dd_instance->create_relaxed_desition_diagram(2);
+    dd_instance->createRelaxedDecisionDiagram(2);
 
     ASSERT_TRUE(dd_instance->get_desition_diagram()==expected_graph);
 }
@@ -217,21 +219,21 @@ TEST_F(ProblemIndependentSetTest, TestGetCopy) {
 }
 
 TEST_F(ProblemIndependentSetTest, TestGetDDBuilderTime) {
-    ASSERT_GT(stof(dd_instance->get_dd_builder_time()), 0);
+    ASSERT_GT(stof(dd_instance->getDdBuilderTime()), 0);
 }
 
 TEST_F(ProblemIndependentSetTest, TestGetReduceDDBuilderTime) {
-    dd_instance->create_reduce_desition_diagram();
-    ASSERT_GT(stof(dd_instance->get_reduce_dd_builder_time()), 0);
+    dd_instance->createReduceDecisionDiagram();
+    ASSERT_GT(stof(dd_instance->getReduceDdBuilderTime()), 0);
 }
 
 TEST_F(ProblemIndependentSetTest, TestGetRestrictedDDBuilderTime) {
-    dd_instance->create_restricted_desition_diagram(2);
-    ASSERT_GT(stof(dd_instance->get_restricted_dd_builder_time()), 0);
+    dd_instance->createRestrictedDecisionDiagram(2);
+    ASSERT_GT(stof(dd_instance->getRestrictedDdBuilderTime()), 0);
 }
 
 TEST_F(ProblemIndependentSetTest, TestGetRelaxedDDBuilderTime) {
-    dd_instance->create_relaxed_desition_diagram(2);
+    dd_instance->createRelaxedDecisionDiagram(2);
     ASSERT_GT(stof(dd_instance->get_relaxed_dd_builder_time()), 0);
 }
 
@@ -244,7 +246,7 @@ TEST_F(ProblemIndependentSetTest, GetSolutionForDD) {
 }
 
 TEST_F(ProblemIndependentSetTest, GetSolutionForReduceDD) {
-    dd_instance->create_reduce_desition_diagram();
+    dd_instance->createReduceDecisionDiagram();
     ObjectiveStruct solution = getLinearDpSolution();
     int expected_value = 11;
     string expected_path = " arc_0_1(0)-> arc_1_4(1)-> arc_4_7(0)-> arc_7_8(0)-> arc_8_10(1)";
@@ -253,7 +255,7 @@ TEST_F(ProblemIndependentSetTest, GetSolutionForReduceDD) {
 }
 
 TEST_F(ProblemIndependentSetTest, GetSolutionForRestrictedeDD) {
-    dd_instance->create_restricted_desition_diagram(2, false);
+    dd_instance->createRestrictedDecisionDiagram(2, false);
     ObjectiveStruct solution = getLinearDpSolution();
     int expected_value = 10;
     string expected_path = " arc_0_2(1)-> arc_2_4(0)-> arc_4_5(0)-> arc_5_7(0)-> arc_7_9(1)";
@@ -262,7 +264,7 @@ TEST_F(ProblemIndependentSetTest, GetSolutionForRestrictedeDD) {
 }
 
 TEST_F(ProblemIndependentSetTest, GetSolutionForRelaxedeDD) {
-    dd_instance->create_relaxed_desition_diagram(2);
+    dd_instance->createRelaxedDecisionDiagram(2);
     ObjectiveStruct solution = getLinearDpSolution();
     int expected_value = 13;
     string expected_path = " arc_0_1(0)-> arc_1_3(1)-> arc_3_6(1)-> arc_6_7(0)-> arc_7_9(1)";
@@ -290,13 +292,11 @@ TEST_F(ProblemIndependentSetTest, TestCompareGMLDDGraph) {
 }
 
 TEST_F(ProblemIndependentSetTest, TestCompareGMLReduceDDGraph) {
-    dd_instance->create_reduce_desition_diagram();
+    dd_instance->createReduceDecisionDiagram();
     dd_instance->export_graph_file("test");
 
-    string source_directory = fs::current_path().parent_path().string();
-
-    string expected_file_path = source_directory + "/DD_optimization_program/Test/gml_files/reduce_dd_independent_set.gml";
-    string actual_file_path = source_directory + "/DD_optimization_program/test.gml";
+    string expected_file_path = source_directory + "/Test/gml_files/reduce_dd_independent_set.gml";
+    string actual_file_path = source_directory + "/test.gml";
 
     ASSERT_TRUE(ifstream(expected_file_path).good());
     ASSERT_TRUE(ifstream(actual_file_path).good());
@@ -310,13 +310,11 @@ TEST_F(ProblemIndependentSetTest, TestCompareGMLReduceDDGraph) {
 }
 
 TEST_F(ProblemIndependentSetTest, TestCompareGMLRestrictedDDGraph) {
-    dd_instance->create_restricted_desition_diagram(2);
+    dd_instance->createRestrictedDecisionDiagram(2);
     dd_instance->export_graph_file("test");
 
-    string source_directory = fs::current_path().parent_path().string();
-
-    string expected_file_path = source_directory + "/DD_optimization_program/Test/gml_files/restricted_dd_independent_set.gml";
-    string actual_file_path = source_directory + "/DD_optimization_program/test.gml";
+    string expected_file_path = source_directory + "/Test/gml_files/restricted_dd_independent_set.gml";
+    string actual_file_path = source_directory + "/test.gml";
 
     ASSERT_TRUE(ifstream(expected_file_path).good());
     ASSERT_TRUE(ifstream(actual_file_path).good());
@@ -330,13 +328,11 @@ TEST_F(ProblemIndependentSetTest, TestCompareGMLRestrictedDDGraph) {
 }
 
 TEST_F(ProblemIndependentSetTest, TestCompareGMLRelaxedDDGraph) {
-    dd_instance->create_relaxed_desition_diagram(2);
+    dd_instance->createRelaxedDecisionDiagram(2);
     dd_instance->export_graph_file("test");
 
-    string source_directory = fs::current_path().parent_path().string();
-
-    string expected_file_path = source_directory + "/DD_optimization_program/Test/gml_files/relax_dd_independent_set.gml";
-    string actual_file_path = source_directory + "/DD_optimization_program/test.gml";
+    string expected_file_path = source_directory + "/Test/gml_files/relax_dd_independent_set.gml";
+    string actual_file_path = source_directory + "/test.gml";
 
     ASSERT_TRUE(ifstream(expected_file_path).good());
     ASSERT_TRUE(ifstream(actual_file_path).good());

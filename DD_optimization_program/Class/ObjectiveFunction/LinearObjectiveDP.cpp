@@ -19,7 +19,6 @@ void LinearObjectiveDP::assign_graph(Graph graph_DD) {
 
 
 ObjectiveStruct LinearObjectiveDP::resolve_graph() {
-    //DP = vector<ObjectiveStruct*>(graph.nodes.size(), new ObjectiveStruct());
     DP = vector<ObjectiveStruct*>(graph.nodes.size(), nullptr);
     int last_layer_number = graph.structure.size() - 2;
     ObjectiveStruct* objective_answer = dp(*graph.nodes.back(), last_layer_number);
@@ -34,9 +33,9 @@ ObjectiveStruct LinearObjectiveDP::resolve_graph() {
 }
 
 
-ObjectiveStruct* LinearObjectiveDP::dp(Node node, int layer) {
+ObjectiveStruct* LinearObjectiveDP::dp(const Node& node, int layer) {
 
-    if (node.in_arcs.size() == 0) {
+    if (node.in_arcs.empty()) {
         return new ObjectiveStruct(0, "", {});
     }
 

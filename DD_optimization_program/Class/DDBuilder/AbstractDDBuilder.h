@@ -34,7 +34,7 @@ public:
      * @param should_visualize Booleano que indica si se debe visualizar la construcción del grafo.
      * @return Puntero al grafo construido.
      */
-    Graph* get_desition_diagram(bool should_visualize);
+    Graph* getDecisionDiagram(bool should_visualize);
 
     virtual ~AbstractDDBuilder() = default; /**< Destructor virtual por defecto. */
 
@@ -70,7 +70,7 @@ private:
      * Método virtual puro que debe ser implementado por las subclases para definir el comportamiento 
      * de la capa específica.
      */
-    virtual void specific_layer_function() = 0;
+    virtual void specificLayerFunction() = 0;
 
     /**
      * @brief Función específica final.

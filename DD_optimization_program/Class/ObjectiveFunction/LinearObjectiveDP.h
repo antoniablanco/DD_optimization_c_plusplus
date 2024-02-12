@@ -63,7 +63,7 @@ private:
      * @param layer Capa actual en el grafo de decisión.
      * @return Puntero a la estructura de objetivo correspondiente al nodo y capa dados.
      */
-    ObjectiveStruct* dp(Node node, int layer);
+    ObjectiveStruct* dp(const Node& node, int layer);
 };
 
 

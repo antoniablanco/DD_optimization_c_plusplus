@@ -29,7 +29,7 @@ class RestrictedDDBuilder: public AbstractDDBuilder {
          * @brief Función específica para la capa del grafo en la construcción de un grafo de decisión restringido.
          * Se implementa función obligatoria de la clase padre.
          */
-        void specific_layer_function() override;
+        void specificLayerFunction() override;
 
         /**
          * @brief Función específica para la capa final del grafo en la construcción de un grafo de decisión restringido.
@@ -41,7 +41,7 @@ class RestrictedDDBuilder: public AbstractDDBuilder {
         // Métodos que trabajan en la construcción del grafo restringido.
         void eliminate_nodes_when_width_is_greater_than_w();
         bool width_is_greater_than_w();
-        void eliminate_nodes(vector<Node*> nodes_to_eliminate);
+        void eliminate_nodes(const vector<Node*>& nodes_to_eliminate);
         void eliminate_nodes_without_out_arcs();
         void adjust_node_number();
 

@@ -13,7 +13,7 @@ using namespace std;
 ReduceDDBuilder::ReduceDDBuilder(Graph* graph) : graph(graph), layer_working(graph->actual_layer) {
 }
 
-Graph ReduceDDBuilder::get_desition_diagram(bool should_visualize) {
+Graph ReduceDDBuilder::GetDecisionDiagram(bool should_visualize) {
     auto reversedStructure = graph->structure;
     reverse(reversedStructure.begin(), reversedStructure.end());
 
@@ -78,7 +78,7 @@ void ReduceDDBuilder::merge_nodes(Node* node_one, Node* node_two) {
     delete_node(node_to_remove);
 }
 
-pair<Node*, Node*> ReduceDDBuilder::get_order_of_changin_nodes(Node* node_one, Node* node_two) {
+pair<Node*, Node*> ReduceDDBuilder::get_order_of_changin_nodes(Node* node_one, Node* node_two) const {
     vector<Node*> current_layer = graph->structure[layer_working];
 
     auto find_node_one = find(current_layer.begin(), current_layer.end(), node_one);
@@ -116,7 +116,7 @@ void ReduceDDBuilder::delete_out_arcs(Node* node_to_remove) {
     }
 }
 
-void ReduceDDBuilder::delete_node(Node* node_to_remove) {
+void ReduceDDBuilder::delete_node(Node* node_to_remove) const {
     graph->remove_node(*node_to_remove);
     delete node_to_remove;
 }
@@ -125,9 +125,9 @@ void ReduceDDBuilder::specific_final_function() {
     adjust_node_number();
 }
 
-void ReduceDDBuilder::adjust_node_number() {
+void ReduceDDBuilder::adjust_node_number() const {
     int initial_node_number = 0;
-    for (vector<Node*> layer : graph->structure) {
+    for (const vector<Node*>& layer : graph->structure) {
         for (Node* node : layer) {
             node->id = initial_node_number;
             initial_node_number++;
@@ -141,7 +141,7 @@ void ReduceDDBuilder::print_graph(bool should_visualize) {
     }
 }
 
-void ReduceDDBuilder::print() {
+void ReduceDDBuilder::print() const {
 
     cout << "" << endl;
     for (const auto& layer : graph->structure) {

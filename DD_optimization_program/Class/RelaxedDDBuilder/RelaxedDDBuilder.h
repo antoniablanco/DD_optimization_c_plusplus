@@ -29,7 +29,7 @@ private:
      * @brief Función específica para la capa del grafo en la construcción de un grafo de decisión relajado.
      * Se implementa función obligatoria de la clase padre.
      */
-    void specific_layer_function() override;
+    void specificLayerFunction() override;
 
     /**
      * @brief Función específica para la capa final del grafo en la construcción de un grafo de decisión relajado.
@@ -43,8 +43,8 @@ private:
     void merge_nodes(Node* node_to_remove, Node* node_to_keep);
     void merge_with_an_existing_node(Node* node_one, Node* node_two, Node* exist_node);
     void merge_when_doesnt_exist_node(Node* node_to_remove, Node* node_to_keep, vector<int> new_state);
-    void redirect_in_arcs(Node* node_to_remove, Node* node_to_keep);
-    void change_new_state(Node* node, vector<int> new_state);
+    static void redirect_in_arcs(Node* node_to_remove, Node* node_to_keep);
+    static void change_new_state(Node* node, vector<int> new_state);
     void delete_node(Node* node_to_remove);
     void adjust_node_number(); /**< Ajusta el id de los nodos tras los cambios producidos */
 

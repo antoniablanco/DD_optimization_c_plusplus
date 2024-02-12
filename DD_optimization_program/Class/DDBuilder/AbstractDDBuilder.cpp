@@ -14,11 +14,11 @@ AbstractDDBuilder::AbstractDDBuilder(AbstractProblem& problem) :
     }
     
 
-Graph* AbstractDDBuilder::get_desition_diagram(bool should_visualize) {
+Graph* AbstractDDBuilder::getDecisionDiagram(bool should_visualize) {
         
     for (size_t variable_id = 0; variable_id < variables.size(); ++variable_id) {
         create_new_layer(variable_id);
-        specific_layer_function();
+        specificLayerFunction();
         print_graph(should_visualize);
     }
  

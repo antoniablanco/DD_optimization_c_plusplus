@@ -40,6 +40,11 @@ protected:
 
         set_covering_instance = new SetCoveringProblem(initial_state, variables, matrix_of_wheight, right_side_of_restrictions);
         dd_instance = new DD(*set_covering_instance, false);
+
+        source_directory = fs::current_path().parent_path().string();
+        if (source_directory == "/Users/antoniablanco/Desktop/DD_optimization_c-") {
+            source_directory = source_directory + "/DD_optimization_program";
+        }
     }
 
     void TearDown() override {
@@ -57,6 +62,7 @@ protected:
     vector<int> initial_state;
     SetCoveringProblem* set_covering_instance;
     DD* dd_instance;
+    string source_directory;
 };
 
 
@@ -89,8 +95,7 @@ TEST_F(ProblemSetCoveringTest, TestVerboseCreateDD) {
     DD dd_set_covering_instance(*set_covering_instance, true);
     cout.rdbuf(coutbuf);
     
-    string source_directory = fs::current_path().parent_path().string();
-    string full_file_path = source_directory + "/DD_optimization_program/Test/txt_files/createDDSetCovering.txt";
+    string full_file_path = source_directory + "/Test/txt_files/createDDSetCovering.txt";
 
     ifstream file(full_file_path);
     string expected_output((istreambuf_iterator<char>(file)), istreambuf_iterator<char>());
@@ -109,12 +114,11 @@ TEST_F(ProblemSetCoveringTest, TestVerboseCreateReduceDD) {
     cout.rdbuf(out.rdbuf());
 
     DD dd_set_covering_instance(*set_covering_instance, false);
-    dd_set_covering_instance.create_reduce_desition_diagram(true);
+    dd_set_covering_instance.createReduceDecisionDiagram(true);
 
     cout.rdbuf(coutbuf);
 
-    string source_directory = fs::current_path().parent_path().string();
-    string full_file_path = source_directory + "/DD_optimization_program/Test/txt_files/createReduceDDSetCovering.txt";
+    string full_file_path = source_directory + "/Test/txt_files/createReduceDDSetCovering.txt";
 
     ifstream file(full_file_path);
     string expected_output((istreambuf_iterator<char>(file)), istreambuf_iterator<char>());
@@ -133,12 +137,11 @@ TEST_F(ProblemSetCoveringTest, TestVerboseCreateRestrictedDD) {
     cout.rdbuf(out.rdbuf());
 
     DD dd_set_covering_instance(*set_covering_instance, false);
-    dd_set_covering_instance.create_restricted_desition_diagram(3, true);
+    dd_set_covering_instance.createRestrictedDecisionDiagram(3, true);
 
     cout.rdbuf(coutbuf);
     
-    string source_directory = fs::current_path().parent_path().string();
-    string full_file_path = source_directory + "/DD_optimization_program/Test/txt_files/createRestrictedDDSetCovering.txt";
+    string full_file_path = source_directory + "/Test/txt_files/createRestrictedDDSetCovering.txt";
 
     ifstream file(full_file_path);
     string expected_output((istreambuf_iterator<char>(file)), istreambuf_iterator<char>());
@@ -157,7 +160,7 @@ TEST_F(ProblemSetCoveringTest, TestVerboseCreateRelaxedDD) {
     cout.rdbuf(out.rdbuf());
 
     DD dd_set_covering_instance(*set_covering_instance, false);
-    dd_set_covering_instance.create_relaxed_desition_diagram(3, true);
+    dd_set_covering_instance.createRelaxedDecisionDiagram(3, true);
 
     cout.rdbuf(coutbuf);
     
@@ -182,14 +185,14 @@ TEST_F(ProblemSetCoveringTest, TestCreateDDGraphEqual) {
 
 TEST_F(ProblemSetCoveringTest, TestCreateReduceDDGraphEqual) {
     Graph expected_graph = GetReduceDDSetCovering();
-    dd_instance->create_reduce_desition_diagram();
+    dd_instance->createReduceDecisionDiagram();
 
     ASSERT_TRUE(dd_instance->get_desition_diagram()==expected_graph);
 }
 
 TEST_F(ProblemSetCoveringTest, TestCreateRestrictedDDGraphEqual) {
     Graph expected_graph = GetRestrictedDDSetCovering();
-    dd_instance->create_restricted_desition_diagram(3);
+    dd_instance->createRestrictedDecisionDiagram(3);
 
     ASSERT_TRUE(dd_instance->get_desition_diagram()==expected_graph);
 }
@@ -202,7 +205,7 @@ TEST_F(ProblemSetCoveringTest, CompareTwoDifferentGraphs) {
 
 TEST_F(ProblemSetCoveringTest, TestCreateRelaxedDDGraphEqual) {
     Graph expected_graph = GetRelaxedDDSetCovering();
-    dd_instance->create_relaxed_desition_diagram(3);
+    dd_instance->createRelaxedDecisionDiagram(3);
 
     ASSERT_TRUE(dd_instance->get_desition_diagram()==expected_graph);
 }
@@ -216,21 +219,21 @@ TEST_F(ProblemSetCoveringTest, TestGetCopy) {
 }
 
 TEST_F(ProblemSetCoveringTest, TestGetDDBuilderTime) {
-    ASSERT_GT(stof(dd_instance->get_dd_builder_time()), 0);
+    ASSERT_GT(stof(dd_instance->getDdBuilderTime()), 0);
 }
 
 TEST_F(ProblemSetCoveringTest, TestGetReduceDDBuilderTime) {
-    dd_instance->create_reduce_desition_diagram();
-    ASSERT_GT(stof(dd_instance->get_reduce_dd_builder_time()), 0);
+    dd_instance->createReduceDecisionDiagram();
+    ASSERT_GT(stof(dd_instance->getReduceDdBuilderTime()), 0);
 }
 
 TEST_F(ProblemSetCoveringTest, TestGetRestrictedDDBuilderTime) {
-    dd_instance->create_restricted_desition_diagram(2);
-    ASSERT_GT(stof(dd_instance->get_restricted_dd_builder_time()), 0);
+    dd_instance->createRestrictedDecisionDiagram(2);
+    ASSERT_GT(stof(dd_instance->getRestrictedDdBuilderTime()), 0);
 }
 
 TEST_F(ProblemSetCoveringTest, TestGetRelaxedDDBuilderTime) {
-    dd_instance->create_relaxed_desition_diagram(2);
+    dd_instance->createRelaxedDecisionDiagram(2);
     ASSERT_GT(stof(dd_instance->get_relaxed_dd_builder_time()), 0);
 }
 
@@ -243,7 +246,7 @@ TEST_F(ProblemSetCoveringTest, GetSolutionForDD) {
 }
 
 TEST_F(ProblemSetCoveringTest, GetSolutionForReduceDD) {
-    dd_instance->create_reduce_desition_diagram();
+    dd_instance->createReduceDecisionDiagram();
     ObjectiveStruct solution = getLinearDpSolution();
     int expected_value = 3;
     string expected_path = " arc_0_2(1)-> arc_2_6(1)-> arc_6_10(0)-> arc_10_12(0)-> arc_12_16(0)-> arc_16_17(0)";
@@ -252,7 +255,7 @@ TEST_F(ProblemSetCoveringTest, GetSolutionForReduceDD) {
 }
 
 TEST_F(ProblemSetCoveringTest, GetSolutionForRestrictedeDD) {
-    dd_instance->create_restricted_desition_diagram(3, false);
+    dd_instance->createRestrictedDecisionDiagram(3, false);
     ObjectiveStruct solution = getLinearDpSolution();
     int expected_value = 3;
     string expected_path = " arc_0_2(1)-> arc_2_5(1)-> arc_5_8(0)-> arc_8_10(0)-> arc_10_12(0)-> arc_12_14(0)";
@@ -261,7 +264,7 @@ TEST_F(ProblemSetCoveringTest, GetSolutionForRestrictedeDD) {
 }
 
 TEST_F(ProblemSetCoveringTest, GetSolutionForRelaxedeDD) {
-    dd_instance->create_relaxed_desition_diagram(3);
+    dd_instance->createRelaxedDecisionDiagram(3);
     ObjectiveStruct solution = getLinearDpSolution();
     int expected_value = 3;
     string expected_path = " arc_0_1(0)-> arc_1_3(0)-> arc_3_6(0)-> arc_6_10(1)-> arc_10_12(0)-> arc_12_14(0)";
@@ -289,13 +292,11 @@ TEST_F(ProblemSetCoveringTest, TestCompareGMLDDGraph) {
 }
 
 TEST_F(ProblemSetCoveringTest, TestCompareGMLReduceDDGraph) {
-    dd_instance->create_reduce_desition_diagram();
+    dd_instance->createReduceDecisionDiagram();
     dd_instance->export_graph_file("test");
 
-    string source_directory = fs::current_path().parent_path().string();
-
-    string expected_file_path = source_directory + "/DD_optimization_program/Test/gml_files/reduce_dd_set_covering.gml";
-    string actual_file_path = source_directory + "/DD_optimization_program/test.gml";
+    string expected_file_path = source_directory + "/Test/gml_files/reduce_dd_set_covering.gml";
+    string actual_file_path = source_directory + "/test.gml";
 
     ASSERT_TRUE(ifstream(expected_file_path).good());
     ASSERT_TRUE(ifstream(actual_file_path).good());
@@ -309,13 +310,11 @@ TEST_F(ProblemSetCoveringTest, TestCompareGMLReduceDDGraph) {
 }
 
 TEST_F(ProblemSetCoveringTest, TestCompareGMLRestrictedDDGraph) {
-    dd_instance->create_restricted_desition_diagram(3);
+    dd_instance->createRestrictedDecisionDiagram(3);
     dd_instance->export_graph_file("test");
 
-    string source_directory = fs::current_path().parent_path().string();
-
-    string expected_file_path = source_directory + "/DD_optimization_program/Test/gml_files/restricted_dd_set_covering.gml";
-    string actual_file_path = source_directory + "/DD_optimization_program/test.gml";
+    string expected_file_path = source_directory + "/Test/gml_files/restricted_dd_set_covering.gml";
+    string actual_file_path = source_directory + "/test.gml";
 
     ASSERT_TRUE(ifstream(expected_file_path).good());
     ASSERT_TRUE(ifstream(actual_file_path).good());
@@ -329,13 +328,11 @@ TEST_F(ProblemSetCoveringTest, TestCompareGMLRestrictedDDGraph) {
 }
 
 TEST_F(ProblemSetCoveringTest, TestCompareGMLRelaxedDDGraph) {
-    dd_instance->create_relaxed_desition_diagram(3);
+    dd_instance->createRelaxedDecisionDiagram(3);
     dd_instance->export_graph_file("test");
 
-    string source_directory = fs::current_path().parent_path().string();
-
-    string expected_file_path = source_directory + "/DD_optimization_program/Test/gml_files/relax_dd_set_covering.gml";
-    string actual_file_path = source_directory + "/DD_optimization_program/test.gml";
+    string expected_file_path = source_directory + "/Test/gml_files/relax_dd_set_covering.gml";
+    string actual_file_path = source_directory + "/test.gml";
 
     ASSERT_TRUE(ifstream(expected_file_path).good());
     ASSERT_TRUE(ifstream(actual_file_path).good());

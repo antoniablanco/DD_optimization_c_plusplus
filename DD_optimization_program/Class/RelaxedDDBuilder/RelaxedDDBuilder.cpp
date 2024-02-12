@@ -1,18 +1,16 @@
 #include "RelaxedDDBuilder.h"
 
-#include <iostream>
-#include <string>
+#include <utility>
 #include <vector>
 #include <algorithm>
 
 using namespace std;
 
-
 RelaxedDDBuilder::RelaxedDDBuilder(AbstractProblem& problem, int max_width) : 
 AbstractDDBuilder(problem), max_width(max_width) {
 }
 
-void RelaxedDDBuilder::specific_layer_function() {
+void RelaxedDDBuilder::specificLayerFunction() {
     merge_nodes_when_width_is_greater_than_w();
 }
 
@@ -60,7 +58,7 @@ void RelaxedDDBuilder::merge_with_an_existing_node(Node* node_one, Node* node_tw
 
 void RelaxedDDBuilder::merge_when_doesnt_exist_node(Node* node_to_remove, Node* node_to_keep, vector<int> new_state) {
     redirect_in_arcs(node_to_remove, node_to_keep);
-    change_new_state(node_to_keep, new_state);
+    change_new_state(node_to_keep, std::move(new_state));
     delete_node(node_to_remove);
 }
 
@@ -77,7 +75,7 @@ void RelaxedDDBuilder::redirect_in_arcs(Node* node_to_remove, Node* node_to_keep
 }
 
 void RelaxedDDBuilder::change_new_state(Node* node, vector<int> new_state) {
-    node->state = new_state;
+    node->state = std::move(new_state);
 }
 
 void RelaxedDDBuilder::delete_node(Node* node_to_remove) {
@@ -87,7 +85,7 @@ void RelaxedDDBuilder::delete_node(Node* node_to_remove) {
 
 void RelaxedDDBuilder::adjust_node_number() {
     int initial_node_number = 0;
-    for (vector<Node*> layer : graph->structure) {
+    for (const vector<Node*>& layer : graph->structure) {
         for (Node* node : layer) {
             node->id = initial_node_number;
             initial_node_number++;

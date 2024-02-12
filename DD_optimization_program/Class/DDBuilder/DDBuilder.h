@@ -26,7 +26,7 @@ class DDBuilder: public AbstractDDBuilder {
          * @brief Función específica de la capa para la construcción de diagramas de decisión.
          *        No es implementada
          */
-        void specific_layer_function() override;
+        void specificLayerFunction() override;
 
         /**
          * @brief Función específica final para la construcción de diagramas de decisión.

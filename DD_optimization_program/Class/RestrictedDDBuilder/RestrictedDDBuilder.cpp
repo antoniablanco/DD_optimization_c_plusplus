@@ -11,7 +11,7 @@ using namespace std;
 RestrictedDDBuilder::RestrictedDDBuilder(AbstractProblem& problem, int max_width) : 
 AbstractDDBuilder(problem), max_width(max_width) {}
 
-void RestrictedDDBuilder::specific_layer_function() {
+void RestrictedDDBuilder::specificLayerFunction() {
     eliminate_nodes_when_width_is_greater_than_w();
 }
 
@@ -38,7 +38,7 @@ bool RestrictedDDBuilder::width_is_greater_than_w() {
     return graph -> structure.back().size() > max_width;
 }
 
-void RestrictedDDBuilder::eliminate_nodes(vector<Node*> nodes_to_eliminate) {
+void RestrictedDDBuilder::eliminate_nodes(const vector<Node*>& nodes_to_eliminate) {
     for (Node* node : nodes_to_eliminate) {
         graph->eliminate_node_and_his_arcs(*node);
         };
@@ -59,7 +59,7 @@ void RestrictedDDBuilder::eliminate_nodes_without_out_arcs() {
 
 void RestrictedDDBuilder::adjust_node_number() {
     int initial_node_number = 0;
-    for (vector<Node*> layer : graph->structure) {
+    for (const vector<Node*>& layer : graph->structure) {
         for (Node* node : layer) {
             node->id = initial_node_number;
             initial_node_number++;

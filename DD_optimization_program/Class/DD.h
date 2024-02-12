@@ -43,19 +43,19 @@ public:
      * @brief Crea un diagrama de decisión reducido y lo guarda en el atributo graph_DD.
      * @param verbose Booleano que indica si se mostrarán mensajes de progreso durante la construcción del diagrama.
      */
-    void create_reduce_desition_diagram(const bool verbose = false);
+    void createReduceDecisionDiagram(const bool verbose = false);
 
     /**
      * @brief Crea un diagrama de decisión restringido y lo guarda en el atributo graph_DD.
      * @param verbose Booleano que indica si se mostrarán mensajes de progreso durante la construcción del diagrama.
      */
-    void create_restricted_desition_diagram(int max_width, const bool verbose = false);
+    void createRestrictedDecisionDiagram(int max_width, const bool verbose = false);
 
     /**
      * @brief Crea un diagrama de decisión relajado y lo guarda en el atributo graph_DD.
      * @param verbose Booleano que indica si se mostrarán mensajes de progreso durante la construcción del diagrama.
      */
-    void create_relaxed_desition_diagram(int max_width, const bool verbose = false);
+    void createRelaxedDecisionDiagram(int max_width, const bool verbose = false);
     
     /**
      * @brief Exporta el grafo de decisión a un archivo.
@@ -76,9 +76,9 @@ public:
     Graph get_desition_diagram_copy();
 
     // Métodos que obtienen el tiempo de construcción de los diagramas de decisión.
-    string get_dd_builder_time();
-    string get_reduce_dd_builder_time();
-    string get_restricted_dd_builder_time();
+    string getDdBuilderTime();
+    string getReduceDdBuilderTime();
+    string getRestrictedDdBuilderTime();
     string get_relaxed_dd_builder_time();
 
     /**
@@ -91,7 +91,7 @@ private:
      * @brief Crea el diagrama de decisión.
      * @param verbose Booleano que indica si se mostrarán mensajes de progreso durante la construcción del diagrama.
      */
-    void create_desition_diagram(const bool verbose = false);
+    void createDecisionDiagram(const bool verbose = false);
     Graph graph_DD; /**< Grafo del diagrama de decisión. */
 
     // Atributos que almacenan el tiempo de construcción de los diagramas de decisión.

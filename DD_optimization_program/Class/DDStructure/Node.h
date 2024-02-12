@@ -48,8 +48,13 @@ public:
      */
     bool operator==(const Node &other) const;
 
-
+    /**
+     * @brief Sobrecarga del operador de escritura para los grafos.
+     * @param node Nodo que se quiere escribir en una cadena.
+     */
     friend std::ostream& operator<<(std::ostream& os, const Node& node);
+
+    friend std::ostream& operator<<(std::ostream& os, const vector<int>& state);
 
     // Métodos que trabajan sobre la estructura de arcos del nodo.
     void add_in_arc(Arc* arc);
