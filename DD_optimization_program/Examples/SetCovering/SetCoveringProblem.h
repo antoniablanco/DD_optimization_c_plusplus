@@ -40,6 +40,7 @@ public:
     int get_priority_for_discard_node(const vector<int>& state) const override;
     int get_priority_for_merge_nodes(const int node_id, const vector<int>& state) const override;
     const vector<int> merge_operator(const vector<int>& state_one, const vector<int>& state_two) const override;
+    const string get_state_as_string(const vector<int>& state) const override;
 
 private:
     vector<vector<int>> matrix_of_wheight; /**< Matriz de pesos de los elementos. */

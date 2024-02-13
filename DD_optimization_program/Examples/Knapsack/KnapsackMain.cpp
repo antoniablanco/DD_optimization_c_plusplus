@@ -70,7 +70,7 @@ int main() {
     */
 
     KnapsackProblem knapsack_instance(initial_state, variables, matrix_of_wheight, right_side_of_restrictions);
-    DD dd_instance(knapsack_instance, false);
+    DD dd_instance(knapsack_instance, true);
 
     Graph pre_graph = dd_instance.get_desition_diagram();
     cout << "Nodes: " << pre_graph.nodes.size() << endl;

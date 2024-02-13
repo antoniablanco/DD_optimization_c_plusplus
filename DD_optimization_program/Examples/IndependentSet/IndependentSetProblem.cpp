@@ -84,3 +84,15 @@ const vector<int> IndependentSetProblem::merge_operator(const vector<int>& state
     set_union(state_one.begin(), state_one.end(), state_two.begin(), state_two.end(), back_inserter(result));
     return result;
 }
+
+const string IndependentSetProblem::get_state_as_string(const vector<int>& state) const {
+    string result = "[";
+    for (int i = 0; i < state.size(); ++i) {
+        result += std::to_string(state[i]);
+        if (i != state.size() - 1) {
+            result += ", ";
+        }
+    }
+    result += "]";
+    return result;
+    }

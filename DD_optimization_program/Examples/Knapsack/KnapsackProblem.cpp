@@ -83,3 +83,15 @@ const vector<int> KnapsackProblem::merge_operator(const vector<int>& state_one, 
     return state;
     }
 
+const string KnapsackProblem::get_state_as_string(const vector<int>& state) const {
+    string result = "[";
+    for (int i = 0; i < state.size(); ++i) {
+        result += std::to_string(state[i]);
+        if (i != state.size() - 1) {
+            result += ", ";
+        }
+    }
+    result += "]";
+    return result;
+    }
+

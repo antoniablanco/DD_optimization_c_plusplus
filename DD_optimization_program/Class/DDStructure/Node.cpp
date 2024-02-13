@@ -18,7 +18,7 @@ Node::~Node() {
 }
 
 string Node::to_string() const {
-    return "u_" + std::to_string(id)  + " " + to_string_int_vector(state);
+    return "u_" + std::to_string(id)  + " ";
 }
 
 ostream& operator<<(std::ostream& os, const Node& node) {

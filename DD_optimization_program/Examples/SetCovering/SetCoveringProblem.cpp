@@ -70,3 +70,15 @@ const vector<int> SetCoveringProblem::merge_operator(const vector<int>& state_on
     set_intersection(state_one.begin(), state_one.end(), state_two.begin(), state_two.end(), back_inserter(new_state));
     return new_state;
 }
+
+const string SetCoveringProblem::get_state_as_string(const vector<int>& state) const {
+    string result = "[";
+    for (int i = 0; i < state.size(); ++i) {
+        result += std::to_string(state[i]);
+        if (i != state.size() - 1) {
+            result += ", ";
+        }
+    }
+    result += "]";
+    return result;
+    }

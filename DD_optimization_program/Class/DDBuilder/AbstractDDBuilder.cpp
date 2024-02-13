@@ -121,7 +121,7 @@ void AbstractDDBuilder::print() {
                 in_arcs_str += arc->to_string() + " ";
             }
             in_arcs_str = in_arcs_str.empty() ? "" : in_arcs_str.substr(0, in_arcs_str.size() - 1);
-            cout << node->to_string() << "(" << in_arcs_str << ") ";
+            cout << node->to_string() << problem.get_state_as_string(node->state) << "(" << in_arcs_str << ") ";
         }
         cout << "" << endl;
     }

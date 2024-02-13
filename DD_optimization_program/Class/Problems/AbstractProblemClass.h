@@ -61,6 +61,8 @@ public:
      */
     virtual const vector<int> merge_operator(const vector<int>& state_one, const vector<int>& state_two) const = 0;
 
+    virtual const string get_state_as_string(const vector<int>& state) const = 0;
+
     vector<int>& initial_state; /**< Estado inicial del problema. */
     vector<string> ordered_variables; /**< Vector que contiene el orden de las variables. */
     map<string, vector<int>> variables_domain; /**< Mapa que contiene las variables y sus dominios. */
