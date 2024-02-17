@@ -839,7 +839,7 @@ CMakeFiles/DD_optimization_program_tests.dir/Test/test_ProblemIndependentSet.cpp
   /Users/antoniablanco/Desktop/DD_optimization_c-/build/_deps/googletest-src/googletest/include/gtest/gtest-typed-test.h \
   /Users/antoniablanco/Desktop/DD_optimization_c-/build/_deps/googletest-src/googletest/include/gtest/gtest_pred_impl.h \
   /Users/antoniablanco/Desktop/DD_optimization_c-/Class/AnswerStructure/../../Examples/IndependentSet/IndependentSetProblem.h \
-  /Users/antoniablanco/Desktop/DD_optimization_c-/Class/AnswerStructure/../../Examples/IndependentSet/../../Exceptions/MyExceptions.h \
+  /Users/antoniablanco/Desktop/DD_optimization_c-/Exceptions/MyExceptions.h \
   /Users/antoniablanco/Desktop/DD_optimization_c-/Class/AnswerStructure/../../Examples/IndependentSet/../../Class/Problems/AbstractProblemClass.h \
   /Users/antoniablanco/Desktop/DD_optimization_c-/Class/Problems/AbstractProblemClass.tpp \
   /Users/antoniablanco/Desktop/DD_optimization_c-/Class/Problems/AbstractProblemClass.h \

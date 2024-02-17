@@ -1,7 +1,7 @@
 CMakeFiles/IndependentSet.dir/Examples/IndependentSet/IndependentSetProblem.cpp.o: \
   /Users/antoniablanco/Desktop/DD_optimization_c-/Examples/IndependentSet/IndependentSetProblem.cpp \
   /Users/antoniablanco/Desktop/DD_optimization_c-/Examples/IndependentSet/IndependentSetProblem.h \
-  /Users/antoniablanco/Desktop/DD_optimization_c-/Examples/IndependentSet/../../Exceptions/MyExceptions.h \
+  /Users/antoniablanco/Desktop/DD_optimization_c-/Exceptions/MyExceptions.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/stdexcept \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__assert \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__config \

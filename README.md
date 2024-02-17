@@ -6,9 +6,8 @@ This program provides a versatile implementation of Decision Graphs for solving 
 
 Make sure you have in your system
 
-* python > 3.11
-* networkx
-* matplotlibsd
+* c++ > 17
+* cmake > 3.27
 
 For a complete use of the program, it is recommended to have a tool that can read documents with a .gml extension. yED is a suitable program for this purpose.
 
@@ -18,10 +17,13 @@ Clone this repository and navigate to the project directory to implement the mai
 
 ## Getting Started
 
-First should proceed to the construction of a **Problem** class, which must inherit from  **AbstractProblem** . It is crucial to define the following functions for this class:
+First should proceed to the construction of a **Problem** class, which must inherit from  **AbstractProblem** . First, when writing the file, it is necessary to define the data type that will be used in the state. This should be done in the inheritance of AbstractProblem (e.g., "AbstractProblem<vector `<int>`>" or "AbstractProblem `<string>`").
+
+Second it is crucial to define the following functions for this class:
 
 * **equals:** Takes two states as input and should give as output a boolean value indicating whether they are equal or not.
 * **transition_function:** Takes as inputs a previous state, a variable identifier (e.g., "x_2"), and the domain this variable takes (e.g., "1"). It outputs a new state and a boolean value indicating whether the state is feasible or not.
+* **get_state_as_string:** This function takes as input one state and must return its string representation. This function is crucial for exporting the graph to a GML file.
 
 If you want to obtain the restricted diagram, it is necessary to implement the following function when constructing your **Problem** class.
 
@@ -32,7 +34,7 @@ Furthermore, to obtain the relaxed diagram, it is necessary to add the following
 * **get_priority_for_merge_nodes:** Takes a state and the ID of a node as inputs and outputs a number representing the priority for merging the node with others.
 * **merge_operator:** Takes two states, each one from a node that is going to merge, as inputs. It outputs a new state for the merged nodes..
 
-Once this class is built, it is essential to create an instance of it to be passed to the "DD" class. In this, you'll find functions to create, reduce, restrict, relax and visualize a diagram, as well as obtain a copy of it.
+Once this class is built, it is essential to create an instance of it to be passed to the "DD" class, in the construction of this, specifying the data type contained within the state is necessary (e.g., "DD<vector `<int>>`"). In this, you'll find functions to create, reduce, restrict, relax and visualize a diagram, as well as obtain a copy of it.
 
 Finally, to obtain the problem's solution, create an instance of the **ObjectiveFunction** class, to which you pass the DD object containing the graph. Within this function, you can assign and solve the objective function.
 
@@ -54,10 +56,6 @@ To create the restricted decision diagram, is necesary use *create_restricted_de
 
 To create the relax decision diagram, is necesary use *create_relax_decision_diagram()* from the **DD** class, which transforms the graph class object saved when creating the diagram into its relax form. This new version is then stored within the **DD** class.
 
-#### Print Decision Diagram
-
-For a quick visualization of the created diagram, can be use the *print_decision_diagram()* method of the **DD** class. It's important to note that this method uses the networkx library; therefore, it has a limitation of 5 different line types. If you have a variable domain greater than this, the design of the arcs will be repeated.
-
 #### Export Decision Diagram
 
 To export the created decision diagram, whether it's reduced or in its original format, should be use the *export_graph_file()* method of the **DD** class. This generates a *.gml* file that can be visualized in programs such as *yED.*
@@ -68,7 +66,7 @@ To obtain a copy of the DD instance without it being a pointer to the original o
 
 #### Solve the Decision Diagram
 
-The first step to use this feature is to create an instance of the ObjectiveFunction, providing the dd_instance instance created earlier. Subsequently, it is necessary to create an instance of the algorithm to be used for solving the graph, which should receive a list with the weights of each variable in the objective function, and a string representing whether it is to maximize or minimize. The string values 'min' or 'max' can be used. For example, LinearObjectiveDP or SchedulingObjective. Finally, you should use the *SetObjectiveFunction()* method of the **ObjectiveFunction** class, providing the instance of the created algorithm. Subsequently, you can obtain the solution by using *solve_dd()* of the same class. Or if you already solve the graph and you online one to recover this information, can use *get_the_solution().*
+The first step to use this feature is to create an instance of the ObjectiveFunction `<state_type>`, providing the dd_instance instance created earlier. Subsequently, it is necessary to create an instance of the algorithm to be used for solving the graph, which should receive a list with the weights of each variable in the objective function, and a string representing whether it is to maximize or minimize. The string values 'min' or 'max' can be used. For example, LinearObjectiveDP<`state_type`> or SchedulingObjective<`state_type`>. Finally, you should use the *SetObjectiveFunction()* method of the **ObjectiveFunction** class, providing the instance of the created algorithm. Subsequently, you can obtain the solution by using *solve_dd()* of the same class. Or if you already solve the graph and you only one to recover this information, can use *get_the_solution().*
 
 #### Get the Time of the Algoritms
 
@@ -76,7 +74,7 @@ If it's want to get the time taken by the algorithms for creating the diagram or
 
 ## Examples
 
-For a more comprehensive understanding of these classes, it is recommended to thoroughly review the examples available in the **"/Examples/"** folder within the code, and execute **Knapsack/KnapsackMain** *or* **IndependentSet/IndependentSetMain.** These examples are generic and open for testing different values. In light of the above, the examples will be explained below.
+For a more comprehensive understanding of these classes, it is recommended to thoroughly review the examples available in the **"/Examples/"** folder within the code, and execute **Knapsack/KnapsackMain, IndependentSet/IndependentSetMain** or **SetCovering/SetCoveringMain.** These examples are generic and open for testing different values. In light of the above, the examples will be explained below.
 
 #### Knapsack
 
@@ -88,7 +86,7 @@ Similar to the previous case, it can be observed that in the IndependentSetMain 
 
 #### SetCovering
 
-This example represents a generalization of the set covering problem, allowing for different values to test various cases. To construct it, various values need to be provided. First, the initial state should be a list containing numbers representing the number of constraints to be given, for example, "[1,2,3]". Additionally, a dictionary of variables along with their domains must be provided. Specifically for this problem, the `right_side_of_restrictions` is the minimum value for each constraint, associated through their positions. Lastly, `matrix_of_weight` is a list of lists where the values represent the probability of each variable (associated by position) being within the constraint. After providing all these parameters to the instance of the constructed problem class, you can test the other features.
+This example represents a generalization of the set covering problem, allowing for different values to test various cases. To construct it, various values need to be provided. First, the initial state should be a list containing numbers representing the number of constraints to be given, for example, "{1,2,3}`". Additionally, a dictionary of variables along with their domains must be provided. Specifically for this problem, the `right_side_of_restrictions `is the minimum value for each constraint, associated through their positions. Lastly,`matrix_of_weight` is a list of lists where the values represent the probability of each variable (associated by position) being within the constraint. After providing all these parameters to the instance of the constructed problem class, you can test the other features.
 
 ## Test Casses
 

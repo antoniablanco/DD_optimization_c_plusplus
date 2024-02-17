@@ -1,8 +1,8 @@
 #ifndef TEMPLATETYPE_SETCOVERINGPROBLEM_H
 #define TEMPLATETYPE_SETCOVERINGPROBLEM_H
 
-#include "../../Exceptions/MyExceptions.h"
-#include "../../Class/Problems/AbstractProblemClass.h"
+#include "MyExceptions.h"
+#include "AbstractProblemClass.h"
 
 #include <iostream>
 #include <string>

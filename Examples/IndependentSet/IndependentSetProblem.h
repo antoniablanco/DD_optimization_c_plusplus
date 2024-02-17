@@ -1,8 +1,8 @@
 #ifndef TEMPLATETYPE_INDEPENDENTSETPROBLEM_H
 #define TEMPLATETYPE_INDEPENDENTSETPROBLEM_H
 
-#include "../../Exceptions/MyExceptions.h"
-#include "../../Class/Problems/AbstractProblemClass.h"
+#include "MyExceptions.h"
+#include "AbstractProblemClass.h"
 
 #include <iostream>
 #include <string>

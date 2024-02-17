@@ -839,10 +839,9 @@ CMakeFiles/DD_optimization_program_tests.dir/Test/test_ProblemKnapsack.cpp.o: \
   /Users/antoniablanco/Desktop/DD_optimization_c-/build/_deps/googletest-src/googletest/include/gtest/gtest-typed-test.h \
   /Users/antoniablanco/Desktop/DD_optimization_c-/build/_deps/googletest-src/googletest/include/gtest/gtest_pred_impl.h \
   /Users/antoniablanco/Desktop/DD_optimization_c-/Class/AnswerStructure/../../Examples/Knapsack/KnapsackProblem.h \
-  /Users/antoniablanco/Desktop/DD_optimization_c-/Class/AnswerStructure/../../Examples/Knapsack/../../Exceptions/MyExceptions.h \
-  /Users/antoniablanco/Desktop/DD_optimization_c-/Class/AnswerStructure/../../Examples/Knapsack/../../Class/Problems/AbstractProblemClass.h \
-  /Users/antoniablanco/Desktop/DD_optimization_c-/Class/Problems/AbstractProblemClass.tpp \
+  /Users/antoniablanco/Desktop/DD_optimization_c-/Exceptions/MyExceptions.h \
   /Users/antoniablanco/Desktop/DD_optimization_c-/Class/Problems/AbstractProblemClass.h \
+  /Users/antoniablanco/Desktop/DD_optimization_c-/Class/Problems/AbstractProblemClass.tpp \
   /Users/antoniablanco/Desktop/DD_optimization_c-/Class/AnswerStructure/../../Class/DD.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/thread \
   /Users/antoniablanco/Desktop/DD_optimization_c-/Class/DDStructure/Graph.h \

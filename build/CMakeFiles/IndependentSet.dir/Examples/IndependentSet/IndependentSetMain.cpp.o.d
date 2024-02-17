@@ -792,7 +792,7 @@ CMakeFiles/IndependentSet.dir/Examples/IndependentSet/IndependentSetMain.cpp.o: 
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/cstdarg \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/sstream \
   /Users/antoniablanco/Desktop/DD_optimization_c-/Examples/IndependentSet/IndependentSetProblem.h \
-  /Users/antoniablanco/Desktop/DD_optimization_c-/Examples/IndependentSet/../../Exceptions/MyExceptions.h \
+  /Users/antoniablanco/Desktop/DD_optimization_c-/Exceptions/MyExceptions.h \
   /Users/antoniablanco/Desktop/DD_optimization_c-/Examples/IndependentSet/../../Class/Problems/AbstractProblemClass.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/map \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__tree \

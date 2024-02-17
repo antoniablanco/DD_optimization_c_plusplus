@@ -1742,7 +1742,6 @@ CMakeFiles/DD_optimization_program_tests.dir/Test/test_ProblemKnapsack.cpp.o: /U
   /Users/antoniablanco/Desktop/DD_optimization_c-/Class/ObjectiveFunction/LinearObjectiveDP.h \
   /Users/antoniablanco/Desktop/DD_optimization_c-/Class/ObjectiveFunction/ObjectiveFunction.h \
   /Users/antoniablanco/Desktop/DD_optimization_c-/Class/Problems/AbstractProblemClass.h \
-  /Users/antoniablanco/Desktop/DD_optimization_c-/Exceptions/MyExceptions.h \
   /Users/antoniablanco/Desktop/DD_optimization_c-/Examples/Knapsack/KnapsackProblem.h \
   /Users/antoniablanco/Desktop/DD_optimization_c-/Class/AnswerStructure/ObjectiveStructure.h \
   /Users/antoniablanco/Desktop/DD_optimization_c-/Class/AnswerStructure/ObjectiveStructure.tpp \
@@ -1774,6 +1773,7 @@ CMakeFiles/DD_optimization_program_tests.dir/Test/test_ProblemKnapsack.cpp.o: /U
   /Users/antoniablanco/Desktop/DD_optimization_c-/Class/RelaxedDDBuilder/RelaxedDDBuilder.tpp \
   /Users/antoniablanco/Desktop/DD_optimization_c-/Class/RestrictedDDBuilder/RestrictedDDBuilder.h \
   /Users/antoniablanco/Desktop/DD_optimization_c-/Class/RestrictedDDBuilder/RestrictedDDBuilder.tpp \
+  /Users/antoniablanco/Desktop/DD_optimization_c-/Exceptions/MyExceptions.h \
   /Users/antoniablanco/Desktop/DD_optimization_c-/Test/dd_controller_generators/DDKnapsack.cpp \
   _deps/googletest-src/googletest/include/gtest/gtest-death-test.h \
   _deps/googletest-src/googletest/include/gtest/gtest-matchers.h \
