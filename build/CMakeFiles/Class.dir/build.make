@@ -53,7 +53,7 @@ RM = /usr/local/Cellar/cmake/3.28.1/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program
+CMAKE_SOURCE_DIR = /Users/antoniablanco/Desktop/DD_optimization_c-
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /Users/antoniablanco/Desktop/DD_optimization_c-/build
@@ -69,271 +69,31 @@ include CMakeFiles/Class.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Class.dir/flags.make
 
-CMakeFiles/Class.dir/Class/AnswerStructure/ObjectiveStructure.cpp.o: CMakeFiles/Class.dir/flags.make
-CMakeFiles/Class.dir/Class/AnswerStructure/ObjectiveStructure.cpp.o: /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/AnswerStructure/ObjectiveStructure.cpp
-CMakeFiles/Class.dir/Class/AnswerStructure/ObjectiveStructure.cpp.o: CMakeFiles/Class.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/antoniablanco/Desktop/DD_optimization_c-/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Class.dir/Class/AnswerStructure/ObjectiveStructure.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Class.dir/Class/AnswerStructure/ObjectiveStructure.cpp.o -MF CMakeFiles/Class.dir/Class/AnswerStructure/ObjectiveStructure.cpp.o.d -o CMakeFiles/Class.dir/Class/AnswerStructure/ObjectiveStructure.cpp.o -c /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/AnswerStructure/ObjectiveStructure.cpp
-
-CMakeFiles/Class.dir/Class/AnswerStructure/ObjectiveStructure.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Class.dir/Class/AnswerStructure/ObjectiveStructure.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/AnswerStructure/ObjectiveStructure.cpp > CMakeFiles/Class.dir/Class/AnswerStructure/ObjectiveStructure.cpp.i
-
-CMakeFiles/Class.dir/Class/AnswerStructure/ObjectiveStructure.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Class.dir/Class/AnswerStructure/ObjectiveStructure.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/AnswerStructure/ObjectiveStructure.cpp -o CMakeFiles/Class.dir/Class/AnswerStructure/ObjectiveStructure.cpp.s
-
-CMakeFiles/Class.dir/Class/DDBuilder/AbstractDDBuilder.cpp.o: CMakeFiles/Class.dir/flags.make
-CMakeFiles/Class.dir/Class/DDBuilder/AbstractDDBuilder.cpp.o: /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDBuilder/AbstractDDBuilder.cpp
-CMakeFiles/Class.dir/Class/DDBuilder/AbstractDDBuilder.cpp.o: CMakeFiles/Class.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/antoniablanco/Desktop/DD_optimization_c-/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Class.dir/Class/DDBuilder/AbstractDDBuilder.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Class.dir/Class/DDBuilder/AbstractDDBuilder.cpp.o -MF CMakeFiles/Class.dir/Class/DDBuilder/AbstractDDBuilder.cpp.o.d -o CMakeFiles/Class.dir/Class/DDBuilder/AbstractDDBuilder.cpp.o -c /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDBuilder/AbstractDDBuilder.cpp
-
-CMakeFiles/Class.dir/Class/DDBuilder/AbstractDDBuilder.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Class.dir/Class/DDBuilder/AbstractDDBuilder.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDBuilder/AbstractDDBuilder.cpp > CMakeFiles/Class.dir/Class/DDBuilder/AbstractDDBuilder.cpp.i
-
-CMakeFiles/Class.dir/Class/DDBuilder/AbstractDDBuilder.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Class.dir/Class/DDBuilder/AbstractDDBuilder.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDBuilder/AbstractDDBuilder.cpp -o CMakeFiles/Class.dir/Class/DDBuilder/AbstractDDBuilder.cpp.s
-
-CMakeFiles/Class.dir/Class/DDBuilder/DDBuilder.cpp.o: CMakeFiles/Class.dir/flags.make
-CMakeFiles/Class.dir/Class/DDBuilder/DDBuilder.cpp.o: /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDBuilder/DDBuilder.cpp
-CMakeFiles/Class.dir/Class/DDBuilder/DDBuilder.cpp.o: CMakeFiles/Class.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/antoniablanco/Desktop/DD_optimization_c-/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Class.dir/Class/DDBuilder/DDBuilder.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Class.dir/Class/DDBuilder/DDBuilder.cpp.o -MF CMakeFiles/Class.dir/Class/DDBuilder/DDBuilder.cpp.o.d -o CMakeFiles/Class.dir/Class/DDBuilder/DDBuilder.cpp.o -c /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDBuilder/DDBuilder.cpp
-
-CMakeFiles/Class.dir/Class/DDBuilder/DDBuilder.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Class.dir/Class/DDBuilder/DDBuilder.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDBuilder/DDBuilder.cpp > CMakeFiles/Class.dir/Class/DDBuilder/DDBuilder.cpp.i
-
-CMakeFiles/Class.dir/Class/DDBuilder/DDBuilder.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Class.dir/Class/DDBuilder/DDBuilder.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDBuilder/DDBuilder.cpp -o CMakeFiles/Class.dir/Class/DDBuilder/DDBuilder.cpp.s
-
-CMakeFiles/Class.dir/Class/DDStructure/Arc.cpp.o: CMakeFiles/Class.dir/flags.make
-CMakeFiles/Class.dir/Class/DDStructure/Arc.cpp.o: /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDStructure/Arc.cpp
-CMakeFiles/Class.dir/Class/DDStructure/Arc.cpp.o: CMakeFiles/Class.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/antoniablanco/Desktop/DD_optimization_c-/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Class.dir/Class/DDStructure/Arc.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Class.dir/Class/DDStructure/Arc.cpp.o -MF CMakeFiles/Class.dir/Class/DDStructure/Arc.cpp.o.d -o CMakeFiles/Class.dir/Class/DDStructure/Arc.cpp.o -c /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDStructure/Arc.cpp
-
-CMakeFiles/Class.dir/Class/DDStructure/Arc.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Class.dir/Class/DDStructure/Arc.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDStructure/Arc.cpp > CMakeFiles/Class.dir/Class/DDStructure/Arc.cpp.i
-
-CMakeFiles/Class.dir/Class/DDStructure/Arc.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Class.dir/Class/DDStructure/Arc.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDStructure/Arc.cpp -o CMakeFiles/Class.dir/Class/DDStructure/Arc.cpp.s
-
-CMakeFiles/Class.dir/Class/DDStructure/Node.cpp.o: CMakeFiles/Class.dir/flags.make
-CMakeFiles/Class.dir/Class/DDStructure/Node.cpp.o: /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDStructure/Node.cpp
-CMakeFiles/Class.dir/Class/DDStructure/Node.cpp.o: CMakeFiles/Class.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/antoniablanco/Desktop/DD_optimization_c-/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Class.dir/Class/DDStructure/Node.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Class.dir/Class/DDStructure/Node.cpp.o -MF CMakeFiles/Class.dir/Class/DDStructure/Node.cpp.o.d -o CMakeFiles/Class.dir/Class/DDStructure/Node.cpp.o -c /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDStructure/Node.cpp
-
-CMakeFiles/Class.dir/Class/DDStructure/Node.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Class.dir/Class/DDStructure/Node.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDStructure/Node.cpp > CMakeFiles/Class.dir/Class/DDStructure/Node.cpp.i
-
-CMakeFiles/Class.dir/Class/DDStructure/Node.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Class.dir/Class/DDStructure/Node.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDStructure/Node.cpp -o CMakeFiles/Class.dir/Class/DDStructure/Node.cpp.s
-
-CMakeFiles/Class.dir/Class/DDStructure/Graph.cpp.o: CMakeFiles/Class.dir/flags.make
-CMakeFiles/Class.dir/Class/DDStructure/Graph.cpp.o: /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDStructure/Graph.cpp
-CMakeFiles/Class.dir/Class/DDStructure/Graph.cpp.o: CMakeFiles/Class.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/antoniablanco/Desktop/DD_optimization_c-/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Class.dir/Class/DDStructure/Graph.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Class.dir/Class/DDStructure/Graph.cpp.o -MF CMakeFiles/Class.dir/Class/DDStructure/Graph.cpp.o.d -o CMakeFiles/Class.dir/Class/DDStructure/Graph.cpp.o -c /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDStructure/Graph.cpp
-
-CMakeFiles/Class.dir/Class/DDStructure/Graph.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Class.dir/Class/DDStructure/Graph.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDStructure/Graph.cpp > CMakeFiles/Class.dir/Class/DDStructure/Graph.cpp.i
-
-CMakeFiles/Class.dir/Class/DDStructure/Graph.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Class.dir/Class/DDStructure/Graph.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDStructure/Graph.cpp -o CMakeFiles/Class.dir/Class/DDStructure/Graph.cpp.s
-
 CMakeFiles/Class.dir/Class/DDStructure/utils.cpp.o: CMakeFiles/Class.dir/flags.make
-CMakeFiles/Class.dir/Class/DDStructure/utils.cpp.o: /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDStructure/utils.cpp
+CMakeFiles/Class.dir/Class/DDStructure/utils.cpp.o: /Users/antoniablanco/Desktop/DD_optimization_c-/Class/DDStructure/utils.cpp
 CMakeFiles/Class.dir/Class/DDStructure/utils.cpp.o: CMakeFiles/Class.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/antoniablanco/Desktop/DD_optimization_c-/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Class.dir/Class/DDStructure/utils.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Class.dir/Class/DDStructure/utils.cpp.o -MF CMakeFiles/Class.dir/Class/DDStructure/utils.cpp.o.d -o CMakeFiles/Class.dir/Class/DDStructure/utils.cpp.o -c /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDStructure/utils.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/antoniablanco/Desktop/DD_optimization_c-/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Class.dir/Class/DDStructure/utils.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Class.dir/Class/DDStructure/utils.cpp.o -MF CMakeFiles/Class.dir/Class/DDStructure/utils.cpp.o.d -o CMakeFiles/Class.dir/Class/DDStructure/utils.cpp.o -c /Users/antoniablanco/Desktop/DD_optimization_c-/Class/DDStructure/utils.cpp
 
 CMakeFiles/Class.dir/Class/DDStructure/utils.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Class.dir/Class/DDStructure/utils.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDStructure/utils.cpp > CMakeFiles/Class.dir/Class/DDStructure/utils.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/antoniablanco/Desktop/DD_optimization_c-/Class/DDStructure/utils.cpp > CMakeFiles/Class.dir/Class/DDStructure/utils.cpp.i
 
 CMakeFiles/Class.dir/Class/DDStructure/utils.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Class.dir/Class/DDStructure/utils.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDStructure/utils.cpp -o CMakeFiles/Class.dir/Class/DDStructure/utils.cpp.s
-
-CMakeFiles/Class.dir/Class/GraphVisualization/GraphFile.cpp.o: CMakeFiles/Class.dir/flags.make
-CMakeFiles/Class.dir/Class/GraphVisualization/GraphFile.cpp.o: /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/GraphVisualization/GraphFile.cpp
-CMakeFiles/Class.dir/Class/GraphVisualization/GraphFile.cpp.o: CMakeFiles/Class.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/antoniablanco/Desktop/DD_optimization_c-/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Class.dir/Class/GraphVisualization/GraphFile.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Class.dir/Class/GraphVisualization/GraphFile.cpp.o -MF CMakeFiles/Class.dir/Class/GraphVisualization/GraphFile.cpp.o.d -o CMakeFiles/Class.dir/Class/GraphVisualization/GraphFile.cpp.o -c /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/GraphVisualization/GraphFile.cpp
-
-CMakeFiles/Class.dir/Class/GraphVisualization/GraphFile.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Class.dir/Class/GraphVisualization/GraphFile.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/GraphVisualization/GraphFile.cpp > CMakeFiles/Class.dir/Class/GraphVisualization/GraphFile.cpp.i
-
-CMakeFiles/Class.dir/Class/GraphVisualization/GraphFile.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Class.dir/Class/GraphVisualization/GraphFile.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/GraphVisualization/GraphFile.cpp -o CMakeFiles/Class.dir/Class/GraphVisualization/GraphFile.cpp.s
-
-CMakeFiles/Class.dir/Class/ObjectiveFunction/LinearObjectiveDP.cpp.o: CMakeFiles/Class.dir/flags.make
-CMakeFiles/Class.dir/Class/ObjectiveFunction/LinearObjectiveDP.cpp.o: /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/ObjectiveFunction/LinearObjectiveDP.cpp
-CMakeFiles/Class.dir/Class/ObjectiveFunction/LinearObjectiveDP.cpp.o: CMakeFiles/Class.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/antoniablanco/Desktop/DD_optimization_c-/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Class.dir/Class/ObjectiveFunction/LinearObjectiveDP.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Class.dir/Class/ObjectiveFunction/LinearObjectiveDP.cpp.o -MF CMakeFiles/Class.dir/Class/ObjectiveFunction/LinearObjectiveDP.cpp.o.d -o CMakeFiles/Class.dir/Class/ObjectiveFunction/LinearObjectiveDP.cpp.o -c /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/ObjectiveFunction/LinearObjectiveDP.cpp
-
-CMakeFiles/Class.dir/Class/ObjectiveFunction/LinearObjectiveDP.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Class.dir/Class/ObjectiveFunction/LinearObjectiveDP.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/ObjectiveFunction/LinearObjectiveDP.cpp > CMakeFiles/Class.dir/Class/ObjectiveFunction/LinearObjectiveDP.cpp.i
-
-CMakeFiles/Class.dir/Class/ObjectiveFunction/LinearObjectiveDP.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Class.dir/Class/ObjectiveFunction/LinearObjectiveDP.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/ObjectiveFunction/LinearObjectiveDP.cpp -o CMakeFiles/Class.dir/Class/ObjectiveFunction/LinearObjectiveDP.cpp.s
-
-CMakeFiles/Class.dir/Class/ObjectiveFunction/ObjectiveFunction.cpp.o: CMakeFiles/Class.dir/flags.make
-CMakeFiles/Class.dir/Class/ObjectiveFunction/ObjectiveFunction.cpp.o: /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/ObjectiveFunction/ObjectiveFunction.cpp
-CMakeFiles/Class.dir/Class/ObjectiveFunction/ObjectiveFunction.cpp.o: CMakeFiles/Class.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/antoniablanco/Desktop/DD_optimization_c-/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Class.dir/Class/ObjectiveFunction/ObjectiveFunction.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Class.dir/Class/ObjectiveFunction/ObjectiveFunction.cpp.o -MF CMakeFiles/Class.dir/Class/ObjectiveFunction/ObjectiveFunction.cpp.o.d -o CMakeFiles/Class.dir/Class/ObjectiveFunction/ObjectiveFunction.cpp.o -c /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/ObjectiveFunction/ObjectiveFunction.cpp
-
-CMakeFiles/Class.dir/Class/ObjectiveFunction/ObjectiveFunction.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Class.dir/Class/ObjectiveFunction/ObjectiveFunction.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/ObjectiveFunction/ObjectiveFunction.cpp > CMakeFiles/Class.dir/Class/ObjectiveFunction/ObjectiveFunction.cpp.i
-
-CMakeFiles/Class.dir/Class/ObjectiveFunction/ObjectiveFunction.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Class.dir/Class/ObjectiveFunction/ObjectiveFunction.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/ObjectiveFunction/ObjectiveFunction.cpp -o CMakeFiles/Class.dir/Class/ObjectiveFunction/ObjectiveFunction.cpp.s
-
-CMakeFiles/Class.dir/Class/ObjectiveFunction/AbstractObjective.cpp.o: CMakeFiles/Class.dir/flags.make
-CMakeFiles/Class.dir/Class/ObjectiveFunction/AbstractObjective.cpp.o: /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/ObjectiveFunction/AbstractObjective.cpp
-CMakeFiles/Class.dir/Class/ObjectiveFunction/AbstractObjective.cpp.o: CMakeFiles/Class.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/antoniablanco/Desktop/DD_optimization_c-/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Class.dir/Class/ObjectiveFunction/AbstractObjective.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Class.dir/Class/ObjectiveFunction/AbstractObjective.cpp.o -MF CMakeFiles/Class.dir/Class/ObjectiveFunction/AbstractObjective.cpp.o.d -o CMakeFiles/Class.dir/Class/ObjectiveFunction/AbstractObjective.cpp.o -c /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/ObjectiveFunction/AbstractObjective.cpp
-
-CMakeFiles/Class.dir/Class/ObjectiveFunction/AbstractObjective.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Class.dir/Class/ObjectiveFunction/AbstractObjective.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/ObjectiveFunction/AbstractObjective.cpp > CMakeFiles/Class.dir/Class/ObjectiveFunction/AbstractObjective.cpp.i
-
-CMakeFiles/Class.dir/Class/ObjectiveFunction/AbstractObjective.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Class.dir/Class/ObjectiveFunction/AbstractObjective.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/ObjectiveFunction/AbstractObjective.cpp -o CMakeFiles/Class.dir/Class/ObjectiveFunction/AbstractObjective.cpp.s
-
-CMakeFiles/Class.dir/Class/Problems/AbstractProblemClass.cpp.o: CMakeFiles/Class.dir/flags.make
-CMakeFiles/Class.dir/Class/Problems/AbstractProblemClass.cpp.o: /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/Problems/AbstractProblemClass.cpp
-CMakeFiles/Class.dir/Class/Problems/AbstractProblemClass.cpp.o: CMakeFiles/Class.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/antoniablanco/Desktop/DD_optimization_c-/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Class.dir/Class/Problems/AbstractProblemClass.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Class.dir/Class/Problems/AbstractProblemClass.cpp.o -MF CMakeFiles/Class.dir/Class/Problems/AbstractProblemClass.cpp.o.d -o CMakeFiles/Class.dir/Class/Problems/AbstractProblemClass.cpp.o -c /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/Problems/AbstractProblemClass.cpp
-
-CMakeFiles/Class.dir/Class/Problems/AbstractProblemClass.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Class.dir/Class/Problems/AbstractProblemClass.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/Problems/AbstractProblemClass.cpp > CMakeFiles/Class.dir/Class/Problems/AbstractProblemClass.cpp.i
-
-CMakeFiles/Class.dir/Class/Problems/AbstractProblemClass.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Class.dir/Class/Problems/AbstractProblemClass.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/Problems/AbstractProblemClass.cpp -o CMakeFiles/Class.dir/Class/Problems/AbstractProblemClass.cpp.s
-
-CMakeFiles/Class.dir/Class/ReduceDDBuilder/ReduceDDBuilder.cpp.o: CMakeFiles/Class.dir/flags.make
-CMakeFiles/Class.dir/Class/ReduceDDBuilder/ReduceDDBuilder.cpp.o: /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/ReduceDDBuilder/ReduceDDBuilder.cpp
-CMakeFiles/Class.dir/Class/ReduceDDBuilder/ReduceDDBuilder.cpp.o: CMakeFiles/Class.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/antoniablanco/Desktop/DD_optimization_c-/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Class.dir/Class/ReduceDDBuilder/ReduceDDBuilder.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Class.dir/Class/ReduceDDBuilder/ReduceDDBuilder.cpp.o -MF CMakeFiles/Class.dir/Class/ReduceDDBuilder/ReduceDDBuilder.cpp.o.d -o CMakeFiles/Class.dir/Class/ReduceDDBuilder/ReduceDDBuilder.cpp.o -c /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/ReduceDDBuilder/ReduceDDBuilder.cpp
-
-CMakeFiles/Class.dir/Class/ReduceDDBuilder/ReduceDDBuilder.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Class.dir/Class/ReduceDDBuilder/ReduceDDBuilder.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/ReduceDDBuilder/ReduceDDBuilder.cpp > CMakeFiles/Class.dir/Class/ReduceDDBuilder/ReduceDDBuilder.cpp.i
-
-CMakeFiles/Class.dir/Class/ReduceDDBuilder/ReduceDDBuilder.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Class.dir/Class/ReduceDDBuilder/ReduceDDBuilder.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/ReduceDDBuilder/ReduceDDBuilder.cpp -o CMakeFiles/Class.dir/Class/ReduceDDBuilder/ReduceDDBuilder.cpp.s
-
-CMakeFiles/Class.dir/Class/RestrictedDDBuilder/RestrictedDDBuilder.cpp.o: CMakeFiles/Class.dir/flags.make
-CMakeFiles/Class.dir/Class/RestrictedDDBuilder/RestrictedDDBuilder.cpp.o: /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/RestrictedDDBuilder/RestrictedDDBuilder.cpp
-CMakeFiles/Class.dir/Class/RestrictedDDBuilder/RestrictedDDBuilder.cpp.o: CMakeFiles/Class.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/antoniablanco/Desktop/DD_optimization_c-/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/Class.dir/Class/RestrictedDDBuilder/RestrictedDDBuilder.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Class.dir/Class/RestrictedDDBuilder/RestrictedDDBuilder.cpp.o -MF CMakeFiles/Class.dir/Class/RestrictedDDBuilder/RestrictedDDBuilder.cpp.o.d -o CMakeFiles/Class.dir/Class/RestrictedDDBuilder/RestrictedDDBuilder.cpp.o -c /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/RestrictedDDBuilder/RestrictedDDBuilder.cpp
-
-CMakeFiles/Class.dir/Class/RestrictedDDBuilder/RestrictedDDBuilder.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Class.dir/Class/RestrictedDDBuilder/RestrictedDDBuilder.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/RestrictedDDBuilder/RestrictedDDBuilder.cpp > CMakeFiles/Class.dir/Class/RestrictedDDBuilder/RestrictedDDBuilder.cpp.i
-
-CMakeFiles/Class.dir/Class/RestrictedDDBuilder/RestrictedDDBuilder.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Class.dir/Class/RestrictedDDBuilder/RestrictedDDBuilder.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/RestrictedDDBuilder/RestrictedDDBuilder.cpp -o CMakeFiles/Class.dir/Class/RestrictedDDBuilder/RestrictedDDBuilder.cpp.s
-
-CMakeFiles/Class.dir/Class/RelaxedDDBuilder/RelaxedDDBuilder.cpp.o: CMakeFiles/Class.dir/flags.make
-CMakeFiles/Class.dir/Class/RelaxedDDBuilder/RelaxedDDBuilder.cpp.o: /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/RelaxedDDBuilder/RelaxedDDBuilder.cpp
-CMakeFiles/Class.dir/Class/RelaxedDDBuilder/RelaxedDDBuilder.cpp.o: CMakeFiles/Class.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/antoniablanco/Desktop/DD_optimization_c-/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/Class.dir/Class/RelaxedDDBuilder/RelaxedDDBuilder.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Class.dir/Class/RelaxedDDBuilder/RelaxedDDBuilder.cpp.o -MF CMakeFiles/Class.dir/Class/RelaxedDDBuilder/RelaxedDDBuilder.cpp.o.d -o CMakeFiles/Class.dir/Class/RelaxedDDBuilder/RelaxedDDBuilder.cpp.o -c /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/RelaxedDDBuilder/RelaxedDDBuilder.cpp
-
-CMakeFiles/Class.dir/Class/RelaxedDDBuilder/RelaxedDDBuilder.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Class.dir/Class/RelaxedDDBuilder/RelaxedDDBuilder.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/RelaxedDDBuilder/RelaxedDDBuilder.cpp > CMakeFiles/Class.dir/Class/RelaxedDDBuilder/RelaxedDDBuilder.cpp.i
-
-CMakeFiles/Class.dir/Class/RelaxedDDBuilder/RelaxedDDBuilder.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Class.dir/Class/RelaxedDDBuilder/RelaxedDDBuilder.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/RelaxedDDBuilder/RelaxedDDBuilder.cpp -o CMakeFiles/Class.dir/Class/RelaxedDDBuilder/RelaxedDDBuilder.cpp.s
-
-CMakeFiles/Class.dir/Class/DD.cpp.o: CMakeFiles/Class.dir/flags.make
-CMakeFiles/Class.dir/Class/DD.cpp.o: /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DD.cpp
-CMakeFiles/Class.dir/Class/DD.cpp.o: CMakeFiles/Class.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/antoniablanco/Desktop/DD_optimization_c-/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/Class.dir/Class/DD.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Class.dir/Class/DD.cpp.o -MF CMakeFiles/Class.dir/Class/DD.cpp.o.d -o CMakeFiles/Class.dir/Class/DD.cpp.o -c /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DD.cpp
-
-CMakeFiles/Class.dir/Class/DD.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Class.dir/Class/DD.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DD.cpp > CMakeFiles/Class.dir/Class/DD.cpp.i
-
-CMakeFiles/Class.dir/Class/DD.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Class.dir/Class/DD.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DD.cpp -o CMakeFiles/Class.dir/Class/DD.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/antoniablanco/Desktop/DD_optimization_c-/Class/DDStructure/utils.cpp -o CMakeFiles/Class.dir/Class/DDStructure/utils.cpp.s
 
 # Object files for target Class
 Class_OBJECTS = \
-"CMakeFiles/Class.dir/Class/AnswerStructure/ObjectiveStructure.cpp.o" \
-"CMakeFiles/Class.dir/Class/DDBuilder/AbstractDDBuilder.cpp.o" \
-"CMakeFiles/Class.dir/Class/DDBuilder/DDBuilder.cpp.o" \
-"CMakeFiles/Class.dir/Class/DDStructure/Arc.cpp.o" \
-"CMakeFiles/Class.dir/Class/DDStructure/Node.cpp.o" \
-"CMakeFiles/Class.dir/Class/DDStructure/Graph.cpp.o" \
-"CMakeFiles/Class.dir/Class/DDStructure/utils.cpp.o" \
-"CMakeFiles/Class.dir/Class/GraphVisualization/GraphFile.cpp.o" \
-"CMakeFiles/Class.dir/Class/ObjectiveFunction/LinearObjectiveDP.cpp.o" \
-"CMakeFiles/Class.dir/Class/ObjectiveFunction/ObjectiveFunction.cpp.o" \
-"CMakeFiles/Class.dir/Class/ObjectiveFunction/AbstractObjective.cpp.o" \
-"CMakeFiles/Class.dir/Class/Problems/AbstractProblemClass.cpp.o" \
-"CMakeFiles/Class.dir/Class/ReduceDDBuilder/ReduceDDBuilder.cpp.o" \
-"CMakeFiles/Class.dir/Class/RestrictedDDBuilder/RestrictedDDBuilder.cpp.o" \
-"CMakeFiles/Class.dir/Class/RelaxedDDBuilder/RelaxedDDBuilder.cpp.o" \
-"CMakeFiles/Class.dir/Class/DD.cpp.o"
+"CMakeFiles/Class.dir/Class/DDStructure/utils.cpp.o"
 
 # External object files for target Class
 Class_EXTERNAL_OBJECTS =
 
-libClass.a: CMakeFiles/Class.dir/Class/AnswerStructure/ObjectiveStructure.cpp.o
-libClass.a: CMakeFiles/Class.dir/Class/DDBuilder/AbstractDDBuilder.cpp.o
-libClass.a: CMakeFiles/Class.dir/Class/DDBuilder/DDBuilder.cpp.o
-libClass.a: CMakeFiles/Class.dir/Class/DDStructure/Arc.cpp.o
-libClass.a: CMakeFiles/Class.dir/Class/DDStructure/Node.cpp.o
-libClass.a: CMakeFiles/Class.dir/Class/DDStructure/Graph.cpp.o
 libClass.a: CMakeFiles/Class.dir/Class/DDStructure/utils.cpp.o
-libClass.a: CMakeFiles/Class.dir/Class/GraphVisualization/GraphFile.cpp.o
-libClass.a: CMakeFiles/Class.dir/Class/ObjectiveFunction/LinearObjectiveDP.cpp.o
-libClass.a: CMakeFiles/Class.dir/Class/ObjectiveFunction/ObjectiveFunction.cpp.o
-libClass.a: CMakeFiles/Class.dir/Class/ObjectiveFunction/AbstractObjective.cpp.o
-libClass.a: CMakeFiles/Class.dir/Class/Problems/AbstractProblemClass.cpp.o
-libClass.a: CMakeFiles/Class.dir/Class/ReduceDDBuilder/ReduceDDBuilder.cpp.o
-libClass.a: CMakeFiles/Class.dir/Class/RestrictedDDBuilder/RestrictedDDBuilder.cpp.o
-libClass.a: CMakeFiles/Class.dir/Class/RelaxedDDBuilder/RelaxedDDBuilder.cpp.o
-libClass.a: CMakeFiles/Class.dir/Class/DD.cpp.o
 libClass.a: CMakeFiles/Class.dir/build.make
 libClass.a: CMakeFiles/Class.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/antoniablanco/Desktop/DD_optimization_c-/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX static library libClass.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/antoniablanco/Desktop/DD_optimization_c-/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libClass.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/Class.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Class.dir/link.txt --verbose=$(VERBOSE)
 
@@ -346,6 +106,6 @@ CMakeFiles/Class.dir/clean:
 .PHONY : CMakeFiles/Class.dir/clean
 
 CMakeFiles/Class.dir/depend:
-	cd /Users/antoniablanco/Desktop/DD_optimization_c-/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program /Users/antoniablanco/Desktop/DD_optimization_c-/build /Users/antoniablanco/Desktop/DD_optimization_c-/build /Users/antoniablanco/Desktop/DD_optimization_c-/build/CMakeFiles/Class.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /Users/antoniablanco/Desktop/DD_optimization_c-/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/antoniablanco/Desktop/DD_optimization_c- /Users/antoniablanco/Desktop/DD_optimization_c- /Users/antoniablanco/Desktop/DD_optimization_c-/build /Users/antoniablanco/Desktop/DD_optimization_c-/build /Users/antoniablanco/Desktop/DD_optimization_c-/build/CMakeFiles/Class.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/Class.dir/depend
 

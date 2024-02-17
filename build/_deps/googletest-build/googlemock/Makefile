@@ -57,7 +57,7 @@ RM = /usr/local/Cellar/cmake/3.28.1/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program
+CMAKE_SOURCE_DIR = /Users/antoniablanco/Desktop/DD_optimization_c-
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /Users/antoniablanco/Desktop/DD_optimization_c-/build

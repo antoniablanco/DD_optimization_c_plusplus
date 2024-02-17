@@ -199,13 +199,13 @@ CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 CMAKE_PROJECT_NAME:STATIC=DD_optimization_program
 
 //Value Computed by CMake
-CMAKE_PROJECT_VERSION:STATIC=1.14.0
+CMAKE_PROJECT_VERSION:STATIC=1.11.0
 
 //Value Computed by CMake
 CMAKE_PROJECT_VERSION_MAJOR:STATIC=1
 
 //Value Computed by CMake
-CMAKE_PROJECT_VERSION_MINOR:STATIC=14
+CMAKE_PROJECT_VERSION_MINOR:STATIC=11
 
 //Value Computed by CMake
 CMAKE_PROJECT_VERSION_PATCH:STATIC=0
@@ -285,7 +285,7 @@ DD_optimization_program_BINARY_DIR:STATIC=/Users/antoniablanco/Desktop/DD_optimi
 DD_optimization_program_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
-DD_optimization_program_SOURCE_DIR:STATIC=/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program
+DD_optimization_program_SOURCE_DIR:STATIC=/Users/antoniablanco/Desktop/DD_optimization_c-
 
 //Directory under which to collect all populated content
 FETCHCONTENT_BASE_DIR:PATH=/Users/antoniablanco/Desktop/DD_optimization_c-/build/_deps
@@ -306,10 +306,6 @@ FETCHCONTENT_UPDATES_DISCONNECTED:BOOL=OFF
 
 //Enables UPDATE_DISCONNECTED behavior just for population of googletest
 FETCHCONTENT_UPDATES_DISCONNECTED_GOOGLETEST:BOOL=OFF
-
-//Use Abseil and RE2. Requires Abseil and RE2 to be separately
-// added to the build.
-GTEST_HAS_ABSL:BOOL=OFF
 
 //Enable installation of googletest. (Projects embedding googletest
 // may want to turn this OFF.)
@@ -449,7 +445,7 @@ CMAKE_GENERATOR_TOOLSET:INTERNAL=
 CMAKE_HAVE_LIBC_PTHREAD:INTERNAL=1
 //Source directory with the top level CMakeLists.txt file for this
 // project
-CMAKE_HOME_DIRECTORY:INTERNAL=/Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program
+CMAKE_HOME_DIRECTORY:INTERNAL=/Users/antoniablanco/Desktop/DD_optimization_c-
 //ADVANCED property for variable: CMAKE_INSTALL_BINDIR
 CMAKE_INSTALL_BINDIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_INSTALL_DATADIR

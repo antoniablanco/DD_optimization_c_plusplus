@@ -1,5 +1,5 @@
 CMakeFiles/DD_optimization_program_tests.dir/Test/test_ProblemIndependentSet.cpp.o: \
-  /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Test/test_ProblemIndependentSet.cpp \
+  /Users/antoniablanco/Desktop/DD_optimization_c-/Test/test_ProblemIndependentSet.cpp \
   /Users/antoniablanco/Desktop/DD_optimization_c-/build/_deps/googletest-src/googletest/include/gtest/gtest.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/cstddef \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__assert \
@@ -273,6 +273,13 @@ CMakeFiles/DD_optimization_program_tests.dir/Test/test_ProblemIndependentSet.cpp
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__utility/swap.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__fwd/array.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__fwd/subrange.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__fwd/tuple.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__tuple_dir/tuple_element.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__tuple_dir/tuple_indices.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__utility/integer_sequence.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__tuple_dir/tuple_types.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__utility/piecewise_construct.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__memory/concepts.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__iterator/concepts.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__concepts/arithmetic.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__type_traits/is_signed_integer.h \
@@ -292,13 +299,6 @@ CMakeFiles/DD_optimization_program_tests.dir/Test/test_ProblemIndependentSet.cpp
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__iterator/iter_move.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__iterator/iterator_traits.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__iterator/readable_traits.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__fwd/tuple.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__tuple_dir/tuple_element.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__tuple_dir/tuple_indices.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__utility/integer_sequence.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__tuple_dir/tuple_types.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__utility/piecewise_construct.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__memory/concepts.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__ranges/access.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__ranges/enable_borrowed_range.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__utility/auto_cast.h \
@@ -688,6 +688,26 @@ CMakeFiles/DD_optimization_program_tests.dir/Test/test_ProblemIndependentSet.cpp
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__algorithm/shift_left.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__algorithm/shift_right.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__algorithm/transform.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/chrono \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__chrono/calendar.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__chrono/convert_to_tm.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__chrono/day.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__chrono/hh_mm_ss.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__chrono/month.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__chrono/month_weekday.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__chrono/weekday.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__chrono/monthday.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__chrono/statically_widen.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__format/concepts.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__format/format_fwd.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__format/format_parse_context.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__format/format_error.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__chrono/year.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__chrono/year_month.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__chrono/year_month_day.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__chrono/year_month_weekday.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__chrono/file_clock.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__chrono/literals.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/functional \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__functional/binary_negate.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__functional/bind.h \
@@ -705,7 +725,6 @@ CMakeFiles/DD_optimization_program_tests.dir/Test/test_ProblemIndependentSet.cpp
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/optional \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/vector \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__format/formatter.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__format/format_fwd.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__memory/temp_value.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__split_buffer \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__functional/compose.h \
@@ -819,37 +838,21 @@ CMakeFiles/DD_optimization_program_tests.dir/Test/test_ProblemIndependentSet.cpp
   /Users/antoniablanco/Desktop/DD_optimization_c-/build/_deps/googletest-src/googletest/include/gtest/gtest_prod.h \
   /Users/antoniablanco/Desktop/DD_optimization_c-/build/_deps/googletest-src/googletest/include/gtest/gtest-typed-test.h \
   /Users/antoniablanco/Desktop/DD_optimization_c-/build/_deps/googletest-src/googletest/include/gtest/gtest_pred_impl.h \
-  /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/AnswerStructure/../../Examples/IndependentSet/IndependentSetProblem.h \
-  /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Exceptions/MyExceptions.h \
-  /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/Problems/AbstractProblemClass.h \
-  /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDStructure/utils.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/list \
+  /Users/antoniablanco/Desktop/DD_optimization_c-/Class/AnswerStructure/../../Examples/IndependentSet/IndependentSetProblem.h \
+  /Users/antoniablanco/Desktop/DD_optimization_c-/Class/AnswerStructure/../../Examples/IndependentSet/../../Exceptions/MyExceptions.h \
+  /Users/antoniablanco/Desktop/DD_optimization_c-/Class/AnswerStructure/../../Examples/IndependentSet/../../Class/Problems/AbstractProblemClass.h \
+  /Users/antoniablanco/Desktop/DD_optimization_c-/Class/Problems/AbstractProblemClass.tpp \
+  /Users/antoniablanco/Desktop/DD_optimization_c-/Class/Problems/AbstractProblemClass.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/unordered_set \
-  /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/AnswerStructure/../../Class/DD.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/chrono \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__chrono/calendar.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__chrono/convert_to_tm.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__chrono/day.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__chrono/hh_mm_ss.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__chrono/month.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__chrono/month_weekday.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__chrono/weekday.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__chrono/monthday.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__chrono/statically_widen.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__format/concepts.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__format/format_parse_context.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__format/format_error.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__chrono/year.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__chrono/year_month.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__chrono/year_month_day.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__chrono/year_month_weekday.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__chrono/file_clock.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__chrono/literals.h \
+  /Users/antoniablanco/Desktop/DD_optimization_c-/Class/AnswerStructure/../../Class/DD.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/thread \
-  /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDStructure/Graph.h \
-  /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDStructure/Node.h \
-  /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDStructure/Arc.h \
-  /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/GraphVisualization/GraphFile.h \
+  /Users/antoniablanco/Desktop/DD_optimization_c-/Class/DDStructure/Graph.h \
+  /Users/antoniablanco/Desktop/DD_optimization_c-/Class/DDStructure/Node.h \
+  /Users/antoniablanco/Desktop/DD_optimization_c-/Class/DDStructure/Node.tpp \
+  /Users/antoniablanco/Desktop/DD_optimization_c-/Class/DDStructure/Arc.h \
+  /Users/antoniablanco/Desktop/DD_optimization_c-/Class/DDStructure/Arc.tpp \
+  /Users/antoniablanco/Desktop/DD_optimization_c-/Class/DDStructure/Graph.tpp \
+  /Users/antoniablanco/Desktop/DD_optimization_c-/Class/GraphVisualization/GraphFile.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/fstream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/filesystem \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__filesystem/copy_options.h \
@@ -868,15 +871,28 @@ CMakeFiles/DD_optimization_program_tests.dir/Test/test_ProblemIndependentSet.cpp
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__filesystem/path_iterator.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__filesystem/recursive_directory_iterator.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__filesystem/u8path.h \
-  /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDBuilder/DDBuilder.h \
-  /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DDBuilder/AbstractDDBuilder.h \
-  /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/RestrictedDDBuilder/RestrictedDDBuilder.h \
-  /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/RelaxedDDBuilder/RelaxedDDBuilder.h \
-  /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/ReduceDDBuilder/ReduceDDBuilder.h \
-  /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/AnswerStructure/../../Class/AnswerStructure/ObjectiveStructure.h \
-  /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/AnswerStructure/../../Class/ObjectiveFunction/LinearObjectiveDP.h \
-  /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/ObjectiveFunction/AbstractObjective.h \
-  /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/AnswerStructure/ObjectiveStructure.h \
-  /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/AnswerStructure/../../Class/ObjectiveFunction/ObjectiveFunction.h \
-  /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Class/DD.h \
-  /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program/Test/dd_controller_generators/DDIndependentSet.cpp
+  /Users/antoniablanco/Desktop/DD_optimization_c-/Class/GraphVisualization/GraphFile.tpp \
+  /Users/antoniablanco/Desktop/DD_optimization_c-/Class/DDBuilder/DDBuilder.h \
+  /Users/antoniablanco/Desktop/DD_optimization_c-/Class/DDBuilder/AbstractDDBuilder.h \
+  /Users/antoniablanco/Desktop/DD_optimization_c-/Class/DDBuilder/AbstractDDBuilder.tpp \
+  /Users/antoniablanco/Desktop/DD_optimization_c-/Class/DDBuilder/DDBuilder.tpp \
+  /Users/antoniablanco/Desktop/DD_optimization_c-/Class/RestrictedDDBuilder/RestrictedDDBuilder.h \
+  /Users/antoniablanco/Desktop/DD_optimization_c-/Class/RestrictedDDBuilder/RestrictedDDBuilder.tpp \
+  /Users/antoniablanco/Desktop/DD_optimization_c-/Class/RelaxedDDBuilder/RelaxedDDBuilder.h \
+  /Users/antoniablanco/Desktop/DD_optimization_c-/Class/RelaxedDDBuilder/RelaxedDDBuilder.tpp \
+  /Users/antoniablanco/Desktop/DD_optimization_c-/Class/ReduceDDBuilder/ReduceDDBuilder.h \
+  /Users/antoniablanco/Desktop/DD_optimization_c-/Class/ReduceDDBuilder/ReduceDDBuilder.tpp \
+  /Users/antoniablanco/Desktop/DD_optimization_c-/Class/DD.tpp \
+  /Users/antoniablanco/Desktop/DD_optimization_c-/Class/DD.h \
+  /Users/antoniablanco/Desktop/DD_optimization_c-/Class/AnswerStructure/../../Class/ObjectiveFunction/LinearObjectiveDP.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/list \
+  /Users/antoniablanco/Desktop/DD_optimization_c-/Class/ObjectiveFunction/AbstractObjective.h \
+  /Users/antoniablanco/Desktop/DD_optimization_c-/Class/AnswerStructure/ObjectiveStructure.h \
+  /Users/antoniablanco/Desktop/DD_optimization_c-/Class/AnswerStructure/ObjectiveStructure.tpp \
+  /Users/antoniablanco/Desktop/DD_optimization_c-/Class/ObjectiveFunction/AbstractObjective.tpp \
+  /Users/antoniablanco/Desktop/DD_optimization_c-/Class/ObjectiveFunction/LinearObjectiveDP.tpp \
+  /Users/antoniablanco/Desktop/DD_optimization_c-/Class/ObjectiveFunction/LinearObjectiveDP.h \
+  /Users/antoniablanco/Desktop/DD_optimization_c-/Class/AnswerStructure/../../Class/ObjectiveFunction/ObjectiveFunction.h \
+  /Users/antoniablanco/Desktop/DD_optimization_c-/Class/ObjectiveFunction/ObjectiveFunction.tpp \
+  /Users/antoniablanco/Desktop/DD_optimization_c-/Class/ObjectiveFunction/ObjectiveFunction.h \
+  /Users/antoniablanco/Desktop/DD_optimization_c-/Test/dd_controller_generators/DDIndependentSet.cpp

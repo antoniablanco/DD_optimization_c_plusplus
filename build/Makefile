@@ -57,7 +57,7 @@ RM = /usr/local/Cellar/cmake/3.28.1/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program
+CMAKE_SOURCE_DIR = /Users/antoniablanco/Desktop/DD_optimization_c-
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /Users/antoniablanco/Desktop/DD_optimization_c-/build
@@ -162,19 +162,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Class
-
-# Build rule for target.
-Class: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Class
-.PHONY : Class
-
-# fast build rule for target.
-Class/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Class.dir/build.make CMakeFiles/Class.dir/build
-.PHONY : Class/fast
-
-#=============================================================================
 # Target rules for targets named Exceptions
 
 # Build rule for target.
@@ -199,6 +186,19 @@ Problems: cmake_check_build_system
 Problems/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Problems.dir/build.make CMakeFiles/Problems.dir/build
 .PHONY : Problems/fast
+
+#=============================================================================
+# Target rules for targets named Class
+
+# Build rule for target.
+Class: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Class
+.PHONY : Class
+
+# fast build rule for target.
+Class/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Class.dir/build.make CMakeFiles/Class.dir/build
+.PHONY : Class/fast
 
 #=============================================================================
 # Target rules for targets named Knapsack
@@ -304,174 +304,6 @@ gtest_main/fast:
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
 
-Class/AnswerStructure/ObjectiveStructure.o: Class/AnswerStructure/ObjectiveStructure.cpp.o
-.PHONY : Class/AnswerStructure/ObjectiveStructure.o
-
-# target to build an object file
-Class/AnswerStructure/ObjectiveStructure.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Class.dir/build.make CMakeFiles/Class.dir/Class/AnswerStructure/ObjectiveStructure.cpp.o
-.PHONY : Class/AnswerStructure/ObjectiveStructure.cpp.o
-
-Class/AnswerStructure/ObjectiveStructure.i: Class/AnswerStructure/ObjectiveStructure.cpp.i
-.PHONY : Class/AnswerStructure/ObjectiveStructure.i
-
-# target to preprocess a source file
-Class/AnswerStructure/ObjectiveStructure.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Class.dir/build.make CMakeFiles/Class.dir/Class/AnswerStructure/ObjectiveStructure.cpp.i
-.PHONY : Class/AnswerStructure/ObjectiveStructure.cpp.i
-
-Class/AnswerStructure/ObjectiveStructure.s: Class/AnswerStructure/ObjectiveStructure.cpp.s
-.PHONY : Class/AnswerStructure/ObjectiveStructure.s
-
-# target to generate assembly for a file
-Class/AnswerStructure/ObjectiveStructure.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Class.dir/build.make CMakeFiles/Class.dir/Class/AnswerStructure/ObjectiveStructure.cpp.s
-.PHONY : Class/AnswerStructure/ObjectiveStructure.cpp.s
-
-Class/DD.o: Class/DD.cpp.o
-.PHONY : Class/DD.o
-
-# target to build an object file
-Class/DD.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Class.dir/build.make CMakeFiles/Class.dir/Class/DD.cpp.o
-.PHONY : Class/DD.cpp.o
-
-Class/DD.i: Class/DD.cpp.i
-.PHONY : Class/DD.i
-
-# target to preprocess a source file
-Class/DD.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Class.dir/build.make CMakeFiles/Class.dir/Class/DD.cpp.i
-.PHONY : Class/DD.cpp.i
-
-Class/DD.s: Class/DD.cpp.s
-.PHONY : Class/DD.s
-
-# target to generate assembly for a file
-Class/DD.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Class.dir/build.make CMakeFiles/Class.dir/Class/DD.cpp.s
-.PHONY : Class/DD.cpp.s
-
-Class/DDBuilder/AbstractDDBuilder.o: Class/DDBuilder/AbstractDDBuilder.cpp.o
-.PHONY : Class/DDBuilder/AbstractDDBuilder.o
-
-# target to build an object file
-Class/DDBuilder/AbstractDDBuilder.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Class.dir/build.make CMakeFiles/Class.dir/Class/DDBuilder/AbstractDDBuilder.cpp.o
-.PHONY : Class/DDBuilder/AbstractDDBuilder.cpp.o
-
-Class/DDBuilder/AbstractDDBuilder.i: Class/DDBuilder/AbstractDDBuilder.cpp.i
-.PHONY : Class/DDBuilder/AbstractDDBuilder.i
-
-# target to preprocess a source file
-Class/DDBuilder/AbstractDDBuilder.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Class.dir/build.make CMakeFiles/Class.dir/Class/DDBuilder/AbstractDDBuilder.cpp.i
-.PHONY : Class/DDBuilder/AbstractDDBuilder.cpp.i
-
-Class/DDBuilder/AbstractDDBuilder.s: Class/DDBuilder/AbstractDDBuilder.cpp.s
-.PHONY : Class/DDBuilder/AbstractDDBuilder.s
-
-# target to generate assembly for a file
-Class/DDBuilder/AbstractDDBuilder.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Class.dir/build.make CMakeFiles/Class.dir/Class/DDBuilder/AbstractDDBuilder.cpp.s
-.PHONY : Class/DDBuilder/AbstractDDBuilder.cpp.s
-
-Class/DDBuilder/DDBuilder.o: Class/DDBuilder/DDBuilder.cpp.o
-.PHONY : Class/DDBuilder/DDBuilder.o
-
-# target to build an object file
-Class/DDBuilder/DDBuilder.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Class.dir/build.make CMakeFiles/Class.dir/Class/DDBuilder/DDBuilder.cpp.o
-.PHONY : Class/DDBuilder/DDBuilder.cpp.o
-
-Class/DDBuilder/DDBuilder.i: Class/DDBuilder/DDBuilder.cpp.i
-.PHONY : Class/DDBuilder/DDBuilder.i
-
-# target to preprocess a source file
-Class/DDBuilder/DDBuilder.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Class.dir/build.make CMakeFiles/Class.dir/Class/DDBuilder/DDBuilder.cpp.i
-.PHONY : Class/DDBuilder/DDBuilder.cpp.i
-
-Class/DDBuilder/DDBuilder.s: Class/DDBuilder/DDBuilder.cpp.s
-.PHONY : Class/DDBuilder/DDBuilder.s
-
-# target to generate assembly for a file
-Class/DDBuilder/DDBuilder.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Class.dir/build.make CMakeFiles/Class.dir/Class/DDBuilder/DDBuilder.cpp.s
-.PHONY : Class/DDBuilder/DDBuilder.cpp.s
-
-Class/DDStructure/Arc.o: Class/DDStructure/Arc.cpp.o
-.PHONY : Class/DDStructure/Arc.o
-
-# target to build an object file
-Class/DDStructure/Arc.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Class.dir/build.make CMakeFiles/Class.dir/Class/DDStructure/Arc.cpp.o
-.PHONY : Class/DDStructure/Arc.cpp.o
-
-Class/DDStructure/Arc.i: Class/DDStructure/Arc.cpp.i
-.PHONY : Class/DDStructure/Arc.i
-
-# target to preprocess a source file
-Class/DDStructure/Arc.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Class.dir/build.make CMakeFiles/Class.dir/Class/DDStructure/Arc.cpp.i
-.PHONY : Class/DDStructure/Arc.cpp.i
-
-Class/DDStructure/Arc.s: Class/DDStructure/Arc.cpp.s
-.PHONY : Class/DDStructure/Arc.s
-
-# target to generate assembly for a file
-Class/DDStructure/Arc.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Class.dir/build.make CMakeFiles/Class.dir/Class/DDStructure/Arc.cpp.s
-.PHONY : Class/DDStructure/Arc.cpp.s
-
-Class/DDStructure/Graph.o: Class/DDStructure/Graph.cpp.o
-.PHONY : Class/DDStructure/Graph.o
-
-# target to build an object file
-Class/DDStructure/Graph.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Class.dir/build.make CMakeFiles/Class.dir/Class/DDStructure/Graph.cpp.o
-.PHONY : Class/DDStructure/Graph.cpp.o
-
-Class/DDStructure/Graph.i: Class/DDStructure/Graph.cpp.i
-.PHONY : Class/DDStructure/Graph.i
-
-# target to preprocess a source file
-Class/DDStructure/Graph.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Class.dir/build.make CMakeFiles/Class.dir/Class/DDStructure/Graph.cpp.i
-.PHONY : Class/DDStructure/Graph.cpp.i
-
-Class/DDStructure/Graph.s: Class/DDStructure/Graph.cpp.s
-.PHONY : Class/DDStructure/Graph.s
-
-# target to generate assembly for a file
-Class/DDStructure/Graph.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Class.dir/build.make CMakeFiles/Class.dir/Class/DDStructure/Graph.cpp.s
-.PHONY : Class/DDStructure/Graph.cpp.s
-
-Class/DDStructure/Node.o: Class/DDStructure/Node.cpp.o
-.PHONY : Class/DDStructure/Node.o
-
-# target to build an object file
-Class/DDStructure/Node.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Class.dir/build.make CMakeFiles/Class.dir/Class/DDStructure/Node.cpp.o
-.PHONY : Class/DDStructure/Node.cpp.o
-
-Class/DDStructure/Node.i: Class/DDStructure/Node.cpp.i
-.PHONY : Class/DDStructure/Node.i
-
-# target to preprocess a source file
-Class/DDStructure/Node.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Class.dir/build.make CMakeFiles/Class.dir/Class/DDStructure/Node.cpp.i
-.PHONY : Class/DDStructure/Node.cpp.i
-
-Class/DDStructure/Node.s: Class/DDStructure/Node.cpp.s
-.PHONY : Class/DDStructure/Node.s
-
-# target to generate assembly for a file
-Class/DDStructure/Node.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Class.dir/build.make CMakeFiles/Class.dir/Class/DDStructure/Node.cpp.s
-.PHONY : Class/DDStructure/Node.cpp.s
-
 Class/DDStructure/utils.o: Class/DDStructure/utils.cpp.o
 .PHONY : Class/DDStructure/utils.o
 
@@ -495,198 +327,6 @@ Class/DDStructure/utils.s: Class/DDStructure/utils.cpp.s
 Class/DDStructure/utils.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Class.dir/build.make CMakeFiles/Class.dir/Class/DDStructure/utils.cpp.s
 .PHONY : Class/DDStructure/utils.cpp.s
-
-Class/GraphVisualization/GraphFile.o: Class/GraphVisualization/GraphFile.cpp.o
-.PHONY : Class/GraphVisualization/GraphFile.o
-
-# target to build an object file
-Class/GraphVisualization/GraphFile.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Class.dir/build.make CMakeFiles/Class.dir/Class/GraphVisualization/GraphFile.cpp.o
-.PHONY : Class/GraphVisualization/GraphFile.cpp.o
-
-Class/GraphVisualization/GraphFile.i: Class/GraphVisualization/GraphFile.cpp.i
-.PHONY : Class/GraphVisualization/GraphFile.i
-
-# target to preprocess a source file
-Class/GraphVisualization/GraphFile.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Class.dir/build.make CMakeFiles/Class.dir/Class/GraphVisualization/GraphFile.cpp.i
-.PHONY : Class/GraphVisualization/GraphFile.cpp.i
-
-Class/GraphVisualization/GraphFile.s: Class/GraphVisualization/GraphFile.cpp.s
-.PHONY : Class/GraphVisualization/GraphFile.s
-
-# target to generate assembly for a file
-Class/GraphVisualization/GraphFile.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Class.dir/build.make CMakeFiles/Class.dir/Class/GraphVisualization/GraphFile.cpp.s
-.PHONY : Class/GraphVisualization/GraphFile.cpp.s
-
-Class/ObjectiveFunction/AbstractObjective.o: Class/ObjectiveFunction/AbstractObjective.cpp.o
-.PHONY : Class/ObjectiveFunction/AbstractObjective.o
-
-# target to build an object file
-Class/ObjectiveFunction/AbstractObjective.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Class.dir/build.make CMakeFiles/Class.dir/Class/ObjectiveFunction/AbstractObjective.cpp.o
-.PHONY : Class/ObjectiveFunction/AbstractObjective.cpp.o
-
-Class/ObjectiveFunction/AbstractObjective.i: Class/ObjectiveFunction/AbstractObjective.cpp.i
-.PHONY : Class/ObjectiveFunction/AbstractObjective.i
-
-# target to preprocess a source file
-Class/ObjectiveFunction/AbstractObjective.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Class.dir/build.make CMakeFiles/Class.dir/Class/ObjectiveFunction/AbstractObjective.cpp.i
-.PHONY : Class/ObjectiveFunction/AbstractObjective.cpp.i
-
-Class/ObjectiveFunction/AbstractObjective.s: Class/ObjectiveFunction/AbstractObjective.cpp.s
-.PHONY : Class/ObjectiveFunction/AbstractObjective.s
-
-# target to generate assembly for a file
-Class/ObjectiveFunction/AbstractObjective.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Class.dir/build.make CMakeFiles/Class.dir/Class/ObjectiveFunction/AbstractObjective.cpp.s
-.PHONY : Class/ObjectiveFunction/AbstractObjective.cpp.s
-
-Class/ObjectiveFunction/LinearObjectiveDP.o: Class/ObjectiveFunction/LinearObjectiveDP.cpp.o
-.PHONY : Class/ObjectiveFunction/LinearObjectiveDP.o
-
-# target to build an object file
-Class/ObjectiveFunction/LinearObjectiveDP.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Class.dir/build.make CMakeFiles/Class.dir/Class/ObjectiveFunction/LinearObjectiveDP.cpp.o
-.PHONY : Class/ObjectiveFunction/LinearObjectiveDP.cpp.o
-
-Class/ObjectiveFunction/LinearObjectiveDP.i: Class/ObjectiveFunction/LinearObjectiveDP.cpp.i
-.PHONY : Class/ObjectiveFunction/LinearObjectiveDP.i
-
-# target to preprocess a source file
-Class/ObjectiveFunction/LinearObjectiveDP.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Class.dir/build.make CMakeFiles/Class.dir/Class/ObjectiveFunction/LinearObjectiveDP.cpp.i
-.PHONY : Class/ObjectiveFunction/LinearObjectiveDP.cpp.i
-
-Class/ObjectiveFunction/LinearObjectiveDP.s: Class/ObjectiveFunction/LinearObjectiveDP.cpp.s
-.PHONY : Class/ObjectiveFunction/LinearObjectiveDP.s
-
-# target to generate assembly for a file
-Class/ObjectiveFunction/LinearObjectiveDP.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Class.dir/build.make CMakeFiles/Class.dir/Class/ObjectiveFunction/LinearObjectiveDP.cpp.s
-.PHONY : Class/ObjectiveFunction/LinearObjectiveDP.cpp.s
-
-Class/ObjectiveFunction/ObjectiveFunction.o: Class/ObjectiveFunction/ObjectiveFunction.cpp.o
-.PHONY : Class/ObjectiveFunction/ObjectiveFunction.o
-
-# target to build an object file
-Class/ObjectiveFunction/ObjectiveFunction.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Class.dir/build.make CMakeFiles/Class.dir/Class/ObjectiveFunction/ObjectiveFunction.cpp.o
-.PHONY : Class/ObjectiveFunction/ObjectiveFunction.cpp.o
-
-Class/ObjectiveFunction/ObjectiveFunction.i: Class/ObjectiveFunction/ObjectiveFunction.cpp.i
-.PHONY : Class/ObjectiveFunction/ObjectiveFunction.i
-
-# target to preprocess a source file
-Class/ObjectiveFunction/ObjectiveFunction.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Class.dir/build.make CMakeFiles/Class.dir/Class/ObjectiveFunction/ObjectiveFunction.cpp.i
-.PHONY : Class/ObjectiveFunction/ObjectiveFunction.cpp.i
-
-Class/ObjectiveFunction/ObjectiveFunction.s: Class/ObjectiveFunction/ObjectiveFunction.cpp.s
-.PHONY : Class/ObjectiveFunction/ObjectiveFunction.s
-
-# target to generate assembly for a file
-Class/ObjectiveFunction/ObjectiveFunction.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Class.dir/build.make CMakeFiles/Class.dir/Class/ObjectiveFunction/ObjectiveFunction.cpp.s
-.PHONY : Class/ObjectiveFunction/ObjectiveFunction.cpp.s
-
-Class/Problems/AbstractProblemClass.o: Class/Problems/AbstractProblemClass.cpp.o
-.PHONY : Class/Problems/AbstractProblemClass.o
-
-# target to build an object file
-Class/Problems/AbstractProblemClass.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Class.dir/build.make CMakeFiles/Class.dir/Class/Problems/AbstractProblemClass.cpp.o
-.PHONY : Class/Problems/AbstractProblemClass.cpp.o
-
-Class/Problems/AbstractProblemClass.i: Class/Problems/AbstractProblemClass.cpp.i
-.PHONY : Class/Problems/AbstractProblemClass.i
-
-# target to preprocess a source file
-Class/Problems/AbstractProblemClass.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Class.dir/build.make CMakeFiles/Class.dir/Class/Problems/AbstractProblemClass.cpp.i
-.PHONY : Class/Problems/AbstractProblemClass.cpp.i
-
-Class/Problems/AbstractProblemClass.s: Class/Problems/AbstractProblemClass.cpp.s
-.PHONY : Class/Problems/AbstractProblemClass.s
-
-# target to generate assembly for a file
-Class/Problems/AbstractProblemClass.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Class.dir/build.make CMakeFiles/Class.dir/Class/Problems/AbstractProblemClass.cpp.s
-.PHONY : Class/Problems/AbstractProblemClass.cpp.s
-
-Class/ReduceDDBuilder/ReduceDDBuilder.o: Class/ReduceDDBuilder/ReduceDDBuilder.cpp.o
-.PHONY : Class/ReduceDDBuilder/ReduceDDBuilder.o
-
-# target to build an object file
-Class/ReduceDDBuilder/ReduceDDBuilder.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Class.dir/build.make CMakeFiles/Class.dir/Class/ReduceDDBuilder/ReduceDDBuilder.cpp.o
-.PHONY : Class/ReduceDDBuilder/ReduceDDBuilder.cpp.o
-
-Class/ReduceDDBuilder/ReduceDDBuilder.i: Class/ReduceDDBuilder/ReduceDDBuilder.cpp.i
-.PHONY : Class/ReduceDDBuilder/ReduceDDBuilder.i
-
-# target to preprocess a source file
-Class/ReduceDDBuilder/ReduceDDBuilder.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Class.dir/build.make CMakeFiles/Class.dir/Class/ReduceDDBuilder/ReduceDDBuilder.cpp.i
-.PHONY : Class/ReduceDDBuilder/ReduceDDBuilder.cpp.i
-
-Class/ReduceDDBuilder/ReduceDDBuilder.s: Class/ReduceDDBuilder/ReduceDDBuilder.cpp.s
-.PHONY : Class/ReduceDDBuilder/ReduceDDBuilder.s
-
-# target to generate assembly for a file
-Class/ReduceDDBuilder/ReduceDDBuilder.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Class.dir/build.make CMakeFiles/Class.dir/Class/ReduceDDBuilder/ReduceDDBuilder.cpp.s
-.PHONY : Class/ReduceDDBuilder/ReduceDDBuilder.cpp.s
-
-Class/RelaxedDDBuilder/RelaxedDDBuilder.o: Class/RelaxedDDBuilder/RelaxedDDBuilder.cpp.o
-.PHONY : Class/RelaxedDDBuilder/RelaxedDDBuilder.o
-
-# target to build an object file
-Class/RelaxedDDBuilder/RelaxedDDBuilder.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Class.dir/build.make CMakeFiles/Class.dir/Class/RelaxedDDBuilder/RelaxedDDBuilder.cpp.o
-.PHONY : Class/RelaxedDDBuilder/RelaxedDDBuilder.cpp.o
-
-Class/RelaxedDDBuilder/RelaxedDDBuilder.i: Class/RelaxedDDBuilder/RelaxedDDBuilder.cpp.i
-.PHONY : Class/RelaxedDDBuilder/RelaxedDDBuilder.i
-
-# target to preprocess a source file
-Class/RelaxedDDBuilder/RelaxedDDBuilder.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Class.dir/build.make CMakeFiles/Class.dir/Class/RelaxedDDBuilder/RelaxedDDBuilder.cpp.i
-.PHONY : Class/RelaxedDDBuilder/RelaxedDDBuilder.cpp.i
-
-Class/RelaxedDDBuilder/RelaxedDDBuilder.s: Class/RelaxedDDBuilder/RelaxedDDBuilder.cpp.s
-.PHONY : Class/RelaxedDDBuilder/RelaxedDDBuilder.s
-
-# target to generate assembly for a file
-Class/RelaxedDDBuilder/RelaxedDDBuilder.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Class.dir/build.make CMakeFiles/Class.dir/Class/RelaxedDDBuilder/RelaxedDDBuilder.cpp.s
-.PHONY : Class/RelaxedDDBuilder/RelaxedDDBuilder.cpp.s
-
-Class/RestrictedDDBuilder/RestrictedDDBuilder.o: Class/RestrictedDDBuilder/RestrictedDDBuilder.cpp.o
-.PHONY : Class/RestrictedDDBuilder/RestrictedDDBuilder.o
-
-# target to build an object file
-Class/RestrictedDDBuilder/RestrictedDDBuilder.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Class.dir/build.make CMakeFiles/Class.dir/Class/RestrictedDDBuilder/RestrictedDDBuilder.cpp.o
-.PHONY : Class/RestrictedDDBuilder/RestrictedDDBuilder.cpp.o
-
-Class/RestrictedDDBuilder/RestrictedDDBuilder.i: Class/RestrictedDDBuilder/RestrictedDDBuilder.cpp.i
-.PHONY : Class/RestrictedDDBuilder/RestrictedDDBuilder.i
-
-# target to preprocess a source file
-Class/RestrictedDDBuilder/RestrictedDDBuilder.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Class.dir/build.make CMakeFiles/Class.dir/Class/RestrictedDDBuilder/RestrictedDDBuilder.cpp.i
-.PHONY : Class/RestrictedDDBuilder/RestrictedDDBuilder.cpp.i
-
-Class/RestrictedDDBuilder/RestrictedDDBuilder.s: Class/RestrictedDDBuilder/RestrictedDDBuilder.cpp.s
-.PHONY : Class/RestrictedDDBuilder/RestrictedDDBuilder.s
-
-# target to generate assembly for a file
-Class/RestrictedDDBuilder/RestrictedDDBuilder.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Class.dir/build.make CMakeFiles/Class.dir/Class/RestrictedDDBuilder/RestrictedDDBuilder.cpp.s
-.PHONY : Class/RestrictedDDBuilder/RestrictedDDBuilder.cpp.s
 
 Examples/IndependentSet/IndependentSetMain.o: Examples/IndependentSet/IndependentSetMain.cpp.o
 .PHONY : Examples/IndependentSet/IndependentSetMain.o
@@ -960,54 +600,9 @@ help:
 	@echo "... gmock_main"
 	@echo "... gtest"
 	@echo "... gtest_main"
-	@echo "... Class/AnswerStructure/ObjectiveStructure.o"
-	@echo "... Class/AnswerStructure/ObjectiveStructure.i"
-	@echo "... Class/AnswerStructure/ObjectiveStructure.s"
-	@echo "... Class/DD.o"
-	@echo "... Class/DD.i"
-	@echo "... Class/DD.s"
-	@echo "... Class/DDBuilder/AbstractDDBuilder.o"
-	@echo "... Class/DDBuilder/AbstractDDBuilder.i"
-	@echo "... Class/DDBuilder/AbstractDDBuilder.s"
-	@echo "... Class/DDBuilder/DDBuilder.o"
-	@echo "... Class/DDBuilder/DDBuilder.i"
-	@echo "... Class/DDBuilder/DDBuilder.s"
-	@echo "... Class/DDStructure/Arc.o"
-	@echo "... Class/DDStructure/Arc.i"
-	@echo "... Class/DDStructure/Arc.s"
-	@echo "... Class/DDStructure/Graph.o"
-	@echo "... Class/DDStructure/Graph.i"
-	@echo "... Class/DDStructure/Graph.s"
-	@echo "... Class/DDStructure/Node.o"
-	@echo "... Class/DDStructure/Node.i"
-	@echo "... Class/DDStructure/Node.s"
 	@echo "... Class/DDStructure/utils.o"
 	@echo "... Class/DDStructure/utils.i"
 	@echo "... Class/DDStructure/utils.s"
-	@echo "... Class/GraphVisualization/GraphFile.o"
-	@echo "... Class/GraphVisualization/GraphFile.i"
-	@echo "... Class/GraphVisualization/GraphFile.s"
-	@echo "... Class/ObjectiveFunction/AbstractObjective.o"
-	@echo "... Class/ObjectiveFunction/AbstractObjective.i"
-	@echo "... Class/ObjectiveFunction/AbstractObjective.s"
-	@echo "... Class/ObjectiveFunction/LinearObjectiveDP.o"
-	@echo "... Class/ObjectiveFunction/LinearObjectiveDP.i"
-	@echo "... Class/ObjectiveFunction/LinearObjectiveDP.s"
-	@echo "... Class/ObjectiveFunction/ObjectiveFunction.o"
-	@echo "... Class/ObjectiveFunction/ObjectiveFunction.i"
-	@echo "... Class/ObjectiveFunction/ObjectiveFunction.s"
-	@echo "... Class/Problems/AbstractProblemClass.o"
-	@echo "... Class/Problems/AbstractProblemClass.i"
-	@echo "... Class/Problems/AbstractProblemClass.s"
-	@echo "... Class/ReduceDDBuilder/ReduceDDBuilder.o"
-	@echo "... Class/ReduceDDBuilder/ReduceDDBuilder.i"
-	@echo "... Class/ReduceDDBuilder/ReduceDDBuilder.s"
-	@echo "... Class/RelaxedDDBuilder/RelaxedDDBuilder.o"
-	@echo "... Class/RelaxedDDBuilder/RelaxedDDBuilder.i"
-	@echo "... Class/RelaxedDDBuilder/RelaxedDDBuilder.s"
-	@echo "... Class/RestrictedDDBuilder/RestrictedDDBuilder.o"
-	@echo "... Class/RestrictedDDBuilder/RestrictedDDBuilder.i"
-	@echo "... Class/RestrictedDDBuilder/RestrictedDDBuilder.s"
 	@echo "... Examples/IndependentSet/IndependentSetMain.o"
 	@echo "... Examples/IndependentSet/IndependentSetMain.i"
 	@echo "... Examples/IndependentSet/IndependentSetMain.s"

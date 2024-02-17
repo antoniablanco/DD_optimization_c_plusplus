@@ -1,4 +1,4 @@
-# Install script for directory: /Users/antoniablanco/Desktop/DD_optimization_c-/DD_optimization_program
+# Install script for directory: /Users/antoniablanco/Desktop/DD_optimization_c-
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
