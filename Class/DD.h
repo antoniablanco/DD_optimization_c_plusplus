@@ -42,19 +42,19 @@ public:
      * @brief Crea un diagrama de decisión reducido y lo guarda en el atributo graph_DD.
      * @param verbose Booleano que indica si se mostrarán mensajes de progreso durante la construcción del diagrama.
      */
-    void createReduceDecisionDiagram(const bool verbose = false);
+    void create_reduce_decision_diagram(const bool verbose = false);
 
     /**
      * @brief Crea un diagrama de decisión restringido y lo guarda en el atributo graph_DD.
      * @param verbose Booleano que indica si se mostrarán mensajes de progreso durante la construcción del diagrama.
      */
-    void createRestrictedDecisionDiagram(int max_width, const bool verbose = false);
+    void create_restricted_decision_diagram(int max_width, const bool verbose = false);
 
     /**
      * @brief Crea un diagrama de decisión relajado y lo guarda en el atributo graph_DD.
      * @param verbose Booleano que indica si se mostrarán mensajes de progreso durante la construcción del diagrama.
      */
-    void createRelaxedDecisionDiagram(int max_width, const bool verbose = false);
+    void create_relaxed_decision_diagram(int max_width, const bool verbose = false);
 
     /**
      * @brief Exporta el grafo de decisión a un archivo.
@@ -75,9 +75,9 @@ public:
     Graph<T> get_desition_diagram_copy();
 
     // Métodos que obtienen el tiempo de construcción de los diagramas de decisión.
-    string getDdBuilderTime();
-    string getReduceDdBuilderTime();
-    string getRestrictedDdBuilderTime();
+    string get_dd_builder_time();
+    string get_reduce_dd_builder_time();
+    string get_restricted_dd_builder_time();
     string get_relaxed_dd_builder_time();
 
     /**

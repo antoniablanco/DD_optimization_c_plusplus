@@ -4,7 +4,7 @@
 # compile CXX with /Library/Developer/CommandLineTools/usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/antoniablanco/Desktop/DD_optimization_c-/Exceptions
+CXX_INCLUDES = -I/Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Exceptions
 
 CXX_FLAGSx86_64 = -g -std=gnu++17 -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk
 

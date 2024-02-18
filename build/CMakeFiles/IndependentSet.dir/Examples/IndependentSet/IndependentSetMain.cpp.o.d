@@ -1,5 +1,5 @@
 CMakeFiles/IndependentSet.dir/Examples/IndependentSet/IndependentSetMain.cpp.o: \
-  /Users/antoniablanco/Desktop/DD_optimization_c-/Examples/IndependentSet/IndependentSetMain.cpp \
+  /Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Examples/IndependentSet/IndependentSetMain.cpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/iostream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__assert \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__config \
@@ -791,26 +791,25 @@ CMakeFiles/IndependentSet.dir/Examples/IndependentSet/IndependentSetMain.cpp.o: 
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__bsd_locale_defaults.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/cstdarg \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/sstream \
-  /Users/antoniablanco/Desktop/DD_optimization_c-/Examples/IndependentSet/IndependentSetProblem.h \
-  /Users/antoniablanco/Desktop/DD_optimization_c-/Exceptions/MyExceptions.h \
-  /Users/antoniablanco/Desktop/DD_optimization_c-/Examples/IndependentSet/../../Class/Problems/AbstractProblemClass.h \
+  /Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Examples/IndependentSet/IndependentSetProblem.h \
+  /Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Exceptions/MyExceptions.h \
+  /Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Class/Problems/AbstractProblemClass.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/map \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__tree \
-  /Users/antoniablanco/Desktop/DD_optimization_c-/Class/Problems/AbstractProblemClass.tpp \
-  /Users/antoniablanco/Desktop/DD_optimization_c-/Class/Problems/AbstractProblemClass.h \
+  /Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Class/Problems/AbstractProblemClass.tpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/cassert \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/assert.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/set \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/unordered_set \
-  /Users/antoniablanco/Desktop/DD_optimization_c-/Class/DD.h \
+  /Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Class/DD.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/thread \
-  /Users/antoniablanco/Desktop/DD_optimization_c-/Class/DDStructure/Graph.h \
-  /Users/antoniablanco/Desktop/DD_optimization_c-/Class/DDStructure/Node.h \
-  /Users/antoniablanco/Desktop/DD_optimization_c-/Class/DDStructure/Node.tpp \
-  /Users/antoniablanco/Desktop/DD_optimization_c-/Class/DDStructure/Arc.h \
-  /Users/antoniablanco/Desktop/DD_optimization_c-/Class/DDStructure/Arc.tpp \
-  /Users/antoniablanco/Desktop/DD_optimization_c-/Class/DDStructure/Graph.tpp \
-  /Users/antoniablanco/Desktop/DD_optimization_c-/Class/GraphVisualization/GraphFile.h \
+  /Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Class/DDStructure/Graph.h \
+  /Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Class/DDStructure/Node.h \
+  /Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Class/DDStructure/Node.tpp \
+  /Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Class/DDStructure/Arc.h \
+  /Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Class/DDStructure/Arc.tpp \
+  /Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Class/DDStructure/Graph.tpp \
+  /Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Class/GraphVisualization/GraphFile.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/fstream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/filesystem \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__filesystem/copy_options.h \
@@ -830,24 +829,24 @@ CMakeFiles/IndependentSet.dir/Examples/IndependentSet/IndependentSetMain.cpp.o: 
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__filesystem/path_iterator.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__filesystem/recursive_directory_iterator.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__filesystem/u8path.h \
-  /Users/antoniablanco/Desktop/DD_optimization_c-/Class/GraphVisualization/GraphFile.tpp \
-  /Users/antoniablanco/Desktop/DD_optimization_c-/Class/DDBuilder/DDBuilder.h \
-  /Users/antoniablanco/Desktop/DD_optimization_c-/Class/DDBuilder/AbstractDDBuilder.h \
-  /Users/antoniablanco/Desktop/DD_optimization_c-/Class/DDBuilder/AbstractDDBuilder.tpp \
-  /Users/antoniablanco/Desktop/DD_optimization_c-/Class/DDBuilder/DDBuilder.tpp \
-  /Users/antoniablanco/Desktop/DD_optimization_c-/Class/RestrictedDDBuilder/RestrictedDDBuilder.h \
-  /Users/antoniablanco/Desktop/DD_optimization_c-/Class/RestrictedDDBuilder/RestrictedDDBuilder.tpp \
-  /Users/antoniablanco/Desktop/DD_optimization_c-/Class/RelaxedDDBuilder/RelaxedDDBuilder.h \
-  /Users/antoniablanco/Desktop/DD_optimization_c-/Class/RelaxedDDBuilder/RelaxedDDBuilder.tpp \
-  /Users/antoniablanco/Desktop/DD_optimization_c-/Class/ReduceDDBuilder/ReduceDDBuilder.h \
-  /Users/antoniablanco/Desktop/DD_optimization_c-/Class/ReduceDDBuilder/ReduceDDBuilder.tpp \
-  /Users/antoniablanco/Desktop/DD_optimization_c-/Class/DD.tpp \
-  /Users/antoniablanco/Desktop/DD_optimization_c-/Class/ObjectiveFunction/LinearObjectiveDP.h \
+  /Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Class/GraphVisualization/GraphFile.tpp \
+  /Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Class/DDBuilder/DDBuilder.h \
+  /Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Class/DDBuilder/AbstractDDBuilder.h \
+  /Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Class/DDBuilder/AbstractDDBuilder.tpp \
+  /Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Class/DDBuilder/DDBuilder.tpp \
+  /Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Class/RestrictedDDBuilder/RestrictedDDBuilder.h \
+  /Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Class/RestrictedDDBuilder/RestrictedDDBuilder.tpp \
+  /Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Class/RelaxedDDBuilder/RelaxedDDBuilder.h \
+  /Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Class/RelaxedDDBuilder/RelaxedDDBuilder.tpp \
+  /Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Class/ReduceDDBuilder/ReduceDDBuilder.h \
+  /Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Class/ReduceDDBuilder/ReduceDDBuilder.tpp \
+  /Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Class/DD.tpp \
+  /Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Class/ObjectiveFunction/LinearObjectiveDP.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/list \
-  /Users/antoniablanco/Desktop/DD_optimization_c-/Class/ObjectiveFunction/AbstractObjective.h \
-  /Users/antoniablanco/Desktop/DD_optimization_c-/Class/AnswerStructure/ObjectiveStructure.h \
-  /Users/antoniablanco/Desktop/DD_optimization_c-/Class/AnswerStructure/ObjectiveStructure.tpp \
-  /Users/antoniablanco/Desktop/DD_optimization_c-/Class/ObjectiveFunction/AbstractObjective.tpp \
-  /Users/antoniablanco/Desktop/DD_optimization_c-/Class/ObjectiveFunction/LinearObjectiveDP.tpp \
-  /Users/antoniablanco/Desktop/DD_optimization_c-/Class/ObjectiveFunction/ObjectiveFunction.h \
-  /Users/antoniablanco/Desktop/DD_optimization_c-/Class/ObjectiveFunction/ObjectiveFunction.tpp
+  /Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Class/ObjectiveFunction/AbstractObjective.h \
+  /Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Class/AnswerStructure/ObjectiveStructure.h \
+  /Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Class/AnswerStructure/ObjectiveStructure.tpp \
+  /Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Class/ObjectiveFunction/AbstractObjective.tpp \
+  /Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Class/ObjectiveFunction/LinearObjectiveDP.tpp \
+  /Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Class/ObjectiveFunction/ObjectiveFunction.h \
+  /Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Class/ObjectiveFunction/ObjectiveFunction.tpp

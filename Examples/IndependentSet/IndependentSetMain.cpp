@@ -31,15 +31,15 @@ int main()
     IndependentSetProblem independent_set_instance(initial_state, variables, dict_node_neighbors);
     DD<vector<int>> dd_instance(independent_set_instance, false);
 
-    cout << "Creation Time: " << dd_instance.getDdBuilderTime() << endl;
+    cout << "Creation Time: " << dd_instance.get_dd_builder_time() << endl;
 
-    dd_instance.createReduceDecisionDiagram(false);
-    cout << "Reduce time: " << dd_instance.getReduceDdBuilderTime() << endl;
+    dd_instance.create_reduce_decision_diagram(false);
+    cout << "Reduce time: " << dd_instance.get_reduce_dd_builder_time() << endl;
 
-    dd_instance.createRestrictedDecisionDiagram(2, false);
-    cout << "Restricted time: " << dd_instance.getRestrictedDdBuilderTime() << endl;
+    dd_instance.create_restricted_decision_diagram(2, false);
+    cout << "Restricted time: " << dd_instance.get_restricted_dd_builder_time() << endl;
 
-    dd_instance.createRelaxedDecisionDiagram(2, false);
+    dd_instance.create_relaxed_decision_diagram(2, false);
     cout << "Relaxed time: " << dd_instance.get_relaxed_dd_builder_time() << endl;
 
     Graph post_graph = dd_instance.get_desition_diagram();

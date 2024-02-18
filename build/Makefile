@@ -57,10 +57,10 @@ RM = /usr/local/Cellar/cmake/3.28.1/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/antoniablanco/Desktop/DD_optimization_c-
+CMAKE_SOURCE_DIR = /Users/antoniablanco/Desktop/DD_optimization_c_plusplus
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/antoniablanco/Desktop/DD_optimization_c-/build
+CMAKE_BINARY_DIR = /Users/antoniablanco/Desktop/DD_optimization_c_plusplus/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,9 +132,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniablanco/Desktop/DD_optimization_c-/build/CMakeFiles /Users/antoniablanco/Desktop/DD_optimization_c-/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniablanco/Desktop/DD_optimization_c_plusplus/build/CMakeFiles /Users/antoniablanco/Desktop/DD_optimization_c_plusplus/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniablanco/Desktop/DD_optimization_c-/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniablanco/Desktop/DD_optimization_c_plusplus/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

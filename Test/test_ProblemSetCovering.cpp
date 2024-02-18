@@ -110,7 +110,7 @@ TEST_F(ProblemSetCoveringTest, TestVerboseCreateReduceDD) {
     cout.rdbuf(out.rdbuf());
 
     DD dd_set_covering_instance(*set_covering_instance, false);
-    dd_set_covering_instance.createReduceDecisionDiagram(true);
+    dd_set_covering_instance.create_reduce_decision_diagram(true);
 
     cout.rdbuf(coutbuf);
 
@@ -133,7 +133,7 @@ TEST_F(ProblemSetCoveringTest, TestVerboseCreateRestrictedDD) {
     cout.rdbuf(out.rdbuf());
 
     DD dd_set_covering_instance(*set_covering_instance, false);
-    dd_set_covering_instance.createRestrictedDecisionDiagram(3, true);
+    dd_set_covering_instance.create_restricted_decision_diagram(3, true);
 
     cout.rdbuf(coutbuf);
 
@@ -156,7 +156,7 @@ TEST_F(ProblemSetCoveringTest, TestVerboseCreateRelaxedDD) {
     cout.rdbuf(out.rdbuf());
 
     DD dd_set_covering_instance(*set_covering_instance, false);
-    dd_set_covering_instance.createRelaxedDecisionDiagram(3, true);
+    dd_set_covering_instance.create_relaxed_decision_diagram(3, true);
 
     cout.rdbuf(coutbuf);
 
@@ -180,14 +180,14 @@ TEST_F(ProblemSetCoveringTest, TestCreateDDGraphEqual) {
 
 TEST_F(ProblemSetCoveringTest, TestCreateReduceDDGraphEqual) {
     Graph expected_graph = GetReduceDDSetCovering();
-    dd_instance->createReduceDecisionDiagram();
+    dd_instance->create_reduce_decision_diagram();
 
     ASSERT_TRUE(dd_instance->get_desition_diagram()==expected_graph);
 }
 
 TEST_F(ProblemSetCoveringTest, TestCreateRestrictedDDGraphEqual) {
     Graph expected_graph = GetRestrictedDDSetCovering();
-    dd_instance->createRestrictedDecisionDiagram(3);
+    dd_instance->create_restricted_decision_diagram(3);
 
     ASSERT_TRUE(dd_instance->get_desition_diagram()==expected_graph);
 }
@@ -200,7 +200,7 @@ TEST_F(ProblemSetCoveringTest, CompareTwoDifferentGraphs) {
 
 TEST_F(ProblemSetCoveringTest, TestCreateRelaxedDDGraphEqual) {
     Graph expected_graph = GetRelaxedDDSetCovering();
-    dd_instance->createRelaxedDecisionDiagram(3);
+    dd_instance->create_relaxed_decision_diagram(3);
 
     ASSERT_TRUE(dd_instance->get_desition_diagram()==expected_graph);
 }
@@ -214,21 +214,21 @@ TEST_F(ProblemSetCoveringTest, TestGetCopy) {
 }
 
 TEST_F(ProblemSetCoveringTest, TestGetDDBuilderTime) {
-    ASSERT_GT(stof(dd_instance->getDdBuilderTime()), 0);
+    ASSERT_GT(stof(dd_instance->get_dd_builder_time()), 0);
 }
 
 TEST_F(ProblemSetCoveringTest, TestGetReduceDDBuilderTime) {
-    dd_instance->createReduceDecisionDiagram();
-    ASSERT_GT(stof(dd_instance->getReduceDdBuilderTime()), 0);
+    dd_instance->create_reduce_decision_diagram();
+    ASSERT_GT(stof(dd_instance->get_reduce_dd_builder_time()), 0);
 }
 
 TEST_F(ProblemSetCoveringTest, TestGetRestrictedDDBuilderTime) {
-    dd_instance->createRestrictedDecisionDiagram(2);
-    ASSERT_GT(stof(dd_instance->getRestrictedDdBuilderTime()), 0);
+    dd_instance->create_restricted_decision_diagram(2);
+    ASSERT_GT(stof(dd_instance->get_restricted_dd_builder_time()), 0);
 }
 
 TEST_F(ProblemSetCoveringTest, TestGetRelaxedDDBuilderTime) {
-    dd_instance->createRelaxedDecisionDiagram(2);
+    dd_instance->create_relaxed_decision_diagram(2);
     ASSERT_GT(stof(dd_instance->get_relaxed_dd_builder_time()), 0);
 }
 
@@ -241,7 +241,7 @@ TEST_F(ProblemSetCoveringTest, GetSolutionForDD) {
 }
 
 TEST_F(ProblemSetCoveringTest, GetSolutionForReduceDD) {
-    dd_instance->createReduceDecisionDiagram();
+    dd_instance->create_reduce_decision_diagram();
     ObjectiveStruct solution = getLinearDpSolution();
     int expected_value = 3;
     string expected_path = " arc_0_2(1)-> arc_2_6(1)-> arc_6_10(0)-> arc_10_12(0)-> arc_12_16(0)-> arc_16_17(0)";
@@ -250,7 +250,7 @@ TEST_F(ProblemSetCoveringTest, GetSolutionForReduceDD) {
 }
 
 TEST_F(ProblemSetCoveringTest, GetSolutionForRestrictedeDD) {
-    dd_instance->createRestrictedDecisionDiagram(3, false);
+    dd_instance->create_restricted_decision_diagram(3, false);
     ObjectiveStruct solution = getLinearDpSolution();
     int expected_value = 3;
     string expected_path = " arc_0_2(1)-> arc_2_5(1)-> arc_5_8(0)-> arc_8_10(0)-> arc_10_12(0)-> arc_12_14(0)";
@@ -259,7 +259,7 @@ TEST_F(ProblemSetCoveringTest, GetSolutionForRestrictedeDD) {
 }
 
 TEST_F(ProblemSetCoveringTest, GetSolutionForRelaxedeDD) {
-    dd_instance->createRelaxedDecisionDiagram(3);
+    dd_instance->create_relaxed_decision_diagram(3);
     ObjectiveStruct solution = getLinearDpSolution();
     int expected_value = 3;
     string expected_path = " arc_0_1(0)-> arc_1_3(0)-> arc_3_6(0)-> arc_6_10(1)-> arc_10_12(0)-> arc_12_14(0)";
@@ -285,7 +285,7 @@ TEST_F(ProblemSetCoveringTest, TestCompareGMLDDGraph) {
 }
 
 TEST_F(ProblemSetCoveringTest, TestCompareGMLReduceDDGraph) {
-    dd_instance->createReduceDecisionDiagram();
+    dd_instance->create_reduce_decision_diagram();
     dd_instance->export_graph_file("test");
 
     string expected_file_path = source_directory + "/Test/gml_files/reduce_dd_set_covering.gml";
@@ -303,7 +303,7 @@ TEST_F(ProblemSetCoveringTest, TestCompareGMLReduceDDGraph) {
 }
 
 TEST_F(ProblemSetCoveringTest, TestCompareGMLRestrictedDDGraph) {
-    dd_instance->createRestrictedDecisionDiagram(3);
+    dd_instance->create_restricted_decision_diagram(3);
     dd_instance->export_graph_file("test");
 
     string expected_file_path = source_directory + "/Test/gml_files/restricted_dd_set_covering.gml";
@@ -321,7 +321,7 @@ TEST_F(ProblemSetCoveringTest, TestCompareGMLRestrictedDDGraph) {
 }
 
 TEST_F(ProblemSetCoveringTest, TestCompareGMLRelaxedDDGraph) {
-    dd_instance->createRelaxedDecisionDiagram(3);
+    dd_instance->create_relaxed_decision_diagram(3);
     dd_instance->export_graph_file("test");
 
     string expected_file_path = source_directory + "/Test/gml_files/relax_dd_set_covering.gml";

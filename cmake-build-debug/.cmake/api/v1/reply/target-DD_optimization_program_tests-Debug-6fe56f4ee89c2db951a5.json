@@ -16,7 +16,7 @@
 		"files" : 
 		[
 			"CMakeLists.txt",
-			"build/_deps/googletest-src/googletest/CMakeLists.txt"
+			"cmake-build-debug/_deps/googletest-src/googletest/CMakeLists.txt"
 		],
 		"nodes" : 
 		[
@@ -52,68 +52,68 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -std=gnu++17 -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk"
+					"fragment" : "-g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -fcolor-diagnostics"
 				}
 			],
 			"includes" : 
 			[
 				{
 					"backtrace" : 2,
-					"path" : "/Users/antoniablanco/Desktop/DD_optimization_c-/Class"
+					"path" : "/Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Class"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "/Users/antoniablanco/Desktop/DD_optimization_c-/Class/AnswerStructure"
+					"path" : "/Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Class/AnswerStructure"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "/Users/antoniablanco/Desktop/DD_optimization_c-/Class/DDStructure"
+					"path" : "/Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Class/DDStructure"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "/Users/antoniablanco/Desktop/DD_optimization_c-/Class/GraphVisualization"
+					"path" : "/Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Class/GraphVisualization"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "/Users/antoniablanco/Desktop/DD_optimization_c-/Class/ObjectiveFunction"
+					"path" : "/Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Class/ObjectiveFunction"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "/Users/antoniablanco/Desktop/DD_optimization_c-/Class/Problems"
+					"path" : "/Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Class/Problems"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "/Users/antoniablanco/Desktop/DD_optimization_c-/Class/DDBuilder"
+					"path" : "/Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Class/DDBuilder"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "/Users/antoniablanco/Desktop/DD_optimization_c-/Class/RestrictedDDBuilder"
+					"path" : "/Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Class/RestrictedDDBuilder"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "/Users/antoniablanco/Desktop/DD_optimization_c-/Class/RelaxedDDBuilder"
+					"path" : "/Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Class/RelaxedDDBuilder"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "/Users/antoniablanco/Desktop/DD_optimization_c-/Class/ReduceDDBuilder"
+					"path" : "/Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Class/ReduceDDBuilder"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "/Users/antoniablanco/Desktop/DD_optimization_c-/Exceptions"
+					"path" : "/Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Exceptions"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "/Users/antoniablanco/Desktop/DD_optimization_c-/Problems"
-				},
-				{
-					"backtrace" : 2,
-					"isSystem" : true,
-					"path" : "/Users/antoniablanco/Desktop/DD_optimization_c-/build/_deps/googletest-src/googletest/include"
+					"path" : "/Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Problems"
 				},
 				{
 					"backtrace" : 2,
 					"isSystem" : true,
-					"path" : "/Users/antoniablanco/Desktop/DD_optimization_c-/build/_deps/googletest-src/googletest"
+					"path" : "/Users/antoniablanco/Desktop/DD_optimization_c_plusplus/cmake-build-debug/_deps/googletest-src/googletest/include"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "/Users/antoniablanco/Desktop/DD_optimization_c_plusplus/cmake-build-debug/_deps/googletest-src/googletest"
 				}
 			],
 			"language" : "CXX",
@@ -141,11 +141,11 @@
 		},
 		{
 			"backtrace" : 2,
-			"id" : "Class::@6890427a1f51a3e7e1df"
+			"id" : "Problems::@6890427a1f51a3e7e1df"
 		},
 		{
 			"backtrace" : 2,
-			"id" : "Problems::@6890427a1f51a3e7e1df"
+			"id" : "Class::@6890427a1f51a3e7e1df"
 		},
 		{
 			"backtrace" : 2,

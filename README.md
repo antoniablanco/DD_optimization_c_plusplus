@@ -70,7 +70,7 @@ The first step to use this feature is to create an instance of the ObjectiveFunc
 
 #### Get the Time of the Algoritms
 
-If it's want to get the time taken by the algorithms for creating the diagram or another of its forms, you need to use the *getDdBuilderTime()* or *get_TYPE_constructor_time()* methods of the **DD** class, where TYPE represent the type of graph that its wanted, for example relax, restricted or reduce. On the other hand, to obtain the objective function time, you should use *get_time()* from the **ObjectiveFunction** class.
+If it's want to get the time taken by the algorithms for creating the diagram or another of its forms, you need to use the *get_dd_builder_time()* or *get_TYPE_constructor_time()* methods of the **DD** class, where TYPE represent the type of graph that its wanted, for example relax, restricted or reduce. On the other hand, to obtain the objective function time, you should use *get_time()* from the **ObjectiveFunction** class.
 
 ## Examples
 

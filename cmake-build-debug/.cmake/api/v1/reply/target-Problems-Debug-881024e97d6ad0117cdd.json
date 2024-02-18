@@ -57,51 +57,51 @@
 			[
 				{
 					"backtrace" : 3,
-					"path" : "/Users/antoniablanco/Desktop/DD_optimization_c-/Problems"
+					"path" : "/Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Problems"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "/Users/antoniablanco/Desktop/DD_optimization_c-/Class"
+					"path" : "/Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Class"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "/Users/antoniablanco/Desktop/DD_optimization_c-/Class/AnswerStructure"
+					"path" : "/Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Class/AnswerStructure"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "/Users/antoniablanco/Desktop/DD_optimization_c-/Class/DDStructure"
+					"path" : "/Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Class/DDStructure"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "/Users/antoniablanco/Desktop/DD_optimization_c-/Class/GraphVisualization"
+					"path" : "/Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Class/GraphVisualization"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "/Users/antoniablanco/Desktop/DD_optimization_c-/Class/ObjectiveFunction"
+					"path" : "/Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Class/ObjectiveFunction"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "/Users/antoniablanco/Desktop/DD_optimization_c-/Class/Problems"
+					"path" : "/Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Class/Problems"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "/Users/antoniablanco/Desktop/DD_optimization_c-/Class/DDBuilder"
+					"path" : "/Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Class/DDBuilder"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "/Users/antoniablanco/Desktop/DD_optimization_c-/Class/RestrictedDDBuilder"
+					"path" : "/Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Class/RestrictedDDBuilder"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "/Users/antoniablanco/Desktop/DD_optimization_c-/Class/RelaxedDDBuilder"
+					"path" : "/Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Class/RelaxedDDBuilder"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "/Users/antoniablanco/Desktop/DD_optimization_c-/Class/ReduceDDBuilder"
+					"path" : "/Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Class/ReduceDDBuilder"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "/Users/antoniablanco/Desktop/DD_optimization_c-/Exceptions"
+					"path" : "/Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Exceptions"
 				}
 			],
 			"language" : "CXX",

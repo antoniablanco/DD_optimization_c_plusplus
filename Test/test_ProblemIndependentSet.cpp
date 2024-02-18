@@ -107,7 +107,7 @@ TEST_F(ProblemIndependentSetTest, TestVerboseCreateReduceDD) {
     cout.rdbuf(out.rdbuf());
 
     DD dd_independent_set_instance(*independent_set_instance, false);
-    dd_independent_set_instance.createReduceDecisionDiagram(true);
+    dd_independent_set_instance.create_reduce_decision_diagram(true);
 
     cout.rdbuf(coutbuf);
 
@@ -130,7 +130,7 @@ TEST_F(ProblemIndependentSetTest, TestVerboseCreateRestrictedDD) {
     cout.rdbuf(out.rdbuf());
 
     DD dd_independent_set_instance(*independent_set_instance, false);
-    dd_independent_set_instance.createRestrictedDecisionDiagram(2, true);
+    dd_independent_set_instance.create_restricted_decision_diagram(2, true);
 
     cout.rdbuf(coutbuf);
 
@@ -153,7 +153,7 @@ TEST_F(ProblemIndependentSetTest, TestVerboseCreateRelaxedDD) {
     cout.rdbuf(out.rdbuf());
 
     DD dd_independent_set_instance(*independent_set_instance, false);
-    dd_independent_set_instance.createRelaxedDecisionDiagram(2, true);
+    dd_independent_set_instance.create_relaxed_decision_diagram(2, true);
 
     cout.rdbuf(coutbuf);
 
@@ -177,14 +177,14 @@ TEST_F(ProblemIndependentSetTest, TestCreateDDGraphEqual) {
 
 TEST_F(ProblemIndependentSetTest, TestCreateReduceDDGraphEqual) {
     Graph expected_graph = GetReduceDDIndependentSet();
-    dd_instance->createReduceDecisionDiagram();
+    dd_instance->create_reduce_decision_diagram();
 
     ASSERT_TRUE(dd_instance->get_desition_diagram()==expected_graph);
 }
 
 TEST_F(ProblemIndependentSetTest, TestCreateRestrictedDDGraphEqual) {
     Graph expected_graph = GetRestrictedDDIndependentSet();
-    dd_instance->createRestrictedDecisionDiagram(2);
+    dd_instance->create_restricted_decision_diagram(2);
 
     ASSERT_TRUE(dd_instance->get_desition_diagram()==expected_graph);
 }
@@ -197,7 +197,7 @@ TEST_F(ProblemIndependentSetTest, CompareTwoDifferentGraphs) {
 
 TEST_F(ProblemIndependentSetTest, TestCreateRelaxedDDGraphEqual) {
     Graph expected_graph = GetRelaxedDDIndependentSet();
-    dd_instance->createRelaxedDecisionDiagram(2);
+    dd_instance->create_relaxed_decision_diagram(2);
 
     ASSERT_TRUE(dd_instance->get_desition_diagram()==expected_graph);
 }
@@ -211,21 +211,21 @@ TEST_F(ProblemIndependentSetTest, TestGetCopy) {
 }
 
 TEST_F(ProblemIndependentSetTest, TestGetDDBuilderTime) {
-    ASSERT_GT(stof(dd_instance->getDdBuilderTime()), 0);
+    ASSERT_GT(stof(dd_instance->get_dd_builder_time()), 0);
 }
 
 TEST_F(ProblemIndependentSetTest, TestGetReduceDDBuilderTime) {
-    dd_instance->createReduceDecisionDiagram();
-    ASSERT_GT(stof(dd_instance->getReduceDdBuilderTime()), 0);
+    dd_instance->create_reduce_decision_diagram();
+    ASSERT_GT(stof(dd_instance->get_reduce_dd_builder_time()), 0);
 }
 
 TEST_F(ProblemIndependentSetTest, TestGetRestrictedDDBuilderTime) {
-    dd_instance->createRestrictedDecisionDiagram(2);
-    ASSERT_GT(stof(dd_instance->getRestrictedDdBuilderTime()), 0);
+    dd_instance->create_restricted_decision_diagram(2);
+    ASSERT_GT(stof(dd_instance->get_restricted_dd_builder_time()), 0);
 }
 
 TEST_F(ProblemIndependentSetTest, TestGetRelaxedDDBuilderTime) {
-    dd_instance->createRelaxedDecisionDiagram(2);
+    dd_instance->create_relaxed_decision_diagram(2);
     ASSERT_GT(stof(dd_instance->get_relaxed_dd_builder_time()), 0);
 }
 
@@ -238,7 +238,7 @@ TEST_F(ProblemIndependentSetTest, GetSolutionForDD) {
 }
 
 TEST_F(ProblemIndependentSetTest, GetSolutionForReduceDD) {
-    dd_instance->createReduceDecisionDiagram();
+    dd_instance->create_reduce_decision_diagram();
     ObjectiveStruct solution = getLinearDpSolution();
     int expected_value = 11;
     string expected_path = " arc_0_1(0)-> arc_1_4(1)-> arc_4_7(0)-> arc_7_8(0)-> arc_8_10(1)";
@@ -247,7 +247,7 @@ TEST_F(ProblemIndependentSetTest, GetSolutionForReduceDD) {
 }
 
 TEST_F(ProblemIndependentSetTest, GetSolutionForRestrictedeDD) {
-    dd_instance->createRestrictedDecisionDiagram(2, false);
+    dd_instance->create_restricted_decision_diagram(2, false);
     ObjectiveStruct solution = getLinearDpSolution();
     int expected_value = 10;
     string expected_path = " arc_0_2(1)-> arc_2_4(0)-> arc_4_5(0)-> arc_5_7(0)-> arc_7_9(1)";
@@ -256,7 +256,7 @@ TEST_F(ProblemIndependentSetTest, GetSolutionForRestrictedeDD) {
 }
 
 TEST_F(ProblemIndependentSetTest, GetSolutionForRelaxedeDD) {
-    dd_instance->createRelaxedDecisionDiagram(2);
+    dd_instance->create_relaxed_decision_diagram(2);
     ObjectiveStruct solution = getLinearDpSolution();
     int expected_value = 13;
     string expected_path = " arc_0_1(0)-> arc_1_3(1)-> arc_3_6(1)-> arc_6_7(0)-> arc_7_9(1)";
@@ -282,7 +282,7 @@ TEST_F(ProblemIndependentSetTest, TestCompareGMLDDGraph) {
 }
 
 TEST_F(ProblemIndependentSetTest, TestCompareGMLReduceDDGraph) {
-    dd_instance->createReduceDecisionDiagram();
+    dd_instance->create_reduce_decision_diagram();
     dd_instance->export_graph_file("test");
 
     string expected_file_path = source_directory + "/Test/gml_files/reduce_dd_independent_set.gml";
@@ -300,7 +300,7 @@ TEST_F(ProblemIndependentSetTest, TestCompareGMLReduceDDGraph) {
 }
 
 TEST_F(ProblemIndependentSetTest, TestCompareGMLRestrictedDDGraph) {
-    dd_instance->createRestrictedDecisionDiagram(2);
+    dd_instance->create_restricted_decision_diagram(2);
     dd_instance->export_graph_file("test");
 
     string expected_file_path = source_directory + "/Test/gml_files/restricted_dd_independent_set.gml";
@@ -318,7 +318,7 @@ TEST_F(ProblemIndependentSetTest, TestCompareGMLRestrictedDDGraph) {
 }
 
 TEST_F(ProblemIndependentSetTest, TestCompareGMLRelaxedDDGraph) {
-    dd_instance->createRelaxedDecisionDiagram(2);
+    dd_instance->create_relaxed_decision_diagram(2);
     dd_instance->export_graph_file("test");
 
     string expected_file_path = source_directory + "/Test/gml_files/relax_dd_independent_set.gml";

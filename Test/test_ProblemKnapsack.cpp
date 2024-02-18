@@ -111,7 +111,7 @@ TEST_F(ProblemKnapsackTest, TestVerboseCreateReduceDD) {
     cout.rdbuf(out.rdbuf());
 
     DD dd_knapsack_instance(*knapsack_instance, false);
-    dd_knapsack_instance.createReduceDecisionDiagram(true);
+    dd_knapsack_instance.create_reduce_decision_diagram(true);
 
     cout.rdbuf(coutbuf);
 
@@ -134,7 +134,7 @@ TEST_F(ProblemKnapsackTest, TestVerboseCreateRestrictedDD) {
     cout.rdbuf(out.rdbuf());
 
     DD dd_knapsack_instance(*knapsack_instance, false);
-    dd_knapsack_instance.createRestrictedDecisionDiagram(3, true);
+    dd_knapsack_instance.create_restricted_decision_diagram(3, true);
 
     cout.rdbuf(coutbuf);
 
@@ -157,7 +157,7 @@ TEST_F(ProblemKnapsackTest, TestVerboseCreateRelaxedDD) {
     cout.rdbuf(out.rdbuf());
 
     DD dd_knapsack_instance(*knapsack_instance, false);
-    dd_knapsack_instance.createRelaxedDecisionDiagram(3, true);
+    dd_knapsack_instance.create_relaxed_decision_diagram(3, true);
 
     cout.rdbuf(coutbuf);
 
@@ -181,14 +181,14 @@ TEST_F(ProblemKnapsackTest, TestCreateDDGraphEqual) {
 
 TEST_F(ProblemKnapsackTest, TestCreateReduceDDGraphEqual) {
     Graph expected_graph = GetReduceDDKnapsack();
-    dd_instance->createReduceDecisionDiagram();
+    dd_instance->create_reduce_decision_diagram();
 
     ASSERT_TRUE(dd_instance->get_desition_diagram()==expected_graph);
 }
 
 TEST_F(ProblemKnapsackTest, TestCreateRestrictedDDGraphEqual) {
     Graph expected_graph = GetRestrictedDDKnapsack();
-    dd_instance->createRestrictedDecisionDiagram(3);
+    dd_instance->create_restricted_decision_diagram(3);
 
     ASSERT_TRUE(dd_instance->get_desition_diagram()==expected_graph);
 }
@@ -201,7 +201,7 @@ TEST_F(ProblemKnapsackTest, CompareTwoDifferentGraphs) {
 
 TEST_F(ProblemKnapsackTest, TestCreateRelaxedDDGraphEqual) {
     Graph expected_graph = GetRelaxedDDKnapsack();
-    dd_instance->createRelaxedDecisionDiagram(3);
+    dd_instance->create_relaxed_decision_diagram(3);
 
     ASSERT_TRUE(dd_instance->get_desition_diagram()==expected_graph);
 }
@@ -215,21 +215,21 @@ TEST_F(ProblemKnapsackTest, TestGetCopy) {
 }
 
 TEST_F(ProblemKnapsackTest, TestGetDDBuilderTime) {
-    ASSERT_GT(stof(dd_instance->getDdBuilderTime()), 0);
+    ASSERT_GT(stof(dd_instance->get_dd_builder_time()), 0);
 }
 
 TEST_F(ProblemKnapsackTest, TestGetReduceDDBuilderTime) {
-    dd_instance->createReduceDecisionDiagram();
-    ASSERT_GT(stof(dd_instance->getReduceDdBuilderTime()), 0);
+    dd_instance->create_reduce_decision_diagram();
+    ASSERT_GT(stof(dd_instance->get_reduce_dd_builder_time()), 0);
 }
 
 TEST_F(ProblemKnapsackTest, TestGetRestrictedDDBuilderTime) {
-    dd_instance->createRestrictedDecisionDiagram(3);
-    ASSERT_GT(stof(dd_instance->getRestrictedDdBuilderTime()), 0);
+    dd_instance->create_restricted_decision_diagram(3);
+    ASSERT_GT(stof(dd_instance->get_restricted_dd_builder_time()), 0);
 }
 
 TEST_F(ProblemKnapsackTest, TestGetRelaxedDDBuilderTime) {
-    dd_instance->createRelaxedDecisionDiagram(3, true);
+    dd_instance->create_relaxed_decision_diagram(3, true);
     ASSERT_GT(stof(dd_instance->get_relaxed_dd_builder_time()), 0);
 }
 
@@ -242,7 +242,7 @@ TEST_F(ProblemKnapsackTest, GetSolutionForDD) {
 }
 
 TEST_F(ProblemKnapsackTest, GetSolutionForReduceDD) {
-    dd_instance->createReduceDecisionDiagram();
+    dd_instance->create_reduce_decision_diagram();
     ObjectiveStruct solution = getLinearDpSolution();
     int expected_value = 18;
     string expected_path = " arc_0_1(0)-> arc_1_3(0)-> arc_3_6(1)-> arc_6_7(0)";
@@ -251,7 +251,7 @@ TEST_F(ProblemKnapsackTest, GetSolutionForReduceDD) {
 }
 
 TEST_F(ProblemKnapsackTest, GetSolutionForRestrictedeDD) {
-    dd_instance->createRestrictedDecisionDiagram(3);
+    dd_instance->create_restricted_decision_diagram(3);
     ObjectiveStruct solution = getLinearDpSolution();
     int expected_value = 18;
     string expected_path = " arc_0_1(0)-> arc_1_3(0)-> arc_3_6(1)-> arc_6_9(0)";
@@ -260,7 +260,7 @@ TEST_F(ProblemKnapsackTest, GetSolutionForRestrictedeDD) {
 }
 
 TEST_F(ProblemKnapsackTest, GetSolutionForRelaxedeDD) {
-    dd_instance->createRelaxedDecisionDiagram(3);
+    dd_instance->create_relaxed_decision_diagram(3);
     ObjectiveStruct solution = getLinearDpSolution();
     int expected_value = 35;
     string expected_path = " arc_0_1(0)-> arc_1_3(0)-> arc_3_6(1)-> arc_6_9(1)";
@@ -286,7 +286,7 @@ TEST_F(ProblemKnapsackTest, TestCompareGMLDDGraph) {
 }
 
 TEST_F(ProblemKnapsackTest, TestCompareGMLReduceDDGraph) {
-    dd_instance->createReduceDecisionDiagram();
+    dd_instance->create_reduce_decision_diagram();
     dd_instance->export_graph_file("test");
 
     string expected_file_path = source_directory + "/Test/gml_files/reduce_dd_knapsack.gml";
@@ -304,7 +304,7 @@ TEST_F(ProblemKnapsackTest, TestCompareGMLReduceDDGraph) {
 }
 
 TEST_F(ProblemKnapsackTest, TestCompareGMLRestrictedDDGraph) {
-    dd_instance->createRestrictedDecisionDiagram(3);
+    dd_instance->create_restricted_decision_diagram(3);
     dd_instance->export_graph_file("test");
 
     string expected_file_path = source_directory + "/Test/gml_files/restricted_dd_knapsack.gml";
@@ -322,7 +322,7 @@ TEST_F(ProblemKnapsackTest, TestCompareGMLRestrictedDDGraph) {
 }
 
 TEST_F(ProblemKnapsackTest, TestCompareGMLRelaxedDDGraph) {
-    dd_instance->createRelaxedDecisionDiagram(3);
+    dd_instance->create_relaxed_decision_diagram(3);
     dd_instance->export_graph_file("test");
 
     string expected_file_path = source_directory + "/Test/gml_files/relax_dd_knapsack.gml";

@@ -67,15 +67,15 @@ int main() {
 
     Graph pre_graph = dd_instance.get_desition_diagram();
     cout << "Nodes: " << pre_graph.nodes.size() << endl;
-    cout << "Creation Time: " << dd_instance.getDdBuilderTime() << endl;
+    cout << "Creation Time: " << dd_instance.get_dd_builder_time() << endl;
 
-    dd_instance.createReduceDecisionDiagram(false);
-    cout << "Reduce time: " << dd_instance.getReduceDdBuilderTime() << endl;
+    dd_instance.create_reduce_decision_diagram(false);
+    cout << "Reduce time: " << dd_instance.get_reduce_dd_builder_time() << endl;
 
-    dd_instance.createRestrictedDecisionDiagram(3, false);
-    cout << "Restricted time: " << dd_instance.getRestrictedDdBuilderTime() << endl;
+    dd_instance.create_restricted_decision_diagram(3, false);
+    cout << "Restricted time: " << dd_instance.get_restricted_dd_builder_time() << endl;
 
-    dd_instance.createRelaxedDecisionDiagram(3, false);
+    dd_instance.create_relaxed_decision_diagram(3, false);
     cout << "Relaxed time: " << dd_instance.get_relaxed_dd_builder_time() << endl;
 
     dd_instance.export_graph_file("knapsack_file");
