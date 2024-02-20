@@ -50,8 +50,8 @@ private:
     void check_consistent_dictionary_of_neighbors();
 
 
-    vector<string> keysToVector(const map<string, vector<int>>& variables); /**< Obtiene las claves de un mapa de pares. */
-    vector<string> keysOfVector(vector<pair<string, vector<int>>>& variables); /**< Obtiene las claves de un vector de pares. */
+    unordered_set<string> keysToVector(const map<string, vector<int>>& variables); /**< Obtiene las claves de un mapa de pares. */
+    unordered_set<string> keysOfVector(vector<pair<string, vector<int>>>& variables); /**< Obtiene las claves de un vector de pares. */
 
     /**
      * @brief Verifica si un vecino es consistente.

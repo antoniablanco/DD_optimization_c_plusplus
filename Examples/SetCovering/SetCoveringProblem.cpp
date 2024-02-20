@@ -4,10 +4,12 @@
 
 #include "SetCoveringProblem.h"
 
+#include <utility>
+
 SetCoveringProblem::SetCoveringProblem(vector<int> &initial_state, const vector<pair<string, vector<int>>>& variables,
                                        vector<vector<int>> matrix_of_wheight, vector<int> right_side_of_restrictions)
         : AbstractProblem(initial_state, variables),
-          matrix_of_wheight(matrix_of_wheight),
+          matrix_of_wheight(std::move(matrix_of_wheight)),
           right_side_of_restrictions(right_side_of_restrictions)
 {
     check_atributes(variables, initial_state);
@@ -34,7 +36,7 @@ void SetCoveringProblem::check_same_len_rows_matrix_and_variables(const vector<p
 }
 
 bool SetCoveringProblem::equals(const vector<int>& state_one, const vector<int>& state_two) const {
-    return unordered_set<int>(state_one.begin(), state_one.end()) == unordered_set<int>(state_two.begin(), state_two.end());
+    return state_one==state_two;
 }
 
 pair<vector<int>, bool> SetCoveringProblem::transition_function(const vector<int>& previous_state, const string& variable_id, int variable_value) const {
@@ -56,7 +58,6 @@ pair<vector<int>, bool> SetCoveringProblem::transition_function(const vector<int
             }
         }
     }
-
     return make_pair(new_state, isFeasible);
 }
 

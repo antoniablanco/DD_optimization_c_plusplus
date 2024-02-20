@@ -32,19 +32,17 @@
   <component name="ChangeListManager">
     <list default="true" id="ad155aba-e836-4943-98df-aedd7029eaad" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Class/DDBuilder/AbstractDDBuilder.tpp" beforeDir="false" afterPath="$PROJECT_DIR$/Class/DDBuilder/AbstractDDBuilder.tpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Class/DDStructure/Graph.tpp" beforeDir="false" afterPath="$PROJECT_DIR$/Class/DDStructure/Graph.tpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Class/ObjectiveFunction/AbstractObjective.h" beforeDir="false" afterPath="$PROJECT_DIR$/Class/ObjectiveFunction/AbstractObjective.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Class/ObjectiveFunction/LinearObjectiveDP.h" beforeDir="false" afterPath="$PROJECT_DIR$/Class/ObjectiveFunction/LinearObjectiveDP.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Class/ObjectiveFunction/LinearObjectiveDP.tpp" beforeDir="false" afterPath="$PROJECT_DIR$/Class/ObjectiveFunction/LinearObjectiveDP.tpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Class/ObjectiveFunction/ObjectiveFunction.h" beforeDir="false" afterPath="$PROJECT_DIR$/Class/ObjectiveFunction/ObjectiveFunction.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Class/ObjectiveFunction/ObjectiveFunction.tpp" beforeDir="false" afterPath="$PROJECT_DIR$/Class/ObjectiveFunction/ObjectiveFunction.tpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Class/ReduceDDBuilder/ReduceDDBuilder.tpp" beforeDir="false" afterPath="$PROJECT_DIR$/Class/ReduceDDBuilder/ReduceDDBuilder.tpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Examples/IndependentSet/IndependentSetMain.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Examples/IndependentSet/IndependentSetMain.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Examples/IndependentSet/IndependentSetProblem.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Examples/IndependentSet/IndependentSetProblem.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Examples/IndependentSet/IndependentSetProblem.h" beforeDir="false" afterPath="$PROJECT_DIR$/Examples/IndependentSet/IndependentSetProblem.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Examples/Knapsack/KnapsackMain.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Examples/Knapsack/KnapsackMain.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Examples/Knapsack/KnapsackProblem.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Examples/Knapsack/KnapsackProblem.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Examples/SetCovering/SetCoveringMain.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Examples/SetCovering/SetCoveringMain.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Examples/SetCovering/SetCoveringProblem.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Examples/SetCovering/SetCoveringProblem.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/DD_optimization_program_tests" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/DD_optimization_program_tests" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Knapsack" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Knapsack" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/libProblems.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/libProblems.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/knapsack_file.gml" beforeDir="false" afterPath="$PROJECT_DIR$/knapsack_file.gml" afterDir="false" />
@@ -79,7 +77,9 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "CMake Application.IndependentSet.executor": "Run",
     "CMake Application.Knapsack.executor": "Run",
+    "CMake Application.SetCovering.executor": "Run",
     "Google Test.DD_optimization_program_tests.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -134,11 +134,6 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="gmock" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DD_optimization_program" TARGET_NAME="gmock" CONFIG_NAME="Debug">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -188,6 +183,7 @@
       <workItem from="1708204478468" duration="12000" />
       <workItem from="1708286105786" duration="924000" />
       <workItem from="1708391216082" duration="4673000" />
+      <workItem from="1708448337030" duration="6675000" />
     </task>
     <servers />
   </component>

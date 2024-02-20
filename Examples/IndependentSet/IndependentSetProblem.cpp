@@ -1,7 +1,3 @@
-//
-// Created by antonia blanco on 13-02-24.
-//
-
 #include "IndependentSetProblem.h"
 IndependentSetProblem::IndependentSetProblem(vector<int> &initial_state, vector<pair<string, vector<int>>>& variables,
                                              map<string, vector<int>> dict_node_neighbors)
@@ -20,18 +16,18 @@ void IndependentSetProblem::check_same_variables(vector<pair<string, vector<int>
     assert(keysOfVector(variables) == keysToVector(dict_node_neighbors) && "Variables must be the same between dictionaries");
 }
 
-vector<std::string> IndependentSetProblem::keysToVector(const map<string, vector<int>>& dict_node_neighbors) {
-    std::vector<std::string> result;
+unordered_set<std::string> IndependentSetProblem::keysToVector(const map<string, vector<int>>& dict_node_neighbors) {
+    std::unordered_set<std::string> result;
     for (const auto& entry : dict_node_neighbors) {
-        result.push_back(entry.first);
+        result.insert(entry.first);
     }
     return result;
 }
 
-vector<std::string> IndependentSetProblem::keysOfVector(vector<pair<string, vector<int>>>& variables) {
-    std::vector<std::string> result;
+unordered_set<std::string> IndependentSetProblem::keysOfVector(vector<pair<string, vector<int>>>& variables) {
+    std::unordered_set<std::string> result;
     for (const auto& entry : variables) {
-        result.push_back(entry.first);
+        result.insert(entry.first);
     }
     return result;
 }
@@ -51,7 +47,7 @@ bool IndependentSetProblem::isNeighborConsistent(const string& key, int value) {
 }
 
 bool IndependentSetProblem::equals(const vector<int>& state_one, const vector<int>& state_two) const {
-    return unordered_set<int>(state_one.begin(), state_one.end()) == unordered_set<int>(state_two.begin(), state_two.end());
+    return state_one == state_two;
 }
 
 pair<vector<int>, bool> IndependentSetProblem::transition_function(const vector<int>& previous_state, const string& variable_id, int variable_value) const {

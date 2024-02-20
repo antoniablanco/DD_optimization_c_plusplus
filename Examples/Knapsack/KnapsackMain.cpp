@@ -16,7 +16,7 @@ using namespace std;
 int main() {
 
     // Tiempos:
-    // Creación dd: 67.789444 en c++ y en python fue: 51.712515115737915
+    // Creación dd: 67.789444 en c++ y en python fue: 51.712515115737915 (nodes: 99929)
     // Reduce dd: 40.130613
     // Restricted dd: 0.19868
     // Relaxed dd: 65.879433
@@ -28,8 +28,9 @@ int main() {
     random_device rd;
     mt19937 gen(rd());
     uniform_int_distribution<> dis(1, 10);
+    int variables_length = 1000;
 
-    vector<vector<int>> matrix_of_wheight(1, std::vector<int>(1000));
+    vector<vector<int>> matrix_of_wheight(1, std::vector<int>(variables_length));
     for (size_t j = 0; j < matrix_of_wheight[0].size(); ++j) {
         matrix_of_wheight[0][j] = dis(gen);
     }
@@ -39,14 +40,14 @@ int main() {
     vector<int> initial_state = {0, 0};
 
     std::vector<std::pair<std::string, std::vector<int>>> variables;
-    for (int i = 1; i <= 1000; ++i) {
+    for (int i = 1; i <= variables_length; ++i) {
         std::string variable_name = "x_" + std::to_string(i);
         variables.emplace_back(make_pair(variable_name, vector<int>{0,1}));
     }
 
-    vector<int> objective_weights(vector<int>(1000));
-    for (size_t j = 0; j < objective_weights.size(); ++j) {
-        objective_weights[j] = dis(gen);
+    vector<int> objective_weights = {};
+    for (size_t j = 0; j < variables_length; ++j) {
+        objective_weights.push_back(dis(gen));
     }
 
 

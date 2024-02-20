@@ -31,7 +31,7 @@ void KnapsackProblem::check_same_len_rows_matrix_and_variables(const vector<pair
 }
 
 bool KnapsackProblem::equals(const vector<int>& state_one, const vector<int>& state_two) const {
-    return set<int>(state_one.begin(), state_one.end()) == set<int>(state_two.begin(), state_two.end());
+    return state_one == state_two;
 }
 
 pair<vector<int>, bool> KnapsackProblem::transition_function(const vector<int>& previous_state, const string& variable_id, int variable_value) const {
