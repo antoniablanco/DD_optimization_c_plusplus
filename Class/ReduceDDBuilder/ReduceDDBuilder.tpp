@@ -57,12 +57,11 @@ bool ReduceDDBuilder<T>::checking_if_two_nodes_should_merge(Node<T>* node_one, N
 template <typename T>
 vector<string> ReduceDDBuilder<T>::get_node_of_every_type_of_path(Node<T>* node) {
     vector<string> nodesOfPath = {};
+    nodesOfPath.reserve(node->out_arcs.size());
     for (Arc<T>* arc : node->out_arcs) {
 
-        std::ostringstream ss;
-        ss << arc->in_node << "_" << to_string(arc->variable_value);
-
-        nodesOfPath.push_back(ss.str());
+        string aux = arc->in_node->to_string() + "_" + to_string(arc->variable_value);
+        nodesOfPath.push_back(aux);
     }
     return nodesOfPath;
 }

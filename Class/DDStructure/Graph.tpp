@@ -91,11 +91,8 @@ bool Graph<T>::compare_two_nodes(const Node<T>& nodeOne, const Node<T>& nodeTwo)
 
 template <typename T>
 void Graph<T>::add_node(Node<T>* node) {
-    auto iterator = find(nodes.begin(), nodes.end(), node);
-    if (iterator == nodes.end()) {
-        nodes.push_back(node);
-        structure[actual_layer].push_back(node);
-    }
+    nodes.push_back(node);
+    structure[actual_layer].push_back(node);
 }
 
 template <typename T>
@@ -122,8 +119,8 @@ void Graph<T>::remove_node(Node<T>& node) {
     auto iterator = find(nodes.begin(), nodes.end(), &node);
 
     if (iterator != nodes.end()) {
-        nodes.erase(iterator);
         remove_node_from_layer(node);
+        nodes.erase(iterator);
     }
 }
 

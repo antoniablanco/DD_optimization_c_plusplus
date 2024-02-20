@@ -22,7 +22,7 @@ public:
      * @brief Constructor de la clase ObjectiveFunction.
      * @param dd Objeto de la clase DD en el cual se encuentra el grafo de decisión asociado a la función objetivo.
      */
-    ObjectiveFunction(DD<T> dd);
+    ObjectiveFunction(DD<T>& dd);
 
     ObjectiveStruct<T> answer; /**< Estructura que almacena la solución de la función objetivo. */
 

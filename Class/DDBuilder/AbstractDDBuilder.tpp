@@ -11,6 +11,7 @@ AbstractDDBuilder<T>::AbstractDDBuilder(AbstractProblem<T>& problem) :
 {
     Node<T>* node_root = new Node(0, problem.initial_state);
     graph = new Graph(node_root);
+    graph->structure.reserve(variables.size());
 }
 
 template <typename T>
@@ -38,6 +39,7 @@ void AbstractDDBuilder<T>::create_new_layer(int variable_id) {
 template <typename T>
 void AbstractDDBuilder<T>::create_new_nodes_in_the_new_layer(int variable_id) {
     size_t last_layer_index = graph->structure.size() - 2;
+    graph->structure.back().reserve(variables_domain[variables[variable_id]].size());
 
     for (Node<T>* pExistedNode : graph->structure[last_layer_index]) {
         if (pExistedNode) {

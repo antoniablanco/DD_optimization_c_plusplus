@@ -27,7 +27,7 @@ public:
      * @param graph_DD Grafo que se va a asignar al objetivo.
      * Es un método virtual puro que debe ser implementado por las clases hijas.
      */
-    virtual void assign_graph(Graph<T> graph_DD) = 0;
+    virtual void assign_graph(Graph<T>& graph_DD) = 0;
 
     /**
      * @brief Resuelve el grafo asociado al objetivo.

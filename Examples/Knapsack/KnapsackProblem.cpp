@@ -40,8 +40,8 @@ pair<vector<int>, bool> KnapsackProblem::transition_function(const vector<int>& 
     vector<int> state = {};
 
     for (size_t row = 0; row < matrix_of_wheight.size(); ++row) {
-        vector<int> lista_suma_variables = matrix_of_wheight[row];
-        int new_state = previous_state[row] + lista_suma_variables[stoi(variable_id.substr(2)) - 1] * variable_value;
+        const vector<int>& row_of_matrix = matrix_of_wheight[row];
+        int new_state = previous_state[row] + row_of_matrix[stoi(variable_id.substr(2)) - 1] * variable_value;
         state.push_back(new_state);
         state.push_back(new_state);
 
@@ -54,8 +54,8 @@ pair<vector<int>, bool> KnapsackProblem::transition_function(const vector<int>& 
 
 int KnapsackProblem::get_priority_for_discard_node(const vector<int>& state) const {
     int total = 0;
-    for (size_t i=0; i < state.size(); ++i ) {
-        total += state[i];
+    for (int i : state) {
+        total += i;
     }
     return -total;
 }

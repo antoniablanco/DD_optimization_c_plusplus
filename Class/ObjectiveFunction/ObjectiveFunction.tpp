@@ -1,7 +1,7 @@
 #include "ObjectiveFunction.h"
 
 template <typename T>
-ObjectiveFunction<T>::ObjectiveFunction(DD<T> dd) :
+ObjectiveFunction<T>::ObjectiveFunction(DD<T>& dd) :
         graph(dd.get_desition_diagram()), time(std::chrono::duration<double>::zero()), objective_function(nullptr) {
 }
 

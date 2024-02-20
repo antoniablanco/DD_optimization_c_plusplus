@@ -3,6 +3,7 @@
 #include <vector>
 #include <string>
 #include <algorithm>
+#include <random>
 
 #include "KnapsackProblem.h"
 #include "DD.h"
@@ -23,7 +24,7 @@ int main() {
 
     // Configurar el generador de números aleatorios
 
-    /*
+
     random_device rd;
     mt19937 gen(rd());
     uniform_int_distribution<> dis(1, 10);
@@ -47,8 +48,9 @@ int main() {
     for (size_t j = 0; j < objective_weights.size(); ++j) {
         objective_weights[j] = dis(gen);
     }
-    */
 
+
+    /*
     vector<vector<int>> matrix_of_wheight = {{3, 3, 4, 6}};
     vector<int> right_side_of_restrictions = {6};
 
@@ -60,6 +62,8 @@ int main() {
             make_pair("x_4", vector<int>{0, 1})
     };
 
+    vector<int> objective_weights = {-5, 1, 18, 17};
+    */
     KnapsackProblem knapsack_instance(initial_state, variables, matrix_of_wheight, right_side_of_restrictions);
     cout << knapsack_instance.get_state_as_string(initial_state)<<endl;
 
@@ -72,16 +76,15 @@ int main() {
     dd_instance.create_reduce_decision_diagram(false);
     cout << "Reduce time: " << dd_instance.get_reduce_dd_builder_time() << endl;
 
-    dd_instance.create_restricted_decision_diagram(3, false);
+    dd_instance.create_restricted_decision_diagram(70, false);
     cout << "Restricted time: " << dd_instance.get_restricted_dd_builder_time() << endl;
 
-    dd_instance.create_relaxed_decision_diagram(3, false);
+    dd_instance.create_relaxed_decision_diagram(70, false);
     cout << "Relaxed time: " << dd_instance.get_relaxed_dd_builder_time() << endl;
 
     dd_instance.export_graph_file("knapsack_file");
 
     // Resolución del diagrama
-    vector<int> objective_weights = {-5, 1, 18, 17};
 
     ObjectiveFunction objective_function_instance = ObjectiveFunction<vector<int>>(dd_instance);
     LinearObjectiveDP linear_objective_instance = LinearObjectiveDP<vector<int>>(objective_weights, "max");

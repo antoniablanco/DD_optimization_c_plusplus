@@ -15,7 +15,7 @@ void LinearObjectiveDP<T>::choose_transform_weights() {
 }
 
 template <typename T>
-void LinearObjectiveDP<T>::assign_graph(Graph<T> graph_DD) {
+void LinearObjectiveDP<T>::assign_graph(Graph<T>& graph_DD) {
     graph = graph_DD;
 }
 

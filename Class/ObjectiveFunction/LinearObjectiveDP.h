@@ -30,7 +30,7 @@ public:
      * @param graph_DD Grafo que se va a asignar al objetivo.
      * Implementa el método virtual puro de la clase AbstractObjective.
      */
-    void assign_graph(Graph<T> graph_DD) override;
+    void assign_graph(Graph<T>& graph_DD) override;
 
     /**
      * @brief Resuelve el grafo asociado al objetivo.
