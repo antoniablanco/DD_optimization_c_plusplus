@@ -58,7 +58,6 @@ public:
     /**
      * @brief Obtención del estado del nodo.
      */
-    T get_state() const;
 
     // Métodos que trabajan sobre la estructura de arcos del nodo.
     void add_in_arc(Arc<T>* arc);

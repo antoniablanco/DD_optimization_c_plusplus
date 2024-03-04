@@ -59,9 +59,9 @@ public:
      * @param state_two Segundo estado a fusionar.
      * @return Nuevo estado resultante de la fusión.
      */
-    virtual const T merge_operator(const T& state_one, const T& state_two) const = 0;
+    virtual T merge_operator(const T& state_one, const T& state_two) const = 0;
 
-    virtual const string get_state_as_string(const T& state) const = 0;
+    virtual string get_state_as_string(const T& state) const = 0;
 
     T& initial_state; /**< Estado inicial del problema. */
     vector<string> ordered_variables; /**< Vector que contiene el orden de las variables. */

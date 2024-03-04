@@ -62,12 +62,12 @@ int KnapsackProblem::get_priority_for_discard_node(const vector<int>& state) con
 
 int KnapsackProblem::get_priority_for_merge_nodes(const int node_id, const vector<int>& state) const {
     if (state[0] != state[1]) {
-        return -500;
+        return -50000;
     }
     return -node_id;
 }
 
-const vector<int> KnapsackProblem::merge_operator(const vector<int>& state_one, const vector<int>& state_two) const {
+vector<int> KnapsackProblem::merge_operator(const vector<int>& state_one, const vector<int>& state_two) const {
     vector<int> state = {};
 
     state.push_back(state_one[0]);
@@ -78,7 +78,7 @@ const vector<int> KnapsackProblem::merge_operator(const vector<int>& state_one, 
     return state;
 }
 
-const string KnapsackProblem::get_state_as_string(const vector<int>& state) const {
+string KnapsackProblem::get_state_as_string(const vector<int>& state) const {
     string result = "[";
     for (int i = 0; i < state.size(); ++i) {
         result += std::to_string(state[i]);

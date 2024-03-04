@@ -32,15 +32,22 @@
   <component name="ChangeListManager">
     <list default="true" id="ad155aba-e836-4943-98df-aedd7029eaad" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Examples/IndependentSet/IndependentSetMain.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Examples/IndependentSet/IndependentSetMain.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Class/DDStructure/Node.h" beforeDir="false" afterPath="$PROJECT_DIR$/Class/DDStructure/Node.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Class/DDStructure/Node.tpp" beforeDir="false" afterPath="$PROJECT_DIR$/Class/DDStructure/Node.tpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Class/Problems/AbstractProblemClass.h" beforeDir="false" afterPath="$PROJECT_DIR$/Class/Problems/AbstractProblemClass.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Class/Problems/AbstractProblemClass.tpp" beforeDir="false" afterPath="$PROJECT_DIR$/Class/Problems/AbstractProblemClass.tpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Examples/IndependentSet/IndependentSetProblem.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Examples/IndependentSet/IndependentSetProblem.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Examples/IndependentSet/IndependentSetProblem.h" beforeDir="false" afterPath="$PROJECT_DIR$/Examples/IndependentSet/IndependentSetProblem.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Examples/Knapsack/KnapsackMain.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Examples/Knapsack/KnapsackMain.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Examples/Knapsack/KnapsackProblem.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Examples/Knapsack/KnapsackProblem.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Examples/SetCovering/SetCoveringMain.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Examples/SetCovering/SetCoveringMain.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Examples/Knapsack/KnapsackProblem.h" beforeDir="false" afterPath="$PROJECT_DIR$/Examples/Knapsack/KnapsackProblem.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Examples/SetCovering/SetCoveringProblem.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Examples/SetCovering/SetCoveringProblem.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Examples/SetCovering/SetCoveringProblem.h" beforeDir="false" afterPath="$PROJECT_DIR$/Examples/SetCovering/SetCoveringProblem.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Knapsack.dir/Examples/Knapsack/KnapsackMain.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Knapsack.dir/Examples/Knapsack/KnapsackMain.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Knapsack.dir/Examples/Knapsack/KnapsackProblem.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Knapsack.dir/Examples/Knapsack/KnapsackProblem.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Problems.dir/Examples/SetCovering/SetCoveringProblem.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Problems.dir/Examples/SetCovering/SetCoveringProblem.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/DD_optimization_program_tests" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/DD_optimization_program_tests" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Knapsack" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Knapsack" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
@@ -184,6 +191,8 @@
       <workItem from="1708286105786" duration="924000" />
       <workItem from="1708391216082" duration="4673000" />
       <workItem from="1708448337030" duration="6675000" />
+      <workItem from="1709046095643" duration="3057000" />
+      <workItem from="1709579651193" duration="3158000" />
     </task>
     <servers />
   </component>

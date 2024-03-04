@@ -78,13 +78,13 @@ int IndependentSetProblem::get_priority_for_merge_nodes(const int node_id, const
     return -node_id;
 }
 
-const vector<int> IndependentSetProblem::merge_operator(const vector<int>& state_one, const vector<int>& state_two) const {
+vector<int> IndependentSetProblem::merge_operator(const vector<int>& state_one, const vector<int>& state_two) const {
     vector<int> result;
     set_union(state_one.begin(), state_one.end(), state_two.begin(), state_two.end(), back_inserter(result));
     return result;
 }
 
-const string IndependentSetProblem::get_state_as_string(const vector<int>& state) const {
+string IndependentSetProblem::get_state_as_string(const vector<int>& state) const {
     string result = "[";
     for (int i = 0; i < state.size(); ++i) {
         result += std::to_string(state[i]);

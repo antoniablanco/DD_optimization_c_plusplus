@@ -1,0 +1,2 @@
+[04-03-2024 17:04:40]  Creation Time: 0.912366, Nodes: 100004;    Reduce time: 6.246918, Nodes: 99109;    (Width: 70) Restricted time: 0.558002, Nodes: 69497;    Relaxed time: 4.034753, Nodes: 69497;    LinearDp time: 1.108793
+[04-03-2024 17:05:29]  Creation Time: 0.900812, Nodes: 99855;    Reduce time: 6.233028, Nodes: 98950;    (Width: 70) Restricted time: 0.558937, Nodes: 69406;    Relaxed time: 3.670393, Nodes: 69407;    LinearDp time: 1.102092

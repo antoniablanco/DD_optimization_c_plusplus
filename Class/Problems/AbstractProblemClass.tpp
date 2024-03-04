@@ -9,7 +9,6 @@ AbstractProblem<T>::AbstractProblem(T& initial_state, const vector<pair<string, 
 
 template <typename T>
 void AbstractProblem<T>::get_variables(const vector<pair<std::string, vector<int>>> &variables) {
-    vector<string> ordered_variables;
     for (auto &variable: variables) {
         this->ordered_variables.push_back(variable.first);
         this->variables_domain[variable.first] = variable.second;
@@ -37,6 +36,11 @@ int AbstractProblem<T>::get_priority_for_merge_nodes(const int node_id, const T 
 }
 
 template <typename T>
-const T AbstractProblem<T>::merge_operator(const T &state_one, const T &state_two) const {
+T AbstractProblem<T>::merge_operator(const T &state_one, const T &state_two) const {
     throw std::logic_error("The method merge_operator has not been implemented yet");
+}
+
+template <typename T>
+string AbstractProblem<T>::get_state_as_string(const T &state) const {
+    throw std::logic_error("The method get_state_as_string has not been implemented yet");
 }

@@ -47,11 +47,6 @@ bool Node<T>::operator==(const Node<T> &other) const {
 }
 
 template <typename T>
-T Node<T>::get_state() const {
-    return state;
-}
-
-template <typename T>
 void Node<T>::add_in_arc(Arc<T>* arc) {
     in_arcs.push_back(arc);
 }
