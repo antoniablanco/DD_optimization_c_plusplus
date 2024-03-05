@@ -12,6 +12,7 @@
 #include "DD.h"
 #include "LinearObjectiveDP.h"
 #include "ObjectiveFunction.h"
+#include "Data.cpp"
 
 using namespace std;
 
@@ -33,33 +34,8 @@ int main() {
 
     vector<int> objective_weights = {-5, 1, 18, 17};
     */
-
-    // Configurar el generador de números aleatorios
-    random_device rd;
-    mt19937 gen(rd());
-    uniform_int_distribution<> dis(1, 10);
-    int variables_length = 1000;
-
-    vector<vector<int>> matrix_of_wheight(1, std::vector<int>(variables_length));
-    for (size_t j = 0; j < matrix_of_wheight[0].size(); ++j) {
-        matrix_of_wheight[0][j] = dis(gen);
-    }
-
-    vector<int> right_side_of_restrictions = {100};
-
-    vector<int> initial_state = {0, 0};
-
-    std::vector<std::pair<std::string, std::vector<int>>> variables;
-    for (int i = 1; i <= variables_length; ++i) {
-        std::string variable_name = "x_" + std::to_string(i);
-        variables.emplace_back(make_pair(variable_name, vector<int>{0,1}));
-    }
-
-    vector<int> objective_weights = {};
-    for (size_t j = 0; j < variables_length; ++j) {
-        objective_weights.push_back(dis(gen));
-    }
-
+    
+    
     // Crear el archivo de escritura de las estadísticas
     string file_name = "knapsack_statistics";
     string source_directory = fs::current_path().parent_path().string();
@@ -75,7 +51,7 @@ int main() {
     (*file) << "[" << buffer << "]" << "  ";
 
     // Crear los diagramas de decisión
-    KnapsackProblem knapsack_instance(initial_state, variables, matrix_of_wheight, right_side_of_restrictions);
+    KnapsackProblem knapsack_instance(initial_state, variables, matrix_of_weight, right_side_of_restrictions);
     DD<vector<int>> dd_instance(knapsack_instance, false);
 
     Graph creation_graph = dd_instance.get_desition_diagram();
@@ -103,7 +79,9 @@ int main() {
     objective_function_instance.set_objective_function(linear_objective_instance);
     objective_function_instance.solve_dd();
     (*file) << "LinearDp time: " << objective_function_instance.get_time() << "\n";
+    cout << objective_function_instance.get_the_solution().value<< endl;
 
     file->close();
+    
     return 0;
 }

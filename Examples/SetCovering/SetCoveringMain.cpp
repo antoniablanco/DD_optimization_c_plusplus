@@ -20,13 +20,6 @@ int main() {
     int variables_length = 100;
     int restrictions_length = 20;
 
-    // Tiempos: para 100 y 20
-    // Creación dd: 28.004 en c++  (Nodes: 362116)
-    // Reduce dd:
-    // Restricted dd:
-    // Relaxed dd:
-    // LinearDp:  seconds
-
     vector<vector<int>> matrix_of_wheight(restrictions_length, std::vector<int>(variables_length));
     for (size_t row = 0; row < matrix_of_wheight.size(); ++row) {
         for (size_t j = 0; j < matrix_of_wheight[row].size(); ++j) {
@@ -54,6 +47,7 @@ int main() {
     }
 
     /*
+    // Ejemplo utilizado en los tests
     vector<vector<int>> matrix_of_wheight = {{1, 1, 1, 0, 0, 0},
                                              {1, 0, 0, 1, 1, 0},
                                              {0, 1, 0, 1, 0, 1}};

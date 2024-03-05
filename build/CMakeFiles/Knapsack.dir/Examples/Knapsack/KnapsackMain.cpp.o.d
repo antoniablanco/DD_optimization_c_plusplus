@@ -791,24 +791,54 @@ CMakeFiles/Knapsack.dir/Examples/Knapsack/KnapsackMain.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__bsd_locale_defaults.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/cstdarg \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/sstream \
-  /Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Examples/Knapsack/KnapsackProblem.h \
-  /Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Exceptions/MyExceptions.h \
-  /Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Class/Problems/AbstractProblemClass.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/map \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__tree \
-  /Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Class/Problems/AbstractProblemClass.tpp \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/cassert \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/assert.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/set \
-  /Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Class/DD.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/thread \
-  /Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Class/DDStructure/Graph.h \
-  /Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Class/DDStructure/Node.h \
-  /Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Class/DDStructure/Node.tpp \
-  /Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Class/DDStructure/Arc.h \
-  /Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Class/DDStructure/Arc.tpp \
-  /Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Class/DDStructure/Graph.tpp \
-  /Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Class/GraphVisualization/GraphFile.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/random \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__random/bernoulli_distribution.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__random/uniform_real_distribution.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__random/generate_canonical.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__random/binomial_distribution.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__random/cauchy_distribution.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__random/chi_squared_distribution.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__random/gamma_distribution.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__random/exponential_distribution.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__random/clamp_to_integral.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__random/default_random_engine.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__random/linear_congruential_engine.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__random/is_seed_sequence.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__random/discard_block_engine.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__random/discrete_distribution.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/numeric \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__numeric/accumulate.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__numeric/adjacent_difference.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__numeric/exclusive_scan.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__numeric/gcd_lcm.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__numeric/inclusive_scan.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__numeric/inner_product.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__numeric/iota.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__numeric/midpoint.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__numeric/partial_sum.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__numeric/reduce.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__numeric/transform_exclusive_scan.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__numeric/transform_inclusive_scan.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__numeric/transform_reduce.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__random/extreme_value_distribution.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__random/fisher_f_distribution.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__random/geometric_distribution.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__random/negative_binomial_distribution.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__random/poisson_distribution.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__random/normal_distribution.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__random/independent_bits_engine.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__random/knuth_b.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__random/shuffle_order_engine.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__random/lognormal_distribution.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__random/mersenne_twister_engine.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__random/piecewise_constant_distribution.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__random/piecewise_linear_distribution.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__random/random_device.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__random/ranlux.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__random/subtract_with_carry_engine.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__random/seed_seq.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__random/student_t_distribution.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__random/weibull_distribution.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/fstream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/filesystem \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__filesystem/copy_options.h \
@@ -828,6 +858,24 @@ CMakeFiles/Knapsack.dir/Examples/Knapsack/KnapsackMain.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__filesystem/path_iterator.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__filesystem/recursive_directory_iterator.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__filesystem/u8path.h \
+  /Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Examples/Knapsack/KnapsackProblem.h \
+  /Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Exceptions/MyExceptions.h \
+  /Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Class/Problems/AbstractProblemClass.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/map \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__tree \
+  /Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Class/Problems/AbstractProblemClass.tpp \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/cassert \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/assert.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/set \
+  /Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Class/DD.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/thread \
+  /Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Class/DDStructure/Graph.h \
+  /Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Class/DDStructure/Node.h \
+  /Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Class/DDStructure/Node.tpp \
+  /Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Class/DDStructure/Arc.h \
+  /Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Class/DDStructure/Arc.tpp \
+  /Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Class/DDStructure/Graph.tpp \
+  /Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Class/GraphVisualization/GraphFile.h \
   /Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Class/GraphVisualization/GraphFile.tpp \
   /Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Class/DDBuilder/DDBuilder.h \
   /Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Class/DDBuilder/AbstractDDBuilder.h \
@@ -848,4 +896,5 @@ CMakeFiles/Knapsack.dir/Examples/Knapsack/KnapsackMain.cpp.o: \
   /Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Class/ObjectiveFunction/AbstractObjective.tpp \
   /Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Class/ObjectiveFunction/LinearObjectiveDP.tpp \
   /Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Class/ObjectiveFunction/ObjectiveFunction.h \
-  /Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Class/ObjectiveFunction/ObjectiveFunction.tpp
+  /Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Class/ObjectiveFunction/ObjectiveFunction.tpp \
+  /Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Examples/Knapsack/Data.cpp

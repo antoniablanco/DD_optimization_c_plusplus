@@ -59,6 +59,7 @@ int main()
     }
 
     /*
+    // Ejemplo utilizado en los tests
     map<string, vector<int>> dict_node_neighbors;
     dict_node_neighbors["x_1"] = {2, 3};
     dict_node_neighbors["x_2"] = {1, 3, 4};
