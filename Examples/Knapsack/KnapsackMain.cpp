@@ -34,12 +34,12 @@ int main() {
 
     vector<int> objective_weights = {-5, 1, 18, 17};
     */
-    
-    
+
+
     // Crear el archivo de escritura de las estadísticas
     string file_name = "knapsack_statistics";
     string source_directory = fs::current_path().parent_path().string();
-    string full_file_path = source_directory + "/" + file_name + ".txt";
+    string full_file_path = source_directory + "/Examples/Knapsack/" + file_name + ".txt";
     auto* file = new ofstream(full_file_path, std::ios::app);
 
     // Obtener información horaria de la ejecución
@@ -49,6 +49,9 @@ int main() {
     char buffer[80];
     std::strftime(buffer, 80, "%d-%m-%Y %H:%M:%S", local_time);
     (*file) << "[" << buffer << "]" << "  ";
+
+    // Información sobre el problema creado
+    (*file) << "Variable length: 100;   right_side: 5029;   dis(1, 100); " << "  ";
 
     // Crear los diagramas de decisión
     KnapsackProblem knapsack_instance(initial_state, variables, matrix_of_weight, right_side_of_restrictions);
@@ -61,7 +64,7 @@ int main() {
     Graph reduce_graph = dd_instance.get_desition_diagram();
     (*file) << "Reduce time: " << dd_instance.get_reduce_dd_builder_time() << ", Nodes: " << reduce_graph.nodes.size() << ";    ";
 
-    int width = 70;
+    int width = 200;
     (*file) << "(Width: " << width << ") ";
     dd_instance.create_restricted_decision_diagram(width, false);
     Graph restricted_graph = dd_instance.get_desition_diagram();
@@ -82,6 +85,6 @@ int main() {
     cout << objective_function_instance.get_the_solution().value<< endl;
 
     file->close();
-    
+
     return 0;
 }

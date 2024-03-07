@@ -1,6 +1,0 @@
-[04-03-2024 17:04:40]  Creation Time: 0.912366, Nodes: 100004;    Reduce time: 6.246918, Nodes: 99109;    (Width: 70) Restricted time: 0.558002, Nodes: 69497;    Relaxed time: 4.034753, Nodes: 69497;    LinearDp time: 1.108793
-[04-03-2024 17:05:29]  Creation Time: 0.900812, Nodes: 99855;    Reduce time: 6.233028, Nodes: 98950;    (Width: 70) Restricted time: 0.558937, Nodes: 69406;    Relaxed time: 3.670393, Nodes: 69407;    LinearDp time: 1.102092
-[05-03-2024 17:22:51]  Creation Time: 1.585653, Nodes: 99587;    Reduce time: 13.812956, Nodes: 98719;    (Width: 70) Restricted time: 1.002824, Nodes: 69295;    Relaxed time: 3.000099, Nodes: 69295;    LinearDp time: 2.294115
-[05-03-2024 17:23:34]  Creation Time: 1.602045, Nodes: 99587;    Reduce time: 13.598400, Nodes: 98719;    (Width: 70) Restricted time: 0.980786, Nodes: 69295;    Relaxed time: 3.001410, Nodes: 69295;    LinearDp time: 2.116500
-[05-03-2024 17:27:39]  Creation Time: 1.586960, Nodes: 99587;    Reduce time: 14.350406, Nodes: 98719;    (Width: 70) Restricted time: 0.989338, Nodes: 69295;    Relaxed time: 3.011084, Nodes: 69295;    LinearDp time: 2.120320
-[05-03-2024 17:35:59]  Creation Time: 1.592759, Nodes: 99587;    Reduce time: 13.768617, Nodes: 98719;    (Width: 70) Restricted time: 0.992603, Nodes: 69295;    Relaxed time: 3.011937, Nodes: 69295;    LinearDp time: 2.383769

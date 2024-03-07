@@ -61,7 +61,7 @@ vector<string> ReduceDDBuilder<T>::get_node_of_every_type_of_path(Node<T>* node)
     for (Arc<T>* arc : node->out_arcs) {
 
         string aux = arc->in_node->to_string() + "_" + to_string(arc->variable_value);
-        nodesOfPath.push_back(aux);
+        nodesOfPath.push_back(std::move(aux));
     }
     return nodesOfPath;
 }
