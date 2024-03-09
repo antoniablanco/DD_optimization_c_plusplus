@@ -10,7 +10,9 @@ using namespace std;
 
 
 template <typename T>
-Node<T>::Node(int node_id, T state) : id(node_id), state(state) {}
+Node<T>::Node(int node_id, T state) : id(node_id), state(state) {
+    node_as_string = "u_" + std::to_string(id)  + " ";
+}
 
 template <typename T>
 Node<T>::~Node() {
@@ -18,13 +20,23 @@ Node<T>::~Node() {
 
 template <typename T>
 string Node<T>::to_string() const {
-    return "u_" + std::to_string(id)  + " ";
+    return node_as_string;
 }
 
+template <typename T>
+void Node<T>::set_id(int id) {
+    this->id = id;
+    node_as_string = "u_" + std::to_string(id)  + " ";
+}
+
+template <typename T>
+int Node<T>::get_id() const {
+    return id;
+}
 
 template <typename T>
 ostream& operator<<(std::ostream& os, const Node<T> node) {
-    os << "u_" + std::to_string(node.id)  + " ";
+    os << node.node_as_string;
     return os;
 }
 

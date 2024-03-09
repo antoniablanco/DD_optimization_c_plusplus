@@ -134,7 +134,7 @@ void ReduceDDBuilder<T>::adjust_node_number() const {
     int initial_node_number = 0;
     for (const vector<Node<T>*>& layer : graph->structure) {
         for (Node<T>* node : layer) {
-            node->id = initial_node_number;
+            node->set_id(initial_node_number);
             initial_node_number++;
         }
     }

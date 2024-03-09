@@ -27,8 +27,8 @@ void RelaxedDDBuilder<T>::merge_nodes_when_width_is_greater_than_w() {
         vector<Node<T>*> ordered_nodes = this->graph->structure.back();
 
         sort(ordered_nodes.begin(), ordered_nodes.end(), [&](const Node<T>* node1, const Node<T>* node2) {
-            return this->problem.get_priority_for_merge_nodes(node1->id, node1->state) >
-                    this->problem.get_priority_for_merge_nodes(node2->id, node2->state);
+            return this->problem.get_priority_for_merge_nodes(node1->get_id(), node1->state) >
+                    this->problem.get_priority_for_merge_nodes(node2->get_id(), node2->state);
         });
 
         merge_nodes(ordered_nodes[0], ordered_nodes[1]);
@@ -99,7 +99,7 @@ void RelaxedDDBuilder<T>::adjust_node_number() {
     int initial_node_number = 0;
     for (const vector<Node<T>*>& layer : this->graph->structure) {
         for (Node<T>* node : layer) {
-            node->id = initial_node_number;
+            node->set_id(initial_node_number);
             initial_node_number++;
         }
     }

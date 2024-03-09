@@ -31,7 +31,7 @@ public:
      */
     Node() = default;
 
-    int id; /**< Identificador único del nodo. */
+    string node_as_string; /**< Cadena de texto que representa el nodo. */
     T state; /**< Estado del nodo, el cual puede poseer diferentes tipos de datos */
     vector<Arc<T>*> in_arcs; /**< Vector de arcos que entran al nodo. */
     vector<Arc<T>*> out_arcs; /**< Vector de arcos que salen del nodo. */
@@ -56,8 +56,14 @@ public:
     friend std::ostream& operator<<(std::ostream& os, const Node<T>& node);
 
     /**
-     * @brief Obtención del estado del nodo.
+     * @brief Se setea el id del nodo.
      */
+     void set_id(int id);
+
+    /**
+    * @brief Se realiza un get del id.
+    */
+    int get_id() const;
 
     // Métodos que trabajan sobre la estructura de arcos del nodo.
     void add_in_arc(Arc<T>* arc);
@@ -67,6 +73,9 @@ public:
      * @brief Destructor de la clase Node.
      */
     ~Node();
+
+private:
+    int id; /**< Identificador único del nodo. */
 };
 
 #include "Node.tpp"

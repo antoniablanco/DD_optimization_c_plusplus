@@ -69,8 +69,8 @@ void GraphFile<T>::add_nodes_and_arcs() {
 template <typename T>
 void GraphFile<T>::add_node(Node<T>* node) {
     (*bdd_file) << "\n node [\n";
-    (*bdd_file) << "\t id " << node->id << "\n";
-    (*bdd_file) << "\t label \"" << node->id << "             " << problem.get_state_as_string(node->state) << "\"\n";
+    (*bdd_file) << "\t id " << node->get_id() << "\n";
+    (*bdd_file) << "\t label \"" << node->get_id() << "             " << problem.get_state_as_string(node->state) << "\"\n";
     (*bdd_file) << " \tgraphics [\n";
     (*bdd_file) << "\t type \"ellipse\"\n";
     (*bdd_file) << "\t hasFill 0\n";
@@ -78,7 +78,7 @@ void GraphFile<T>::add_node(Node<T>* node) {
     (*bdd_file) << "\t outline \"#000000\" ]\n";
     (*bdd_file) << "]\n";
     (*bdd_file) << " \tLabelGraphics [\n";
-    (*bdd_file) << "\t text \"" << node->id << "             "  << problem.get_state_as_string(node->state) << "\"\n";
+    (*bdd_file) << "\t text \"" << node->get_id() << "             "  << problem.get_state_as_string(node->state) << "\"\n";
     (*bdd_file) << "\t fontSize 12\n";
     (*bdd_file) << "\t fontName \"Dialog\"\n";
     (*bdd_file) << "\t model \"sides\"\n";
@@ -110,7 +110,7 @@ void GraphFile<T>::add_arc(Arc<T>* arc) {
 
 template <typename T>
 void GraphFile<T>::add_arc_source(Arc<T>* arc) {
-    (*bdd_file) << "\t source " << arc->out_node->id << "\n";
+    (*bdd_file) << "\t source " << arc->out_node->get_id() << "\n";
 }
 
 template <typename T>
@@ -120,7 +120,7 @@ void GraphFile<T>::add_arc_label(Arc<T>* arc) {
 
 template <typename T>
 void GraphFile<T>::add_arc_target(Arc<T>* arc) {
-    (*bdd_file) << "\ttarget " << arc->in_node->id << "\n";
+    (*bdd_file) << "\ttarget " << arc->in_node->get_id() << "\n";
 }
 
 template <typename T>

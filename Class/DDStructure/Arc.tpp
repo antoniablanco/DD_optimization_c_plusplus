@@ -13,12 +13,12 @@ Arc<T>::Arc(Node<T>* out_node, Node<T>* in_node, int variable_value, string vari
 
 template <typename T>
 string Arc<T>::to_string() const {
-    return "arc_" + std::to_string(out_node->id) + "_" + std::to_string(in_node->id);
+    return "arc_" + std::to_string(out_node->get_id()) + "_" + std::to_string(in_node->get_id());
 }
 
 template <typename T>
 ostream& operator<<(std::ostream& os, const Arc<T>& arc) {
-    os << "arc_" << std::to_string(arc.out_node->id) << "_" + std::to_string(arc.in_node->id);
+    os << "arc_" << std::to_string(arc.out_node->get_id()) << "_" + std::to_string(arc.in_node->get_id());
     return os;
 }
 
