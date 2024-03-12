@@ -8,3 +8,6 @@
 [07-03-2024 19:24:22]  Variable length: 100;   right_side: 5029;   dis(1, 100);   Creation Time: 27.672508, Nodes: 246658;    Reduce time: 332.984187, Nodes: 101;    (Width: 200) Restricted time: 1.082535, Nodes: 17958;    Relaxed time: 2.572814, Nodes: 18632;    LinearDp time: 0.055117
 [09-03-2024 17:42:24]  Variable length: 100;   right_side: 5029;   dis(1, 100);   Creation Time: 26.740397, Nodes: 246658;    Reduce time: 332.435135, Nodes: 101;    (Width: 200) Restricted time: 1.083870, Nodes: 17958;    Relaxed time: 2.621988, Nodes: 18632;    LinearDp time: 0.056180
 [09-03-2024 17:49:33]  Variable length: 100;   right_side: 5029/3=1676;   dis(1, 100);   Creation Time: 7.413077, Nodes: 136247;    Reduce time: 109.779957, Nodes: 105767;    (Width: 200) Restricted time: 0.421563, Nodes: 17958;    Relaxed time: 1.342406, Nodes: 18632;    LinearDp time: 0.055655
+[09-03-2024 18:05:31]  Variable length: 100;   right_side: 5029/3 == 1676;   dis(1, 100);   Creation Time: 7.295505, Nodes: 136247;    Reduce time: 109.699563, Nodes: 105767;    (Width: 200) Restricted time: 0.415965, Nodes: 17958;    Relaxed time: 1.498209, Nodes: 18632;    LinearDp time: 0.058371
+
+

@@ -21,7 +21,7 @@ int main() {
 
     /*
     // Ejemplo utilizado en los tests
-    vector<vector<int>> matrix_of_wheight = {{3, 3, 4, 6}};
+    vector<vector<int>> matrix_of_weight = {{3, 3, 4, 6}};
     vector<int> right_side_of_restrictions = {6};
 
     vector<int> initial_state = {0, 0};
@@ -59,7 +59,6 @@ int main() {
 
     Graph creation_graph = dd_instance.get_desition_diagram();
     (*file) << "Creation Time: " << dd_instance.get_dd_builder_time() << ", Nodes: " << creation_graph.nodes.size() << ";    ";
-
     dd_instance.create_reduce_decision_diagram(false);
     Graph reduce_graph = dd_instance.get_desition_diagram();
     (*file) << "Reduce time: " << dd_instance.get_reduce_dd_builder_time() << ", Nodes: " << reduce_graph.nodes.size() << ";    ";
