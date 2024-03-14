@@ -35,6 +35,7 @@ public:
     T state; /**< Estado del nodo, el cual puede poseer diferentes tipos de datos */
     vector<Arc<T>*> in_arcs; /**< Vector de arcos que entran al nodo. */
     vector<Arc<T>*> out_arcs; /**< Vector de arcos que salen del nodo. */
+    bool is_active; /**< Indica si el nodo es activo o no. */
 
     /**
      * @brief Convierte el nodo a una cadena de texto.

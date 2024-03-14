@@ -32,8 +32,35 @@
   <component name="ChangeListManager">
     <list default="true" id="ad155aba-e836-4943-98df-aedd7029eaad" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vscode/settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Class/DDStructure/Graph.h" beforeDir="false" afterPath="$PROJECT_DIR$/Class/DDStructure/Graph.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Class/DDStructure/Graph.tpp" beforeDir="false" afterPath="$PROJECT_DIR$/Class/DDStructure/Graph.tpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Class/DDStructure/Node.h" beforeDir="false" afterPath="$PROJECT_DIR$/Class/DDStructure/Node.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Class/DDStructure/Node.tpp" beforeDir="false" afterPath="$PROJECT_DIR$/Class/DDStructure/Node.tpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Class/ReduceDDBuilder/ReduceDDBuilder.h" beforeDir="false" afterPath="$PROJECT_DIR$/Class/ReduceDDBuilder/ReduceDDBuilder.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Class/ReduceDDBuilder/ReduceDDBuilder.tpp" beforeDir="false" afterPath="$PROJECT_DIR$/Class/ReduceDDBuilder/ReduceDDBuilder.tpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Examples/Knapsack/Data.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Examples/Knapsack/Data.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Examples/Knapsack/KnapsackMain.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Examples/Knapsack/KnapsackMain.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Examples/Knapsack/knapsack_statistics.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Examples/Knapsack/knapsack_statistics.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/.cmake/api/v1/reply/codemodel-v2-c7aec827c77cf966c9be.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/.cmake/api/v1/reply/index-2024-03-06T22-05-46-0613.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/.cmake/api/v1/reply/target-DD_optimization_program_tests-Debug-801e02c10e4a49b08ce3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/.cmake/api/v1/reply/target-IndependentSet-Debug-ff1406f6bc033b915584.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/.cmake/api/v1/reply/target-Knapsack-Debug-ab7a5e64479deacbd9d4.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/.cmake/api/v1/reply/target-Problems-Debug-afee8826237ca85ce8ee.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/.cmake/api/v1/reply/target-SetCovering-Debug-d8a8000a65cb8d1d4a0c.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/DD_optimization_program_tests.dir/Test/test_ProblemIndependentSet.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/DD_optimization_program_tests.dir/Test/test_ProblemIndependentSet.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/DD_optimization_program_tests.dir/Test/test_ProblemKnapsack.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/DD_optimization_program_tests.dir/Test/test_ProblemKnapsack.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/DD_optimization_program_tests.dir/Test/test_ProblemSetCovering.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/DD_optimization_program_tests.dir/Test/test_ProblemSetCovering.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/IndependentSet.dir/Examples/IndependentSet/IndependentSetMain.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/IndependentSet.dir/Examples/IndependentSet/IndependentSetMain.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Knapsack.dir/Examples/Knapsack/KnapsackMain.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/Knapsack.dir/Examples/Knapsack/KnapsackMain.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Knapsack.dir/Examples/Knapsack/KnapsackMain.cpp.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/Knapsack.dir/Examples/Knapsack/KnapsackMain.cpp.o.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/SetCovering.dir/Examples/SetCovering/SetCoveringMain.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/SetCovering.dir/Examples/SetCovering/SetCoveringMain.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/DD_optimization_program_tests" beforeDir="false" afterPath="$PROJECT_DIR$/build/DD_optimization_program_tests" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/IndependentSet" beforeDir="false" afterPath="$PROJECT_DIR$/build/IndependentSet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Knapsack" beforeDir="false" afterPath="$PROJECT_DIR$/build/Knapsack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/SetCovering" beforeDir="false" afterPath="$PROJECT_DIR$/build/SetCovering" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DD_optimization_program_tests.dir/Test/test_ProblemIndependentSet.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DD_optimization_program_tests.dir/Test/test_ProblemIndependentSet.cpp.o" afterDir="false" />
@@ -43,7 +70,7 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/DD_optimization_program_tests" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/DD_optimization_program_tests" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Knapsack" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Knapsack" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/knapsack_file.gml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knapsack_file.gml" beforeDir="false" afterPath="$PROJECT_DIR$/knapsack_file.gml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,7 +185,6 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Google Test.DD_optimization_program_tests" />
       <item itemvalue="CMake Application.Class" />
       <item itemvalue="CMake Application.Exceptions" />
       <item itemvalue="CMake Application.IndependentSet" />
@@ -169,6 +195,7 @@
       <item itemvalue="CMake Application.gmock_main" />
       <item itemvalue="CMake Application.gtest" />
       <item itemvalue="CMake Application.gtest_main" />
+      <item itemvalue="Google Test.DD_optimization_program_tests" />
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -195,7 +222,12 @@
       <workItem from="1710015213128" duration="2642000" />
       <workItem from="1710017992052" duration="565000" />
       <workItem from="1710278318007" duration="1230000" />
-      <workItem from="1710281895685" duration="2000" />
+      <workItem from="1710281895685" duration="402000" />
+      <workItem from="1710284963871" duration="436000" />
+      <workItem from="1710286266252" duration="1114000" />
+      <workItem from="1710287684777" duration="406000" />
+      <workItem from="1710449253560" duration="5376000" />
+      <workItem from="1710455995282" duration="1000" />
     </task>
     <servers />
   </component>

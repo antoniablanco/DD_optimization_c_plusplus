@@ -16,6 +16,7 @@ Graph<T> ReduceDDBuilder<T>::GetDecisionDiagram(bool should_visualize) {
     for (const auto& layer : reversedStructure) {
         print_graph(should_visualize);
         reviewing_layer(layer);
+        graph->remove_not_active_nodes(layer_working);
         layer_working -=1;
     }
 
@@ -27,31 +28,18 @@ Graph<T> ReduceDDBuilder<T>::GetDecisionDiagram(bool should_visualize) {
 
 template <typename T>
 void ReduceDDBuilder<T>::reviewing_layer(vector<Node<T>*> layer) {
-
+    map<vector<string>, Node<T>*> map_of_paths;
     auto it = layer.begin();
     while (it != layer.end()) {
-        Node<T>* node_one = *it;
-        auto nodes_it = it;
-        ++nodes_it;
-        while (nodes_it != layer.end()) {
-            Node<T>* node_two = *nodes_it;
-            if (checking_if_two_nodes_should_merge(node_one, node_two)) {
-                merge_nodes(node_one, node_two);
-                nodes_it = layer.erase(nodes_it);
-            } else {
-                ++nodes_it;
-            }
+        Node<T>* node = *it;
+        vector<string> PathsOfNode = get_node_of_every_type_of_path(node);
+        if (map_of_paths.count(PathsOfNode)) {
+            merge_nodes(node, map_of_paths[PathsOfNode]);
+        } else {
+            map_of_paths[PathsOfNode] = node;
         }
         ++it;
     }
-
-}
-
-template <typename T>
-bool ReduceDDBuilder<T>::checking_if_two_nodes_should_merge(Node<T>* node_one, Node<T>* node_two) {
-    vector<string> PathsOfNodeOne = get_node_of_every_type_of_path(node_one);
-    vector<string> PathsOfNodeTwo = get_node_of_every_type_of_path(node_two);
-    return PathsOfNodeOne == PathsOfNodeTwo;
 }
 
 template <typename T>
@@ -67,33 +55,10 @@ vector<string> ReduceDDBuilder<T>::get_node_of_every_type_of_path(Node<T>* node)
 }
 
 template <typename T>
-void ReduceDDBuilder<T>::merge_nodes(Node<T>* node_one, Node<T>* node_two) {
-    std::pair<Node<T>*, Node<T>*> order = get_order_of_changin_nodes(node_one, node_two);
-    Node<T>* node_to_remove = order.first;
-    Node<T>* node_to_keep = order.second;
-
+void ReduceDDBuilder<T>::merge_nodes(Node<T>* node_to_remove, Node<T>* node_to_keep) {
     redirect_in_arcs(node_to_remove, node_to_keep);
     delete_out_arcs(node_to_remove);
     delete_node(node_to_remove);
-}
-
-template <typename T>
-pair<Node<T>*, Node<T>*> ReduceDDBuilder<T>::get_order_of_changin_nodes(Node<T>* node_one, Node<T>* node_two) const {
-    vector<Node<T>*> current_layer = graph->structure[layer_working];
-
-    auto find_node_one = find(current_layer.begin(), current_layer.end(), node_one);
-    auto find_node_two = find(current_layer.begin(), current_layer.end(), node_two);
-
-    if (find_node_one != current_layer.end() && find_node_two != current_layer.end()) {
-        if (distance(current_layer.begin(), find_node_one) > distance(current_layer.begin(), find_node_two)) {
-            return make_pair(node_one, node_two);
-        } else {
-            return make_pair(node_two, node_one);
-        }
-    } else {
-        cout << "Error: No se encuentran los nodos en la capa actual" << endl;
-        return std::make_pair(static_cast<Node<T>*>(nullptr), static_cast<Node<T>*>(nullptr));
-    }
 }
 
 template <typename T>
@@ -120,8 +85,7 @@ void ReduceDDBuilder<T>::delete_out_arcs(Node<T>* node_to_remove) {
 
 template <typename T>
 void ReduceDDBuilder<T>::delete_node(Node<T>* node_to_remove) const {
-    graph->remove_node(*node_to_remove);
-    delete node_to_remove;
+    node_to_remove->is_active = false;
 }
 
 template <typename T>

@@ -114,6 +114,7 @@ void Graph<T>::eliminate_node_and_his_arcs(Node<T>& node) {
     remove_node(node);
 }
 
+
 template <typename T>
 void Graph<T>::remove_node(Node<T>& node) {
     auto iterator = find(nodes.begin(), nodes.end(), &node);
@@ -133,5 +134,29 @@ void Graph<T>::remove_node_from_layer(Node<T>& node) {
             layer.erase(iterator);
         }
     }
+}
+
+template <typename T>
+void Graph<T>::remove_not_active_nodes(int actual_layer) {
+    auto& layer = structure[actual_layer];
+
+    auto it = layer.begin();
+    while (it != layer.end()) {
+        if ((*it)->is_active == false) {
+            it = layer.erase(it);
+        } else {
+            ++it;
+        }
+    }
+
+    auto iterador = nodes.begin();
+    while (iterador != nodes.end()) {
+        if ((*iterador)->is_active == false) {
+            iterador = nodes.erase(iterador);
+        } else {
+            ++iterador;
+        }
+    }
+
 }
 

@@ -52,6 +52,8 @@ public:
     void eliminate_node_and_his_arcs(Node<T>& node);
     void remove_node(Node<T>& node);
 
+    void remove_not_active_nodes(int actual_layer);
+
     /**
      * @brief Destructor de la clase Graph.
      */

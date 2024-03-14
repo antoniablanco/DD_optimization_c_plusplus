@@ -12,6 +12,7 @@ using namespace std;
 template <typename T>
 Node<T>::Node(int node_id, T state) : id(node_id), state(state) {
     node_as_string = "u_" + std::to_string(id)  + " ";
+    is_active = true;
 }
 
 template <typename T>

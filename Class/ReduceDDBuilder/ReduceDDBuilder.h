@@ -8,6 +8,7 @@
 #include <vector>
 #include <algorithm>
 #include <sstream>
+#include <map>
 
 using namespace std;
 
@@ -43,10 +44,8 @@ private:
 
     // Métodos que trabajan en la construcción del grafo reducido.
     void reviewing_layer(vector<Node<T>*> layer);
-    static bool checking_if_two_nodes_should_merge(Node<T>* node_one, Node<T>* node_two);
     static vector<string> get_node_of_every_type_of_path(Node<T>* node);
-    void merge_nodes(Node<T>* node_one, Node<T>* node_two);
-    pair<Node<T>*, Node<T>*> get_order_of_changin_nodes(Node<T>* node_one, Node<T>* node_two) const;
+    void merge_nodes(Node<T>* node_to_remove, Node<T>* node_to_keep);
     static void redirect_in_arcs(Node<T>* node_to_remove, Node<T>* node_to_keep);
     static void delete_out_arcs(Node<T>* node_to_remove);
     void delete_node(Node<T>* node_to_remove) const;
