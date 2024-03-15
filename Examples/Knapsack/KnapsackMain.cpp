@@ -51,7 +51,7 @@ int main() {
     (*file) << "[" << buffer << "]" << "  ";
 
     // Información sobre el problema creado
-    (*file) << "Variable length: 100;   right_side: 5029;   dis(1, 100); " << "  ";
+    (*file) << "Variable length: 300;   right_side: 15269/4;   dis(1, 100); " << "  ";
 
     // Crear los diagramas de decisión
     KnapsackProblem knapsack_instance(initial_state, variables, matrix_of_weight, right_side_of_restrictions);
@@ -59,11 +59,12 @@ int main() {
 
     Graph creation_graph = dd_instance.get_desition_diagram();
     (*file) << "Creation Time: " << dd_instance.get_dd_builder_time() << ", Nodes: " << creation_graph.nodes.size() << ";    ";
+
     dd_instance.create_reduce_decision_diagram(false);
     Graph reduce_graph = dd_instance.get_desition_diagram();
     (*file) << "Reduce time: " << dd_instance.get_reduce_dd_builder_time() << ", Nodes: " << reduce_graph.nodes.size() << ";    ";
 
-    int width = 200;
+    int width = 300;
     (*file) << "(Width: " << width << ") ";
     dd_instance.create_restricted_decision_diagram(width, false);
     Graph restricted_graph = dd_instance.get_desition_diagram();
