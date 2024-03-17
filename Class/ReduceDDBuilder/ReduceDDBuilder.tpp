@@ -66,9 +66,6 @@ void ReduceDDBuilder<T>::redirect_in_arcs(Node<T>* node_to_remove, Node<T>* node
     for (Arc<T>* arc : node_to_remove->in_arcs) {
         arc->in_node = node_to_keep;
         node_to_keep->add_in_arc(arc);
-        //if (find(node_to_keep->in_arcs.begin(), node_to_keep->in_arcs.end(), arc) == node_to_keep->in_arcs.end()) {
-        //    node_to_keep->add_in_arc(arc);
-        //}
     }
     node_to_remove->in_arcs.clear();
 }

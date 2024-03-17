@@ -40,30 +40,40 @@ template <typename T>
 void AbstractDDBuilder<T>::create_new_nodes_in_the_new_layer(int variable_id) {
     size_t last_layer_index = graph->structure.size() - 2;
     graph->structure.back().reserve(variables_domain[variables[variable_id]].size());
+    map_of_states = std::map<T, Node<T>*>();
 
     for (Node<T>* pExistedNode : graph->structure[last_layer_index]) {
         if (pExistedNode) {
             for (int variable_value : variables_domain[variables[variable_id]]) {
-                check_if_new_node_should_be_created(variable_value, pExistedNode, variable_id);
+
+                auto result = problem.transition_function(pExistedNode->state, variables[variable_id], variable_value);
+                T node_state = result.first;
+                bool isFeasible = result.second;
+
+                if (isFeasible)
+                {
+                    create_new_node(variable_id, variable_value, pExistedNode, node_state);
+                }
             }
         }
     }
 }
 
 template <typename T>
-void AbstractDDBuilder<T>::check_if_new_node_should_be_created(int variable_value, Node<T>* existed_node, int variable_id) {
-    auto result = problem.transition_function(existed_node->state, variables[variable_id], variable_value);
-    vector<int> node_state = result.first;
-    bool isFeasible = result.second;
-
-    if (isFeasible)
-    {
-        if (there_is_node_in_last_layer(variable_id)) {
-            create_arcs_for_the_terminal_node(variable_value, existed_node, variable_id);
+void AbstractDDBuilder<T>::create_new_node(int variable_id, int variable_value, Node<T>* pExistedNode, T node_state){
+    if (there_is_node_in_last_layer(variable_id)) {
+        create_arcs_for_the_terminal_node(variable_value, pExistedNode, variable_id);
+    } else {
+        if (map_of_states.count(node_state)) {
+            create_arc_for_the_new_node(pExistedNode, map_of_states[node_state], variable_value, variable_id);
         } else {
-            create_rest_of_arcs(variable_value, existed_node, variable_id, node_state);
-        }
+            Node<T> *new_node = new Node(node_number, node_state);
+            map_of_states[node_state] = new_node;
 
+            create_arc_for_the_new_node(pExistedNode, new_node, variable_value, variable_id);
+            graph->add_node(new_node);
+            node_number++;
+        }
     }
 }
 
@@ -76,34 +86,6 @@ template <typename T>
 void AbstractDDBuilder<T>::create_arcs_for_the_terminal_node(int variable_value, Node<T> *existed_node, int variable_id) {
     Node<T>& same_state_node = *graph->structure.back().back();
     create_arc_for_the_new_node(existed_node, &same_state_node, variable_value, variable_id);
-}
-
-template <typename T>
-void AbstractDDBuilder<T>::create_rest_of_arcs(int variable_value, Node<T> *existed_node, int variable_id, vector<int> node_state) {
-    auto result = exist_node_with_same_state(node_state);
-    bool exist_node = result.first;
-    Node<T>* node_created = result.second;
-
-    if (exist_node) {
-        create_arc_for_the_new_node(existed_node, node_created, variable_value, variable_id);
-    } else {
-        Node<T> *new_node = new Node(node_number, node_state);
-
-        create_arc_for_the_new_node(existed_node, new_node, variable_value, variable_id);
-        graph->add_node(new_node);
-        node_number++;
-    }
-}
-
-template <typename T>
-pair<bool, Node<T>*> AbstractDDBuilder<T>::exist_node_with_same_state(vector<int> node_state) {
-
-    for (const auto& pNode : graph->structure.back()) {
-        if (problem.equals(pNode->state, node_state)) {
-            return {true, pNode};
-        }
-    }
-    return {false, nullptr};
 }
 
 template <typename T>
@@ -139,3 +121,14 @@ void AbstractDDBuilder<T>::print() {
     }
 }
 
+template <typename T>
+pair<bool, Node<T>*> AbstractDDBuilder<T>::exist_node_with_same_state(T node_state) {
+
+    for (const auto& pNode : graph->structure.back()) {
+        if (problem.equals(pNode->state, node_state)) {
+            return {true, pNode};
+        }
+    }
+    return {false, nullptr};
+
+}

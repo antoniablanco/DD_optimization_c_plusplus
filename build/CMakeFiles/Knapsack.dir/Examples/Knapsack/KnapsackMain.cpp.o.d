@@ -896,4 +896,5 @@ CMakeFiles/Knapsack.dir/Examples/Knapsack/KnapsackMain.cpp.o: \
   /Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Class/ObjectiveFunction/AbstractObjective.tpp \
   /Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Class/ObjectiveFunction/LinearObjectiveDP.tpp \
   /Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Class/ObjectiveFunction/ObjectiveFunction.h \
-  /Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Class/ObjectiveFunction/ObjectiveFunction.tpp
+  /Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Class/ObjectiveFunction/ObjectiveFunction.tpp \
+  /Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Examples/Knapsack/Data.cpp

@@ -69,7 +69,7 @@ using namespace std;
 
 
 // Ejemplo utilizado en los tests
-vector<int> right_side_of_restrictions = {15269/4};
+vector<int> right_side_of_restrictions = {15269*3/4};
 
 vector<int> initial_state = {0, 0};
 

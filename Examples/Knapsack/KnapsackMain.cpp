@@ -51,7 +51,7 @@ int main() {
     (*file) << "[" << buffer << "]" << "  ";
 
     // Información sobre el problema creado
-    (*file) << "Variable length: 300;   right_side: 15269/4;   dis(1, 100); " << "  ";
+    (*file) << "Variable length: 300;   right_side: 15269* 3/4;   dis(1, 100); " << "  ";
 
     // Crear los diagramas de decisión
     KnapsackProblem knapsack_instance(initial_state, variables, matrix_of_weight, right_side_of_restrictions);

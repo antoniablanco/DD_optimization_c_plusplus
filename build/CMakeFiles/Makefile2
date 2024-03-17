@@ -169,8 +169,8 @@ CMakeFiles/Exceptions.dir/clean:
 # Target rules for target CMakeFiles/Problems.dir
 
 # All Build rule for target.
-CMakeFiles/Problems.dir/all: CMakeFiles/Class.dir/all
 CMakeFiles/Problems.dir/all: CMakeFiles/Exceptions.dir/all
+CMakeFiles/Problems.dir/all: CMakeFiles/Class.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Problems.dir/build.make CMakeFiles/Problems.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Problems.dir/build.make CMakeFiles/Problems.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/antoniablanco/Desktop/DD_optimization_c_plusplus/build/CMakeFiles --progress-num=15,16,17,18 "Built target Problems"
@@ -222,8 +222,8 @@ CMakeFiles/Class.dir/clean:
 # Target rules for target CMakeFiles/Knapsack.dir
 
 # All Build rule for target.
-CMakeFiles/Knapsack.dir/all: CMakeFiles/Class.dir/all
 CMakeFiles/Knapsack.dir/all: CMakeFiles/Exceptions.dir/all
+CMakeFiles/Knapsack.dir/all: CMakeFiles/Class.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Knapsack.dir/build.make CMakeFiles/Knapsack.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Knapsack.dir/build.make CMakeFiles/Knapsack.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/antoniablanco/Desktop/DD_optimization_c_plusplus/build/CMakeFiles --progress-num=12,13,14 "Built target Knapsack"
@@ -249,8 +249,8 @@ CMakeFiles/Knapsack.dir/clean:
 # Target rules for target CMakeFiles/IndependentSet.dir
 
 # All Build rule for target.
-CMakeFiles/IndependentSet.dir/all: CMakeFiles/Class.dir/all
 CMakeFiles/IndependentSet.dir/all: CMakeFiles/Exceptions.dir/all
+CMakeFiles/IndependentSet.dir/all: CMakeFiles/Class.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/IndependentSet.dir/build.make CMakeFiles/IndependentSet.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/IndependentSet.dir/build.make CMakeFiles/IndependentSet.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/antoniablanco/Desktop/DD_optimization_c_plusplus/build/CMakeFiles --progress-num=9,10,11 "Built target IndependentSet"
@@ -276,8 +276,8 @@ CMakeFiles/IndependentSet.dir/clean:
 # Target rules for target CMakeFiles/SetCovering.dir
 
 # All Build rule for target.
-CMakeFiles/SetCovering.dir/all: CMakeFiles/Class.dir/all
 CMakeFiles/SetCovering.dir/all: CMakeFiles/Exceptions.dir/all
+CMakeFiles/SetCovering.dir/all: CMakeFiles/Class.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SetCovering.dir/build.make CMakeFiles/SetCovering.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SetCovering.dir/build.make CMakeFiles/SetCovering.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/antoniablanco/Desktop/DD_optimization_c_plusplus/build/CMakeFiles --progress-num=19,20,21 "Built target SetCovering"
@@ -303,9 +303,9 @@ CMakeFiles/SetCovering.dir/clean:
 # Target rules for target CMakeFiles/DD_optimization_program_tests.dir
 
 # All Build rule for target.
+CMakeFiles/DD_optimization_program_tests.dir/all: CMakeFiles/Exceptions.dir/all
 CMakeFiles/DD_optimization_program_tests.dir/all: CMakeFiles/Problems.dir/all
 CMakeFiles/DD_optimization_program_tests.dir/all: CMakeFiles/Class.dir/all
-CMakeFiles/DD_optimization_program_tests.dir/all: CMakeFiles/Exceptions.dir/all
 CMakeFiles/DD_optimization_program_tests.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
 CMakeFiles/DD_optimization_program_tests.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DD_optimization_program_tests.dir/build.make CMakeFiles/DD_optimization_program_tests.dir/depend
