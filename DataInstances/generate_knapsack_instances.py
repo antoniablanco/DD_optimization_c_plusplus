@@ -2,8 +2,8 @@ import random
 
 seed_value = 1
 random.seed(seed_value)
-variables_length = 500
-max_variable_value = 50
+variables_length = 1000
+max_variable_value = 10
 
 right_side = 0
 matrix_of_weights = []
