@@ -70,6 +70,7 @@
         "deque": "cpp",
         "forward_list": "cpp",
         "span": "cpp",
-        "*.tpp": "cpp"
+        "*.tpp": "cpp",
+        "filesystem": "cpp"
     }
 }
