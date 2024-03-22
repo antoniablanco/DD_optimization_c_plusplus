@@ -40,7 +40,7 @@ template <typename T>
 void AbstractDDBuilder<T>::create_new_nodes_in_the_new_layer(int variable_id) {
     size_t last_layer_index = graph->structure.size() - 2;
     graph->structure.back().reserve(variables_domain[variables[variable_id]].size());
-    map_of_states = std::map<T, Node<T>*>();
+    map_of_states = std::map<string, Node<T>*>();
 
     for (Node<T>* pExistedNode : graph->structure[last_layer_index]) {
         if (pExistedNode) {
@@ -64,11 +64,12 @@ void AbstractDDBuilder<T>::create_new_node(int variable_id, int variable_value, 
     if (there_is_node_in_last_layer(variable_id)) {
         create_arcs_for_the_terminal_node(variable_value, pExistedNode, variable_id);
     } else {
-        if (map_of_states.count(node_state)) {
-            create_arc_for_the_new_node(pExistedNode, map_of_states[node_state], variable_value, variable_id);
+        string state_as_string = problem.get_state_as_string(node_state);
+        if (map_of_states.count(state_as_string )) {
+            create_arc_for_the_new_node(pExistedNode, map_of_states[state_as_string], variable_value, variable_id);
         } else {
             Node<T> *new_node = new Node(node_number, node_state);
-            map_of_states[node_state] = new_node;
+            map_of_states[state_as_string] = new_node;
 
             create_arc_for_the_new_node(pExistedNode, new_node, variable_value, variable_id);
             graph->add_node(new_node);

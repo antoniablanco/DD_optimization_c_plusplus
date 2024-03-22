@@ -65,3 +65,13 @@
 1216	1317	1710696134284710472	Knapsack	644ece3e0030f80
 3	1135	1710696281869751937	CMakeFiles/Knapsack.dir/Examples/Knapsack/KnapsackMain.cpp.o	d653618df70df11c
 1137	1233	1710696281969572041	Knapsack	644ece3e0030f80
+3	1199	1711131682750383910	CMakeFiles/Knapsack.dir/Examples/Knapsack/KnapsackMain.cpp.o	d653618df70df11c
+1205	1365	1711131682921404093	Knapsack	644ece3e0030f80
+4	1831	1711131995934824021	CMakeFiles/DD_optimization_program_tests.dir/Test/test_ProblemIndependentSet.cpp.o	818d71d49ede78a
+4	1844	1711131995937234673	CMakeFiles/DD_optimization_program_tests.dir/Test/test_ProblemKnapsack.cpp.o	42e4e6186ba6dbf9
+4	1844	1711131995937190840	CMakeFiles/DD_optimization_program_tests.dir/Test/test_ProblemSetCovering.cpp.o	baffeb4c986c5ddb
+1844	2565	1711131996677017786	DD_optimization_program_tests	769d30ed7e2d6dec
+1844	2565	1711131996677017786	DD_optimization_program_tests[1]_tests.cmake	769d30ed7e2d6dec
+1844	2565	1711131996677017786	/Users/antoniablanco/Desktop/DD_optimization_c_plusplus/cmake-build-debug/DD_optimization_program_tests[1]_tests.cmake	769d30ed7e2d6dec
+3	1501	1711132004820874848	CMakeFiles/Knapsack.dir/Examples/Knapsack/KnapsackMain.cpp.o	d653618df70df11c
+1503	1556	1711132004879782764	Knapsack	644ece3e0030f80

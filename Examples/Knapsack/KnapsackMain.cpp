@@ -36,7 +36,7 @@ int main() {
 
     // Se realiza la lectura de los datos necesarios
     string source_directory = fs::current_path().parent_path().string();
-    auto& filename = "knapsack_instance_v1000_d10_seed1.txt";
+    auto& filename = "knapsack_instance_v300_d100_seed1.txt";
     string file_path = source_directory + "/DataInstances/txt/" + filename;
 
     ifstream input(file_path);

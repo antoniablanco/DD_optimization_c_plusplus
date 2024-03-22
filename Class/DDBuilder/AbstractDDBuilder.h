@@ -43,7 +43,7 @@ protected:
     pair<bool, Node<T>*> exist_node_with_same_state(T node_state); /**< Verifica si existe un nodo con el mismo estado. */
 
 private:
-    map<T, Node<T>*> map_of_states; /**< Mapa que almacena los estados de los nodos en cada layer. */
+    map<string, Node<T>*> map_of_states; /**< Mapa que almacena los estados de los nodos en cada layer. */
     /**
      * @brief Inicializa el grafo con un nodo raíz.
      * @param initial_state Estado inicial del nodo raíz.
