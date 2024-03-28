@@ -90,6 +90,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/Knapsack.dir/DependInfo.cmake"
   "CMakeFiles/IndependentSet.dir/DependInfo.cmake"
   "CMakeFiles/SetCovering.dir/DependInfo.cmake"
+  "CMakeFiles/KnapsackState.dir/DependInfo.cmake"
   "CMakeFiles/DD_optimization_program_tests.dir/DependInfo.cmake"
   "_deps/googletest-build/googlemock/CMakeFiles/gmock.dir/DependInfo.cmake"
   "_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/DependInfo.cmake"

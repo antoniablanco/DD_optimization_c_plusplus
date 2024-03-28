@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/DD_optimization_program_tests.dir/Test/test_ProblemIndependentSet.cpp.o.d"
   "CMakeFiles/DD_optimization_program_tests.dir/Test/test_ProblemKnapsack.cpp.o"
   "CMakeFiles/DD_optimization_program_tests.dir/Test/test_ProblemKnapsack.cpp.o.d"
+  "CMakeFiles/DD_optimization_program_tests.dir/Test/test_ProblemKnapsackState.cpp.o"
+  "CMakeFiles/DD_optimization_program_tests.dir/Test/test_ProblemKnapsackState.cpp.o.d"
   "CMakeFiles/DD_optimization_program_tests.dir/Test/test_ProblemSetCovering.cpp.o"
   "CMakeFiles/DD_optimization_program_tests.dir/Test/test_ProblemSetCovering.cpp.o.d"
   "DD_optimization_program_tests"

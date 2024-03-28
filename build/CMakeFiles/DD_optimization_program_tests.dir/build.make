@@ -111,11 +111,26 @@ CMakeFiles/DD_optimization_program_tests.dir/Test/test_ProblemSetCovering.cpp.s:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/DD_optimization_program_tests.dir/Test/test_ProblemSetCovering.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Test/test_ProblemSetCovering.cpp -o CMakeFiles/DD_optimization_program_tests.dir/Test/test_ProblemSetCovering.cpp.s
 
+CMakeFiles/DD_optimization_program_tests.dir/Test/test_ProblemKnapsackState.cpp.o: CMakeFiles/DD_optimization_program_tests.dir/flags.make
+CMakeFiles/DD_optimization_program_tests.dir/Test/test_ProblemKnapsackState.cpp.o: /Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Test/test_ProblemKnapsackState.cpp
+CMakeFiles/DD_optimization_program_tests.dir/Test/test_ProblemKnapsackState.cpp.o: CMakeFiles/DD_optimization_program_tests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/antoniablanco/Desktop/DD_optimization_c_plusplus/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/DD_optimization_program_tests.dir/Test/test_ProblemKnapsackState.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DD_optimization_program_tests.dir/Test/test_ProblemKnapsackState.cpp.o -MF CMakeFiles/DD_optimization_program_tests.dir/Test/test_ProblemKnapsackState.cpp.o.d -o CMakeFiles/DD_optimization_program_tests.dir/Test/test_ProblemKnapsackState.cpp.o -c /Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Test/test_ProblemKnapsackState.cpp
+
+CMakeFiles/DD_optimization_program_tests.dir/Test/test_ProblemKnapsackState.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/DD_optimization_program_tests.dir/Test/test_ProblemKnapsackState.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Test/test_ProblemKnapsackState.cpp > CMakeFiles/DD_optimization_program_tests.dir/Test/test_ProblemKnapsackState.cpp.i
+
+CMakeFiles/DD_optimization_program_tests.dir/Test/test_ProblemKnapsackState.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/DD_optimization_program_tests.dir/Test/test_ProblemKnapsackState.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Test/test_ProblemKnapsackState.cpp -o CMakeFiles/DD_optimization_program_tests.dir/Test/test_ProblemKnapsackState.cpp.s
+
 # Object files for target DD_optimization_program_tests
 DD_optimization_program_tests_OBJECTS = \
 "CMakeFiles/DD_optimization_program_tests.dir/Test/test_ProblemKnapsack.cpp.o" \
 "CMakeFiles/DD_optimization_program_tests.dir/Test/test_ProblemIndependentSet.cpp.o" \
-"CMakeFiles/DD_optimization_program_tests.dir/Test/test_ProblemSetCovering.cpp.o"
+"CMakeFiles/DD_optimization_program_tests.dir/Test/test_ProblemSetCovering.cpp.o" \
+"CMakeFiles/DD_optimization_program_tests.dir/Test/test_ProblemKnapsackState.cpp.o"
 
 # External object files for target DD_optimization_program_tests
 DD_optimization_program_tests_EXTERNAL_OBJECTS =
@@ -123,6 +138,7 @@ DD_optimization_program_tests_EXTERNAL_OBJECTS =
 DD_optimization_program_tests: CMakeFiles/DD_optimization_program_tests.dir/Test/test_ProblemKnapsack.cpp.o
 DD_optimization_program_tests: CMakeFiles/DD_optimization_program_tests.dir/Test/test_ProblemIndependentSet.cpp.o
 DD_optimization_program_tests: CMakeFiles/DD_optimization_program_tests.dir/Test/test_ProblemSetCovering.cpp.o
+DD_optimization_program_tests: CMakeFiles/DD_optimization_program_tests.dir/Test/test_ProblemKnapsackState.cpp.o
 DD_optimization_program_tests: CMakeFiles/DD_optimization_program_tests.dir/build.make
 DD_optimization_program_tests: libClass.a
 DD_optimization_program_tests: libExceptions.a
@@ -132,7 +148,7 @@ DD_optimization_program_tests: lib/libgtestd.a
 DD_optimization_program_tests: libClass.a
 DD_optimization_program_tests: libExceptions.a
 DD_optimization_program_tests: CMakeFiles/DD_optimization_program_tests.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/antoniablanco/Desktop/DD_optimization_c_plusplus/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable DD_optimization_program_tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/antoniablanco/Desktop/DD_optimization_c_plusplus/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable DD_optimization_program_tests"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/DD_optimization_program_tests.dir/link.txt --verbose=$(VERBOSE)
 	/usr/local/Cellar/cmake/3.28.1/bin/cmake -D TEST_TARGET=DD_optimization_program_tests -D TEST_EXECUTABLE=/Users/antoniablanco/Desktop/DD_optimization_c_plusplus/build/DD_optimization_program_tests -D TEST_EXECUTOR= -D TEST_WORKING_DIR=/Users/antoniablanco/Desktop/DD_optimization_c_plusplus/build -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=DD_optimization_program_tests_TESTS -D CTEST_FILE=/Users/antoniablanco/Desktop/DD_optimization_c_plusplus/build/DD_optimization_program_tests[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_XML_OUTPUT_DIR= -P /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/GoogleTestAddTests.cmake
 

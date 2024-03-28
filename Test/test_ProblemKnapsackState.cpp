@@ -1,9 +1,9 @@
 #include <gtest/gtest.h>
-#include "../../Examples/Knapsack/KnapsackProblem.h"
+#include "../../Examples/KnapsackState/KnapsackProblemState.h"
 #include "../../Class/DD.h"
 #include "../../Class/ObjectiveFunction/LinearObjectiveDP.h"
 #include "../../Class/ObjectiveFunction/ObjectiveFunction.h"
-#include "dd_controller_generators/DDKnapsack.cpp"
+#include "dd_controller_generators/DDKnapsackState.cpp"
 
 #include <iostream>
 #include <string>
@@ -16,10 +16,11 @@
 namespace fs = std::filesystem;
 using namespace std;
 
-class ProblemKnapsackTest : public ::testing::Test {
+
+class ProblemKnapsackTestState : public ::testing::Test {
 protected:
     void SetUp() override {
-        initial_state = {0, 0};
+        initial_state = new State({0, 0});
         vector<pair<string, vector<int>>> variables = {
                 make_pair("x_1", vector<int>{0, 1}),
                 make_pair("x_2", vector<int>{0, 1}),
@@ -30,7 +31,7 @@ protected:
         vector<vector<int>> matrix_of_wheight = {{3, 3, 4, 6}};
         vector<int> right_side_of_restrictions = {6};
 
-        knapsack_instance = new KnapsackProblem(initial_state, variables, matrix_of_wheight, right_side_of_restrictions);
+        knapsack_instance = new KnapsackProblemState(*initial_state, variables, matrix_of_wheight, right_side_of_restrictions);
         dd_instance = new DD(*knapsack_instance, false);
 
         source_directory = fs::current_path().parent_path().string();
@@ -39,29 +40,30 @@ protected:
     void TearDown() override {
         delete knapsack_instance;
         delete dd_instance;
+        delete initial_state;
     }
 
-    ObjectiveStruct<vector<int>> getLinearDpSolution() {
+    ObjectiveStruct<State> getLinearDpSolution() {
         vector<int> objective_weights = {-5, 1, 18, 17};
-        ObjectiveFunction objective_function_instance = ObjectiveFunction<vector<int>>(*dd_instance);
-        LinearObjectiveDP linear_objective_instance = LinearObjectiveDP<vector<int>>(objective_weights, "max");
+        ObjectiveFunction objective_function_instance = ObjectiveFunction<State>(*dd_instance);
+        LinearObjectiveDP linear_objective_instance = LinearObjectiveDP<State>(objective_weights, "max");
         objective_function_instance.set_objective_function(linear_objective_instance);
 
         return objective_function_instance.solve_dd();
     }
 
-    vector<int> initial_state;
-    KnapsackProblem* knapsack_instance;
-    DD<vector<int>>* dd_instance;
+    State* initial_state;
+    KnapsackProblemState* knapsack_instance;
+    DD<State>* dd_instance;
     string source_directory;
 };
 
-TEST_F(ProblemKnapsackTest, TestOrderedVariables) {
+TEST_F(ProblemKnapsackTestState, TestOrderedVariables) {
     vector<string> ordered_variables_test = {"x_1", "x_2", "x_3", "x_4"};
     ASSERT_EQ(knapsack_instance->ordered_variables, ordered_variables_test);
 }
 
-TEST_F(ProblemKnapsackTest, TestVariablesDomain) {
+TEST_F(ProblemKnapsackTestState, TestVariablesDomain) {
     map<string, vector<int>> variables_domain_test = {
             {"x_1", {0, 1}},
             {"x_2", {0, 1}},
@@ -71,11 +73,11 @@ TEST_F(ProblemKnapsackTest, TestVariablesDomain) {
     ASSERT_EQ(knapsack_instance->variables_domain, variables_domain_test);
 }
 
-TEST_F(ProblemKnapsackTest, TestIsDDCreated) {
+TEST_F(ProblemKnapsackTestState, TestIsDDCreated) {
     ASSERT_FALSE(dd_instance->get_desition_diagram().nodes.empty());
 }
 
-TEST_F(ProblemKnapsackTest, TestVerboseCreateDD) {
+TEST_F(ProblemKnapsackTestState, TestVerboseCreateDD) {
     ofstream out("createDDKnapsack.txt");
     streambuf *coutbuf = cout.rdbuf();
     cout.rdbuf(out.rdbuf());
@@ -95,7 +97,7 @@ TEST_F(ProblemKnapsackTest, TestVerboseCreateDD) {
     ASSERT_TRUE(actual_output==expected_output);
 }
 
-TEST_F(ProblemKnapsackTest, TestVerboseCreateReduceDD) {
+TEST_F(ProblemKnapsackTestState, TestVerboseCreateReduceDD) {
     ofstream out("createReduceDDKnapsack.txt");
     streambuf *coutbuf = cout.rdbuf();
     cout.rdbuf(out.rdbuf());
@@ -118,7 +120,7 @@ TEST_F(ProblemKnapsackTest, TestVerboseCreateReduceDD) {
     ASSERT_TRUE(actual_output==expected_output);
 }
 
-TEST_F(ProblemKnapsackTest, TestVerboseCreateRestrictedDD) {
+TEST_F(ProblemKnapsackTestState, TestVerboseCreateRestrictedDD) {
     ofstream out("createRestrictedDDKnapsack.txt");
     streambuf *coutbuf = cout.rdbuf();
     cout.rdbuf(out.rdbuf());
@@ -141,7 +143,7 @@ TEST_F(ProblemKnapsackTest, TestVerboseCreateRestrictedDD) {
     ASSERT_TRUE(actual_output==expected_output);
 }
 
-TEST_F(ProblemKnapsackTest, TestVerboseCreateRelaxedDD) {
+TEST_F(ProblemKnapsackTestState, TestVerboseCreateRelaxedDD) {
     ofstream out("createRelaxedDDKnapsack.txt");
     streambuf *coutbuf = cout.rdbuf();
     cout.rdbuf(out.rdbuf());
@@ -164,39 +166,39 @@ TEST_F(ProblemKnapsackTest, TestVerboseCreateRelaxedDD) {
     ASSERT_TRUE(actual_output==expected_output);
 }
 
-TEST_F(ProblemKnapsackTest, TestCreateDDGraphEqual) {
-    Graph expected_graph = GetExactDDKnapsack();
+TEST_F(ProblemKnapsackTestState, TestCreateDDGraphEqual) {
+    Graph expected_graph = GetExactDDKnapsackState();
     ASSERT_TRUE(dd_instance->get_desition_diagram()==expected_graph);
 }
 
-TEST_F(ProblemKnapsackTest, TestCreateReduceDDGraphEqual) {
-    Graph expected_graph = GetReduceDDKnapsack();
+TEST_F(ProblemKnapsackTestState, TestCreateReduceDDGraphEqual) {
+    Graph expected_graph = GetReduceDDKnapsackState();
     dd_instance->create_reduce_decision_diagram();
 
     ASSERT_TRUE(dd_instance->get_desition_diagram()==expected_graph);
 }
 
-TEST_F(ProblemKnapsackTest, TestCreateRestrictedDDGraphEqual) {
-    Graph expected_graph = GetRestrictedDDKnapsack();
+TEST_F(ProblemKnapsackTestState, TestCreateRestrictedDDGraphEqual) {
+    Graph expected_graph = GetRestrictedDDKnapsackState();
     dd_instance->create_restricted_decision_diagram(3);
 
     ASSERT_TRUE(dd_instance->get_desition_diagram()==expected_graph);
 }
 
-TEST_F(ProblemKnapsackTest, CompareTwoDifferentGraphs) {
-    Graph not_expected_graph = GetFalseDDKnapsack();
+TEST_F(ProblemKnapsackTestState, CompareTwoDifferentGraphs) {
+    Graph not_expected_graph = GetFalseDDKnapsackState();
 
     ASSERT_FALSE(dd_instance->get_desition_diagram()==not_expected_graph);
 }
 
-TEST_F(ProblemKnapsackTest, TestCreateRelaxedDDGraphEqual) {
-    Graph expected_graph = GetRelaxedDDKnapsack();
+TEST_F(ProblemKnapsackTestState, TestCreateRelaxedDDGraphEqual) {
+    Graph expected_graph = GetRelaxedDDKnapsackState();
     dd_instance->create_relaxed_decision_diagram(3);
 
     ASSERT_TRUE(dd_instance->get_desition_diagram()==expected_graph);
 }
 
-TEST_F(ProblemKnapsackTest, TestGetCopy) {
+TEST_F(ProblemKnapsackTestState, TestGetCopy) {
     Graph original_graph = dd_instance->get_desition_diagram();
     Graph copied_graph = dd_instance->get_desition_diagram_copy();
 
@@ -204,26 +206,26 @@ TEST_F(ProblemKnapsackTest, TestGetCopy) {
     ASSERT_TRUE(original_graph==copied_graph);
 }
 
-TEST_F(ProblemKnapsackTest, TestGetDDBuilderTime) {
+TEST_F(ProblemKnapsackTestState, TestGetDDBuilderTime) {
     ASSERT_GT(stof(dd_instance->get_dd_builder_time()), 0);
 }
 
-TEST_F(ProblemKnapsackTest, TestGetReduceDDBuilderTime) {
+TEST_F(ProblemKnapsackTestState, TestGetReduceDDBuilderTime) {
     dd_instance->create_reduce_decision_diagram();
     ASSERT_GT(stof(dd_instance->get_reduce_dd_builder_time()), 0);
 }
 
-TEST_F(ProblemKnapsackTest, TestGetRestrictedDDBuilderTime) {
+TEST_F(ProblemKnapsackTestState, TestGetRestrictedDDBuilderTime) {
     dd_instance->create_restricted_decision_diagram(3);
     ASSERT_GT(stof(dd_instance->get_restricted_dd_builder_time()), 0);
 }
 
-TEST_F(ProblemKnapsackTest, TestGetRelaxedDDBuilderTime) {
+TEST_F(ProblemKnapsackTestState, TestGetRelaxedDDBuilderTime) {
     dd_instance->create_relaxed_decision_diagram(3, true);
     ASSERT_GT(stof(dd_instance->get_relaxed_dd_builder_time()), 0);
 }
 
-TEST_F(ProblemKnapsackTest, GetSolutionForDD) {
+TEST_F(ProblemKnapsackTestState, GetSolutionForDD) {
     ObjectiveStruct solution = getLinearDpSolution();
     int expected_value = 18;
     string expected_path = " arc_0_1(0)-> arc_1_3(0)-> arc_3_7(1)-> arc_7_10(0)";
@@ -231,7 +233,7 @@ TEST_F(ProblemKnapsackTest, GetSolutionForDD) {
     ASSERT_EQ(solution.path, expected_path);
 }
 
-TEST_F(ProblemKnapsackTest, GetSolutionForReduceDD) {
+TEST_F(ProblemKnapsackTestState, GetSolutionForReduceDD) {
     dd_instance->create_reduce_decision_diagram();
     ObjectiveStruct solution = getLinearDpSolution();
     int expected_value = 18;
@@ -240,7 +242,7 @@ TEST_F(ProblemKnapsackTest, GetSolutionForReduceDD) {
     ASSERT_EQ(solution.path, expected_path);
 }
 
-TEST_F(ProblemKnapsackTest, GetSolutionForRestrictedeDD) {
+TEST_F(ProblemKnapsackTestState, GetSolutionForRestrictedeDD) {
     dd_instance->create_restricted_decision_diagram(3);
     ObjectiveStruct solution = getLinearDpSolution();
     int expected_value = 18;
@@ -249,7 +251,7 @@ TEST_F(ProblemKnapsackTest, GetSolutionForRestrictedeDD) {
     ASSERT_EQ(solution.path, expected_path);
 }
 
-TEST_F(ProblemKnapsackTest, GetSolutionForRelaxedeDD) {
+TEST_F(ProblemKnapsackTestState, GetSolutionForRelaxedeDD) {
     dd_instance->create_relaxed_decision_diagram(3);
     ObjectiveStruct solution = getLinearDpSolution();
     int expected_value = 35;
@@ -258,7 +260,7 @@ TEST_F(ProblemKnapsackTest, GetSolutionForRelaxedeDD) {
     ASSERT_EQ(solution.path, expected_path);
 }
 
-TEST_F(ProblemKnapsackTest, TestCompareGMLDDGraph) {
+TEST_F(ProblemKnapsackTestState, TestCompareGMLDDGraph) {
     dd_instance->export_graph_file("test");
 
     string expected_file_path = source_directory + "/Test/gml_files/exact_dd_knapsack.gml";
@@ -275,7 +277,7 @@ TEST_F(ProblemKnapsackTest, TestCompareGMLDDGraph) {
     ASSERT_TRUE(actual_output==expected_output);
 }
 
-TEST_F(ProblemKnapsackTest, TestCompareGMLReduceDDGraph) {
+TEST_F(ProblemKnapsackTestState, TestCompareGMLReduceDDGraph) {
     dd_instance->create_reduce_decision_diagram();
     dd_instance->export_graph_file("test");
 
@@ -293,7 +295,7 @@ TEST_F(ProblemKnapsackTest, TestCompareGMLReduceDDGraph) {
     ASSERT_TRUE(actual_output==expected_output);
 }
 
-TEST_F(ProblemKnapsackTest, TestCompareGMLRestrictedDDGraph) {
+TEST_F(ProblemKnapsackTestState, TestCompareGMLRestrictedDDGraph) {
     dd_instance->create_restricted_decision_diagram(3);
     dd_instance->export_graph_file("test");
 
@@ -311,7 +313,7 @@ TEST_F(ProblemKnapsackTest, TestCompareGMLRestrictedDDGraph) {
     ASSERT_TRUE(actual_output==expected_output);
 }
 
-TEST_F(ProblemKnapsackTest, TestCompareGMLRelaxedDDGraph) {
+TEST_F(ProblemKnapsackTestState, TestCompareGMLRelaxedDDGraph) {
     dd_instance->create_relaxed_decision_diagram(3);
     dd_instance->export_graph_file("test");
 

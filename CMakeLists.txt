@@ -57,7 +57,9 @@ set(PROBLEMS_SOURCE
         Examples/IndependentSet/IndependentSetProblem.cpp
         Examples/IndependentSet/IndependentSetProblem.h
         Examples/SetCovering/SetCoveringProblem.cpp
-        Examples/SetCovering/SetCoveringProblem.h)
+        Examples/SetCovering/SetCoveringProblem.h
+        Examples/KnapsackState/KnapsackProblemState.h
+        Examples/KnapsackState/KnapsackProblemState.cpp)
 
 add_library(Exceptions ${EXCEPTIONS_SOURCE})
 add_library(Problems ${PROBLEMS_SOURCE})
@@ -88,16 +90,21 @@ add_executable(IndependentSet Examples/IndependentSet/IndependentSetMain.cpp
 add_executable(SetCovering Examples/SetCovering/SetCoveringMain.cpp
         Examples/SetCovering/SetCoveringProblem.cpp
         Examples/SetCovering/SetCoveringProblem.h)
+add_executable(KnapsackState Examples/KnapsackState/KnapsackStateMain.cpp
+        Examples/KnapsackState/KnapsackProblemState.cpp
+        Examples/KnapsackState/KnapsackProblemState.h)
 
 target_link_libraries(Knapsack PRIVATE Class Exceptions)
 target_link_libraries(IndependentSet PRIVATE Class Exceptions)
 target_link_libraries(SetCovering PRIVATE Class Exceptions)
 target_link_libraries(Problems PRIVATE Class Exceptions)
+target_link_libraries(KnapsackState PRIVATE Class Exceptions)
 
 add_executable(DD_optimization_program_tests
         Test/test_ProblemKnapsack.cpp
         Test/test_ProblemIndependentSet.cpp
         Test/test_ProblemSetCovering.cpp
+        Test/test_ProblemKnapsackState.cpp
 )
 target_link_libraries(DD_optimization_program_tests PRIVATE
         Class

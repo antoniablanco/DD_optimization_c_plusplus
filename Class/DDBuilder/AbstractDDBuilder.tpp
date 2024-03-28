@@ -52,7 +52,7 @@ void AbstractDDBuilder<T>::create_new_nodes_in_the_new_layer(int variable_id) {
 
                 if (isFeasible)
                 {
-                    create_new_node(variable_id, variable_value, pExistedNode, node_state);
+                    create_new_node(variable_id, variable_value, pExistedNode, &node_state);
                 }
             }
         }
@@ -60,15 +60,15 @@ void AbstractDDBuilder<T>::create_new_nodes_in_the_new_layer(int variable_id) {
 }
 
 template <typename T>
-void AbstractDDBuilder<T>::create_new_node(int variable_id, int variable_value, Node<T>* pExistedNode, T node_state){
+void AbstractDDBuilder<T>::create_new_node(int variable_id, int variable_value, Node<T>* pExistedNode, T* node_state){
     if (there_is_node_in_last_layer(variable_id)) {
         create_arcs_for_the_terminal_node(variable_value, pExistedNode, variable_id);
     } else {
-        string state_as_string = problem.get_state_as_string(node_state);
+        string state_as_string = problem.get_state_as_string(*node_state);
         if (map_of_states.count(state_as_string )) {
             create_arc_for_the_new_node(pExistedNode, map_of_states[state_as_string], variable_value, variable_id);
         } else {
-            Node<T> *new_node = new Node(node_number, node_state);
+            Node<T> *new_node = new Node(node_number, *node_state);
             map_of_states[state_as_string] = new_node;
 
             create_arc_for_the_new_node(pExistedNode, new_node, variable_value, variable_id);
@@ -123,10 +123,10 @@ void AbstractDDBuilder<T>::print() {
 }
 
 template <typename T>
-pair<bool, Node<T>*> AbstractDDBuilder<T>::exist_node_with_same_state(T node_state) {
+pair<bool, Node<T>*> AbstractDDBuilder<T>::exist_node_with_same_state(T* node_state) {
 
     for (const auto& pNode : graph->structure.back()) {
-        if (problem.equals(pNode->state, node_state)) {
+        if (problem.equals(pNode->state, *node_state)) {
             return {true, pNode};
         }
     }

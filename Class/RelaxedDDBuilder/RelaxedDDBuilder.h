@@ -43,9 +43,9 @@ private:
     bool width_is_greater_than_w();
     void merge_nodes(Node<T>* node_to_remove, Node<T>* node_to_keep);
     void merge_with_an_existing_node(Node<T>* node_one, Node<T>* node_two, Node<T>* exist_node);
-    void merge_when_doesnt_exist_node(Node<T>* node_to_remove, Node<T>* node_to_keep, vector<int> new_state);
+    void merge_when_doesnt_exist_node(Node<T>* node_to_remove, Node<T>* node_to_keep, T* new_state);
     static void redirect_in_arcs(Node<T>* node_to_remove, Node<T>* node_to_keep);
-    static void change_new_state(Node<T>* node, vector<int> new_state);
+    static void change_new_state(Node<T>* node, T* new_state);
     void delete_node(Node<T>* node_to_remove);
     void adjust_node_number(); /**< Ajusta el id de los nodos tras los cambios producidos */
 

@@ -40,7 +40,7 @@ protected:
     AbstractProblem<T>& problem; /**< Referencia al problema asociado al grafo. */
     vector<string> variables; /**< Lista de variables del problema. */
     map<string, vector<int>> variables_domain; /**< Dominio de las variables del problema. */
-    pair<bool, Node<T>*> exist_node_with_same_state(T node_state); /**< Verifica si existe un nodo con el mismo estado. */
+    pair<bool, Node<T>*> exist_node_with_same_state(T* node_state); /**< Verifica si existe un nodo con el mismo estado. */
 
 private:
     map<string, Node<T>*> map_of_states; /**< Mapa que almacena los estados de los nodos en cada layer. */
@@ -48,12 +48,12 @@ private:
      * @brief Inicializa el grafo con un nodo raíz.
      * @param initial_state Estado inicial del nodo raíz.
      */
-    Graph<T> initialize_graph(vector<int>& initial_state);
+    Graph<T> initialize_graph(T& initial_state);
 
     // Métodos para la construcción del grafo
     void create_new_layer(int variable_id);
     void create_new_nodes_in_the_new_layer(int variable_id);
-    void create_new_node(int variable_id, int variable_value, Node<T>* pExistedNode, T node_state);
+    void create_new_node(int variable_id, int variable_value, Node<T>* pExistedNode, T* node_state);
     bool there_is_node_in_last_layer(int variable_id);
     void create_arcs_for_the_terminal_node(int variable_value, Node<T>* existed_node, int variable_id);
     void create_arc_for_the_new_node(Node<T>* existed_node, Node<T>* node_created, int variable_value, int variable_id);

@@ -11,6 +11,7 @@
   </component>
   <component name="CMakeRunConfigurationManager">
     <generated>
+      <config projectName="DD_optimization_program" targetName="KnapsackState" />
       <config projectName="DD_optimization_program" targetName="Class" />
       <config projectName="DD_optimization_program" targetName="Problems" />
       <config projectName="DD_optimization_program" targetName="DD_optimization_program_tests" />
@@ -32,28 +33,90 @@
   <component name="ChangeListManager">
     <list default="true" id="ad155aba-e836-4943-98df-aedd7029eaad" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Class/DDBuilder/AbstractDDBuilder.h" beforeDir="false" afterPath="$PROJECT_DIR$/Class/DDBuilder/AbstractDDBuilder.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Class/DDBuilder/AbstractDDBuilder.tpp" beforeDir="false" afterPath="$PROJECT_DIR$/Class/DDBuilder/AbstractDDBuilder.tpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Examples/Knapsack/KnapsackMain.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Examples/Knapsack/KnapsackMain.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Examples/Knapsack/knapsack_statistics.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Examples/Knapsack/knapsack_statistics.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Class.dir/compiler_depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/Class.dir/compiler_depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Class/RelaxedDDBuilder/RelaxedDDBuilder.h" beforeDir="false" afterPath="$PROJECT_DIR$/Class/RelaxedDDBuilder/RelaxedDDBuilder.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Class/RelaxedDDBuilder/RelaxedDDBuilder.tpp" beforeDir="false" afterPath="$PROJECT_DIR$/Class/RelaxedDDBuilder/RelaxedDDBuilder.tpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/test_ProblemKnapsack.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Test/test_ProblemKnapsack.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/.cmake/api/v1/reply/codemodel-v2-c7aec827c77cf966c9be.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/.cmake/api/v1/reply/directory-_deps.googletest-build.googlemock-Debug-38acae655a4e69b124ec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/.cmake/api/v1/reply/directory-_deps.googletest-build.googletest-Debug-01a9abde061adce5c5d6.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/.cmake/api/v1/reply/target-Class-Debug-9cb32659e47f3c8ee8d4.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/.cmake/api/v1/reply/target-DD_optimization_program_tests-Debug-801e02c10e4a49b08ce3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/.cmake/api/v1/reply/target-Exceptions-Debug-035ccde65eabf752909a.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/.cmake/api/v1/reply/target-IndependentSet-Debug-ff1406f6bc033b915584.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/.cmake/api/v1/reply/target-Knapsack-Debug-ab7a5e64479deacbd9d4.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/.cmake/api/v1/reply/target-Problems-Debug-afee8826237ca85ce8ee.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/.cmake/api/v1/reply/target-SetCovering-Debug-d8a8000a65cb8d1d4a0c.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/DD_optimization_program_tests.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/DD_optimization_program_tests.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/DD_optimization_program_tests.dir/Test/test_ProblemIndependentSet.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/DD_optimization_program_tests.dir/Test/test_ProblemIndependentSet.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/DD_optimization_program_tests.dir/Test/test_ProblemKnapsack.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/DD_optimization_program_tests.dir/Test/test_ProblemKnapsack.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/DD_optimization_program_tests.dir/Test/test_ProblemSetCovering.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/DD_optimization_program_tests.dir/Test/test_ProblemSetCovering.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/DD_optimization_program_tests.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/DD_optimization_program_tests.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/DD_optimization_program_tests.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/DD_optimization_program_tests.dir/cmake_clean.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CMakeFiles/DD_optimization_program_tests.dir/compiler_depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/DD_optimization_program_tests.dir/compiler_depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Exceptions.dir/compiler_depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/Exceptions.dir/compiler_depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/IndependentSet.dir/compiler_depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/IndependentSet.dir/compiler_depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Knapsack.dir/compiler_depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/Knapsack.dir/compiler_depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/DD_optimization_program_tests.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/DD_optimization_program_tests.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/DD_optimization_program_tests.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/DD_optimization_program_tests.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Exceptions.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/Exceptions.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/IndependentSet.dir/Examples/IndependentSet/IndependentSetMain.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/IndependentSet.dir/Examples/IndependentSet/IndependentSetMain.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/IndependentSet.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/IndependentSet.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Knapsack.dir/Examples/Knapsack/KnapsackMain.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/Knapsack.dir/Examples/Knapsack/KnapsackMain.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Knapsack.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/Knapsack.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Problems.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/Problems.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Problems.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/Problems.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Problems.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/Problems.dir/cmake_clean.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Problems.dir/compiler_depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/Problems.dir/compiler_depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/SetCovering.dir/compiler_depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/SetCovering.dir/compiler_depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/_deps/googletest-build/googlemock/CMakeFiles/gmock.dir/compiler_depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/_deps/googletest-build/googlemock/CMakeFiles/gmock.dir/compiler_depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/compiler_depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/compiler_depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/_deps/googletest-build/googletest/CMakeFiles/gtest.dir/compiler_depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/_deps/googletest-build/googletest/CMakeFiles/gtest.dir/compiler_depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/compiler_depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/compiler_depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Problems.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/Problems.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Problems.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/Problems.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/SetCovering.dir/Examples/SetCovering/SetCoveringMain.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/SetCovering.dir/Examples/SetCovering/SetCoveringMain.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/SetCovering.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/SetCovering.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/DD_optimization_program_tests" beforeDir="false" afterPath="$PROJECT_DIR$/build/DD_optimization_program_tests" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/DD_optimization_program_tests[1]_tests.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/DD_optimization_program_tests[1]_tests.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/IndependentSet" beforeDir="false" afterPath="$PROJECT_DIR$/build/IndependentSet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Knapsack" beforeDir="false" afterPath="$PROJECT_DIR$/build/Knapsack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/build/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/SetCovering" beforeDir="false" afterPath="$PROJECT_DIR$/build/SetCovering" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/_deps/googletest-build/googlemock/CMakeFiles/gmock.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/_deps/googletest-build/googlemock/CMakeFiles/gmock.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/_deps/googletest-build/googletest/CMakeFiles/gtest.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/_deps/googletest-build/googletest/CMakeFiles/gtest.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/compile_commands.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/compile_commands.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libProblems.a" beforeDir="false" afterPath="$PROJECT_DIR$/build/libProblems.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-2ba6114b728acfed0c93.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-a862cf010e27e5048814.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/directory-_deps.googletest-build.googlemock-Debug-d95f104de29c5489c580.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/directory-_deps.googletest-build.googletest-Debug-c2e7aa22ec302618407c.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2024-02-18T19-55-10-0280.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-Class-Debug-e3f793ee9fb0656d38d0.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-DD_optimization_program_tests-Debug-6fe56f4ee89c2db951a5.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-Exceptions-Debug-520f849c150f47f4a886.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-IndependentSet-Debug-807dfd75a94e12b5be74.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-Knapsack-Debug-d7040cdb6fd7ed45266d.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-Problems-Debug-881024e97d6ad0117cdd.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-SetCovering-Debug-6e6f02f8039cecd3bfae.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Knapsack.dir/Examples/Knapsack/KnapsackMain.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Knapsack.dir/Examples/Knapsack/KnapsackMain.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DD_optimization_program_tests.dir/Test/test_ProblemIndependentSet.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DD_optimization_program_tests.dir/Test/test_ProblemIndependentSet.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DD_optimization_program_tests.dir/Test/test_ProblemKnapsack.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DD_optimization_program_tests.dir/Test/test_ProblemKnapsack.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DD_optimization_program_tests.dir/Test/test_ProblemSetCovering.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DD_optimization_program_tests.dir/Test/test_ProblemSetCovering.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/DD_optimization_program_tests" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/DD_optimization_program_tests" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Knapsack" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Knapsack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/DD_optimization_program_tests[1]_tests.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/DD_optimization_program_tests[1]_tests.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-subbuild/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-subbuild/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-subbuild/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/_deps/googletest-subbuild/build.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libProblems.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/libProblems.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/knapsack_file.gml" beforeDir="false" afterPath="$PROJECT_DIR$/knapsack_file.gml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.gml" beforeDir="false" afterPath="$PROJECT_DIR$/test.gml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,34 +146,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "CMake Application.IndependentSet.executor": "Run",
-    "CMake Application.Knapsack.executor": "Run",
-    "CMake Application.SetCovering.executor": "Run",
-    "Google Test.DD_optimization_program_tests.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "RunOnceActivity.readMode.enableVisualFormatting": "true",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/antoniablanco/Desktop/DD_optimization_c-",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;CMake Application.IndependentSet.executor&quot;: &quot;Run&quot;,
+    &quot;CMake Application.Knapsack.executor&quot;: &quot;Run&quot;,
+    &quot;CMake Application.SetCovering.executor&quot;: &quot;Run&quot;,
+    &quot;Google Test.DD_optimization_program_tests.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/antoniablanco/Desktop/DD_optimization_c-&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Examples/Knapsack" />
     </key>
   </component>
-  <component name="RunManager" selected="CMake Application.Knapsack">
+  <component name="RunManager" selected="Google Test.DD_optimization_program_tests">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DD_optimization_program_tests" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DD_optimization_program" TARGET_NAME="DD_optimization_program_tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="DD_optimization_program" RUN_TARGET_NAME="DD_optimization_program_tests" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -133,6 +201,11 @@
       </method>
     </configuration>
     <configuration name="Knapsack" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DD_optimization_program" TARGET_NAME="Knapsack" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="DD_optimization_program" RUN_TARGET_NAME="Knapsack">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KnapsackState" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DD_optimization_program" TARGET_NAME="KnapsackState" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="DD_optimization_program" RUN_TARGET_NAME="KnapsackState">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -172,6 +245,7 @@
       <item itemvalue="CMake Application.Exceptions" />
       <item itemvalue="CMake Application.IndependentSet" />
       <item itemvalue="CMake Application.Knapsack" />
+      <item itemvalue="CMake Application.KnapsackState" />
       <item itemvalue="CMake Application.Problems" />
       <item itemvalue="CMake Application.SetCovering" />
       <item itemvalue="CMake Application.gmock" />
@@ -218,7 +292,8 @@
       <workItem from="1710766036455" duration="36000" />
       <workItem from="1710964893208" duration="2977000" />
       <workItem from="1711053197661" duration="599000" />
-      <workItem from="1711131562757" duration="436000" />
+      <workItem from="1711131562757" duration="742000" />
+      <workItem from="1711640740722" duration="17000" />
     </task>
     <servers />
   </component>

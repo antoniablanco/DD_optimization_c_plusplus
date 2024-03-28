@@ -42,8 +42,8 @@ bool RelaxedDDBuilder<T>::width_is_greater_than_w() {
 
 template <typename T>
 void RelaxedDDBuilder<T>::merge_nodes(Node<T>* node_to_remove, Node<T>* node_to_keep) {
-    vector<int> new_state = this->problem.merge_operator(node_to_remove->state, node_to_keep->state);
-    auto result = this->exist_node_with_same_state(new_state);
+    auto new_state = this->problem.merge_operator(node_to_remove->state, node_to_keep->state);
+    auto result = this->exist_node_with_same_state(&new_state);
     bool exist_node = result.first;
     Node<T>* same_state_node = result.second;
 
@@ -51,7 +51,7 @@ void RelaxedDDBuilder<T>::merge_nodes(Node<T>* node_to_remove, Node<T>* node_to_
         merge_with_an_existing_node(node_to_remove, node_to_keep, same_state_node);
     }
     else {
-        merge_when_doesnt_exist_node(node_to_remove, node_to_keep, new_state);
+        merge_when_doesnt_exist_node(node_to_remove, node_to_keep, &new_state);
     }
 }
 
@@ -64,7 +64,7 @@ void RelaxedDDBuilder<T>::merge_with_an_existing_node(Node<T>* node_one, Node<T>
 }
 
 template <typename T>
-void RelaxedDDBuilder<T>::merge_when_doesnt_exist_node(Node<T>* node_to_remove, Node<T>* node_to_keep, vector<int> new_state) {
+void RelaxedDDBuilder<T>::merge_when_doesnt_exist_node(Node<T>* node_to_remove, Node<T>* node_to_keep, T* new_state) {
     redirect_in_arcs(node_to_remove, node_to_keep);
     change_new_state(node_to_keep, std::move(new_state));
     delete_node(node_to_remove);
@@ -82,8 +82,8 @@ void RelaxedDDBuilder<T>::redirect_in_arcs(Node<T>* node_to_remove, Node<T>* nod
 }
 
 template <typename T>
-void RelaxedDDBuilder<T>::change_new_state(Node<T>* node, vector<int> new_state) {
-    node->state = std::move(new_state);
+void RelaxedDDBuilder<T>::change_new_state(Node<T>* node, T* new_state) {
+    node->state = std::move(*new_state);
 }
 
 template <typename T>

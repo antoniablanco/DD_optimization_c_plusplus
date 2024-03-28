@@ -111,11 +111,26 @@ CMakeFiles/Problems.dir/Examples/SetCovering/SetCoveringProblem.cpp.s: cmake_for
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Problems.dir/Examples/SetCovering/SetCoveringProblem.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Examples/SetCovering/SetCoveringProblem.cpp -o CMakeFiles/Problems.dir/Examples/SetCovering/SetCoveringProblem.cpp.s
 
+CMakeFiles/Problems.dir/Examples/KnapsackState/KnapsackProblemState.cpp.o: CMakeFiles/Problems.dir/flags.make
+CMakeFiles/Problems.dir/Examples/KnapsackState/KnapsackProblemState.cpp.o: /Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Examples/KnapsackState/KnapsackProblemState.cpp
+CMakeFiles/Problems.dir/Examples/KnapsackState/KnapsackProblemState.cpp.o: CMakeFiles/Problems.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/antoniablanco/Desktop/DD_optimization_c_plusplus/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Problems.dir/Examples/KnapsackState/KnapsackProblemState.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Problems.dir/Examples/KnapsackState/KnapsackProblemState.cpp.o -MF CMakeFiles/Problems.dir/Examples/KnapsackState/KnapsackProblemState.cpp.o.d -o CMakeFiles/Problems.dir/Examples/KnapsackState/KnapsackProblemState.cpp.o -c /Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Examples/KnapsackState/KnapsackProblemState.cpp
+
+CMakeFiles/Problems.dir/Examples/KnapsackState/KnapsackProblemState.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Problems.dir/Examples/KnapsackState/KnapsackProblemState.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Examples/KnapsackState/KnapsackProblemState.cpp > CMakeFiles/Problems.dir/Examples/KnapsackState/KnapsackProblemState.cpp.i
+
+CMakeFiles/Problems.dir/Examples/KnapsackState/KnapsackProblemState.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Problems.dir/Examples/KnapsackState/KnapsackProblemState.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Examples/KnapsackState/KnapsackProblemState.cpp -o CMakeFiles/Problems.dir/Examples/KnapsackState/KnapsackProblemState.cpp.s
+
 # Object files for target Problems
 Problems_OBJECTS = \
 "CMakeFiles/Problems.dir/Examples/Knapsack/KnapsackProblem.cpp.o" \
 "CMakeFiles/Problems.dir/Examples/IndependentSet/IndependentSetProblem.cpp.o" \
-"CMakeFiles/Problems.dir/Examples/SetCovering/SetCoveringProblem.cpp.o"
+"CMakeFiles/Problems.dir/Examples/SetCovering/SetCoveringProblem.cpp.o" \
+"CMakeFiles/Problems.dir/Examples/KnapsackState/KnapsackProblemState.cpp.o"
 
 # External object files for target Problems
 Problems_EXTERNAL_OBJECTS =
@@ -123,9 +138,10 @@ Problems_EXTERNAL_OBJECTS =
 libProblems.a: CMakeFiles/Problems.dir/Examples/Knapsack/KnapsackProblem.cpp.o
 libProblems.a: CMakeFiles/Problems.dir/Examples/IndependentSet/IndependentSetProblem.cpp.o
 libProblems.a: CMakeFiles/Problems.dir/Examples/SetCovering/SetCoveringProblem.cpp.o
+libProblems.a: CMakeFiles/Problems.dir/Examples/KnapsackState/KnapsackProblemState.cpp.o
 libProblems.a: CMakeFiles/Problems.dir/build.make
 libProblems.a: CMakeFiles/Problems.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/antoniablanco/Desktop/DD_optimization_c_plusplus/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library libProblems.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/antoniablanco/Desktop/DD_optimization_c_plusplus/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX static library libProblems.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/Problems.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Problems.dir/link.txt --verbose=$(VERBOSE)
 

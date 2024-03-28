@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Examples/IndependentSet/IndependentSetProblem.cpp" "CMakeFiles/Problems.dir/Examples/IndependentSet/IndependentSetProblem.cpp.o" "gcc" "CMakeFiles/Problems.dir/Examples/IndependentSet/IndependentSetProblem.cpp.o.d"
   "/Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Examples/Knapsack/KnapsackProblem.cpp" "CMakeFiles/Problems.dir/Examples/Knapsack/KnapsackProblem.cpp.o" "gcc" "CMakeFiles/Problems.dir/Examples/Knapsack/KnapsackProblem.cpp.o.d"
+  "/Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Examples/KnapsackState/KnapsackProblemState.cpp" "CMakeFiles/Problems.dir/Examples/KnapsackState/KnapsackProblemState.cpp.o" "gcc" "CMakeFiles/Problems.dir/Examples/KnapsackState/KnapsackProblemState.cpp.o.d"
   "/Users/antoniablanco/Desktop/DD_optimization_c_plusplus/Examples/SetCovering/SetCoveringProblem.cpp" "CMakeFiles/Problems.dir/Examples/SetCovering/SetCoveringProblem.cpp.o" "gcc" "CMakeFiles/Problems.dir/Examples/SetCovering/SetCoveringProblem.cpp.o.d"
   )
 

@@ -240,6 +240,19 @@ SetCovering/fast:
 .PHONY : SetCovering/fast
 
 #=============================================================================
+# Target rules for targets named KnapsackState
+
+# Build rule for target.
+KnapsackState: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 KnapsackState
+.PHONY : KnapsackState
+
+# fast build rule for target.
+KnapsackState/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/KnapsackState.dir/build.make CMakeFiles/KnapsackState.dir/build
+.PHONY : KnapsackState/fast
+
+#=============================================================================
 # Target rules for targets named DD_optimization_program_tests
 
 # Build rule for target.
@@ -430,6 +443,57 @@ Examples/Knapsack/KnapsackProblem.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Knapsack.dir/build.make CMakeFiles/Knapsack.dir/Examples/Knapsack/KnapsackProblem.cpp.s
 .PHONY : Examples/Knapsack/KnapsackProblem.cpp.s
 
+Examples/KnapsackState/KnapsackProblemState.o: Examples/KnapsackState/KnapsackProblemState.cpp.o
+.PHONY : Examples/KnapsackState/KnapsackProblemState.o
+
+# target to build an object file
+Examples/KnapsackState/KnapsackProblemState.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Problems.dir/build.make CMakeFiles/Problems.dir/Examples/KnapsackState/KnapsackProblemState.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/KnapsackState.dir/build.make CMakeFiles/KnapsackState.dir/Examples/KnapsackState/KnapsackProblemState.cpp.o
+.PHONY : Examples/KnapsackState/KnapsackProblemState.cpp.o
+
+Examples/KnapsackState/KnapsackProblemState.i: Examples/KnapsackState/KnapsackProblemState.cpp.i
+.PHONY : Examples/KnapsackState/KnapsackProblemState.i
+
+# target to preprocess a source file
+Examples/KnapsackState/KnapsackProblemState.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Problems.dir/build.make CMakeFiles/Problems.dir/Examples/KnapsackState/KnapsackProblemState.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/KnapsackState.dir/build.make CMakeFiles/KnapsackState.dir/Examples/KnapsackState/KnapsackProblemState.cpp.i
+.PHONY : Examples/KnapsackState/KnapsackProblemState.cpp.i
+
+Examples/KnapsackState/KnapsackProblemState.s: Examples/KnapsackState/KnapsackProblemState.cpp.s
+.PHONY : Examples/KnapsackState/KnapsackProblemState.s
+
+# target to generate assembly for a file
+Examples/KnapsackState/KnapsackProblemState.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Problems.dir/build.make CMakeFiles/Problems.dir/Examples/KnapsackState/KnapsackProblemState.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/KnapsackState.dir/build.make CMakeFiles/KnapsackState.dir/Examples/KnapsackState/KnapsackProblemState.cpp.s
+.PHONY : Examples/KnapsackState/KnapsackProblemState.cpp.s
+
+Examples/KnapsackState/KnapsackStateMain.o: Examples/KnapsackState/KnapsackStateMain.cpp.o
+.PHONY : Examples/KnapsackState/KnapsackStateMain.o
+
+# target to build an object file
+Examples/KnapsackState/KnapsackStateMain.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/KnapsackState.dir/build.make CMakeFiles/KnapsackState.dir/Examples/KnapsackState/KnapsackStateMain.cpp.o
+.PHONY : Examples/KnapsackState/KnapsackStateMain.cpp.o
+
+Examples/KnapsackState/KnapsackStateMain.i: Examples/KnapsackState/KnapsackStateMain.cpp.i
+.PHONY : Examples/KnapsackState/KnapsackStateMain.i
+
+# target to preprocess a source file
+Examples/KnapsackState/KnapsackStateMain.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/KnapsackState.dir/build.make CMakeFiles/KnapsackState.dir/Examples/KnapsackState/KnapsackStateMain.cpp.i
+.PHONY : Examples/KnapsackState/KnapsackStateMain.cpp.i
+
+Examples/KnapsackState/KnapsackStateMain.s: Examples/KnapsackState/KnapsackStateMain.cpp.s
+.PHONY : Examples/KnapsackState/KnapsackStateMain.s
+
+# target to generate assembly for a file
+Examples/KnapsackState/KnapsackStateMain.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/KnapsackState.dir/build.make CMakeFiles/KnapsackState.dir/Examples/KnapsackState/KnapsackStateMain.cpp.s
+.PHONY : Examples/KnapsackState/KnapsackStateMain.cpp.s
+
 Examples/SetCovering/SetCoveringMain.o: Examples/SetCovering/SetCoveringMain.cpp.o
 .PHONY : Examples/SetCovering/SetCoveringMain.o
 
@@ -553,6 +617,30 @@ Test/test_ProblemKnapsack.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DD_optimization_program_tests.dir/build.make CMakeFiles/DD_optimization_program_tests.dir/Test/test_ProblemKnapsack.cpp.s
 .PHONY : Test/test_ProblemKnapsack.cpp.s
 
+Test/test_ProblemKnapsackState.o: Test/test_ProblemKnapsackState.cpp.o
+.PHONY : Test/test_ProblemKnapsackState.o
+
+# target to build an object file
+Test/test_ProblemKnapsackState.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DD_optimization_program_tests.dir/build.make CMakeFiles/DD_optimization_program_tests.dir/Test/test_ProblemKnapsackState.cpp.o
+.PHONY : Test/test_ProblemKnapsackState.cpp.o
+
+Test/test_ProblemKnapsackState.i: Test/test_ProblemKnapsackState.cpp.i
+.PHONY : Test/test_ProblemKnapsackState.i
+
+# target to preprocess a source file
+Test/test_ProblemKnapsackState.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DD_optimization_program_tests.dir/build.make CMakeFiles/DD_optimization_program_tests.dir/Test/test_ProblemKnapsackState.cpp.i
+.PHONY : Test/test_ProblemKnapsackState.cpp.i
+
+Test/test_ProblemKnapsackState.s: Test/test_ProblemKnapsackState.cpp.s
+.PHONY : Test/test_ProblemKnapsackState.s
+
+# target to generate assembly for a file
+Test/test_ProblemKnapsackState.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DD_optimization_program_tests.dir/build.make CMakeFiles/DD_optimization_program_tests.dir/Test/test_ProblemKnapsackState.cpp.s
+.PHONY : Test/test_ProblemKnapsackState.cpp.s
+
 Test/test_ProblemSetCovering.o: Test/test_ProblemSetCovering.cpp.o
 .PHONY : Test/test_ProblemSetCovering.o
 
@@ -594,6 +682,7 @@ help:
 	@echo "... Exceptions"
 	@echo "... IndependentSet"
 	@echo "... Knapsack"
+	@echo "... KnapsackState"
 	@echo "... Problems"
 	@echo "... SetCovering"
 	@echo "... gmock"
@@ -615,6 +704,12 @@ help:
 	@echo "... Examples/Knapsack/KnapsackProblem.o"
 	@echo "... Examples/Knapsack/KnapsackProblem.i"
 	@echo "... Examples/Knapsack/KnapsackProblem.s"
+	@echo "... Examples/KnapsackState/KnapsackProblemState.o"
+	@echo "... Examples/KnapsackState/KnapsackProblemState.i"
+	@echo "... Examples/KnapsackState/KnapsackProblemState.s"
+	@echo "... Examples/KnapsackState/KnapsackStateMain.o"
+	@echo "... Examples/KnapsackState/KnapsackStateMain.i"
+	@echo "... Examples/KnapsackState/KnapsackStateMain.s"
 	@echo "... Examples/SetCovering/SetCoveringMain.o"
 	@echo "... Examples/SetCovering/SetCoveringMain.i"
 	@echo "... Examples/SetCovering/SetCoveringMain.s"
@@ -630,6 +725,9 @@ help:
 	@echo "... Test/test_ProblemKnapsack.o"
 	@echo "... Test/test_ProblemKnapsack.i"
 	@echo "... Test/test_ProblemKnapsack.s"
+	@echo "... Test/test_ProblemKnapsackState.o"
+	@echo "... Test/test_ProblemKnapsackState.i"
+	@echo "... Test/test_ProblemKnapsackState.s"
 	@echo "... Test/test_ProblemSetCovering.o"
 	@echo "... Test/test_ProblemSetCovering.i"
 	@echo "... Test/test_ProblemSetCovering.s"

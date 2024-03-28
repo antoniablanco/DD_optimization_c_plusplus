@@ -26,7 +26,8 @@
 						3,
 						4,
 						5,
-						6
+						6,
+						7
 					]
 				},
 				{
@@ -36,14 +37,14 @@
 						2
 					],
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-_deps.googletest-build-Debug-325181791364522dc3de.json",
+					"jsonFile" : "directory-_deps.googletest-build-Debug-fa1b18db30f420365ea4.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "2.8.12"
 					},
 					"parentIndex" : 0,
 					"projectIndex" : 1,
-					"source" : "build/_deps/googletest-src"
+					"source" : "cmake-build-debug/_deps/googletest-src"
 				},
 				{
 					"build" : "_deps/googletest-build/googlemock",
@@ -52,35 +53,35 @@
 						3
 					],
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-_deps.googletest-build.googlemock-Debug-38acae655a4e69b124ec.json",
+					"jsonFile" : "directory-_deps.googletest-build.googlemock-Debug-3a5742ac295219ee9e16.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "2.8.12"
 					},
 					"parentIndex" : 1,
 					"projectIndex" : 2,
-					"source" : "build/_deps/googletest-src/googlemock",
+					"source" : "cmake-build-debug/_deps/googletest-src/googlemock",
 					"targetIndexes" : 
 					[
-						7,
-						8
+						8,
+						9
 					]
 				},
 				{
 					"build" : "_deps/googletest-build/googletest",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-_deps.googletest-build.googletest-Debug-01a9abde061adce5c5d6.json",
+					"jsonFile" : "directory-_deps.googletest-build.googletest-Debug-9a99a1ad0aee81ac7d9f.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "2.8.12"
 					},
 					"parentIndex" : 2,
 					"projectIndex" : 3,
-					"source" : "build/_deps/googletest-src/googletest",
+					"source" : "cmake-build-debug/_deps/googletest-src/googletest",
 					"targetIndexes" : 
 					[
-						9,
-						10
+						10,
+						11
 					]
 				}
 			],
@@ -105,7 +106,8 @@
 						3,
 						4,
 						5,
-						6
+						6,
+						7
 					]
 				},
 				{
@@ -133,8 +135,8 @@
 					"parentIndex" : 1,
 					"targetIndexes" : 
 					[
-						7,
-						8
+						8,
+						9
 					]
 				},
 				{
@@ -146,8 +148,8 @@
 					"parentIndex" : 2,
 					"targetIndexes" : 
 					[
-						9,
-						10
+						10,
+						11
 					]
 				}
 			],
@@ -156,77 +158,84 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "Class::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Class-Debug-9cb32659e47f3c8ee8d4.json",
+					"jsonFile" : "target-Class-Debug-5969db2f0acf7275b90e.json",
 					"name" : "Class",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "DD_optimization_program_tests::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-DD_optimization_program_tests-Debug-801e02c10e4a49b08ce3.json",
+					"jsonFile" : "target-DD_optimization_program_tests-Debug-d0b9fc0b110d59782bdf.json",
 					"name" : "DD_optimization_program_tests",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "Exceptions::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Exceptions-Debug-035ccde65eabf752909a.json",
+					"jsonFile" : "target-Exceptions-Debug-a81548c958342c601bab.json",
 					"name" : "Exceptions",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "IndependentSet::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-IndependentSet-Debug-ff1406f6bc033b915584.json",
+					"jsonFile" : "target-IndependentSet-Debug-e9b0d68116722ef6d10b.json",
 					"name" : "IndependentSet",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "Knapsack::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Knapsack-Debug-ab7a5e64479deacbd9d4.json",
+					"jsonFile" : "target-Knapsack-Debug-f444fd00aa0c538cf5d5.json",
 					"name" : "Knapsack",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
+					"id" : "KnapsackState::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-KnapsackState-Debug-7f4c7df88a3da4e1ae7e.json",
+					"name" : "KnapsackState",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
 					"id" : "Problems::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Problems-Debug-afee8826237ca85ce8ee.json",
+					"jsonFile" : "target-Problems-Debug-8b994604bfa248a09f06.json",
 					"name" : "Problems",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "SetCovering::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-SetCovering-Debug-d8a8000a65cb8d1d4a0c.json",
+					"jsonFile" : "target-SetCovering-Debug-b8b3c41b08805986e42e.json",
 					"name" : "SetCovering",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 2,
 					"id" : "gmock::@0f7bb11d64f3678238c7",
-					"jsonFile" : "target-gmock-Debug-eb4146a2c1bce9c3a0b3.json",
+					"jsonFile" : "target-gmock-Debug-3a3c46740650a18f6940.json",
 					"name" : "gmock",
 					"projectIndex" : 2
 				},
 				{
 					"directoryIndex" : 2,
 					"id" : "gmock_main::@0f7bb11d64f3678238c7",
-					"jsonFile" : "target-gmock_main-Debug-6c85a413dc3b552d0e22.json",
+					"jsonFile" : "target-gmock_main-Debug-7b95b326969dc4548718.json",
 					"name" : "gmock_main",
 					"projectIndex" : 2
 				},
 				{
 					"directoryIndex" : 3,
 					"id" : "gtest::@1ea2dfc0605fe3ab2a3f",
-					"jsonFile" : "target-gtest-Debug-0a5271d6a220e4ccec16.json",
+					"jsonFile" : "target-gtest-Debug-a00803379e0125c576c9.json",
 					"name" : "gtest",
 					"projectIndex" : 3
 				},
 				{
 					"directoryIndex" : 3,
 					"id" : "gtest_main::@1ea2dfc0605fe3ab2a3f",
-					"jsonFile" : "target-gtest_main-Debug-ff0df17d9d1d81ce70d2.json",
+					"jsonFile" : "target-gtest_main-Debug-59aade14398078169d78.json",
 					"name" : "gtest_main",
 					"projectIndex" : 3
 				}
@@ -236,7 +245,7 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/Users/antoniablanco/Desktop/DD_optimization_c_plusplus/build",
+		"build" : "/Users/antoniablanco/Desktop/DD_optimization_c_plusplus/cmake-build-debug",
 		"source" : "/Users/antoniablanco/Desktop/DD_optimization_c_plusplus"
 	},
 	"version" : 

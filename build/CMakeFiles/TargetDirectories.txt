@@ -4,6 +4,7 @@
 /Users/antoniablanco/Desktop/DD_optimization_c_plusplus/build/CMakeFiles/Knapsack.dir
 /Users/antoniablanco/Desktop/DD_optimization_c_plusplus/build/CMakeFiles/IndependentSet.dir
 /Users/antoniablanco/Desktop/DD_optimization_c_plusplus/build/CMakeFiles/SetCovering.dir
+/Users/antoniablanco/Desktop/DD_optimization_c_plusplus/build/CMakeFiles/KnapsackState.dir
 /Users/antoniablanco/Desktop/DD_optimization_c_plusplus/build/CMakeFiles/DD_optimization_program_tests.dir
 /Users/antoniablanco/Desktop/DD_optimization_c_plusplus/build/CMakeFiles/edit_cache.dir
 /Users/antoniablanco/Desktop/DD_optimization_c_plusplus/build/CMakeFiles/rebuild_cache.dir

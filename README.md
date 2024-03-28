@@ -17,7 +17,7 @@ Clone this repository and navigate to the project directory to implement the mai
 
 ## Getting Started
 
-First should proceed to the construction of a **Problem** class, which must inherit from  **AbstractProblem** . First, when writing the file, it is necessary to define the data type that will be used in the state. This should be done in the inheritance of AbstractProblem (e.g., "AbstractProblem<vector `<int>`>" or "AbstractProblem `<string>`").
+First should proceed to the construction of a **Problem** class, which must inherit from  **AbstractProblem** . First, when writing the file, it is necessary to define the data type that will be used in the state. This should be done in the inheritance of AbstractProblem (e.g., "AbstractProblem<vector `<int>`>" or "AbstractProblem `<string>`"). If you prefer to use a custom class, it's important to note that it must implement the '==' operator.
 
 Second it is crucial to define the following functions for this class:
 
